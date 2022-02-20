@@ -1,4 +1,4 @@
 export const PreloadSceneData = {
-  key: 'PreloadScene',
+  key: "PreloadScene",
   assets: {},
 };

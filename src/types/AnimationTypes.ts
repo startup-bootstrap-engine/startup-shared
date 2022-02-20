@@ -1,4 +1,4 @@
-export type AnimationDirection = 'down' | 'up' | 'left' | 'right';
+export type AnimationDirection = "down" | "up" | "left" | "right";
 
 export interface IAnimationData {
   [direction: string]: {

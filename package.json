@@ -20,7 +20,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc -p .",
     "prepublish": "tsc",
-    "format": "prettier --write 'src/**/*.ts' 'src/**/*.json' --loglevel silent",
+    "format": "prettier --write 'src/**/*.ts' --loglevel silent",
     "format:check": "prettier --check '**/*.ts' '**/*.json'",
     "configure": "./environment/download-credentials.sh"
   },

@@ -1,4 +1,4 @@
-import { IAnimationData } from './AnimationTypes';
+import { IAnimationData } from "./AnimationTypes";
 
 export interface IAssetData {
   textureKey: string;
