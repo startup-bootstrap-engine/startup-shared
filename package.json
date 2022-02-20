@@ -1,0 +1,38 @@
+{
+  "name": "@rpg-engine/shared",
+  "version": "0.0.3",
+  "description": "> TODO: description",
+  "author": "Joao Paulo Furtado <joaopaulofurtado@live.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/index",
+  "directories": {
+    "dist": "dist",
+    "src": "src"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc -p .",
+    "prepublish": "tsc",
+    "format": "prettier --write 'src/**/*.ts' 'src/**/*.json' --loglevel silent",
+    "format:check": "prettier --check '**/*.ts' '**/*.json'",
+    "configure": "./environment/download-credentials.sh"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn tsc && yarn format"
+    }
+  },
+  "dependencies": {
+    "husky": "^4.3.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.5.5"
+  },
+  "devDependencies": {}
+}
