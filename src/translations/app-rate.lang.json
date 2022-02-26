@@ -1,0 +1,38 @@
+{
+  "title": {
+    "eng": "Would you mind rating BlueShip?",
+    "ptBr": "Gostaria de avaliar BlueShip?"
+  },
+  "message": {
+    "eng": "It will not take more than a minute and helps to promote our app. Thanks for your support!",
+    "ptBr": "Se gostou de utilizar o BlueShip, importa-se de avaliá-lo? Não vai demorar mais do que um minuto. Obrigado pelo seu apoio!"
+  },
+  "cancelButtonLabel": {
+    "eng": "No, Thanks",
+    "ptBr": "Não, obrigado"
+  },
+  "laterButtonLabel": {
+    "eng": "Remind Me Later",
+    "ptBr": "Lembrar mais tarde"
+  },
+  "rateButtonLabel": {
+    "eng": "Rate It Now",
+    "ptBr": "Avaliar agora"
+  },
+  "yesButtonLabel": {
+    "eng": "Yes!",
+    "ptBr": "Sim!"
+  },
+  "noButtonLabel": {
+    "eng": "Not really",
+    "ptBr": "Não"
+  },
+  "appRatePromptTitle": {
+    "eng": "Do you like using BlueShip?",
+    "ptBr": "Você gosta de utilizar BlueShip?"
+  },
+  "feedbackPromptTitle": {
+    "eng": "Mind giving us some feedback?",
+    "ptBr": "Poderia nos dar um feedback?"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "milestoneCompleted": {
+    "eng": "Milestone Completed",
+    "ptBr": "Meta Concluída"
+  },
+  "firstStockBuyModalSubtitle": {
+    "eng": "Ahoy! You bought your first stock",
+    "ptBr": "Boa! Você comprou seu primeiro ativo"
+  },
+  "firstStockSellModalSubtitle": {
+    "eng": "Ahoy! You sold your first stock",
+    "ptBr": "Boa! Você vendeu seu primeiro ativo"
+  },
+  "searchAsset": {
+    "eng": "Search for an Asset",
+    "ptBr": "Procure por um Ativo"
+  },
+  "setOrderQty": {
+    "eng": "Set your order quantity",
+    "ptBr": "Defina a quantidade da ordem"
+  },
+  "selectOperationType": {
+    "eng": "Select operation type",
+    "ptBr": "Selecione o tipo de operação"
+  },
+  "placeYourOrder": {
+    "eng": "Place your order",
+    "ptBr": "Faça sua ordem"
+  },
+  "searchAssetText": {
+    "eng": "Search for any stock that's interesting for you. You can try by name or ticker. For example: Type 'Netflix' or 'NFLX' to buy the Netflix stock.",
+    "ptBr": "Pesquise qualquer ação que seja do seu interesse. Você pode tentar por nome da empresa ou ticker. Por exemplo: digite 'Netflix' ou 'NFLX' para comprar ações da Netflix."
+  },
+  "setOrderQtyText": {
+    "eng": "Here you set how much from your funds you'd like to invest in this asset. Try typing 10,000, for example.",
+    "ptBr": "Aqui você define quanto de seus fundos gostaria de investir neste ativo. Tente digitar 10.000, por exemplo."
+  },
+  "selectOperationTypeText": {
+    "eng": "You can toggle here the order operation. For this example, let's leave the 'buy' toggle selected.",
+    "ptBr": "Você pode alternar aqui a operação da ordem. Para este exemplo, vamos deixar o botão de alternância 'comprar' selecionado."
+  },
+  "placeYourOrderText": {
+    "eng": "Now click here to place your order.",
+    "ptBr": "Agora clique aqui para fazer sua ordem."
+  },
+  "gotIt": {
+    "eng": "Got It!",
+    "ptBr": "Entendi!"
+  }
+}

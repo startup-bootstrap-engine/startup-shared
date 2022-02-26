@@ -1,0 +1,22 @@
+{
+  "home": {
+    "eng": "Home",
+    "ptBr": "Início"
+  },
+  "track": {
+    "eng": "Track",
+    "ptBr": "Rastrear"
+  },
+  "search": {
+    "eng": "Search",
+    "ptBr": "Buscar"
+  },
+  "news": {
+    "eng": "News",
+    "ptBr": "Notícias"
+  },
+  "settings": {
+    "eng": "Settings",
+    "ptBr": "Configurações"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "greetings1": {
+    "eng": "Hi, {{firstName}}!",
+    "ptBr": "Oi, {{firstName}}!"
+  },
+  "greetings2": {
+    "eng": "Hello, {{firstName}}!",
+    "ptBr": "Olá, {{firstName}}!"
+  },
+  "greetings3": {
+    "eng": "Hey there, {{firstName}}!",
+    "ptBr": "Ei, {{firstName}}!"
+  },
+  "alertBody1": {
+    "eng": "We're submitting this message to inform you that your signal for <strong>{{ticker}}</strong> was triggered on <strong>{{date}}</strong> at the price <strong>${{price}}</strong>",
+    "ptBr": "Estamos enviando esta mensagem para informá-lo de que seu sinal para <strong> {{ticker}} </strong> foi acionado em <strong> {{date}} </strong> ao atingir o preço de <strong> ${{price}} </strong>"
+  },
+  "alertBody2": {
+    "eng": "We're sending this e-mail to inform you that your signal for <strong>{{ticker}}</strong> was activated on <strong>{{date}}</strong> at the price <strong>${{price}}</strong>",
+    "ptBr": "Estamos enviando este e-mail para informá-lo de que seu sinal para <strong> {{ticker}} </strong> foi ativado em <strong> {{date}} </strong> com o preço <strong> ${{price}} </strong>"
+  },
+  "genericEndPhrase": {
+    "eng": "Thank you for using our product. </br></br> [Product Name]'s Team",
+    "ptBr": "Obrigado por usar o nosso produto. </br></br> [Product Name]"
+  },
+  "genericConfirmationTitle": {
+    "eng": "Confirmation",
+    "ptBr": "Confirmação"
+  },
+  "welcome": {
+    "eng": "Welcome!",
+    "ptBr": "Seja Bem-vindo(a)!"
+  },
+  "newAccountEmailFirstParagraph": {
+    "eng": "<p>I’m the entrepreneur behind {{appName}} and I’d love to thank you for creating an account within our system.</p>",
+    "ptBr": "<p> Sou o empresário por trás do {{appName}} e gostaria de agradecer a você por criar uma conta em nosso sistema. </p>"
+  },
+  "newAccountEmailForReference": {
+    "eng": "Please, take note of the registered login:",
+    "ptBr": "Por favor, anote o login registrado:"
+  },
+  "newAccountEmailBottom": {
+    "eng": "I’d like to hear your opinion about {{appName}} and if there is anything we can improve. I mean, ANY detail! If you have any questions, please reply to this email. We're always happy to help!",
+    "ptBr": "Gostaria de saber sua opinião sobre o {{appName}} e se houver algo que possamos melhorar. Quer dizer, QUALQUER detalhe! Se você tiver alguma dúvida, responda a este e-mail. Estamos sempre dispostos a ajudar!"
+  },
+  "passwordRecoveryGreetings": {
+    "eng": "Password Recovery",
+    "ptBr": "Recuperação de Senha"
+  },
+  "passwordRecoveryMessage": {
+    "eng": "You recently requested to reset your password. Here there is: <b>{{randomPassword}}</b>. </br></br> If you did not request this change, please contact {{adminEmail}} immediately!",
+    "ptBr": "Você recentemente solicitou redefinir sua senha. Aqui está: <br>{{randomPassword}}</>. </br></br> Se você não solicitou essa alteração, entre em contato com {{adminEmail}} imediatamente!"
+  },
+  "passwordRecoveryEndPhrase": {
+    "eng": "We strongly suggest that you <b>change it right away</b>, by logging in through our app and selecting the password change option.",
+    "ptBr": "Sugerimos que você <b> altere imediatamente </b>, fazendo login em nosso aplicativo e selecionando a opção de alteração de senha."
+  },
+  "passwordChangeTitle": {
+    "eng": "Password Changed",
+    "ptBr": "Senha Atualizada"
+  },
+  "passwordChangeMessage": {
+    "eng": "We're submitting this e-mail just to confirm that your password has changed successfully. </br></br> If you did not request this change, please contact {{adminEmail}} immediately.",
+    "ptBr": "Estamos enviando este e-mail apenas para confirmar que sua senha foi alterada com sucesso. </br></br> Se você não solicitou essa alteração, entre em contato com {{adminEmail}} imediatamente."
+  },
+  "passwordChangeSuccess": {
+    "eng": "Your password was changed successfully! Please, login again.",
+    "ptBr": "Sua senha foi alterada com sucesso! Por favor faça login novamente."
+  }
+}

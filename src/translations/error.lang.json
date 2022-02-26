@@ -1,0 +1,18 @@
+{
+  "genericError": {
+    "eng": "Something went wrong. Please try again.",
+    "ptBr": "Algo deu errado. Por favor, tente novamente."
+  },
+  "mongodbConnectionError": {
+    "eng": "Error while connecting to MongoDB!",
+    "ptBr": "Erro ao conectar ao MongoDB!"
+  },
+  "noHashEmail": {
+    "eng": "No hashEmail provided for unsubscribe function!",
+    "ptBr": "Nenhum hashEmail fornecido para a função de cancelamento de inscrição!"
+  },
+  "agreeWithTermsError": {
+    "eng": "To register an account, you must agree with our Terms of Use and Privacy Policy. Please, click on the respective checkbox if that's the case.",
+    "ptBr": "Para registrar uma conta, você deve concordar com nossos Termos de Uso e Política de Privacidade. Por favor, clique na respectiva caixa de seleção se for o caso."
+  }
+}

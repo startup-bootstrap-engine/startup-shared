@@ -1,0 +1,182 @@
+{
+  "invalidCredentials": {
+    "eng": "Invalid credentials. Please, check your email or password.",
+    "ptBr": "Credenciais inválidas. Por favor, verifique seu e-mail ou senha."
+  },
+  "formInputNamePlaceholder": {
+    "eng": "Name",
+    "ptBr": "Nome"
+  },
+  "header": {
+    "eng": "Invest with virtual money.",
+    "ptBr": "Investir com dinheiro virtual."
+  },
+  "subHeader": {
+    "eng": "Set trackers, stay informed, and make risk-free decisions.",
+    "ptBr": "Rastreie ativos, se mantenha informado e tome decisões sem risco."
+  },
+  "formInputEmailPlaceholder": {
+    "eng": "E-mail",
+    "ptBr": "E-mail"
+  },
+  "formInputPasswordPlaceholder": {
+    "eng": "Password",
+    "ptBr": "Senha"
+  },
+  "formInputPasswordConfirmationPlaceholder": {
+    "eng": "Enter your password again",
+    "ptBr": "Digite sua senha novamente"
+  },
+  "formInputAddressPlaceholder": {
+    "eng": "Your full address",
+    "ptBr": "Seu endereço completo"
+  },
+  "login": {
+    "eng": "Login",
+    "ptBr": "Login"
+  },
+  "createYourAccount": {
+    "eng": "Sign Up",
+    "ptBr": "Criar Conta"
+  },
+  "forgotPassword": {
+    "eng": "Forgot Your Password?",
+    "ptBr": "Esqueceu Sua Senha?"
+  },
+  "emptyEmailPassword": {
+    "eng": "Please enter your e-mail or password to login!",
+    "ptBr": "Por favor, preencha seu e-mail e senha para fazer login!"
+  },
+  "register": {
+    "eng": "Register",
+    "ptBr": "Registro"
+  },
+  "pleaseLogin": {
+    "eng": "Please, login again",
+    "ptBr": "Por favor, acesse novamente"
+  },
+  "couldntAuthenticate": {
+    "eng": "We couldn't authenticate your user. Please login again.",
+    "ptBr": "Não foi possível autenticar seu usuário. Por favor faça login novamente."
+  },
+  "loginBeforeAccessingThisPage": {
+    "eng": "Please, login before accessing this page.",
+    "ptBr": "Por favor, faça o login antes de acessar esta página."
+  },
+  "loginAccessResource": {
+    "eng": "Please, login to access this resource.",
+    "ptBr": "Por favor, faça o login para acessar este recurso."
+  },
+  "notAllowedResource": {
+    "eng": "Sorry, you're not allowed to access this resource.",
+    "ptBr": "Desculpe, você não tem permissão para acessar este recurso."
+  },
+  "adminOnlyResource": {
+    "eng": "Only admins can access this resource!",
+    "ptBr": "Apenas administradores podem acessar este recurso!"
+  },
+  "dontHaveRefreshTokens": {
+    "eng": "Your user does not have refreshTokens.",
+    "ptBr": "Seu usuário não tem refreshTokens."
+  },
+  "refreshTokenInvalid": {
+    "eng": "Error: Your refreshToken is invalid",
+    "ptBr": "Erro: seu refreshToken é inválido"
+  },
+  "oauthAccessTokenError": {
+    "eng": "Error while trying to generate your access token!",
+    "ptBr": "Erro ao tentar gerar seu token de acesso!"
+  },
+  "oauthGoogleEmailNotProvided": {
+    "eng": "Cannot login this user: Google's e-mail not provided!",
+    "ptBr": "Não é possível fazer o login deste usuário: e-mail do Google não fornecido!"
+  },
+  "oauthLoginError": {
+    "eng": "An error occurred while trying to login through this provider. Please, create your account directly within the app and try logging in using these credentials.",
+    "ptBr": "Ocorreu um erro ao tentar fazer login por meio deste provedor. Por favor, crie sua conta diretamente no aplicativo e tente fazer o login usando essas credenciais."
+  },
+  "signInWithGoogle": {
+    "eng": "Sign in with Google",
+    "ptBr": "Login com Google"
+  },
+  "authModeError": {
+    "eng": "You cannot access this account using regular e-mail and password because it was created by a third-party auth system. Try signing in with Google or any other provider available.",
+    "ptBr": "Você não pode acessar esta conta usando e-mail e senha normais porque ela foi criada por um sistema de autenticação de terceiros. Tente fazer login no Google ou em qualquer outro provedor disponível."
+  },
+  "passwordRecovery": {
+    "eng": "Password Recovery",
+    "ptBr": "Recuperação de Senha"
+  },
+  "forgotPasswordText": {
+    "eng": "Please, type the e-mail that you used to create your account below. We'll generate a new password and submit it to you.",
+    "ptBr": "Por favor, digite o e-mail que você utilizou para criar sua conta abaixo. Iremos gerar uma nova senha e enviar para você."
+  },
+  "passwordRecoverySuccess": {
+    "eng": "Your account password was reset. Please, check your e-mail.",
+    "ptBr": "A senha da sua conta foi redefinida. Por favor verifique seu email."
+  },
+  "signUpText": {
+    "eng": "Your address and phone number are required for authentication purposes and will not be shared anywhere else.",
+    "ptBr": "O seu endereço e telefone são necessários para autenticação e serão utilizados apenas para este fim."
+  },
+  "accountCreatedSuccessfully": {
+    "eng": "Account created successfully!",
+    "ptBr": "Conta criada com sucesso"
+  },
+  "alreadyHaveAccountLogin": {
+    "eng": "Already have an account? Please, login",
+    "ptBr": "Você já possui uma conta? Por favor, faça login."
+  },
+  "passwordDoesNotMatchConfirmation": {
+    "eng": "The password provided does not match its confirmation.",
+    "ptBr": "A senha fornecida não corresponde à sua confirmação."
+  },
+  "accountAuthFlowMismatch": {
+    "eng": "This account already exists, and it was created through email and password. If you don't remember your password, please click 'Forgot Password' to recover it.",
+    "ptBr": "Esta conta já existe e foi criada através de email e senha. Se você não se lembra da sua senha, clique em 'Esqueci a senha' para recuperá-la."
+  },
+  "changePassword": {
+    "eng": "Change Password",
+    "ptBr": "Trocar Senha"
+  },
+  "changePasswordIncorrectCurrentPassword": {
+    "eng": "The current password provided is not your password.",
+    "ptBr": "A senha atual fornecida não é sua senha."
+  },
+  "changePasswordSamePasswords": {
+    "eng": "Your current and new password must be different.",
+    "ptBr": "Sua senha atual e a nova devem ser diferentes."
+  },
+  "changePasswordInfoText": {
+    "eng": "Please, type your current password and your chosen new password on the fields below.",
+    "ptBr": "Por favor, digite sua senha atual e a nova senha escolhida nos campos abaixo."
+  },
+  "changePasswordSuccess": {
+    "eng": "Your password was changed successfully! Please, login again.",
+    "ptBr": "Sua senha foi alterada com sucesso! Por favor faça login novamente."
+  },
+  "changePasswordGenericError": {
+    "eng": "Something wrong happened while trying to change your password! Please, contact {{adminEmail}} for more information.",
+    "ptBr": "Ocorreu um erro ao tentar alterar sua senha! Entre em contato com {{adminEmail}} para mais informações."
+  },
+  "logout": {
+    "eng": "Logout",
+    "ptBr": "Sair"
+  },
+  "googleOAuthPopupClosed": {
+    "eng": "To proceed with Google authentication, please don't close the popup.",
+    "ptBr": "Para prosseguir com a autenticação do Google, não feche o pop-up."
+  },
+  "signInWithApple": {
+    "eng": "Sign in with Apple",
+    "ptBr": "Login com Apple"
+  },
+  "accountAlreadyExists": {
+    "eng": "A user with the e-mail provided already exists! If you don't remember your password, please click 'Forgot Your Password?' to recover it.",
+    "ptBr": "Já existe um usuário com o e-mail fornecido! Se você não se lembra da sua senha, clique em \"Esqueceu sua Senha?\" para recuperá-la."
+  },
+  "logoutConfirmation": {
+    "eng": "Are you sure you want to log out?",
+    "ptBr": "Tem certeza que deseja sair?"
+  }
+}

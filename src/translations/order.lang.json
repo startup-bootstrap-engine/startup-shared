@@ -1,0 +1,90 @@
+{
+  "placeAssetOrder": {
+    "eng": "Place an Asset Order",
+    "ptBr": "Nova Ordem de Ativo"
+  },
+  "amountIn": {
+    "eng": "Amount in",
+    "ptBr": "Quantia em"
+  },
+  "funds": {
+    "eng": "Remaining funds",
+    "ptBr": "Fundos restantes"
+  },
+  "placeBuyOrderCTA": {
+    "eng": "Place a buy order",
+    "ptBr": "Finalizar compra"
+  },
+  "placeSellOrderCTA": {
+    "eng": "Place a sell order",
+    "ptBr": "Finalizar venda"
+  },
+  "buy": {
+    "eng": "Buy",
+    "ptBr": "Compra"
+  },
+  "sell": {
+    "eng": "Sell",
+    "ptBr": "Venda"
+  },
+  "confirmBuyOrder": {
+    "eng": "Confirm the Buy Order.",
+    "ptBr": "Confirme o Pedido de Compra."
+  },
+  "confirmSellOrder": {
+    "eng": "Confirm the Sell Order.",
+    "ptBr": "Confirme o Pedido de Venda."
+  },
+  "noPortfolioDefined": {
+    "eng": "Error: No portfolio defined.",
+    "ptBr": "Erro: Nenhuma carteira definida."
+  },
+  "noAssetDefined": {
+    "eng": "Please, select an asset.",
+    "ptBr": "Por favor, selecione um ativo."
+  },
+  "selectPositiveQuantity": {
+    "eng": "Please, enter a positive quantity.",
+    "ptBr": "Por favor, adicione uma quantidade positiva"
+  },
+  "selectPositiveValue": {
+    "eng": "Please, enter a positive amount.",
+    "ptBr": "Por favor, adicione uma quantia positiva"
+  },
+  "noHasAssetToSell": {
+    "eng": "The portfolio does not have the selected asset to sell it.",
+    "ptBr": "A carteira não possui o ativo selecionado para venda."
+  },
+  "noPurchaseTypeDefined": {
+    "eng": "Error: No purchase type defined.",
+    "ptBr": "Erro: Nenhum tipo de compra definido."
+  },
+  "quantity": {
+    "eng": "Quantity",
+    "ptBr": "Quantidade"
+  },
+  "amount": {
+    "eng": "Amount",
+    "ptBr": "Quantia"
+  },
+  "shares": {
+    "eng": "Number of",
+    "ptBr": "Número de"
+  },
+  "shares2": {
+    "eng": "shares",
+    "ptBr": "ações"
+  },
+  "portfolioAsset": {
+    "eng": "Trade a portfolio asset",
+    "ptBr": "Faça uma nova transação"
+  },
+  "youHave": {
+    "eng": "You have",
+    "ptBt": "Você tem"
+  },
+  "insufficientFunds": {
+    "eng": "Your portfolio does not have sufficient funds to process the order.",
+    "ptBr": "Sua carteira não tem fundos suficientes para processar o pedido."
+  }
+}

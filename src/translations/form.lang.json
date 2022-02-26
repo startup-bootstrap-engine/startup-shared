@@ -1,0 +1,94 @@
+{
+  "emptyFieldsError": {
+    "eng": "The following fields are empty: {{invalidFields}}",
+    "ptBr": "Os seguintes campos estão vazios: {{invalidFields}}"
+  },
+  "name": {
+    "eng": "Name",
+    "ptBr": "Nome"
+  },
+  "email": {
+    "eng": "E-mail",
+    "ptBr": "E-mail"
+  },
+  "password": {
+    "eng": "Password",
+    "ptBr": "Senha"
+  },
+  "passwordConfirmation": {
+    "eng": "Password Confirmation",
+    "ptBr": "Confirme sua Senha"
+  },
+  "address": {
+    "eng": "Address",
+    "ptBr": "Endereço"
+  },
+  "phone": {
+    "eng": "Phone",
+    "ptBr": "Telefone"
+  },
+  "type": {
+    "eng": "Type",
+    "ptBr": "Tipo"
+  },
+  "submit": {
+    "eng": "Submit",
+    "ptBr": "Enviar"
+  },
+  "institution": {
+    "eng": "Institution",
+    "ptBr": "Instituição"
+  },
+  "termsOfService": {
+    "eng": "Terms of Service",
+    "ptBr": "Termos de Uso"
+  },
+  "or": {
+    "eng": "OR",
+    "ptBr": "OU"
+  },
+  "forgotPasswordEmailPlaceholder": {
+    "eng": "The e-mail used to create your account.",
+    "ptBr": "O e-mail usado para criar sua conta."
+  },
+  "currentPasswordPlaceholder": {
+    "eng": "Your current password...",
+    "ptBr": "Sua senha atual..."
+  },
+  "newPasswordPlaceholder": {
+    "eng": "Your new password...",
+    "ptBr": "Sua nova senha..."
+  },
+  "currentPassword": {
+    "eng": "Current Password",
+    "ptBr": "Senha Atual"
+  },
+  "newPassword": {
+    "eng": "New Password",
+    "ptBr": "Nova Senha"
+  },
+  "tickers": {
+    "eng": "Tickers",
+    "ptBr": "Códigos"
+  },
+  "typeToSearch": {
+    "eng": "Type to Search...",
+    "ptBr": "Escreva para pesquisar..."
+  },
+  "noOptions": {
+    "eng": "No options...",
+    "ptBr": "Nenhuma opção carregada"
+  },
+  "searchInputError": {
+    "eng": "Please, enter only valid alphanumeric character (a-z, A-Z or 0-9), space or point.",
+    "ptBr": "Por favor, insira apenas caracteres alfanuméricos válidos (a-z, A-Z ou 0-9), espaço ou ponto."
+  },
+  "termsDisclaimerPartial": {
+    "eng": "By signing up, you confirm that you agree with our",
+    "ptBr": "Ao se criar sua conta, você confirma que concorda com nossos"
+  },
+  "termsAgreementConfirmation": {
+    "eng": "I confirm that I've read and agree with BlueShip's",
+    "ptBr": "Eu confirmo que li e concordo com os"
+  }
+}

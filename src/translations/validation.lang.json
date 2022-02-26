@@ -1,0 +1,86 @@
+{
+  "isNotEmptyMultiple": {
+    "eng": "The following fields cannot be empty: {{fields}}.",
+    "ptBr": "Os seguintes campos não podem estar vazios: {{field}}."
+  },
+  "isNotEmpty": {
+    "eng": "{{field}} field cannot be empty.",
+    "ptBr": "O campo {{field}} não pode estar vazio."
+  },
+  "isEmpty": {
+    "eng": "{{field}} must be empty.",
+    "ptBr": "O campo {{field}} deve estar vazio."
+  },
+  "isString": {
+    "eng": "{{field}} field must be a string.",
+    "ptBr": "O campo {{field}} deve ser uma string."
+  },
+  "isType": {
+    "eng": "{{field}} field must be of type {{type}}.",
+    "ptBr": "O campo {{field}} deve ser do tipo {{type}}."
+  },
+  "allArrayFields": {
+    "eng": "All elements from array {{field}} must be a {{type}}.",
+    "ptBr": "Todos os elementos do campo {{field}} devem ser um {{type}}."
+  },
+  "minLength": {
+    "eng": "{{field}} field must have at least $constraint1 characters.",
+    "ptBr": "O campo {{field}} deve ter pelo menos $constraint1 caracteres."
+  },
+  "maxLength": {
+    "eng": "{{field}} field must have up to $constraint1 characters.",
+    "ptBr": "O campo {{field}} deve ter até $constraint1 caracteres."
+  },
+  "isPhoneNumber": {
+    "eng": "{{field}} field  must be a phone number in the following format: {{format}}.",
+    "ptBr": "O campo {{field}} deve ser um número de telefone no seguinte formato: {{format}}."
+  },
+  "isNumber": {
+    "eng": "{{field}} field  must be a number.",
+    "ptBr": "O campo {{field}} deve ser um número."
+  },
+  "isEmail": {
+    "eng": "{{field}} field must be a valid e-mail.",
+    "ptBr": "O campo {{field}} deve ser um e-mail válido."
+  },
+  "alreadyExists": {
+    "eng": "{{field}} already exists!",
+    "ptBr": "O campo {{field}} já existe!"
+  },
+  "alreadyExistsFor": {
+    "eng": "An entity {{target}} with this {{field}} already exists!",
+    "ptBr": "Um(a) {{target}} com o campo {{field}} já existe!"
+  },
+  "notFound": {
+    "eng": "{{field}} not found!",
+    "ptBr": "O campo {{field}} não foi encontrado!"
+  },
+  "creationError": {
+    "eng": "Error while trying to create a new {{field}}.",
+    "ptBr": "Erro ao tentar inserir dados para o campo {{field}}."
+  },
+  "isEnum": {
+    "eng": "Error: The {{field}} field accepts only one of the following values: {{types}}.",
+    "ptBr": "Erro: o campo {{field}} aceita apenas um dos seguintes valores: {{types}}."
+  },
+  "requiredResourceCreate": {
+    "eng": "A valid {{field}} is required for creating this resource.",
+    "ptBr": "Um {{field}} válido é necessário para criar este recurso."
+  },
+  "errorWhileAction": {
+    "eng": "Error while trying to {{action}} the field {{field}}.",
+    "ptBr": "Erro ao tentar {{action}} o campo {{field}}."
+  },
+  "successWhileCreation": {
+    "eng": "Your {{resource}} was successfully created.",
+    "ptBr": "Sucesso ao criar {{resource}}!"
+  },
+  "successWhileUpdating": {
+    "eng": "Your {{resource}} was successfully updated.",
+    "ptBr": "Sucesso ao atualizar {{resource}}!"
+  },
+  "isInvalid": {
+    "eng": "The field {{field}} is invalid. Please, try again.",
+    "ptBr": "O campo '{{field}}' é inválido. Por favor, tente novamente."
+  }
+}

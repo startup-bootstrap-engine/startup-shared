@@ -1,0 +1,82 @@
+{
+  "stock": {
+    "eng": "Stock",
+    "ptBr": "Ação"
+  },
+  "cryptocurrency": {
+    "eng": "Cryptocurrency",
+    "ptBr": "Criptomoeda"
+  },
+  "option": {
+    "eng": "Option",
+    "ptBr": "Opção"
+  },
+  "reit": {
+    "eng": "REIT",
+    "ptBr": "FII"
+  },
+  "etf": {
+    "eng": "ETF",
+    "ptBr": "ETF"
+  },
+  "bond": {
+    "eng": "Bond",
+    "ptBr": "Título"
+  },
+  "commodity": {
+    "eng": "Commodity",
+    "ptBr": "Commodity"
+  },
+  "filterByNameAndTickerOnlyError": {
+    "eng": "You cannot use both filterBy and nameAndTickerOnly on this request.",
+    "ptBr": "Você não pode usar filterBy e nameAndTickerOnly nesta solicitação."
+  },
+  "assets": {
+    "eng": "Assets",
+    "ptBr": "Ativos"
+  },
+  "assetDeletion": {
+    "eng": "Asset Deletion",
+    "ptBr": "Remoção de Ativos"
+  },
+  "asset": {
+    "eng": "Asset",
+    "ptBr": "Ativo"
+  },
+  "company": {
+    "eng": "Company",
+    "ptBr": "Companhia"
+  },
+  "type": {
+    "eng": "Type",
+    "ptBr": "Tipo"
+  },
+  "ticker": {
+    "eng": "Ticker",
+    "ptBr": "Ticker"
+  },
+  "details": {
+    "eng": "Details",
+    "ptBr": "Detalhes"
+  },
+  "quantity": {
+    "eng": "Quantity",
+    "ptBr": "Quantidade"
+  },
+  "dailyMove": {
+    "eng": "Daily move",
+    "ptBr": "Movimento diário"
+  },
+  "orderAvgPrice": {
+    "eng": "Avg price",
+    "ptBr": "Preço médio"
+  },
+  "currentPrice": {
+    "eng": "Current Price",
+    "ptBr": "Preço atual"
+  },
+  "seeCompany": {
+    "eng": "See Company",
+    "ptBr": "Veja empresa"
+  }
+}

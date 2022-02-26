@@ -1,0 +1,50 @@
+{
+  "search": {
+    "eng": "Search",
+    "ptBr": "Pesquisar"
+  },
+  "searchPlaceholder": {
+    "eng": "Search by company or ticker",
+    "ptBr": "Pesquise a companhia ou ticker"
+  },
+  "sortBy": {
+    "eng": "Sort by",
+    "ptBr": "Ordenar por"
+  },
+  "resultsFound": {
+    "eng": "results found",
+    "ptBr": "resultados encontrados"
+  },
+  "first15": {
+    "eng": "First 15 results found",
+    "ptBr": "15 primeiros resultados encontrados"
+  },
+  "noResult": {
+    "eng": "No result found",
+    "ptBr": "Nenhum resultado encontrado"
+  },
+  "oneResult": {
+    "eng": "One result found",
+    "ptBr": "Um resultado encontrado"
+  },
+  "countrySortBy": {
+    "eng": "Country",
+    "ptBr": "País"
+  },
+  "nameSortBy": {
+    "eng": "Company Name",
+    "ptBr": "Nome da Companhia"
+  },
+  "tickerSortBy": {
+    "eng": "Ticker",
+    "ptBr": "Ticker"
+  },
+  "typeSortBy": {
+    "eng": "Type",
+    "ptBr": "Tipo"
+  },
+  "stockExchangeSortBy": {
+    "eng": "Stock Exchange",
+    "ptBr": "Bolsa de Valores"
+  }
+}

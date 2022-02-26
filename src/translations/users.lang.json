@@ -1,0 +1,22 @@
+{
+  "adminOnly": {
+    "eng": "Only admins can access this route!",
+    "ptBr": "Apenas administradores podem acessar esta rota."
+  },
+  "userAlreadyExists": {
+    "eng": "The user with e-mail {{email}} already exists! Please, try again.",
+    "ptBr": "O usuário com e-mail {{email}} já existe! Por favor, tente novamente."
+  },
+  "userNotFound": {
+    "eng": "User does not exist!",
+    "ptBr": "Usuário não existe!"
+  },
+  "userCreationError": {
+    "eng": "Error while trying to sign up. Please, check if all required fields were filled correctly.",
+    "ptBr": "Erro ao tentar criar novo usuário. Por favor, verifique se todos os campos obrigatórios foram preenchidos corretamente."
+  },
+  "userAlreadyUnsubscribed": {
+    "eng": "This user is already unsubscribed!",
+    "ptBr": "Este usuário já cancelou a inscrição!"
+  }
+}

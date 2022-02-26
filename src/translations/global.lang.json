@@ -1,0 +1,90 @@
+{
+  "forbiddenKeyUpdate": {
+    "eng": "Error while trying to update the following forbidden keys: {{forbiddenProperties}}",
+    "ptBr": "Erro ao tentar atualizar as seguintes chaves: {{forbiddenProperties}}"
+  },
+  "serverBootstrapError": {
+    "eng": "Error while trying to bootstrap server on port {{port}}",
+    "ptBr": "Erro ao tentar inicializar o servidor na porta {{port}}"
+  },
+  "serverRunning": {
+    "eng": "Server is running on {{env}} | Port: {{port}} | Language: {{language}} | Timezone: {{timezone}} | Admin: {{adminEmail}}",
+    "ptBr": "Servidor rodando em {{env}} | Porta: {{port}} | Idioma: {{language}} | Timezone: {{timezone}} | Admin: {{adminEmail}}"
+  },
+  "waitMessage": {
+    "eng": "Please wait...",
+    "ptBr": "Por favor, aguarde..."
+  },
+  "connectionError": {
+    "eng": "Couldn't connect to the server. Please, check your internet connection!",
+    "ptBr": "Não foi possível conectar ao servidor. Por favor, verifique sua conexão à internet!"
+  },
+  "oops": {
+    "eng": "Oops!",
+    "ptBr": "Oops!"
+  },
+  "success": {
+    "eng": "🎉",
+    "ptBr": "🎉"
+  },
+  "contact": {
+    "eng": "Contact",
+    "ptBr": "Contato"
+  },
+  "termsOfUse": {
+    "eng": "Terms of Use",
+    "ptBr": "Termos de Uso"
+  },
+  "privacyPolicy": {
+    "eng": "Privacy Policy",
+    "ptBr": "Política de Privacidade"
+  },
+  "clickHere": {
+    "eng": "Click here.",
+    "ptBr": "Clique aqui."
+  },
+  "create": {
+    "eng": "Create",
+    "ptBr": "Criar"
+  },
+  "read": {
+    "eng": "Read",
+    "ptBr": "Ler"
+  },
+  "update": {
+    "eng": "Update",
+    "ptBr": "Atualizar"
+  },
+  "delete": {
+    "eng": "Delete",
+    "ptBr": "Deletar"
+  },
+  "cancel": {
+    "eng": "Cancel",
+    "ptBr": "Cancelar"
+  },
+  "confirm": {
+    "eng": "Confirm",
+    "ptBr": "Confirmar"
+  },
+  "actionConfirmation": {
+    "eng": "Are you sure you want to perform this action?",
+    "ptBr": "Tem certeza de que deseja realizar esta ação?"
+  },
+  "close": {
+    "eng": "Close",
+    "ptBr": "Fechar"
+  },
+  "and": {
+    "eng": "and",
+    "ptBr": "e"
+  },
+  "errorTryAgain": {
+    "eng": "Error! Try again.",
+    "ptBr": "Erro! Tente novamente."
+  },
+  "back": {
+    "eng": "Back",
+    "ptBr": "Voltar"
+  }
+}

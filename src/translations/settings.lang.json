@@ -1,0 +1,14 @@
+{
+  "settings": {
+    "eng": "Settings",
+    "ptBr": "Configurações"
+  },
+  "colorDisplay": {
+    "eng": "Color Display",
+    "ptBr": "Modo de Cores"
+  },
+  "language": {
+    "eng": "Language",
+    "ptBr": "Idioma"
+  }
+}
