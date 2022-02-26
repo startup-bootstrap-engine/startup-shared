@@ -12,8 +12,9 @@
     "sourceMap": true,
     "lib": ["es6"],
     "outDir": "./dist",
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "resolveJsonModule": true
   },
   "exclude": ["node_modules", "**/*.spec.ts"],
-  "include": ["./src/**/*"]
+  "include": ["src", "src/**/*.json"]
 }
