@@ -3,6 +3,7 @@ export * from "./libs/TextHelper";
 export * from "./types/animation.types";
 export * from "./types/api.types";
 export * from "./types/auth.types";
+export * from "./types/character.types";
 export * from "./types/device.types";
 export * from "./types/env.types";
 export * from "./types/googleOAuth.types";
