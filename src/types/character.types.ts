@@ -2,6 +2,7 @@ import { AnimationDirection } from "./animation.types";
 import { IUser } from "./user.types";
 
 export interface ICharacter {
+  _id: string;
   name: string;
   owner: IUser;
   health: number;
