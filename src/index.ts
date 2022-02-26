@@ -8,6 +8,7 @@ export * from "./types/device.types";
 export * from "./types/env.types";
 export * from "./types/googleOAuth.types";
 export * from "./types/maps.types";
+export * from "./types/pagination.types";
 export * from "./types/places.types";
 export * from "./types/player.types";
 export * from "./types/preloadScene.types";
