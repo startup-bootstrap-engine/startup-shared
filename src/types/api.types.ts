@@ -7,6 +7,7 @@ export interface IAPIError {
 export enum HttpStatus {
   OK = 200,
   Created = 201,
+  NoContent = 204, //deleted
   PermanentRedirect = 301,
   TemporaryRedirect = 302,
   BadRequest = 400,
