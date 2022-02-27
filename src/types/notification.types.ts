@@ -6,6 +6,7 @@ export interface IShowPromptOption {
 export interface IShowPrompt {
   question: string;
   options: IShowPromptOption[];
+  addDefaultCancelOption?: boolean;
 }
 
 export interface INotification {
