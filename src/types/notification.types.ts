@@ -1,8 +1,8 @@
-interface IShowPromptOption {
+export interface IShowPromptOption {
   label: string;
   action: (label: string) => void;
 }
-interface IShowPrompt {
+export interface IShowPrompt {
   question: string;
   options: IShowPromptOption[];
 }
