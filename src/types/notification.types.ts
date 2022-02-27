@@ -1,5 +1,6 @@
 export interface IShowPromptOption {
   label: string;
+  color?: string;
   action: (label: string) => void;
 }
 export interface IShowPrompt {
