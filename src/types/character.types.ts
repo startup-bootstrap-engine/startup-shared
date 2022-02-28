@@ -18,6 +18,7 @@ export interface ICharacter extends IResource {
   isOnline: boolean;
   cameraCoordinates: ICameraCoordinates;
   otherPlayersInView: string[];
+  scene: string;
 }
 
 export enum CharacterClass {
