@@ -19,6 +19,7 @@ export interface ICharacter extends IResource {
   cameraCoordinates: ICameraCoordinates;
   otherPlayersInView: string[];
   scene: string;
+  channelId: string;
 }
 
 export enum CharacterClass {
