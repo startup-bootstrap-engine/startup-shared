@@ -1,7 +1,8 @@
 import { AnimationDirection } from "./animation.types";
+import { IResource } from "./resource.types";
 import { IUser } from "./user.types";
 
-export interface ICharacter {
+export interface ICharacter extends IResource {
   _id: string;
   name: string;
   owner: IUser;
