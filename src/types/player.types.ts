@@ -1,3 +1,4 @@
+import { Document } from "mongoose";
 import { ICharacter } from "./character.types";
 import { IUser } from "./user.types";
 
@@ -26,8 +27,8 @@ export interface IPlayerPositionUpdateConfirm {
 export type Events = PlayerGeckosEvents;
 
 export interface IGeckosAuthData {
-  character: ICharacter;
-  user: IUser;
+  character: ICharacter & Document;
+  user: IUser & Document;
 }
 
 export interface IConnectedPlayer extends IGeckosAuthData {
