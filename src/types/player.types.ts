@@ -1,3 +1,6 @@
+import { ICharacter } from "./character.types";
+import { IUser } from "./user.types";
+
 //@ts-ignore
 export enum PlayerGeckosEvents {
   PlayerCreate = "PlayerCreate",
@@ -22,7 +25,12 @@ export interface IPlayerPositionUpdateConfirm {
 
 export type Events = PlayerGeckosEvents;
 
-export interface IConnectedPlayer {
+export interface IGeckosAuthData {
+  character?: ICharacter;
+  user?: IUser;
+}
+
+export interface IConnectedPlayer extends IGeckosAuthData {
   id: string;
   name: string;
   x: number;
