@@ -26,8 +26,8 @@ export interface IPlayerPositionUpdateConfirm {
 export type Events = PlayerGeckosEvents;
 
 export interface IGeckosAuthData {
-  character?: ICharacter;
-  user?: IUser;
+  character: ICharacter;
+  user: IUser;
 }
 
 export interface IConnectedPlayer extends IGeckosAuthData {
