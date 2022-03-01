@@ -12,5 +12,5 @@ export const TILE_HEIGHT = 16;
 
 // we have a multiplier because just adding a grid width/height is not enough for a good offset. Numbers < 10 can cause issues
 
-export const CAMERA_VIEWPORT_OFFSET_X = GRID_WIDTH * 4;
-export const CAMERA_VIEWPORT_OFFSET_Y = GRID_HEIGHT * 4;
+export const CAMERA_VIEWPORT_OFFSET_X = GRID_WIDTH * 2;
+export const CAMERA_VIEWPORT_OFFSET_Y = GRID_HEIGHT * 2;
