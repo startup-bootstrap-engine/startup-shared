@@ -1,7 +1,3 @@
-import { Document } from "mongoose";
-import { ICharacter } from "./character.types";
-import { IUser } from "./user.types";
-
 //@ts-ignore
 export enum PlayerGeckosEvents {
   PlayerCreate = "PlayerCreate",
@@ -26,12 +22,7 @@ export interface IPlayerPositionUpdateConfirm {
 
 export type Events = PlayerGeckosEvents;
 
-export interface IGeckosAuthData {
-  character: ICharacter & Document;
-  user: IUser & Document;
-}
-
-export interface IConnectedPlayer extends IGeckosAuthData {
+export interface IConnectedPlayer {
   id: string;
   name: string;
   x: number;
@@ -41,7 +32,6 @@ export interface IConnectedPlayer extends IGeckosAuthData {
   isMoving?: boolean;
   cameraCoordinates: ICameraCoordinates;
   otherPlayersInView: IOtherPlayerInView;
-  lastActivity?: number;
 }
 
 export interface IConnectedPlayers {
