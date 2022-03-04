@@ -16,6 +16,7 @@ export * from "./types/player.types";
 export * from "./types/preloadScene.types";
 export * from "./types/resource.types";
 export * from "./types/scene.types";
+export * from "./types/socket.types";
 export * from "./types/translation.types";
 export * from "./types/user.types";
 export * from "./types/validation.types";
