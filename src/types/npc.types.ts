@@ -1,7 +1,8 @@
 import { AnimationDirection } from "./animation.types";
 import { CharacterClass, CharacterGender } from "./character.types";
+import { IResource } from "./resource.types";
 
-export interface INPC {
+export interface INPC extends IResource {
   name: string;
   x: number;
   y: number;
