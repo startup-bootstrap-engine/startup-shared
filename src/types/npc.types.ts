@@ -1,5 +1,6 @@
 import { AnimationDirection } from "./animation.types";
 import { CharacterClass, CharacterGender } from "./character.types";
+import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
 
 export interface INPC extends IResource {
@@ -11,4 +12,5 @@ export interface INPC extends IResource {
   class: CharacterClass;
   gender: CharacterGender;
   texture: string;
+  layer: MapLayers;
 }
