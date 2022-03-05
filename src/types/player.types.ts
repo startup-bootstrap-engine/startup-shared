@@ -1,5 +1,5 @@
 //@ts-ignore
-export enum PlayerGeckosEvents {
+export enum PlayerSocketEvents {
   PlayerCreate = "PlayerCreate",
   PlayerPositionUpdate = "PlayerPositionUpdate",
   PlayerPositionUpdateConfirm = "PlayerPositionUpdateConfirm",
@@ -20,7 +20,7 @@ export interface IPlayerPositionUpdateConfirm {
   isValid: boolean;
 }
 
-export type Events = PlayerGeckosEvents;
+export type Events = PlayerSocketEvents;
 
 export interface IConnectedPlayer {
   id: string;
