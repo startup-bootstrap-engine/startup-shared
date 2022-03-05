@@ -3,8 +3,8 @@ import { CharacterClass, CharacterGender } from "./character.types";
 
 export interface INPC {
   name: string;
-  x: string;
-  y: string;
+  x: number;
+  y: number;
   direction: AnimationDirection;
   scene: string;
   class: CharacterClass;
