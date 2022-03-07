@@ -1,4 +1,5 @@
 export * from "./constants/world.constants";
+export * from "./libs/GridHelper";
 export * from "./libs/TextHelper";
 export * from "./types/animation.types";
 export * from "./types/api.types";
@@ -11,6 +12,7 @@ export * from "./types/googleOAuth.types";
 export * from "./types/maps.types";
 export * from "./types/notification.types";
 export * from "./types/npc.types";
+export * from "./types/npcMetadata.types";
 export * from "./types/pagination.types";
 export * from "./types/places.types";
 export * from "./types/player.types";
