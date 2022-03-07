@@ -20,6 +20,7 @@ export enum NPCSocketEvents {
 }
 
 export interface INPCPositionUpdatePayload {
+  id: string;
   x: number;
   y: number;
   direction: string;
