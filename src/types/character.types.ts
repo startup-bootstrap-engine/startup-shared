@@ -17,7 +17,6 @@ export interface ICharacter extends IResource {
   totalWeightCapacity: number;
   isOnline: boolean;
   cameraCoordinates: ICameraCoordinates;
-  otherPlayersInView: string[];
   scene: string;
   channelId: string;
 }
