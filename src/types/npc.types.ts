@@ -14,3 +14,14 @@ export interface INPC extends IResource {
   texture: string;
   layer: MapLayers;
 }
+
+export enum NPCSocketEvents {
+  NPCPositionUpdate = "NPCPositionUpdate",
+}
+
+export interface INPCPositionUpdatePayload {
+  x: number;
+  y: number;
+  direction: string;
+  key: string;
+}
