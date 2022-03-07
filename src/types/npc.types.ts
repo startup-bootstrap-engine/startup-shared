@@ -11,7 +11,6 @@ export interface INPC extends IResource {
   scene: string;
   class: CharacterClass;
   gender: CharacterGender;
-  texture: string;
   layer: MapLayers;
 }
 
