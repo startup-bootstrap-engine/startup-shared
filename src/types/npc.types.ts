@@ -25,4 +25,5 @@ export interface INPCPositionUpdatePayload {
   y: number;
   direction: string;
   key: string;
+  layer: MapLayers;
 }

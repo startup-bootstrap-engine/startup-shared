@@ -15,7 +15,7 @@ export const NPCMetaData: INPCMetaData[] = [
     y: FromGridY(12),
     direction: "down",
     scene: "MainScene",
-    class: CharacterClass.None,
+    class: CharacterClass.Cleric,
     gender: CharacterGender.Female,
     layer: MapLayers.Player,
   },
