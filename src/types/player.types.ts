@@ -60,3 +60,7 @@ export interface IOtherPlayer {
   y: number;
   direction: string;
 }
+
+export interface IPlayerForceDisconnect {
+  reason: string;
+}
