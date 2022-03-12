@@ -14,10 +14,16 @@ export interface INPC extends IResource {
   layer: MapLayers;
   maxRangeInGridCells?: number;
   movementType: NPCMovementType;
+  fixedPathOrientation?: FixedPathOrientation;
   fixedPath?: {
     endGridX: number;
     endGridY: number;
   };
+}
+
+export enum FixedPathOrientation {
+  Forward = "Forward",
+  Backward = "Backward",
 }
 
 export enum NPCMovementType {
