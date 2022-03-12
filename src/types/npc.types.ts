@@ -14,8 +14,6 @@ export interface INPC extends IResource {
   layer: MapLayers;
   maxRangeInGridCells?: number;
   fixedPath?: {
-    startGridX: number;
-    startGridY: number;
     endGridX: number;
     endGridY: number;
   };
