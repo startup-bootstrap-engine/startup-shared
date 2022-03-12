@@ -13,10 +13,16 @@ export interface INPC extends IResource {
   gender: CharacterGender;
   layer: MapLayers;
   maxRangeInGridCells?: number;
+  movementType: NPCMovementType;
   fixedPath?: {
     endGridX: number;
     endGridY: number;
   };
+}
+
+export enum NPCMovementType {
+  Random = "Random",
+  FixedPath = "FixedPath",
 }
 
 export enum NPCSocketEvents {
