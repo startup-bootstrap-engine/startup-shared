@@ -12,6 +12,7 @@ export interface INPC extends IResource {
   class: CharacterClass;
   gender: CharacterGender;
   layer: MapLayers;
+  maxRangeInGridCells?: number;
 }
 
 export enum NPCSocketEvents {
