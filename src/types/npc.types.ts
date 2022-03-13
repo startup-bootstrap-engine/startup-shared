@@ -45,4 +45,5 @@ export interface INPCPositionUpdatePayload {
   direction: string;
   key: string;
   layer: MapLayers;
+  textureKey: string;
 }
