@@ -19,6 +19,8 @@ export interface INPC extends IResource {
     endGridX: number;
     endGridY: number;
   };
+  key: string;
+  textureKey: string;
 }
 
 export enum FixedPathOrientation {
