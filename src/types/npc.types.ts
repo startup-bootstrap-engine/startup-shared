@@ -21,6 +21,7 @@ export interface INPC extends IResource {
   };
   key: string;
   textureKey: string;
+  pm2InstanceManager: number;
 }
 
 export enum FixedPathOrientation {
