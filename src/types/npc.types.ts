@@ -14,6 +14,8 @@ export interface INPC extends IResource {
   layer: MapLayers;
   maxRangeInGridCells?: number;
   movementType: NPCMovementType;
+  alignment: NPCAlignment;
+  targetObject?: string;
   fixedPathOrientation?: FixedPathOrientation;
   fixedPath?: {
     endGridX: number;
@@ -22,6 +24,18 @@ export interface INPC extends IResource {
   key: string;
   textureKey: string;
   pm2InstanceManager: number;
+  socketTransmissionZone: {
+    x: number;
+    y: number;
+    width: number;
+    height: number;
+  };
+}
+
+export enum NPCAlignment {
+  Friendly = "Friendly",
+  Neutral = "Neutral",
+  Hostile = "Hostile",
 }
 
 export enum FixedPathOrientation {
@@ -32,6 +46,8 @@ export enum FixedPathOrientation {
 export enum NPCMovementType {
   Random = "Random",
   FixedPath = "FixedPath",
+  Stopped = "Stopped",
+  MoveAway = "MoveAway",
 }
 
 export enum NPCSocketEvents {

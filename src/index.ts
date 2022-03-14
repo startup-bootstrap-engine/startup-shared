@@ -1,3 +1,4 @@
+export * from "./constants/socket.constants";
 export * from "./constants/world.constants";
 export * from "./libs/GridHelper";
 export * from "./libs/TextHelper";
