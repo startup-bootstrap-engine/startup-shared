@@ -4,9 +4,13 @@ import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
 
 export interface INPC extends IResource {
+  key: string;
+  textureKey: string;
   name: string;
   x: number;
   y: number;
+  health: number;
+  mana: number;
   direction: AnimationDirection;
   scene: string;
   class: CharacterClass;
@@ -15,21 +19,19 @@ export interface INPC extends IResource {
   maxRangeInGridCells?: number;
   movementType: NPCMovementType;
   alignment: NPCAlignment;
-  targetObject?: string;
+  targetCharacter?: string;
   fixedPathOrientation?: FixedPathOrientation;
   fixedPath?: {
     endGridX: number;
     endGridY: number;
   };
-  key: string;
-  textureKey: string;
-  pm2InstanceManager: number;
   socketTransmissionZone: {
     x: number;
     y: number;
     width: number;
     height: number;
   };
+  pm2InstanceManager: number;
 }
 
 export enum NPCAlignment {
