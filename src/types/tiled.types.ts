@@ -1,5 +1,3 @@
-import { MapLayers } from "..";
-
 export interface ITiled {
   compressionlevel: number;
   height: number;
@@ -116,8 +114,8 @@ export interface ITiledTile {
 }
 
 export const TiledLayerNames = {
-  [MapLayers.Ground]: "ground",
-  [MapLayers.OverGround]: "over-ground",
-  [MapLayers.Player]: "player",
-  [MapLayers.OverPlayer]: "over-player",
+  0: "ground",
+  1: "over-ground",
+  2: "player",
+  3: "over-player",
 };
