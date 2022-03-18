@@ -33,7 +33,11 @@ export interface IConnectedPlayer {
   direction?: string;
   isMoving?: boolean;
   cameraCoordinates: ICameraCoordinates;
-  otherEntitiesInView: IEntityBasicInfo[];
+  otherEntitiesInView: IEntitiesInView;
+}
+
+export interface IEntitiesInView {
+  [id: string]: IEntityBasicInfo;
 }
 
 export interface IConnectedPlayers {
