@@ -1,3 +1,5 @@
+import { IEntityBasicInfo } from "./entity.types";
+
 //@ts-ignore
 export enum PlayerSocketEvents {
   PlayerCreate = "PlayerCreate",
@@ -31,7 +33,7 @@ export interface IConnectedPlayer {
   direction?: string;
   isMoving?: boolean;
   cameraCoordinates: ICameraCoordinates;
-  otherPlayersInView: IOtherPlayerInView;
+  otherEntitiesInView: IEntityBasicInfo[];
 }
 
 export interface IConnectedPlayers {
@@ -47,18 +49,6 @@ export interface ICameraCoordinates {
   y: number;
   width: number;
   height: number;
-}
-
-export interface IOtherPlayerInView {
-  [id: string]: IOtherPlayer;
-}
-
-export interface IOtherPlayer {
-  id: string;
-  name: string;
-  x: number;
-  y: number;
-  direction: string;
 }
 
 export interface IPlayerForceDisconnect {
