@@ -1,5 +1,5 @@
 import { AnimationDirection } from "./animation.types";
-import { CharacterClass, CharacterGender } from "./character.types";
+import { CharacterClass, CharacterGender, ICharacter } from "./character.types";
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
 
@@ -19,7 +19,7 @@ export interface INPC extends IResource {
   maxRangeInGridCells?: number;
   movementType: NPCMovementType;
   alignment: NPCAlignment;
-  targetCharacter?: string;
+  targetCharacter?: ICharacter;
   fixedPathOrientation?: FixedPathOrientation;
   fixedPath?: {
     endGridX: number;
