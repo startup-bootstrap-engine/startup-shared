@@ -25,6 +25,7 @@ export interface INPC extends IResource {
     endGridX: number;
     endGridY: number;
   };
+  moveTowardsTarget: string;
   socketTransmissionZone: {
     x: number;
     y: number;
@@ -50,6 +51,7 @@ export enum NPCMovementType {
   FixedPath = "FixedPath",
   Stopped = "Stopped",
   MoveAway = "MoveAway",
+  MoveTowards = "MoveTowards",
 }
 
 export enum NPCSocketEvents {
