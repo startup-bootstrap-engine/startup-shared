@@ -19,7 +19,7 @@ export interface INPC extends IResource {
   maxRangeInGridCells?: number;
   movementType: NPCMovementType;
   alignment: NPCAlignment;
-  targetCharacter?: ICharacter;
+  targetCharacter?: ICharacter | null;
   fixedPathOrientation?: FixedPathOrientation;
   fixedPath?: {
     endGridX: number;
