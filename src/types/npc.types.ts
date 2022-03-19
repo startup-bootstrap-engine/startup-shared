@@ -25,7 +25,6 @@ export interface INPC extends IResource {
     endGridX: number;
     endGridY: number;
   };
-  moveTowardsTarget: string;
   socketTransmissionZone: {
     x: number;
     y: number;
