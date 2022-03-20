@@ -68,3 +68,7 @@ export interface INPCPositionUpdatePayload {
   layer: MapLayers;
   textureKey: string;
 }
+
+export interface INPCDataUpdatePayload {
+  [key: string]: any;
+}
