@@ -54,6 +54,7 @@ export enum NPCMovementType {
 }
 
 export enum NPCSocketEvents {
+  NPCDataUpdate = "NPCDataUpdate",
   NPCPositionUpdate = "NPCPositionUpdate",
 }
 
