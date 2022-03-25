@@ -1,4 +1,5 @@
 import { IEntityBasicInfo } from "./entity.types";
+import { MapLayers } from "./maps.types";
 
 //@ts-ignore
 export enum PlayerSocketEvents {
@@ -34,6 +35,7 @@ export interface IConnectedPlayer {
   isMoving?: boolean;
   cameraCoordinates: ICameraCoordinates;
   otherEntitiesInView: IEntitiesInView;
+  layer: MapLayers;
 }
 
 export interface IEntitiesInView {
