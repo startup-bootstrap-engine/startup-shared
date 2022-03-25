@@ -1,5 +1,4 @@
 import { AnimationDirection } from "./animation.types";
-import { MapLayers } from "./maps.types";
 import { ICameraCoordinates } from "./player.types";
 import { IResource } from "./resource.types";
 import { IUser } from "./user.types";
@@ -7,7 +6,6 @@ import { IUser } from "./user.types";
 export interface ICharacter extends IResource {
   _id: string;
   name: string;
-  layer: MapLayers;
   owner: IUser;
   health: number;
   mana: number;
