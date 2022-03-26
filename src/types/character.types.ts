@@ -1,4 +1,5 @@
 import { AnimationDirection } from "./animation.types";
+import { MapLayers } from "./maps.types";
 import { ICameraCoordinates } from "./player.types";
 import { IResource } from "./resource.types";
 import { IUser } from "./user.types";
@@ -19,6 +20,7 @@ export interface ICharacter extends IResource {
   cameraCoordinates: ICameraCoordinates;
   scene: string;
   channelId: string;
+  layer: MapLayers;
 }
 
 export enum CharacterClass {
