@@ -116,6 +116,6 @@ export interface ITiledTile {
 export const TiledLayerNames = {
   0: "ground",
   1: "over-ground",
-  2: "player",
-  3: "over-player",
+  2: "character",
+  3: "over-character",
 };

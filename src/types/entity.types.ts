@@ -8,6 +8,6 @@ export interface IEntityBasicInfo {
 }
 
 export enum EntityType {
-  Player = "Player",
+  Character = "Character",
   NPC = "Npc",
 }
