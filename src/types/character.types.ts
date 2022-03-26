@@ -73,6 +73,7 @@ export interface ICharacterPositionUpdatePayload {
   isMoving?: boolean;
   cameraCoordinates: ICameraCoordinates;
   otherEntitiesInView: IEntitiesInView;
+  layer: MapLayers;
 }
 
 export interface IEntitiesInView {
