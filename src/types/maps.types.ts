@@ -12,6 +12,6 @@ export interface IMap {
 export enum MapLayers {
   Ground = 0,
   OverGround = 1,
-  Player = 2,
-  OverPlayer = 3,
+  Character = 2,
+  OverCharacter = 3,
 }
