@@ -9,5 +9,5 @@ export interface IEntityBasicInfo {
 
 export enum EntityType {
   Character = "Character",
-  NPC = "Npc",
+  NPC = "NPC",
 }
