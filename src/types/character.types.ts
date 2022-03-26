@@ -1,6 +1,6 @@
 import { AnimationDirection } from "./animation.types";
+import { IEntityBasicInfo } from "./entity.types";
 import { MapLayers } from "./maps.types";
-import { ICameraCoordinates } from "./player.types";
 import { IResource } from "./resource.types";
 import { IUser } from "./user.types";
 
@@ -37,4 +37,59 @@ export enum CharacterClass {
 export enum CharacterGender {
   Male = "Male",
   Female = "Female",
+}
+
+//@ts-ignore
+export enum CharacterSocketEvents {
+  CharacterCreate = "CharacterCreate",
+  CharacterPositionUpdate = "CharacterPositionUpdate",
+  CharacterPositionUpdateConfirm = "CharacterPositionUpdateConfirm",
+  CharacterLogout = "CharacterLogout",
+  CharacterPrivateMessage = "CharacterPrivateMessage",
+  CharacterPing = "CharacterPing",
+  CharacterForceDisconnect = "CharacterForceDisconnect",
+}
+
+export interface ICharacterPing {
+  // just to tell the server you're still alive
+  id: string;
+}
+
+export interface ICharacterPositionUpdateConfirm {
+  id: string;
+  direction: string;
+  isValid: boolean;
+}
+
+export type Events = CharacterSocketEvents;
+
+export interface ICharacterPositionUpdatePayload {
+  id: string;
+  name: string;
+  x: number;
+  y: number;
+  channelId: string;
+  direction?: string;
+  isMoving?: boolean;
+  cameraCoordinates: ICameraCoordinates;
+  otherEntitiesInView: IEntitiesInView;
+}
+
+export interface IEntitiesInView {
+  [id: string]: IEntityBasicInfo;
+}
+
+export interface CharacterLogoutPayload {
+  id: string;
+}
+
+export interface ICameraCoordinates {
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+}
+
+export interface ICharacterForceDisconnect {
+  reason: string;
 }
