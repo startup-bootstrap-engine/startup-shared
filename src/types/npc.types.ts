@@ -25,12 +25,6 @@ export interface INPC extends IResource {
     endGridX: number;
     endGridY: number;
   };
-  socketTransmissionZone: {
-    x: number;
-    y: number;
-    width: number;
-    height: number;
-  };
   pm2InstanceManager: number;
 }
 
