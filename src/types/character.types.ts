@@ -69,8 +69,8 @@ export interface ICharacterPositionUpdatePayload {
   x: number;
   y: number;
   channelId: string;
-  direction?: string;
-  isMoving?: boolean;
+  direction: string;
+  isMoving: boolean;
   cameraCoordinates: ICameraCoordinates;
   otherEntitiesInView: IEntitiesInView;
   layer: MapLayers;
