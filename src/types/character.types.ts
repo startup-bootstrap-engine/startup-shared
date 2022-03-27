@@ -63,24 +63,20 @@ export interface ICharacterPositionUpdateConfirm {
 
 export type Events = CharacterSocketEvents;
 
-export interface ICharacterPositionUpdatePayload {
-  id: string;
-  name: string;
+export interface ICharacterPositionUpdate {
   x: number;
   y: number;
-  channelId: string;
+  newX: number;
+  newY: number;
   direction: string;
-  isMoving: boolean;
-  cameraCoordinates: ICameraCoordinates;
   otherEntitiesInView: IEntitiesInView;
-  layer: MapLayers;
 }
 
 export interface IEntitiesInView {
   [id: string]: IEntityBasicInfo;
 }
 
-export interface CharacterLogoutPayload {
+export interface ICharacterLogout {
   id: string;
 }
 
