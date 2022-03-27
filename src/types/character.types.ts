@@ -69,7 +69,6 @@ export interface ICharacterPositionUpdate {
   y: number;
   newX: number;
   newY: number;
-  direction: string;
   otherEntitiesInView: IEntitiesInView;
 }
 
