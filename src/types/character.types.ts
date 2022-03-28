@@ -77,6 +77,7 @@ export interface ICharacterCreateFromServer {
   y: number;
   direction: AnimationDirection;
   socketTransmissionZone: ISocketTransmissionZone;
+  layer: MapLayers;
 }
 export interface ICharacterPositionUpdateFromClient {
   id: string; // will be validated server side
