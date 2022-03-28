@@ -95,6 +95,7 @@ export interface ICharacterPositionUpdateFromServer {
 
   name: string;
   direction: AnimationDirection;
+  isMoving: boolean;
   layer: MapLayers;
   channelId: string;
 }
