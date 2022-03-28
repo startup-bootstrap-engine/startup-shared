@@ -1,6 +1,6 @@
 {
   "name": "@rpg-engine/shared",
-  "version": "0.1.82",
+  "version": "0.1.83",
   "description": "> TODO: description",
   "author": "Joao Paulo Furtado <joaopaulofurtado@live.com>",
   "homepage": "",
@@ -30,7 +30,6 @@
     }
   },
   "dependencies": {
-    "@rpg-engine/shared": "^0.1.82",
     "husky": "^4.3.0",
     "prettier": "^2.2.1",
     "typescript": "^4.5.5"
