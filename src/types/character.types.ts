@@ -2,7 +2,6 @@ import { AnimationDirection } from "./animation.types";
 import { IEntityBasicInfo } from "./entity.types";
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
-import { ISocketTransmissionZone } from "./socket.types";
 import { IUser } from "./user.types";
 
 export interface ICharacter extends IResource {
@@ -76,7 +75,6 @@ export interface ICharacterCreateFromServer {
   x: number;
   y: number;
   direction: AnimationDirection;
-  socketTransmissionZone: ISocketTransmissionZone;
   layer: MapLayers;
 }
 export interface ICharacterPositionUpdateFromClient {
