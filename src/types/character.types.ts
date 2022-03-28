@@ -64,11 +64,12 @@ export interface ICharacterPositionUpdateConfirm {
 export type Events = CharacterSocketEvents;
 
 export interface ICharacterCreate {
+  id?: string; //only when receiving from server
   channelId: string;
 }
 
 export interface ICharacterPositionUpdate {
-  id?: string;
+  id?: string; //only when receiving from server
   x: number;
   y: number;
   newX: number;
