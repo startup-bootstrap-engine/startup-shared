@@ -23,6 +23,15 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
+"@rpg-engine/shared@^0.1.82":
+  version "0.1.82"
+  resolved "https://registry.yarnpkg.com/@rpg-engine/shared/-/shared-0.1.82.tgz#60256a495a8d6182d0d8d44590dd9e5e2662be3b"
+  integrity sha512-/SITWsd/cjcz01hvu6Dz0Fn3yWeRS3kKleM0BRFTFntd1sGkYnjof1YpMa7BuuHrzjkUkXxBtQgFiCj1HXe1HA==
+  dependencies:
+    husky "^4.3.0"
+    prettier "^2.2.1"
+    typescript "^4.5.5"
+
 "@types/mongoose@^5.11.97":
   version "5.11.97"
   resolved "https://registry.yarnpkg.com/@types/mongoose/-/mongoose-5.11.97.tgz#80b0357f3de6807eb597262f52e49c3e13ee14d8"
