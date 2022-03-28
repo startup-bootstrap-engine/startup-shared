@@ -64,7 +64,7 @@ export interface ICharacterPositionUpdateConfirm {
 export type Events = CharacterSocketEvents;
 
 export interface ICharacterCreate {
-  id: string; // we need this on socket auth, but i will be validated on server!
+  id: string; // will be validated server side
   channelId: string;
   name?: string;
   x?: number;
@@ -74,7 +74,7 @@ export interface ICharacterCreate {
 
 export interface ICharacterPositionUpdate {
   //optionals only available when receiving from server
-  id?: string;
+  id: string; // will be validated server side
   x: number;
   y: number;
   newX: number;
