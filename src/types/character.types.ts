@@ -83,6 +83,7 @@ export interface ICharacterPositionUpdateFromClient {
   y: number;
   newX: number;
   newY: number;
+  direction: AnimationDirection;
   otherEntitiesInView: IEntitiesInView;
 }
 export interface ICharacterPositionUpdateFromServer {
