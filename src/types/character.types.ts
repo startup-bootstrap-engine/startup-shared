@@ -64,12 +64,17 @@ export interface ICharacterPositionUpdateConfirm {
 export type Events = CharacterSocketEvents;
 
 export interface ICharacterCreate {
-  id?: string; //only when receiving from server
+  id?: string;
   channelId: string;
+  name?: string;
+  x?: number;
+  y?: number;
+  direction?: AnimationDirection;
 }
 
 export interface ICharacterPositionUpdate {
-  id?: string; //only when receiving from server
+  //optionals only available when receiving from server
+  id?: string;
   x: number;
   y: number;
   newX: number;
