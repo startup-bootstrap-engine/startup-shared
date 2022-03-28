@@ -8,3 +8,10 @@ export interface ISocket {
   emitToUser<T>(channel: string, eventName: string, data?: T);
   emitToAllUsers<T>(eventName: string, data?: T): void;
 }
+
+export interface ISocketTransmissionZone {
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+}

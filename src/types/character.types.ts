@@ -2,6 +2,7 @@ import { AnimationDirection } from "./animation.types";
 import { IEntityBasicInfo } from "./entity.types";
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
+import { ISocketTransmissionZone } from "./socket.types";
 import { IUser } from "./user.types";
 
 export interface ICharacter extends IResource {
@@ -63,23 +64,40 @@ export interface ICharacterPositionUpdateConfirm {
 
 export type Events = CharacterSocketEvents;
 
-export interface ICharacterCreate {
+export interface ICharacterCreateFromClient {
   id: string; // will be validated server side
   channelId: string;
-  name?: string;
-  x?: number;
-  y?: number;
-  direction?: AnimationDirection;
 }
 
-export interface ICharacterPositionUpdate {
-  //optionals only available when receiving from server
+export interface ICharacterCreateFromServer {
+  id: string; // will be validated server side
+  channelId: string;
+  name: string;
+  x: number;
+  y: number;
+  direction: AnimationDirection;
+  socketTransmissionZone: ISocketTransmissionZone;
+}
+export interface ICharacterPositionUpdateFromClient {
   id: string; // will be validated server side
   x: number;
   y: number;
   newX: number;
   newY: number;
   otherEntitiesInView: IEntitiesInView;
+}
+export interface ICharacterPositionUpdateFromServer {
+  id: string; // will be validated server side
+  x: number;
+  y: number;
+  newX: number;
+  newY: number;
+  otherEntitiesInView: IEntitiesInView;
+
+  name: string;
+  direction: AnimationDirection;
+  layer: MapLayers;
+  channelId: string;
 }
 
 export interface IEntitiesInView {
