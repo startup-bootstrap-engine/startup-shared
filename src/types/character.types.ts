@@ -63,8 +63,12 @@ export interface ICharacterPositionUpdateConfirm {
 
 export type Events = CharacterSocketEvents;
 
+export interface ICharacterCreate {
+  channelId: string;
+}
+
 export interface ICharacterPositionUpdate {
-  id: string;
+  id?: string;
   x: number;
   y: number;
   newX: number;
