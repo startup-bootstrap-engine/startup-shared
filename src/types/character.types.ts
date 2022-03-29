@@ -25,7 +25,7 @@ export interface ICharacter extends IResource {
   movementIntervalMs: number;
   lastMovement: Date;
   isBanned: boolean;
-  charPenalty: number;
+  penalty: number;
   banRemovalDate: Date;
 }
 
