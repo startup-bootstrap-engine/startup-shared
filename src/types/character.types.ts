@@ -24,6 +24,9 @@ export interface ICharacter extends IResource {
   speed: number;
   movementIntervalMs: number;
   lastMovement: Date;
+  isBanned: boolean;
+  charPenalty: number;
+  banRemovalDate: Date;
 }
 
 export enum CharacterClass {
