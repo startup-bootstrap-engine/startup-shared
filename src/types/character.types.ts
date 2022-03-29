@@ -76,6 +76,8 @@ export interface ICharacterCreateFromServer {
   y: number;
   direction: AnimationDirection;
   layer: MapLayers;
+  speed: number;
+  movementIntervalMs: number;
 }
 export interface ICharacterPositionUpdateFromClient {
   id: string; // will be validated server side
@@ -85,6 +87,8 @@ export interface ICharacterPositionUpdateFromClient {
   newY: number;
   direction: AnimationDirection;
   otherEntitiesInView: IEntitiesInView;
+  speed: number;
+  movementIntervalMs: number;
 }
 export interface ICharacterPositionUpdateFromServer {
   id: string; // will be validated server side
