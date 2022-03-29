@@ -22,7 +22,6 @@ export interface ICharacter extends IResource {
   channelId: string;
   layer: MapLayers;
   speed: number;
-  lastMovement: Date;
 }
 
 export enum CharacterClass {
