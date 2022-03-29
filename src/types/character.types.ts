@@ -105,7 +105,6 @@ export interface ICharacterPositionUpdateFromServer {
   layer: MapLayers;
   channelId: string;
   speed: number;
-  movementIntervalMs: number;
 }
 
 export interface IEntitiesInView {
