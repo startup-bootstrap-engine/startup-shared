@@ -80,7 +80,7 @@ export interface ICharacterCreateFromServer {
   direction: AnimationDirection;
   layer: MapLayers;
   speed: number;
-  movementIntervalMs?: number; //character only. Not on OtherCharacter.ts representation!
+  movementIntervalMs: number;
 }
 export interface ICharacterPositionUpdateFromClient {
   id: string; // will be validated server side
@@ -105,6 +105,7 @@ export interface ICharacterPositionUpdateFromServer {
   layer: MapLayers;
   channelId: string;
   speed: number;
+  movementIntervalMs: number;
 }
 
 export interface IEntitiesInView {
