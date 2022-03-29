@@ -21,6 +21,9 @@ export interface ICharacter extends IResource {
   scene: string;
   channelId: string;
   layer: MapLayers;
+  speed: number;
+  movementIntervalMs: number;
+  lastMovement: Date;
 }
 
 export enum CharacterClass {
