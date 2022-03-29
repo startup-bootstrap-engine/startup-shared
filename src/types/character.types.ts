@@ -90,8 +90,6 @@ export interface ICharacterPositionUpdateFromClient {
   newY: number;
   direction: AnimationDirection;
   otherEntitiesInView: IEntitiesInView;
-  speed: number;
-  movementIntervalMs: number;
 }
 export interface ICharacterPositionUpdateFromServer {
   id: string; // will be validated server side
@@ -106,6 +104,8 @@ export interface ICharacterPositionUpdateFromServer {
   isMoving: boolean;
   layer: MapLayers;
   channelId: string;
+  speed: number;
+  movementIntervalMs: number;
 }
 
 export interface IEntitiesInView {
