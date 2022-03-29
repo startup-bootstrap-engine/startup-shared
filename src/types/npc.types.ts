@@ -26,6 +26,7 @@ export interface INPC extends IResource {
     endGridY: number;
   };
   pm2InstanceManager: number;
+  speed: number;
 }
 
 export enum NPCAlignment {
