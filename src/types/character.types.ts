@@ -17,7 +17,6 @@ export interface ICharacter extends IResource {
   gender: CharacterGender;
   totalWeightCapacity: number;
   isOnline: boolean;
-  cameraCoordinates: ICameraCoordinates;
   scene: string;
   channelId: string;
   layer: MapLayers;
@@ -27,6 +26,7 @@ export interface ICharacter extends IResource {
   isBanned: boolean;
   penalty: number;
   banRemovalDate: Date;
+  hasPermanentBan: Date;
 }
 
 export enum CharacterClass {
