@@ -62,6 +62,7 @@ export interface INPCPositionUpdatePayload {
   layer: MapLayers;
   textureKey: string;
   scene: string;
+  speed: number;
 }
 
 export interface INPCDataUpdatePayload {
