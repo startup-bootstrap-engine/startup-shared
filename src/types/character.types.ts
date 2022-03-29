@@ -22,7 +22,6 @@ export interface ICharacter extends IResource {
   channelId: string;
   layer: MapLayers;
   speed: number;
-  movementIntervalMs: number;
   lastMovement: Date;
 }
 
@@ -80,7 +79,6 @@ export interface ICharacterCreateFromServer {
   direction: AnimationDirection;
   layer: MapLayers;
   speed: number;
-  movementIntervalMs: number;
 }
 export interface ICharacterPositionUpdateFromClient {
   id: string; // will be validated server side
@@ -105,7 +103,6 @@ export interface ICharacterPositionUpdateFromServer {
   layer: MapLayers;
   channelId: string;
   speed: number;
-  movementIntervalMs: number;
 }
 
 export interface IEntitiesInView {
