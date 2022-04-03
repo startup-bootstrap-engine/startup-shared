@@ -80,6 +80,10 @@ export interface INPCGetInfoEmitterClient {
 export interface INPCGetInfoEmitterServer extends INPC {}
 
 export interface INPCStartDialog {
-  id: string;
+  npcId: string;
   dialogText: string;
+}
+
+export interface INPCStopDialog {
+  npcId: string;
 }
