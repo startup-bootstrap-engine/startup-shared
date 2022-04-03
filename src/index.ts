@@ -1,6 +1,7 @@
 export * from "./constants/socket.constants";
 export * from "./constants/world.constants";
 export * from "./libs/GridHelper";
+export * from "./libs/MathHelper";
 export * from "./libs/SocketHelper";
 export * from "./libs/TextHelper";
 export * from "./types/animation.types";
