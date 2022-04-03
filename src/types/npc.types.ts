@@ -52,6 +52,7 @@ export enum NPCSocketEvents {
   NPCDataUpdate = "NPCDataUpdate",
   NPCPositionUpdate = "NPCPositionUpdate",
   NPCTalkToNPC = "NPCTalkToNPC",
+  NPCStartDialogNPC = "NPCStartDialogNPC",
   NPCStopDialogNPC = "NPCStopDialogNPC",
 }
 
