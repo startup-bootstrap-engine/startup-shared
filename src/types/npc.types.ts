@@ -17,8 +17,10 @@ export interface INPC extends IResource {
   gender: CharacterGender;
   layer: MapLayers;
   maxRangeInGridCells?: number;
-  movementType: NPCMovementType;
+  originalMovementType: NPCMovementType;
+  currentMovementType: NPCMovementType;
   alignment: NPCAlignment;
+  targetType: NPCTargetType;
   targetCharacter?: ICharacter | null;
   fixedPathOrientation?: FixedPathOrientation;
   fixedPath?: {
@@ -27,6 +29,11 @@ export interface INPC extends IResource {
   };
   pm2InstanceManager: number;
   speed: number;
+}
+
+export enum NPCTargetType {
+  Default = "Default",
+  Talking = "Talking",
 }
 
 export enum NPCAlignment {
