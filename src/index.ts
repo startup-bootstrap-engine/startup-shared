@@ -4,6 +4,7 @@ export * from "./libs/GridHelper";
 export * from "./libs/MathHelper";
 export * from "./libs/SocketHelper";
 export * from "./libs/TextHelper";
+export * from "./libs/TypeHelper";
 export * from "./types/animation.types";
 export * from "./types/api.types";
 export * from "./types/asset.types";
