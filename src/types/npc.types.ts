@@ -78,3 +78,8 @@ export interface INPCGetInfoEmitterClient {
 }
 
 export interface INPCGetInfoEmitterServer extends INPC {}
+
+export interface INPCStartDialog {
+  id: string;
+  dialogText: string;
+}
