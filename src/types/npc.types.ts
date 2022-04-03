@@ -71,3 +71,9 @@ export interface INPCPositionUpdatePayload {
 export interface INPCDataUpdatePayload {
   [key: string]: any;
 }
+
+export interface INPCGetInfoEmitterClient {
+  npcId: string;
+}
+
+export interface INPCGetInfoEmitterServer extends INPC {}
