@@ -51,6 +51,8 @@ export enum NPCMovementType {
 export enum NPCSocketEvents {
   NPCDataUpdate = "NPCDataUpdate",
   NPCPositionUpdate = "NPCPositionUpdate",
+  NPCTalkToNPC = "NPCTalkToNPC",
+  NPCStopDialogNPC = "NPCStopDialogNPC",
 }
 
 export interface INPCPositionUpdatePayload {
