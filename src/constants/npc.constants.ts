@@ -1,3 +1,1 @@
-import { GRID_WIDTH } from "./world.constants";
-
-export const NPC_TALKING_DISTANCE = GRID_WIDTH * 5;
+export const NPC_MAX_TALKING_DISTANCE_IN_GRID = 5;
