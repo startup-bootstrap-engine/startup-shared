@@ -7,6 +7,7 @@ export interface ISocket {
   onConnect?: (callback) => void;
   emitToUser<T>(channel: string, eventName: string, data?: T);
   emitToAllUsers<T>(eventName: string, data?: T): void;
+  disconnect: () => void;
 }
 
 export interface ISocketTransmissionZone {
