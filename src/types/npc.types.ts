@@ -9,6 +9,8 @@ export interface INPC extends IResource {
   name: string;
   x: number;
   y: number;
+  initialX: number;
+  initialY: number;
   health: number;
   mana: number;
   direction: AnimationDirection;
