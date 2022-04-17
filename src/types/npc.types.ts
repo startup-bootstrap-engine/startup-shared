@@ -24,7 +24,7 @@ export interface INPC extends IResource {
   alignment: NPCAlignment;
   targetType: NPCTargetType;
   targetCharacter?: ICharacter | null;
-  fixedPathOrientation?: FixedPathOrientation;
+  pathOrientation?: NPCPathOrientation;
   fixedPath?: {
     endGridX: number;
     endGridY: number;
@@ -44,7 +44,7 @@ export enum NPCAlignment {
   Hostile = "Hostile",
 }
 
-export enum FixedPathOrientation {
+export enum NPCPathOrientation {
   Forward = "Forward",
   Backward = "Backward",
 }
