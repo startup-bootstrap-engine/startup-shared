@@ -19,6 +19,7 @@ export interface INPC extends IResource {
   gender: CharacterGender;
   layer: MapLayers;
   maxRangeInGridCells?: number;
+  maxRangedDistanceInGridCells?: number;
   originalMovementType: NPCMovementType;
   currentMovementType: NPCMovementType;
   alignment: NPCAlignment;
@@ -31,6 +32,7 @@ export interface INPC extends IResource {
   };
   pm2InstanceManager: number;
   speed: number;
+  attackType: NPCAttackType;
 }
 
 export enum NPCTargetType {
@@ -63,6 +65,12 @@ export enum NPCSocketEvents {
   NPCTalkToNPC = "NPCTalkToNPC",
   NPCStartDialogNPC = "NPCStartDialogNPC",
   NPCStopDialogNPC = "NPCStopDialogNPC",
+}
+
+export enum NPCAttackType {
+  Melee = "Melee",
+  Ranged = "Ranged",
+  None = "None",
 }
 
 export interface INPCPositionUpdatePayload {
