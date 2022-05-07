@@ -2,6 +2,7 @@ import { AnimationDirection } from "./animation.types";
 import { CharacterClass, CharacterGender, ICharacter } from "./character.types";
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
+import { ISkill } from "./skills.types";
 
 export interface INPC extends IResource {
   key: string;
@@ -33,6 +34,7 @@ export interface INPC extends IResource {
   pm2InstanceManager: number;
   speed: number;
   attackType: NPCAttackType;
+  skills: ISkill;
 }
 
 export enum NPCTargetType {

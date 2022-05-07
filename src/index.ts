@@ -23,6 +23,7 @@ export * from "./types/places.types";
 export * from "./types/preloadScene.types";
 export * from "./types/resource.types";
 export * from "./types/scene.types";
+export * from "./types/skills.types";
 export * from "./types/socket.types";
 export * from "./types/tiled.types";
 export * from "./types/translation.types";

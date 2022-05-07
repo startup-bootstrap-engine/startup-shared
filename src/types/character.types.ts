@@ -2,6 +2,7 @@ import { AnimationDirection } from "./animation.types";
 import { IEntityBasicInfo } from "./entity.types";
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
+import { ISkill } from "./skills.types";
 import { IUser } from "./user.types";
 
 export interface ICharacter extends IResource {
@@ -27,6 +28,7 @@ export interface ICharacter extends IResource {
   penalty: number;
   banRemovalDate: Date;
   hasPermanentBan: Date;
+  skills: ISkill;
 }
 
 export enum CharacterClass {
