@@ -8,6 +8,7 @@ export interface ISkill extends IResource {
   stamina: number;
   magic: number;
   strength: number;
+  resistence: number;
   dexterity: number;
   first: number;
   club: number;
