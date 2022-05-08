@@ -16,8 +16,8 @@ export interface IBattleEventFromServer {
   targetId: string;
   targetType: string;
   eventType: BattleEventType;
-  totalDamage: number;
-  postDamageTargetHP: number;
+  totalDamage?: number;
+  postDamageTargetHP?: number;
 }
 
 export interface IBattleCharacterDeath {
