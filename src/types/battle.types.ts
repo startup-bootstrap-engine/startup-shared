@@ -2,6 +2,7 @@ import { EntityType } from "./entity.types";
 
 export enum BattleSocketEvents {
   InitTargeting = "InitTargeting",
+  CancelTargeting = "CancelTargeting",
   CharacterEvent = "CharacterEvent",
   CharacterDeath = "CharacterDeath",
   NPCEvent = "NPCEvent",
@@ -29,4 +30,10 @@ export interface IBattleCharacterDeath {
 export interface IBattleInitTargeting {
   targetId: string;
   type: EntityType;
+}
+
+export interface IBattleCancelTargeting {
+  targetId: string;
+  type: EntityType;
+  reason?: string;
 }
