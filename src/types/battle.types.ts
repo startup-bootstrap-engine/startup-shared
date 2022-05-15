@@ -23,3 +23,8 @@ export interface IBattleEventFromServer {
 export interface IBattleCharacterDeath {
   charId: string;
 }
+
+export interface IBattleInitTargeting {
+  targetId: string;
+  type: "Character" | "NPC";
+}
