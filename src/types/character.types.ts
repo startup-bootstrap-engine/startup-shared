@@ -35,6 +35,7 @@ export interface ICharacter extends IResource {
     type: EntityType;
   } | null;
   attackType: EntityAttackType;
+  attackIntervalSpeed: number;
 }
 
 export enum CharacterClass {
