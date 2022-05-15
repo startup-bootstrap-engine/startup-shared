@@ -2,7 +2,8 @@ import { EntityType } from "./entity.types";
 
 export enum BattleSocketEvents {
   InitTargeting = "InitTargeting",
-  CancelTargeting = "CancelTargeting",
+  StopTargeting = "StopTargeting", // client => server
+  CancelTargeting = "CancelTargeting", // server => client (triggered when errors occur)
   CharacterEvent = "CharacterEvent",
   CharacterDeath = "CharacterDeath",
   NPCEvent = "NPCEvent",
