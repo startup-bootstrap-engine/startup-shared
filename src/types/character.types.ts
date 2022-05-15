@@ -1,5 +1,5 @@
 import { AnimationDirection } from "./animation.types";
-import { EntityType, IEntityBasicInfo } from "./entity.types";
+import { EntityAttackType, EntityType, IEntityBasicInfo } from "./entity.types";
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
 import { ISkill } from "./skills.types";
@@ -34,6 +34,7 @@ export interface ICharacter extends IResource {
     id: string;
     type: EntityType;
   } | null;
+  attackType: EntityAttackType;
 }
 
 export enum CharacterClass {

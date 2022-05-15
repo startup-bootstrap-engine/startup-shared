@@ -1,5 +1,6 @@
 import { AnimationDirection } from "./animation.types";
 import { CharacterClass, CharacterGender, ICharacter } from "./character.types";
+import { EntityAttackType } from "./entity.types";
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
 import { ISkill } from "./skills.types";
@@ -33,7 +34,7 @@ export interface INPC extends IResource {
   };
   pm2InstanceManager: number;
   speed: number;
-  attackType: NPCAttackType;
+  attackType: EntityAttackType;
   skills: ISkill;
 }
 
@@ -67,12 +68,6 @@ export enum NPCSocketEvents {
   NPCTalkToNPC = "NPCTalkToNPC",
   NPCStartDialogNPC = "NPCStartDialogNPC",
   NPCStopDialogNPC = "NPCStopDialogNPC",
-}
-
-export enum NPCAttackType {
-  Melee = "Melee",
-  Ranged = "Ranged",
-  None = "None",
 }
 
 export interface INPCPositionUpdatePayload {

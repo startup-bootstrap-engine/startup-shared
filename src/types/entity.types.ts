@@ -11,3 +11,9 @@ export enum EntityType {
   Character = "Character",
   NPC = "NPC",
 }
+
+export enum EntityAttackType {
+  Melee = "Melee",
+  Ranged = "Ranged",
+  None = "None",
+}
