@@ -1,3 +1,5 @@
+import { EntityType } from "./entity.types";
+
 export enum BattleSocketEvents {
   InitTargeting = "InitTargeting",
   CharacterEvent = "CharacterEvent",
@@ -26,5 +28,5 @@ export interface IBattleCharacterDeath {
 
 export interface IBattleInitTargeting {
   targetId: string;
-  type: "Character" | "NPC";
+  type: EntityType;
 }
