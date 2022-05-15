@@ -6,11 +6,12 @@ import { ISkill } from "./skills.types";
 import { IUser } from "./user.types";
 
 export interface ICharacter extends IResource {
-  _id: string;
   name: string;
   owner: IUser;
   health: number;
+  maxHealth: number;
   mana: number;
+  maxMana: number;
   x: number;
   y: number;
   direction: AnimationDirection;
@@ -18,9 +19,9 @@ export interface ICharacter extends IResource {
   gender: CharacterGender;
   totalWeightCapacity: number;
   isOnline: boolean;
+  layer: MapLayers;
   scene: string;
   channelId: string;
-  layer: MapLayers;
   speed: number;
   movementIntervalMs: number;
   lastMovement: Date;

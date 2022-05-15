@@ -1,3 +1,4 @@
+import { ICharacter } from "./character.types";
 import { IResource } from "./resource.types";
 
 export interface IUserPreferences {
@@ -6,17 +7,14 @@ export interface IUserPreferences {
 }
 
 export interface IUserEntity extends IResource {
-  _id: string | null;
   name: string | null;
-  type: UserTypes | null;
-  email: string | null;
+  role: UserTypes | null;
+  authFlow: UserAuthFlow;
+  email: string;
   address: string | null;
   phone: string | null;
-  created: Date | null;
-  updated: Date | null;
-  unsubscribed: boolean | null;
-  pushNotificationToken: string | null;
-  preferences?: IUserPreferences;
+  unsubscribed: boolean;
+  characters: ICharacter[];
 }
 
 export interface IUserToken {

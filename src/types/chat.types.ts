@@ -1,4 +1,4 @@
 export enum ChatMessageType {
-    Global = 'Global',
-    Private = 'Private',
-  }
+  Global = "Global",
+  Private = "Private",
+}
