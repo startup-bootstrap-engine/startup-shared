@@ -86,6 +86,7 @@ export interface INPCPositionUpdatePayload {
   textureKey: string;
   scene: string;
   speed: number;
+  alignment: NPCAlignment;
 }
 
 export interface INPCDataUpdatePayload {
