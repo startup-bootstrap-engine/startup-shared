@@ -122,6 +122,11 @@ export interface ICharacterPositionUpdateFromServer {
   channelId: string;
   speed: number;
   movementIntervalMs: number;
+
+  health: number;
+  maxHealth: number;
+  mana: number;
+  maxMana: number;
 }
 
 export interface IEntitiesInView {
