@@ -93,6 +93,10 @@ export interface ICharacterCreateFromServer {
   layer: MapLayers;
   speed: number;
   movementIntervalMs: number;
+  health: number;
+  maxHealth: number;
+  mana: number;
+  maxMana: number;
 }
 export interface ICharacterPositionUpdateFromClient {
   id: string; // will be validated server side
