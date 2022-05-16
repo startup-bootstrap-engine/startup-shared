@@ -82,6 +82,10 @@ export interface INPCPositionUpdatePayload {
   scene: string;
   speed: number;
   alignment: NPCAlignment;
+  health: number;
+  maxHealth: number;
+  mana: number;
+  maxMana: number;
 }
 
 export interface INPCDataUpdatePayload {
