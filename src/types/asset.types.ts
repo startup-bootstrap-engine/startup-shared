@@ -1,7 +1,7 @@
-import { IAnimationData } from "./animation.types";
+import { IEntityMovementAnimation } from "./animation.types";
 
 export interface IAssetData {
   textureKey: string;
   path: string;
-  animations: IAnimationData;
+  animations: IEntityMovementAnimation;
 }
