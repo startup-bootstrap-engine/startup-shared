@@ -4,10 +4,8 @@ export enum BattleSocketEvents {
   InitTargeting = "InitTargeting",
   StopTargeting = "StopTargeting", // client => server
   CancelTargeting = "CancelTargeting", // server => client (triggered when errors occur)
-  CharacterEvent = "CharacterEvent",
-  CharacterDeath = "CharacterDeath",
-  NPCEvent = "NPCEvent",
-  NPCDeath = "NPCDeath",
+  BattleEvent = "BattleEvent",
+  BattleDeath = "BattleDeath",
 }
 
 export enum BattleEventType {
@@ -24,8 +22,9 @@ export interface IBattleEventFromServer {
   postDamageTargetHP?: number;
 }
 
-export interface IBattleCharacterDeath {
-  charId: string;
+export interface IBattleDeath {
+  id: string;
+  type: "Character" | "NPC";
 }
 
 export interface IBattleInitTargeting {
