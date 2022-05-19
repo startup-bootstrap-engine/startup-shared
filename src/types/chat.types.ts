@@ -4,8 +4,13 @@ export enum ChatMessageType {
   Private = "Private",
 }
 
+interface ICharacter {
+  _id: string;
+  name: string;
+}
+
 export interface IChatMessage extends IResource {
-  charId: string;
+  emitter: ICharacter;
   message: string;
   type: ChatMessageType;
 }
