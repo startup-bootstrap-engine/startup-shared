@@ -9,3 +9,8 @@ export interface IChatMessage extends IResource {
   message: string;
   type: ChatMessageType;
 }
+
+export enum ChatSocketEvents {
+  GlobalChatMessage = "GlobalChatMessage",
+  PrivateChatMessage = "PrivateChatMessage",
+}
