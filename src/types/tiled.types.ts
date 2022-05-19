@@ -65,10 +65,10 @@ export interface ITileset {
 export interface ITile {
   id: number;
   properties: ITileProperty[];
-  animation?: IAnimation[];
+  animation?: ITileAnimation[];
 }
 
-export interface IAnimation {
+export interface ITileAnimation {
   duration: number;
   tileid: number;
 }
