@@ -1,10 +1,11 @@
+import { IResource } from "./resource.types";
 export enum ChatMessageType {
   Global = "Global",
   Private = "Private",
 }
 
-export interface IChatMessage {
+export interface IChatMessage extends IResource {
   charId: string;
-  menssage: string;
+  message: string;
   type: ChatMessageType;
 }
