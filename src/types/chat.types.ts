@@ -5,7 +5,10 @@ export enum ChatMessageType {
 }
 
 export interface IChatMessage extends IResource {
-  charId: string;
+  emitter: {
+    _id: string;
+    name: string;
+  };
   message: string;
   type: ChatMessageType;
 }
