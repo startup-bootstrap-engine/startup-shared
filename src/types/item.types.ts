@@ -60,3 +60,20 @@ export interface IItemContainer extends IResource {
   items?: IItem[];
   allowedItemTypes?: ItemType[];
 }
+
+export enum ItemSocketEvents {
+  Update = "Update",
+  Look = "Look",
+  Equip = "Equip",
+  Unequip = "Unequip",
+  Pickup = "Pickup",
+  Drop = "Drop",
+}
+
+export interface IItemUpdate {
+  itemId: string;
+  x: number;
+  y: number;
+  scene: number;
+  layer: MapLayers;
+}
