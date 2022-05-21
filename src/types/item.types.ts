@@ -57,6 +57,6 @@ export interface IItemContainer extends IResource {
   owner: string;
   name: string;
   slotQty: number;
-  items: IItem[];
+  items?: IItem[];
   allowedItemTypes?: ItemType[];
 }
