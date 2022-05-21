@@ -50,3 +50,11 @@ export interface IItem extends IResource {
   isContainer?: boolean;
   container?: string; // is isContainer, then this is the container reference.
 }
+
+export interface IItemContainer extends IResource {
+  owner: string;
+  name: string;
+  slotQty: number;
+  items: IItem[];
+  allowedItemTypes?: ItemType[];
+}
