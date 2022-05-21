@@ -17,6 +17,7 @@ export * from "./types/chat.types";
 export * from "./types/device.types";
 export * from "./types/env.types";
 export * from "./types/googleOAuth.types";
+export * from "./types/item.types";
 export * from "./types/maps.types";
 export * from "./types/notification.types";
 export * from "./types/npc.types";
