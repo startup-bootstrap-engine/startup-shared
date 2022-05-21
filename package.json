@@ -35,6 +35,7 @@
     "typescript": "^4.6.4"
   },
   "devDependencies": {
+    "@rpg-engine/shared": "^0.2.51",
     "@types/mongoose": "^5.11.97"
   }
 }

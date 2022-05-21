@@ -42,7 +42,7 @@ export interface IItem extends IResource {
   isStackable: boolean;
   maxStackSize?: number; //if isStackable only
   isUsable: boolean;
-  usableEffectKey?: string; // if isUsable only
+  usableEffect?: string; // if isUsable only. This is a key that we'll use to check which effect event to trigger.
   isStorable: boolean; // if false, we cannot add it to a container/inventory
   x?: number; //x,y, scene for items on the map only
   y?: number;
