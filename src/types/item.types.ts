@@ -49,6 +49,7 @@ export interface IItem extends IResource {
   y?: number;
   scene?: number;
   layer?: MapLayers;
+  isSolid: boolean;
   isItemContainer?: boolean;
   itemContainer?: string; // is isContainer, then this is the container reference.
 }
