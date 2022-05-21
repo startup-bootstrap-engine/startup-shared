@@ -41,7 +41,7 @@ export interface IItem extends IResource {
   isEquipable: boolean; // can we add it to our equipment slots?
   equipSlotType?: ItemSlotType; // for equippables only
   isStackable: boolean;
-  maxStackSize?: number; //if isStackable only
+  maxStackSize: number; //if isStackable only
   isUsable: boolean;
   usableEffect?: string; // if isUsable only. This is a key that we'll use to check which effect event to trigger.
   isStorable: boolean; // if false, we cannot add it to a container/inventory
