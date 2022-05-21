@@ -1,3 +1,4 @@
+import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
 
 export enum ItemType {
@@ -47,8 +48,9 @@ export interface IItem extends IResource {
   x?: number; //x,y, scene for items on the map only
   y?: number;
   scene?: number;
-  isContainer?: boolean;
-  container?: string; // is isContainer, then this is the container reference.
+  layer?: MapLayers;
+  isItemContainer?: boolean;
+  itemContainer?: string; // is isContainer, then this is the container reference.
 }
 
 export interface IItemContainer extends IResource {
