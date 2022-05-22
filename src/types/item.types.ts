@@ -35,6 +35,7 @@ export interface IItem extends IResource {
   description: string; // custom item description
   fullDescription: string; //virtual mongoose field, that is dynamically generated based on item attack, defense, weight, etc.
   key: string;
+  textureKey: string;
   blueprintIndex: string;
   attack?: string;
   defense?: string;
