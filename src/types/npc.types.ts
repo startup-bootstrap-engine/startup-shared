@@ -7,6 +7,7 @@ import { ISkill } from "./skills.types";
 
 export interface INPC extends IResource {
   key: string;
+  blueprintIndex: string;
   textureKey: string;
   name: string;
   x: number;
