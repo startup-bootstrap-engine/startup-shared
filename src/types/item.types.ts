@@ -73,6 +73,8 @@ export enum ItemSocketEvents {
 
 export interface IItemUpdate {
   id: string;
+  key: string;
+  name: string;
   x: number;
   y: number;
   scene: string;
