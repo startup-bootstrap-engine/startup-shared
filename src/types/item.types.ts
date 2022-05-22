@@ -72,10 +72,10 @@ export enum ItemSocketEvents {
 }
 
 export interface IItemUpdate {
-  itemId: string;
+  id: string;
   x: number;
   y: number;
-  scene: number;
+  scene: string;
   layer: MapLayers;
 }
 
