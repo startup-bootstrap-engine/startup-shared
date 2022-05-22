@@ -1,5 +1,5 @@
 import { AnimationDirection } from "./animation.types";
-import { EntityAttackType, EntityType, IEntityBasicInfo } from "./entity.types";
+import { EntityAttackType, EntityType, IEntitiesInView } from "./entity.types";
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
 import { ISkill } from "./skills.types";
@@ -127,10 +127,6 @@ export interface ICharacterPositionUpdateFromServer {
   maxHealth: number;
   mana: number;
   maxMana: number;
-}
-
-export interface IEntitiesInView {
-  [id: string]: IEntityBasicInfo;
 }
 
 export interface ICharacterLogout {

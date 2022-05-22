@@ -78,3 +78,13 @@ export interface IItemUpdate {
   scene: number;
   layer: MapLayers;
 }
+
+export interface IItemsInView {
+  [id: string]: IItemInViewBasicInfo;
+}
+
+export interface IItemInViewBasicInfo {
+  id: string;
+  x?: number;
+  y?: number;
+}
