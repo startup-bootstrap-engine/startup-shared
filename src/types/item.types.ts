@@ -15,6 +15,24 @@ export enum ItemType {
   Other = "Other",
 }
 
+export enum ItemSubType {
+  Accessory = "Accessory",
+  Armor = "Armor",
+  Axe = "Axe",
+  Boot = "Boot",
+  Bow = "Bow",
+  Food = "Food",
+  Glove = "Glove",
+  Helmet = "Helmet",
+  Magic = "Magic",
+  Potion = "Potion",
+  Shield = "Shield",
+  Spear = "Spear",
+  Staff = "Staff",
+  Sword = "Sword",
+  Other = "Other",
+}
+
 export enum ItemSlotType {
   Head = "Head",
   Neck = "Neck",
@@ -31,6 +49,7 @@ export enum ItemSlotType {
 
 export interface IItem extends IResource {
   type: ItemType;
+  subType: ItemSubType;
   name: string;
   description: string; // custom item description
   fullDescription: string; //virtual mongoose field, that is dynamically generated based on item attack, defense, weight, etc.
