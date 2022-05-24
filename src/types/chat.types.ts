@@ -1,7 +1,15 @@
+import { ICharacter } from "./character.types";
 import { IResource } from "./resource.types";
+
 export enum ChatMessageType {
   Global = "Global",
   Private = "Private",
+}
+
+export enum ChatSocketEvents {
+  GlobalChatMessageCreate = "GlobalChatMessageCreate",
+  GlobalChatMessageRead = "GlobalChatMessageRead",
+  PrivateChatMessage = "PrivateChatMessage",
 }
 
 export interface IChatMessage extends IResource {
@@ -13,7 +21,13 @@ export interface IChatMessage extends IResource {
   type: ChatMessageType;
 }
 
-export enum ChatSocketEvents {
-  GlobalChatMessage = "GlobalChatMessage",
-  PrivateChatMessage = "PrivateChatMessage",
+export interface IChatMessageCreatePayload {
+  emitter: ICharacter;
+  message: string;
+  type: ChatMessageType;
+  limit: number;
+}
+
+export interface IChatMessageReadPayload {
+  messages: IChatMessage[];
 }
