@@ -75,7 +75,6 @@ export enum ItemSocketEvents {
 
 export interface IItemUpdate {
   id: string;
-  key: string;
   textureKey: string;
   name: string;
   x: number;
