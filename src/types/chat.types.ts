@@ -1,4 +1,3 @@
-import { ICharacter } from "./character.types";
 import { IResource } from "./resource.types";
 
 export enum ChatMessageType {
@@ -22,7 +21,10 @@ export interface IChatMessage extends IResource {
 }
 
 export interface IChatMessageCreatePayload {
-  emitter: ICharacter;
+  emitter: {
+    _id: string;
+    name: string;
+  };
   message: string;
   type: ChatMessageType;
   limit: number;
