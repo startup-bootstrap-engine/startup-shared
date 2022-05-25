@@ -32,3 +32,4 @@ export * from "./types/tiled.types";
 export * from "./types/translation.types";
 export * from "./types/user.types";
 export * from "./types/validation.types";
+export * from "./types/view.types";

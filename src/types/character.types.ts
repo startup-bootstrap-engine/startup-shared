@@ -4,6 +4,7 @@ import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
 import { ISkill } from "./skills.types";
 import { IUser } from "./user.types";
+import { IViewElement } from "./view.types";
 
 export interface ICharacter extends IResource {
   name: string;
@@ -36,6 +37,11 @@ export interface ICharacter extends IResource {
   } | null;
   attackType: EntityAttackType;
   attackIntervalSpeed: number;
+  view: {
+    characters: IViewElement;
+    npcs: IViewElement;
+    items: IViewElement;
+  };
 }
 
 export enum CharacterClass {
