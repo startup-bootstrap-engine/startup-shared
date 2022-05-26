@@ -72,7 +72,7 @@ export enum CharacterSocketEvents {
 }
 
 export interface ICharacterPing {
-  // just to tell the server you're still alive
+  // tell the server you're still alive
   id: string;
 }
 
