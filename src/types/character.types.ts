@@ -1,5 +1,5 @@
 import { AnimationDirection } from "./animation.types";
-import { EntityAttackType, EntityType, IEntitiesInView } from "./entity.types";
+import { EntityAttackType, EntityType } from "./entity.types";
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
 import { ISkill } from "./skills.types";
@@ -111,7 +111,6 @@ export interface ICharacterPositionUpdateFromClient {
   newX: number;
   newY: number;
   direction: AnimationDirection;
-  otherEntitiesInView: IEntitiesInView;
 }
 export interface ICharacterPositionUpdateFromServer {
   id: string; // will be validated server side
@@ -119,7 +118,6 @@ export interface ICharacterPositionUpdateFromServer {
   y: number;
   newX: number;
   newY: number;
-  otherEntitiesInView: IEntitiesInView;
 
   name: string;
   direction: AnimationDirection;
