@@ -95,6 +95,7 @@ export enum ItemSocketEvents {
 
 export interface IItemUpdate {
   id: string;
+  textureAtlas: string;
   textureKey: string;
   type: ItemType;
   subType: ItemSubType;
