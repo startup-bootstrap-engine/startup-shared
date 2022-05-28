@@ -95,6 +95,7 @@ export enum ItemSocketEvents {
 
 export interface IItemUpdate {
   id: string;
+  hasTextureFolder: boolean; //subType on plural will be used as folder
   textureAtlas: string;
   textureKey: string;
   type: ItemType;
