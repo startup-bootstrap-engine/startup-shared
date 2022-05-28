@@ -60,6 +60,7 @@ export interface IItem extends IResource {
   key: string;
   textureAtlas: string;
   texturePath: string;
+  textureKey: string;
   attack?: string;
   defense?: string;
   weight: number;
