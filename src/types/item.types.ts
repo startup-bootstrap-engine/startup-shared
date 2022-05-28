@@ -1,3 +1,4 @@
+import { ICharacter } from "./character.types";
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
 
@@ -49,14 +50,16 @@ export enum ItemSlotType {
 }
 
 export interface IItem extends IResource {
+  tiledId?: number;
+  owner?: ICharacter | string;
   type: ItemType;
   subType: ItemSubType;
   name: string;
   description: string; // custom item description
   fullDescription: string; //virtual mongoose field, that is dynamically generated based on item attack, defense, weight, etc.
   key: string;
-  textureKey: string;
-  blueprintIndex: string;
+  textureAtlas: string;
+  texturePath: string;
   attack?: string;
   defense?: string;
   weight: number;
@@ -95,9 +98,8 @@ export enum ItemSocketEvents {
 
 export interface IItemUpdate {
   id: string;
-  hasTextureFolder: boolean; //subType on plural will be used as folder
   textureAtlas: string;
-  textureKey: string;
+  texturePath: string;
   type: ItemType;
   subType: ItemSubType;
   name: string;
