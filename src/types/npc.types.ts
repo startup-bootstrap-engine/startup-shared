@@ -6,28 +6,31 @@ import { IResource } from "./resource.types";
 import { ISkill } from "./skills.types";
 
 export interface INPC extends IResource {
+  tiledId?: number;
   key: string;
-  blueprintIndex: string;
   textureKey: string;
   name: string;
+  health: number;
+  maxHealth: number;
+  mana: number;
+  maxMana: number;
+  alignment: NPCAlignment;
+  targetType: NPCTargetType;
+  targetCharacter?: ICharacter | null;
   x: number;
   y: number;
   initialX: number;
   initialY: number;
-  health: number;
-  mana: number;
   direction: AnimationDirection;
   scene: string;
   class: CharacterClass;
   gender: CharacterGender;
   layer: MapLayers;
-  maxRangeInGridCells?: number;
-  maxRangedDistanceInGridCells?: number;
+  attackType: EntityAttackType;
   originalMovementType: NPCMovementType;
   currentMovementType: NPCMovementType;
-  alignment: NPCAlignment;
-  targetType: NPCTargetType;
-  targetCharacter?: ICharacter | null;
+  maxRangeInGridCells?: number;
+  maxRangedDistanceInGridCells?: number;
   pathOrientation?: NPCPathOrientation;
   fixedPath?: {
     endGridX: number;
@@ -35,8 +38,10 @@ export interface INPC extends IResource {
   };
   pm2InstanceManager: number;
   speed: number;
-  attackType: EntityAttackType;
-  skills: ISkill;
+  dialogText: string;
+  skills: ISkill | string;
+  spawnIntervalMin: number;
+  nextSpawnTime: Date;
 }
 
 export enum NPCTargetType {
