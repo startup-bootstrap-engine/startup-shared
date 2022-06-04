@@ -64,6 +64,7 @@ export interface IItem extends IResource {
   attack?: number;
   defense?: number;
   weight: number;
+  allowedEquipSlotType: ItemSlotType[];
   isEquipable: boolean; // can we add it to our equipment slots?
   equipSlotType?: ItemSlotType; // for equippables only
   isStackable: boolean;
