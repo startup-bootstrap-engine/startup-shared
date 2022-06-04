@@ -73,7 +73,7 @@ export interface IItem extends IResource {
   isStorable: boolean; // if false, we cannot add it to a container/inventory
   x?: number; //x,y, scene for items on the map only
   y?: number;
-  scene?: number;
+  scene?: string;
   layer?: MapLayers;
   isSolid: boolean;
   isItemContainer?: boolean;
