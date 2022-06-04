@@ -81,6 +81,7 @@ export interface IItem extends IResource {
 }
 
 export interface IItemContainer extends IResource {
+  parentItem: string;
   owner?: string;
   name?: string;
   slotQty: number;
