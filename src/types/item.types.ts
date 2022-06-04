@@ -81,11 +81,12 @@ export interface IItem extends IResource {
 }
 
 export interface IItemContainer extends IResource {
-  owner: string;
-  name: string;
+  owner?: string;
+  name?: string;
   slotQty: number;
   items?: IItem[];
   allowedItemTypes?: ItemType[];
+  isEmpty: boolean;
 }
 
 export enum ItemSocketEvents {
