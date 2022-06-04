@@ -61,8 +61,8 @@ export interface IItem extends IResource {
   textureAtlas: string;
   texturePath: string;
   textureKey: string;
-  attack?: string;
-  defense?: string;
+  attack?: number;
+  defense?: number;
   weight: number;
   isEquipable: boolean; // can we add it to our equipment slots?
   equipSlotType?: ItemSlotType; // for equippables only
