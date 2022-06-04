@@ -96,6 +96,18 @@ export enum ItemSocketEvents {
   Unequip = "Unequip",
   Pickup = "Pickup",
   Drop = "Drop",
+  GetItemInfo = "GetItemInfo",
+  ReadItemInfo = "ReadItemInfo",
+}
+
+export interface IGetItemInfo {
+  id: string;
+  fields: string[];
+}
+
+export interface IReadItemInfo {
+  id: string;
+  information: string;
 }
 
 export interface IItemUpdate {
