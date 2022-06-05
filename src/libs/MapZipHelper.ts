@@ -3,7 +3,7 @@ import fs = require("fs");
 import JSZip = require("jszip");
 
 class MapZipHelper {
-  async createZipMap(mapName: string, mapObject: object, pathToSave: string): Promise<void> {
+  public async createZipMap(mapName: string, mapObject: object, pathToSave: string): Promise<void> {
     const data = compress(mapObject);
     const zip = new JSZip();
     zip.file(`${mapName}.txt`, JSON.stringify(data));
@@ -31,7 +31,7 @@ class MapZipHelper {
   //     return {};
   //   }
 
-  async readZip(fileName, filePath): Promise<object> {
+  public async readZip(fileName, filePath): Promise<object> {
     const data = await fs.readFileSync(filePath);
 
     const zipRead = new JSZip();
