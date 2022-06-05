@@ -1,6 +1,14 @@
 const { compress, decompress } = require("compress-json");
 const fs = require("fs");
 const JSZip = require("jszip");
+let fetch = null;
+let file = null
+import("node-fetch").then(f => {  
+  fetch = f;
+});
+import("file-class").then(f => {
+  file = f;
+});
 
 export class MapZipHelper {
   static async createZipMap(mapName: string, mapObject: object, pathToSave: string): Promise<void> {
