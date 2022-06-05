@@ -61,19 +61,21 @@ export interface IItem extends IResource {
   textureAtlas: string;
   texturePath: string;
   textureKey: string;
-  attack?: string;
-  defense?: string;
+  attack?: number;
+  defense?: number;
   weight: number;
+  allowedEquipSlotType: ItemSlotType[];
   isEquipable: boolean; // can we add it to our equipment slots?
   equipSlotType?: ItemSlotType; // for equippables only
   isStackable: boolean;
   maxStackSize: number; //if isStackable only
+  stackQty?: number;
   isUsable: boolean;
   usableEffect?: string; // if isUsable only. This is a key that we'll use to check which effect event to trigger.
   isStorable: boolean; // if false, we cannot add it to a container/inventory
   x?: number; //x,y, scene for items on the map only
   y?: number;
-  scene?: number;
+  scene?: string;
   layer?: MapLayers;
   isSolid: boolean;
   isItemContainer?: boolean;
@@ -81,11 +83,13 @@ export interface IItem extends IResource {
 }
 
 export interface IItemContainer extends IResource {
-  owner: string;
-  name: string;
+  parentItem: string;
+  owner?: string;
+  name?: string;
   slotQty: number;
   items?: IItem[];
   allowedItemTypes?: ItemType[];
+  isEmpty: boolean;
 }
 
 export enum ItemSocketEvents {

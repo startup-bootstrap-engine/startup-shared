@@ -23,10 +23,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@rpg-engine/shared@^0.2.51":
-  version "0.2.51"
-  resolved "https://registry.yarnpkg.com/@rpg-engine/shared/-/shared-0.2.51.tgz#4eeae80626753a45be55f00e8137bc9a198a2eef"
-  integrity sha512-trJAN20J1Sm+rL1jeTvt7CtWhQSxAl5TnKhE8SlfvcslPRZdObUuLV2quRjUfW5UzgtaMwlko7BDMMewime/Hg==
+"@rpg-engine/shared@^0.2.88":
+  version "0.2.88"
+  resolved "https://registry.yarnpkg.com/@rpg-engine/shared/-/shared-0.2.88.tgz#a15cddbbc4d3c75b17366415aba36c0b44ce3179"
+  integrity sha512-hVC+SqV8MBnJNNdc3vNH20jhQykxKbwD2bBg9XjumIDy+/W/mbkczmFRJo8SVnypah3qb0JPlCp+fFZK+AjWAw==
   dependencies:
     husky "^4.3.0"
     prettier "^2.2.1"

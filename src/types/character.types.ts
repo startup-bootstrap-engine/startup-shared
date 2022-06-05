@@ -22,6 +22,7 @@ export interface ICharacter extends IResource {
   isOnline: boolean;
   layer: MapLayers;
   scene: string;
+  initialScene: string;
   channelId: string;
   speed: number;
   movementIntervalMs: number;
