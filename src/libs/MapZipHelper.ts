@@ -1,5 +1,4 @@
-const compress = require("compress-json");
-const decompress = require("compress-json");
+const {compress, decompress} = require("compress-json");
 const fs = require("fs");
 const JSZip = require("jszip");
 
