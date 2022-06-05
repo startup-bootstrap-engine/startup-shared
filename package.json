@@ -36,6 +36,8 @@
   },
   "devDependencies": {
     "@rpg-engine/shared": "^0.2.51",
-    "@types/mongoose": "^5.11.97"
+    "@types/mongoose": "^5.11.97",
+    "compress-json": "^2.0.1",
+    "jszip": "^3.10.0"
   }
 }
