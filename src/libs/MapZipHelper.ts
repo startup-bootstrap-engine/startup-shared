@@ -1,6 +1,4 @@
 const { compress, decompress } = require("compress-json");
-const fetch = require("node-fetch");
-const File = require("file-class");
 const fs = require("fs");
 const JSZip = require("jszip");
 
