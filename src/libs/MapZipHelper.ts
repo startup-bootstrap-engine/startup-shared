@@ -1,4 +1,6 @@
-const {compress, decompress} = require("compress-json");
+const { compress, decompress } = require("compress-json");
+const fetch = require("node-fetch");
+const File = require("file-class");
 const fs = require("fs");
 const JSZip = require("jszip");
 
@@ -11,37 +13,23 @@ export class MapZipHelper {
     await fs.createWriteStream(`${pathToSave}/${mapName}.zip`).write(buffer);
   }
 
-  //   async readZip(fileName, filePath): Promise<object> {
-  //     const data = await (await fetch(filePath)).blob();
+  async readZip(fileName, filePath): Promise<object> {
+    const data = await (await fetch(filePath)).blob();
 
-  //     const file = new File([data], fileName, { type: "application/zip" });
-
-  //     const zipRead = new JSZip();
-
-  //     const content = await zipRead.loadAsync(file);
-
-  //     if (content.files && content.files[`${fileName}.txt`]) {
-  //       //@ts-ignore
-  //       const txtFile = content.files[`${fileName}.txt`]._data.compressedContent;
-  //       const bufferedString = Buffer.from(txtFile).toString();
-  //       const fileContent = decompress(JSON.parse(bufferedString));
-  //       return fileContent;
-  //     }
-
-  //     return {};
-  //   }
-
-  static async readZip(fileName, filePath): Promise<object> {
-    const data = await fs.readFileSync(filePath);
+    const file = new File([data], fileName, { type: "application/zip" });
 
     const zipRead = new JSZip();
+    const content = await zipRead.loadAsync(file);
 
-    const content = await zipRead.loadAsync(data);
-    const fileBuffer = await content.file(`${fileName}.txt`)!.async("uint8array");
-    const bufferedString = Buffer.from(fileBuffer.buffer).toString();
-    const fileContent = decompress(JSON.parse(bufferedString));
+    if (content.files && content.files[`${fileName}.txt`]) {
+      //@ts-ignore
+      const txtFile = content.files[`${fileName}.txt`]._data.compressedContent;
+      const bufferedString = Buffer.from(txtFile).toString();
+      const fileContent = decompress(JSON.parse(bufferedString));
+      return fileContent;
+    }
 
-    return fileContent;
+    return {};
   }
 }
 
