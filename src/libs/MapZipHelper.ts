@@ -1,9 +1,10 @@
-import { compress, decompress } from "compress-json";
-import fs = require("fs");
-import JSZip = require("jszip");
+const compress = require("compress-json");
+const decompress = require("compress-json");
+const fs = require("fs");
+const JSZip = require("jszip");
 
-class MapZipHelper {
-  public async createZipMap(mapName: string, mapObject: object, pathToSave: string): Promise<void> {
+export class MapZipHelper {
+  static async createZipMap(mapName: string, mapObject: object, pathToSave: string): Promise<void> {
     const data = compress(mapObject);
     const zip = new JSZip();
     zip.file(`${mapName}.txt`, JSON.stringify(data));
@@ -31,7 +32,7 @@ class MapZipHelper {
   //     return {};
   //   }
 
-  public async readZip(fileName, filePath): Promise<object> {
+  static async readZip(fileName, filePath): Promise<object> {
     const data = await fs.readFileSync(filePath);
 
     const zipRead = new JSZip();
