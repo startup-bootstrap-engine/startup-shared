@@ -20,6 +20,7 @@ export interface IUserEntity extends IResource {
 
 export interface IUserWallet {
   publicAddress: string;
+  networkId: number;
 }
 
 export interface IUserToken {
