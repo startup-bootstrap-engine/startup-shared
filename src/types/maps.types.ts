@@ -6,6 +6,7 @@ export interface IMap {
   tileHeight: number;
   imagePath: string;
   jsonPath: string;
+  zipPath: string;
   tilesetName: string;
 }
 
