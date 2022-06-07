@@ -15,6 +15,11 @@ export interface IUserEntity extends IResource {
   phone: string | null;
   unsubscribed: boolean;
   characters: ICharacter[];
+  wallet: IUserWallet;
+}
+
+export interface IUserWallet {
+  publicAddress: string;
 }
 
 export interface IUserToken {
