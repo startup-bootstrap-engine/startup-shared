@@ -99,6 +99,7 @@ export enum ItemSocketEvents {
   Unequip = "Unequip",
   Pickup = "Pickup",
   Drop = "Drop",
+  Use = "Use",
   GetItemInfo = "GetItemInfo",
   ReadItemInfo = "ReadItemInfo",
 }
@@ -135,4 +136,16 @@ export interface IItemInViewBasicInfo {
   id: string;
   x?: number;
   y?: number;
+}
+
+export const ActionsByItemType = {
+  "Equipment": [ItemSocketEvents.Equip, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
+  "Consumable": [ItemSocketEvents.Use, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
+  "CraftMaterial": [, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
+  "Other": [ItemSocketEvents.GetItemInfo],
+}
+
+interface IPayloadProps {  
+  item: IItem | null;
+  actionType: ItemSocketEvents| string;  
 }
