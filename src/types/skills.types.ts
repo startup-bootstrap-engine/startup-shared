@@ -4,8 +4,7 @@ interface ISkillDetails {
   type: SkillType;
   level: number;
   skillPoints: number;
-  skillPointsToNextLevel?: number; //calculated dynamically
-  nextLevelRatio?: number; //calculated dynamically
+  skillPointsToNextLevel: number;
 }
 
 export interface ISkill extends IResource {
