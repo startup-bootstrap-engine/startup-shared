@@ -1,6 +1,6 @@
 import { IResource } from "./resource.types";
 
-interface ISkillDetails {
+export interface ISkillDetails {
   type: SkillType;
   level: number;
   skillPoints: number;
