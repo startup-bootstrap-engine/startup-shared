@@ -139,13 +139,13 @@ export interface IItemInViewBasicInfo {
 }
 
 export const ActionsByItemType = {
-  "Equipment": [ItemSocketEvents.Equip, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
-  "Consumable": [ItemSocketEvents.Use, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
-  "CraftMaterial": [, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
-  "Other": [ItemSocketEvents.GetItemInfo],
-}
+  Equipment: [ItemSocketEvents.Equip, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
+  Consumable: [ItemSocketEvents.Use, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
+  CraftMaterial: [, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
+  Other: [ItemSocketEvents.GetItemInfo],
+};
 
-interface IPayloadProps {  
+export interface IPayloadProps {
   item: IItem | null;
-  actionType: ItemSocketEvents| string;  
+  actionType: ItemSocketEvents | string;
 }
