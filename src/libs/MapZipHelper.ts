@@ -1,6 +1,6 @@
-const { compress } = require("compress-json");
-const fs = require("fs");
-const JSZip = require("jszip");
+import { compress } from "compress-json";
+import fs from "fs-extra";
+import JSZip from "jszip";
 
 export const createZipMap = async (mapName: string, mapObject: object, pathToSave: string): Promise<void> => {
   const data = compress(mapObject);
