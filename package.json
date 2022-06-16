@@ -32,12 +32,12 @@
   "dependencies": {
     "husky": "^4.3.0",
     "prettier": "^2.2.1",
-    "typescript": "^4.6.4"
+    "typescript": "^4.6.4",
+    "compress-json": "^2.0.1",
+    "jszip": "^3.10.0"
   },
   "devDependencies": {
     "@rpg-engine/shared": "^0.2.51",
-    "@types/mongoose": "^5.11.97",
-    "compress-json": "^2.0.1",
-    "jszip": "^3.10.0"
+    "@types/mongoose": "^5.11.97"
   }
 }
