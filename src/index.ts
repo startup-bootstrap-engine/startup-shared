@@ -3,7 +3,6 @@ export * from "./constants/npc.constants";
 export * from "./constants/socket.constants";
 export * from "./constants/world.constants";
 export * from "./libs/GridHelper";
-export * from "./libs/MapZipHelper";
 export * from "./libs/MathHelper";
 export * from "./libs/SocketHelper";
 export * from "./libs/TextHelper";
