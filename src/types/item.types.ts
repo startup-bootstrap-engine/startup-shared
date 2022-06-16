@@ -83,7 +83,7 @@ export interface IItem extends IResource {
 }
 
 interface IItemContainerSlots {
-  [slot: number]: IItem;
+  [slot: number]: IItem | null;
 }
 
 export interface IItemContainer extends IResource {
