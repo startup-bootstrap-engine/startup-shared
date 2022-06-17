@@ -14,7 +14,6 @@ export * from "./types/auth.types";
 export * from "./types/battle.types";
 export * from "./types/character.types";
 export * from "./types/chat.types";
-export * from "./types/container.types";
 export * from "./types/device.types";
 export * from "./types/env.types";
 export * from "./types/googleOAuth.types";
