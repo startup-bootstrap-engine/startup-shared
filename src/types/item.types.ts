@@ -2,6 +2,39 @@ import { ICharacter } from "./character.types";
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
 
+export interface IItem extends IResource {
+  tiledId?: number;
+  owner?: ICharacter | string;
+  type: ItemType;
+  subType: ItemSubType;
+  name: string;
+  description: string; // custom item description
+  fullDescription: string; //virtual mongoose field, that is dynamically generated based on item attack, defense, weight, etc.
+  key: string;
+  textureAtlas: string;
+  texturePath: string;
+  textureKey: string;
+  attack?: number;
+  defense?: number;
+  weight: number;
+  allowedEquipSlotType: ItemSlotType[];
+  isEquipable: boolean; // can we add it to our equipment slots?
+  equipSlotType?: ItemSlotType; // for equippables only
+  isStackable: boolean;
+  maxStackSize: number; //if isStackable only
+  stackQty?: number;
+  isUsable: boolean;
+  usableEffect?: string; // if isUsable only. This is a key that we'll use to check which effect event to trigger.
+  isStorable: boolean; // if false, we cannot add it to a container/inventory
+  x?: number; //x,y, scene for items on the map only
+  y?: number;
+  scene?: string;
+  layer?: MapLayers;
+  isSolid: boolean;
+  isItemContainer?: boolean;
+  itemContainer?: string; // is isContainer, then this is the container reference.
+}
+
 export enum ItemType {
   Weapon = "Weapon",
   Armor = "Armor",
@@ -49,53 +82,6 @@ export enum ItemSlotType {
   Inventory = "Inventory",
 }
 
-export interface IItem extends IResource {
-  tiledId?: number;
-  owner?: ICharacter | string;
-  type: ItemType;
-  subType: ItemSubType;
-  name: string;
-  description: string; // custom item description
-  fullDescription: string; //virtual mongoose field, that is dynamically generated based on item attack, defense, weight, etc.
-  key: string;
-  textureAtlas: string;
-  texturePath: string;
-  textureKey: string;
-  attack?: number;
-  defense?: number;
-  weight: number;
-  allowedEquipSlotType: ItemSlotType[];
-  isEquipable: boolean; // can we add it to our equipment slots?
-  equipSlotType?: ItemSlotType; // for equippables only
-  isStackable: boolean;
-  maxStackSize: number; //if isStackable only
-  stackQty?: number;
-  isUsable: boolean;
-  usableEffect?: string; // if isUsable only. This is a key that we'll use to check which effect event to trigger.
-  isStorable: boolean; // if false, we cannot add it to a container/inventory
-  x?: number; //x,y, scene for items on the map only
-  y?: number;
-  scene?: string;
-  layer?: MapLayers;
-  isSolid: boolean;
-  isItemContainer?: boolean;
-  itemContainer?: string; // is isContainer, then this is the container reference.
-}
-
-interface IItemContainerSlots {
-  [slot: number]: IItem;
-}
-
-export interface IItemContainer extends IResource {
-  parentItem: string;
-  owner?: string;
-  name?: string;
-  slotQty: number;
-  slots: IItemContainerSlots;
-  allowedItemTypes?: ItemType[];
-  isEmpty: boolean;
-}
-
 export enum ItemSocketEvents {
   Update = "Update",
   Look = "Look",
@@ -106,6 +92,9 @@ export enum ItemSocketEvents {
   Use = "Use",
   GetItemInfo = "GetItemInfo",
   ReadItemInfo = "ReadItemInfo",
+  ContainerOpen = "ContainerOpen",
+  ContainerRead = "ContainerRead",
+  ContainerTransfer = "ContainerTransfer",
 }
 
 export interface IGetItemInfo {
