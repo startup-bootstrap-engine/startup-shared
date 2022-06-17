@@ -46,7 +46,9 @@ export interface IItemDrop {
   };
 }
 
-export interface IItemContainerRead extends IItemContainer {}
+export interface IItemContainerRead {
+  itemContainer: IItemContainer;
+}
 
 export interface IItemContainerProps {
   openedContainers: Set<string>;
