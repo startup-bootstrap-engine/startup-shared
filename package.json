@@ -1,6 +1,6 @@
 {
   "name": "@rpg-engine/shared",
-  "version": "0.3.4",
+  "version": "0.3.13",
   "description": "> TODO: description",
   "author": "Joao Paulo Furtado <joaopaulofurtado@live.com>",
   "homepage": "",
@@ -36,8 +36,6 @@
   },
   "devDependencies": {
     "@rpg-engine/shared": "^0.2.51",
-    "@types/mongoose": "^5.11.97",
-    "compress-json": "^2.0.1",
-    "jszip": "^3.10.0"
+    "@types/mongoose": "^5.11.97"
   }
 }
