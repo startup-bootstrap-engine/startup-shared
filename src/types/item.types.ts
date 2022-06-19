@@ -96,6 +96,7 @@ export enum ItemSocketEvents {
   ContainerOpen = "ContainerOpen",
   ContainerRead = "ContainerRead",
   ContainerTransfer = "ContainerTransfer",
+  EquipmentAndInventoryUpdate = "EquipmentAndInventoryUpdate"
 }
 
 export interface IGetItemInfo {
@@ -142,4 +143,20 @@ export const ActionsByItemType = {
 export interface IPayloadProps {
   item: IItem | null;
   actionType: ItemSocketEvents | string;
+}
+
+
+export interface IEquipItemPayload {
+  itemId: string;
+  targetSlot: ItemSlotType
+}
+
+export interface IUnequipItemPayload {
+  itemId: string;
+}
+
+export interface IEquipmentAndInventoryUpdatePayload
+{
+  equipment: object
+  inventory: object
 }
