@@ -33,6 +33,7 @@ export interface IItem extends IResource {
   isSolid: boolean;
   isItemContainer?: boolean;
   itemContainer?: string; // is isContainer, then this is the container reference.
+  generateContainerSlots: number;
 }
 
 export enum ItemType {
