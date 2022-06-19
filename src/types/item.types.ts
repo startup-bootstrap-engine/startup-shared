@@ -66,7 +66,8 @@ export enum ItemSubType {
   Staff = "Staff",
   Sword = "Sword",
   Other = "Other",
-  Body = "Body",
+  DeadBody = "DeadBody",
+  Dagger = "Dagger",
 }
 
 export enum ItemSlotType {
