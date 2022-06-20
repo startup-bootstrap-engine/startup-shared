@@ -2,53 +2,6 @@ import { ICharacter } from "./character.types";
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
 
-export enum ItemType {
-  Weapon = "Weapon",
-  Armor = "Armor",
-  Accessory = "Accessory",
-  Jewelry = "Jewelry",
-  Consumable = "Consumable",
-  CraftMaterial = "CraftMaterial",
-  Quest = "Quest",
-  Information = "Information",
-  Tool = "Tool",
-  Container = "Container",
-  Other = "Other",
-}
-
-export enum ItemSubType {
-  Accessory = "Accessory",
-  Armor = "Armor",
-  Axe = "Axe",
-  Boot = "Boot",
-  Bow = "Bow",
-  Food = "Food",
-  Glove = "Glove",
-  Helmet = "Helmet",
-  Magic = "Magic",
-  Potion = "Potion",
-  Shield = "Shield",
-  Spear = "Spear",
-  Staff = "Staff",
-  Sword = "Sword",
-  Other = "Other",
-  Body = "Body",
-}
-
-export enum ItemSlotType {
-  Head = "Head",
-  Neck = "Neck",
-  Torso = "Torso",
-  LeftHand = "LeftHand",
-  RightHand = "RightHand",
-  Waist = "Waist",
-  Legs = "Legs",
-  Feet = "Feet",
-  Ring = "Ring",
-  Accessory = "Accessory",
-  Inventory = "Inventory",
-}
-
 export interface IItem extends IResource {
   tiledId?: number;
   owner?: ICharacter | string;
@@ -80,20 +33,55 @@ export interface IItem extends IResource {
   isSolid: boolean;
   isItemContainer?: boolean;
   itemContainer?: string; // is isContainer, then this is the container reference.
+  generateContainerSlots: number;
 }
 
-interface IItemContainerSlots {
-  [slot: number]: IItem;
+export enum ItemType {
+  Weapon = "Weapon",
+  Armor = "Armor",
+  Accessory = "Accessory",
+  Jewelry = "Jewelry",
+  Consumable = "Consumable",
+  CraftMaterial = "CraftMaterial",
+  Quest = "Quest",
+  Information = "Information",
+  Tool = "Tool",
+  Container = "Container",
+  Other = "Other",
 }
 
-export interface IItemContainer extends IResource {
-  parentItem: string;
-  owner?: string;
-  name?: string;
-  slotQty: number;
-  slots: IItemContainerSlots;
-  allowedItemTypes?: ItemType[];
-  isEmpty: boolean;
+export enum ItemSubType {
+  Accessory = "Accessory",
+  Armor = "Armor",
+  Axe = "Axe",
+  Boot = "Boot",
+  Bow = "Bow",
+  Food = "Food",
+  Glove = "Glove",
+  Helmet = "Helmet",
+  Magic = "Magic",
+  Potion = "Potion",
+  Shield = "Shield",
+  Spear = "Spear",
+  Staff = "Staff",
+  Sword = "Sword",
+  Other = "Other",
+  DeadBody = "DeadBody",
+  Dagger = "Dagger",
+}
+
+export enum ItemSlotType {
+  Head = "Head",
+  Neck = "Neck",
+  Torso = "Torso",
+  LeftHand = "LeftHand",
+  RightHand = "RightHand",
+  Waist = "Waist",
+  Legs = "Legs",
+  Feet = "Feet",
+  Ring = "Ring",
+  Accessory = "Accessory",
+  Inventory = "Inventory",
 }
 
 export enum ItemSocketEvents {
@@ -106,6 +94,10 @@ export enum ItemSocketEvents {
   Use = "Use",
   GetItemInfo = "GetItemInfo",
   ReadItemInfo = "ReadItemInfo",
+  ContainerOpen = "ContainerOpen",
+  ContainerRead = "ContainerRead",
+  ContainerTransfer = "ContainerTransfer",
+  EquipmentAndInventoryUpdate = "EquipmentAndInventoryUpdate",
 }
 
 export interface IGetItemInfo {
@@ -152,4 +144,18 @@ export const ActionsByItemType = {
 export interface IPayloadProps {
   item: IItem | null;
   actionType: ItemSocketEvents | string;
+}
+
+export interface IEquipItemPayload {
+  itemId: string;
+  targetSlot: ItemSlotType;
+}
+
+export interface IUnequipItemPayload {
+  itemId: string;
+}
+
+export interface IEquipmentAndInventoryUpdatePayload {
+  equipment: object;
+  inventory: object;
 }
