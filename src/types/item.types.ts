@@ -1,4 +1,5 @@
 import { ICharacter } from "./character.types";
+import { IItemContainer } from "./itemContainer.types";
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
 
@@ -32,7 +33,7 @@ export interface IItem extends IResource {
   layer?: MapLayers;
   isSolid: boolean;
   isItemContainer?: boolean;
-  itemContainer?: string; // is isContainer, then this is the container reference.
+  itemContainer?: string | IItemContainer; // is isContainer, then this is the container reference.
   generateContainerSlots?: number;
 }
 
