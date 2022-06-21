@@ -1,4 +1,5 @@
 import { ICharacter } from "./character.types";
+import { IItemContainer } from "./itemContainer.types";
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
 
@@ -97,6 +98,7 @@ export enum ItemSocketEvents {
   ContainerOpen = "ContainerOpen",
   ContainerRead = "ContainerRead",
   ContainerTransfer = "ContainerTransfer",
+  EquipmentAndInventoryUpdate = "EquipmentAndInventoryUpdate",
 }
 
 export interface IGetItemInfo {
@@ -138,9 +140,26 @@ export const ActionsByItemType = {
   Consumable: [ItemSocketEvents.Use, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
   CraftMaterial: [, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
   Other: [ItemSocketEvents.GetItemInfo],
+  EquipmenSetItems: [ItemSocketEvents.Unequip, ItemSocketEvents.GetItemInfo],
+  EquipmenSetContainer: [ ItemSocketEvents.Look, ItemSocketEvents.Unequip, ItemSocketEvents.GetItemInfo],
 };
 
 export interface IPayloadProps {
   item: IItem | null;
   actionType: ItemSocketEvents | string;
 }
+
+export interface IEquipItemPayload {
+  itemId: string;
+  targetSlot: ItemSlotType;
+}
+
+export interface IUnequipItemPayload {
+  itemId: string;
+}
+
+export interface IEquipmentAndInventoryUpdatePayload {
+  equipment: object;
+  inventory: object;
+}
+
