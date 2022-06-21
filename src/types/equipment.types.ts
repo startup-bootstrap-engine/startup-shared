@@ -12,6 +12,6 @@ export interface IEquipementSet extends IResource {
   legs?: IItem | string;
   boot?: IItem | string;
   armor?: IItem | string;
-  acessory?: IItem | string;
+  accessory?: IItem | string;
   inventory: IItem | string;
 }

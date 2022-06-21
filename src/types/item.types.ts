@@ -141,7 +141,7 @@ export const ActionsByItemType = {
   CraftMaterial: [, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
   Other: [ItemSocketEvents.GetItemInfo],
   EquipmenSetItems: [ItemSocketEvents.Unequip, ItemSocketEvents.GetItemInfo],
-  EquipmenSetContainer: [ ItemSocketEvents.Look, ItemSocketEvents.Unequip, ItemSocketEvents.GetItemInfo],
+  EquipmenSetContainer: [ItemSocketEvents.Look, ItemSocketEvents.Unequip, ItemSocketEvents.GetItemInfo],
 };
 
 export interface IPayloadProps {
@@ -162,4 +162,3 @@ export interface IEquipmentAndInventoryUpdatePayload {
   equipment: object;
   inventory: object;
 }
-
