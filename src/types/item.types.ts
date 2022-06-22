@@ -1,4 +1,5 @@
 import { ICharacter } from "./character.types";
+import { IEquipementSet } from "./equipment.types";
 import { IItemContainer } from "./itemContainer.types";
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
@@ -159,6 +160,6 @@ export interface IUnequipItemPayload {
 }
 
 export interface IEquipmentAndInventoryUpdatePayload {
-  equipment: object;
-  inventory: object;
+  equipment: IEquipementSet;
+  inventory: IItemContainer;
 }
