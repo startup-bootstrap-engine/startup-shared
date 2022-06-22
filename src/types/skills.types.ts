@@ -37,12 +37,12 @@ export interface ISkill extends IResource {
   cooking: ISkillDetails;
   alchemy: ISkillDetails;
 
-  // Magic skills
-  ice: ISkillDetails;
-  fire: ISkillDetails;
-  earth: ISkillDetails;
-  air: ISkillDetails;
-  water: ISkillDetails;
+  // Magic skills (will be introduced later!)
+  // ice: ISkillDetails;
+  // fire: ISkillDetails;
+  // earth: ISkillDetails;
+  // air: ISkillDetails;
+  // water: ISkillDetails;
 }
 
 export enum SkillType {
