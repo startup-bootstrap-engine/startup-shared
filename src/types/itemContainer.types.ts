@@ -16,7 +16,7 @@ export interface IItemContainer extends IResource {
 }
 
 export interface IItemContainerOpen {
-  containerId: string;
+  itemId: string;
 }
 
 export interface IItemTransfer {
