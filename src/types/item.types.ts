@@ -70,6 +70,7 @@ export enum ItemSubType {
   Other = "Other",
   DeadBody = "DeadBody",
   Dagger = "Dagger",
+  Mace = "Mace",
 }
 
 export enum ItemSlotType {

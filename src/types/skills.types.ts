@@ -29,6 +29,7 @@ export interface ISkill extends IResource {
   axe: ISkillDetails;
   distance: ISkillDetails;
   shielding: ISkillDetails;
+  dagger: ISkillDetails;
 
   // Crafting skills
   fishing: ISkillDetails;
