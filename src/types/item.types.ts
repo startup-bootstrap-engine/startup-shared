@@ -103,6 +103,19 @@ export enum ItemSocketEvents {
   EquipmentAndInventoryUpdate = "EquipmentAndInventoryUpdate",
 }
 
+export const ItemSocketEventsDisplayLabels = {
+  [ItemSocketEvents.GetItemInfo]: "Look",
+  [ItemSocketEvents.ContainerTransfer]: "Transfer",
+  [ItemSocketEvents.Equip]: "Equip",
+  [ItemSocketEvents.Unequip]: "Unequip",
+  [ItemSocketEvents.Pickup]: "Pickup",
+  [ItemSocketEvents.Drop]: "Drop",
+  [ItemSocketEvents.Use]: "Use",
+  [ItemSocketEvents.ContainerOpen]: "Open",  
+  [ItemSocketEvents.ReadItemInfo]: "Inspect", 
+  [ItemSocketEvents.ContainerRead]: "Read", 
+}
+
 export interface IGetItemInfo {
   id: string;
   fields: string[];
