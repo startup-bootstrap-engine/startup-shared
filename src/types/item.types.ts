@@ -103,7 +103,10 @@ export enum ItemSocketEvents {
   EquipmentAndInventoryUpdate = "EquipmentAndInventoryUpdate",
 }
 
-export const ItemSocketEventsDisplayLabels = {
+interface IStringIndex {
+  [key: string]: any
+}
+export const ItemSocketEventsDisplayLabels:IStringIndex = {
   [ItemSocketEvents.GetItemInfo]: "Look",
   [ItemSocketEvents.ContainerTransfer]: "Transfer",
   [ItemSocketEvents.Equip]: "Equip",
@@ -151,12 +154,12 @@ export interface IItemInViewBasicInfo {
 }
 
 export const ActionsByItemType = {
-  Equipment: [ItemSocketEvents.Equip, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
-  Consumable: [ItemSocketEvents.Use, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
-  CraftMaterial: [, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
-  Other: [ItemSocketEvents.GetItemInfo],
-  EquipmenSetItems: [ItemSocketEvents.Unequip, ItemSocketEvents.GetItemInfo],
-  EquipmenSetContainer: [ItemSocketEvents.Look, ItemSocketEvents.Unequip, ItemSocketEvents.GetItemInfo],
+  Equipment: [ItemSocketEvents.Equip, ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Drop],
+  Consumable: [ItemSocketEvents.Use, ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo,ItemSocketEvents.Drop],
+  CraftMaterial: [, ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Drop],
+  Other: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo],
+  EquipmenSetItems: [ItemSocketEvents.Unequip, ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo],
+  EquipmenSetContainer: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Unequip, ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo],
 };
 
 export interface IPayloadProps {
