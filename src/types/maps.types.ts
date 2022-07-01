@@ -11,6 +11,7 @@ interface IMapMetadataTileset {
 }
 
 export interface IMapMetaData {
+  name: string;
   hash: string;
   layers: string[];
   tileWidth: number;

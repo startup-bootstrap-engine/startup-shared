@@ -104,9 +104,9 @@ export enum ItemSocketEvents {
 }
 
 interface IStringIndex {
-  [key: string]: any
+  [key: string]: any;
 }
-export const ItemSocketEventsDisplayLabels:IStringIndex = {
+export const ItemSocketEventsDisplayLabels: IStringIndex = {
   [ItemSocketEvents.GetItemInfo]: "Look",
   [ItemSocketEvents.ContainerTransfer]: "Transfer",
   [ItemSocketEvents.Equip]: "Equip",
@@ -114,10 +114,10 @@ export const ItemSocketEventsDisplayLabels:IStringIndex = {
   [ItemSocketEvents.Pickup]: "Pickup",
   [ItemSocketEvents.Drop]: "Drop",
   [ItemSocketEvents.Use]: "Use",
-  [ItemSocketEvents.ContainerOpen]: "Open",  
-  [ItemSocketEvents.ReadItemInfo]: "Inspect", 
-  [ItemSocketEvents.ContainerRead]: "Read", 
-}
+  [ItemSocketEvents.ContainerOpen]: "Open",
+  [ItemSocketEvents.ReadItemInfo]: "Inspect",
+  [ItemSocketEvents.ContainerRead]: "Read",
+};
 
 export interface IGetItemInfo {
   id: string;
@@ -154,8 +154,18 @@ export interface IItemInViewBasicInfo {
 }
 
 export const ActionsByItemType = {
-  Equipment: [ItemSocketEvents.Equip, ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Drop],
-  Consumable: [ItemSocketEvents.Use, ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo,ItemSocketEvents.Drop],
+  Equipment: [
+    ItemSocketEvents.Equip,
+    ItemSocketEvents.GetItemInfo,
+    ItemSocketEvents.ReadItemInfo,
+    ItemSocketEvents.Drop,
+  ],
+  Consumable: [
+    ItemSocketEvents.Use,
+    ItemSocketEvents.GetItemInfo,
+    ItemSocketEvents.ReadItemInfo,
+    ItemSocketEvents.Drop,
+  ],
   CraftMaterial: [, ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Drop],
   Other: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo],
   EquipmenSetItems: [ItemSocketEvents.Unequip, ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo],
