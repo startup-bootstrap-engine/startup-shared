@@ -5,7 +5,7 @@ export enum MapLayers {
   OverCharacter = 3,
 }
 
-interface IMapMetadataTileset {
+export interface IMapMetadataTileset {
   name: string;
   imagePath: string;
 }
