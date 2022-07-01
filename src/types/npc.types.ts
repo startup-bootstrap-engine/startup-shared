@@ -43,6 +43,7 @@ export interface INPC extends IResource {
   spawnIntervalMin: number;
   nextSpawnTime: Date;
   fleeOnLowHealth: boolean;
+  experience: number;
 }
 
 export enum NPCTargetType {
