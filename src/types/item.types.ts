@@ -55,6 +55,7 @@ export enum ItemType {
 export enum ItemSubType {
   Accessory = "Accessory",
   Armor = "Armor",
+  Legs = "Legs",
   Axe = "Axe",
   Boot = "Boot",
   Bow = "Bow",
