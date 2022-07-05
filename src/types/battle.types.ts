@@ -12,7 +12,6 @@ export enum BattleEventType {
   Miss = "Miss",
   Block = "Block",
   Hit = "Hit",
-  LevelUp = "LevelUp",
 }
 
 export interface IBattleEventFromServer {
