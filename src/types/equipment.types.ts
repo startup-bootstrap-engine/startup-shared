@@ -15,3 +15,22 @@ export interface IEquipementSet extends IResource {
   accessory?: IItem | string;
   inventory: IItem | string;
 }
+
+export enum EquipmentSocketEvents {
+  Unequip = "Unequip",
+  ContainerOpen = "ContainerOpen",
+  ContainerRead = "ContainerRead",
+  GetEquipmentInfo = "GetEquipmentInfo",
+  ReadEquipmentInfo = "ReadEquipmentInfo",  
+  EquipmentUpdate = "EquipmentUpdate",
+}
+interface IStringIndex {
+  [key: string]: any;
+}
+export const EquipmentSocketEventsDisplayLabels: IStringIndex = {
+  [EquipmentSocketEvents.Unequip]: "Unequip",
+  [EquipmentSocketEvents.GetEquipmentInfo]: "Look",  
+  [EquipmentSocketEvents.ReadEquipmentInfo]: "Inspect",
+  [EquipmentSocketEvents.ContainerOpen]: "Open",  
+  [EquipmentSocketEvents.ContainerRead]: "Read",
+};
