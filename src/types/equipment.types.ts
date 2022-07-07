@@ -24,6 +24,11 @@ export enum EquipmentSocketEvents {
   ReadEquipmentInfo = "ReadEquipmentInfo",  
   EquipmentUpdate = "EquipmentUpdate",
 }
+
+export interface IEquipmentRead {
+  equipment: IEquipementSet;
+}
+
 interface IStringIndex {
   [key: string]: any;
 }
