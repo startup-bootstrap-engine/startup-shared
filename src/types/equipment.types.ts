@@ -21,7 +21,7 @@ export enum EquipmentSocketEvents {
   ContainerOpen = "ContainerOpen",
   ContainerRead = "ContainerRead",
   GetEquipmentInfo = "GetEquipmentInfo",
-  ReadEquipmentInfo = "ReadEquipmentInfo",  
+  ReadEquipmentInfo = "ReadEquipmentInfo",
   EquipmentUpdate = "EquipmentUpdate",
 }
 
@@ -34,8 +34,8 @@ interface IStringIndex {
 }
 export const EquipmentSocketEventsDisplayLabels: IStringIndex = {
   [EquipmentSocketEvents.Unequip]: "Unequip",
-  [EquipmentSocketEvents.GetEquipmentInfo]: "Look",  
+  [EquipmentSocketEvents.GetEquipmentInfo]: "Look",
   [EquipmentSocketEvents.ReadEquipmentInfo]: "Inspect",
-  [EquipmentSocketEvents.ContainerOpen]: "Open",  
+  [EquipmentSocketEvents.ContainerOpen]: "Open",
   [EquipmentSocketEvents.ContainerRead]: "Read",
 };

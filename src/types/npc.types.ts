@@ -44,7 +44,7 @@ export interface INPC extends IResource {
   nextSpawnTime: Date;
   fleeOnLowHealth: boolean;
   experience?: number;
-  xpToRelease?: { charId: number, xp: number }[];
+  xpToRelease?: { charId: number; xp: number }[];
   loots?: INPCLoot[];
 }
 
