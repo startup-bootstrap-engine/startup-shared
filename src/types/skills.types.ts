@@ -20,7 +20,6 @@ export interface ISkillEventFromServer {
   skill?: string;
 }
 
-
 export interface ISkillDetails {
   type: SkillType;
   level: number;
