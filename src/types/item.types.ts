@@ -191,3 +191,10 @@ export interface IEquipmentAndInventoryUpdatePayload {
   equipment: IEquipementSet;
   inventory: IItemContainer;
 }
+
+
+export enum InventorySocketEvents {
+  ContainerOpen = "ContainerOpen",
+  ContainerRead = "ContainerRead",
+  ContainerTransfer = "ContainerTransfer"  
+}
