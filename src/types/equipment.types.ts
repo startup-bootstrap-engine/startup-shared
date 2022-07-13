@@ -18,8 +18,8 @@ export interface IEquipmentSet extends IResource {
 
 export enum EquipmentSocketEvents {
   Unequip = "Unequip",
-  ContainerOpen = "ContainerOpen",
-  ContainerRead = "ContainerRead",
+  ContainerOpen = "EquipmentOpen",
+  ContainerRead = "EquipmentRead",
   GetEquipmentInfo = "GetEquipmentInfo",
   ReadEquipmentInfo = "ReadEquipmentInfo",
   EquipmentUpdate = "EquipmentUpdate",
