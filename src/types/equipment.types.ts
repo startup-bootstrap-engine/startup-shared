@@ -2,7 +2,7 @@ import { ICharacter } from "./character.types";
 import { IItem } from "./item.types";
 import { IResource } from "./resource.types";
 
-export interface IEquipementSet extends IResource {
+export interface IEquipmentSet extends IResource {
   owner?: ICharacter | string;
   head?: IItem | string;
   neck?: IItem | string;
@@ -13,7 +13,7 @@ export interface IEquipementSet extends IResource {
   boot?: IItem | string;
   armor?: IItem | string;
   accessory?: IItem | string;
-  inventory: IItem | string;
+  inventory?: IItem | string;
 }
 
 export enum EquipmentSocketEvents {
@@ -26,7 +26,7 @@ export enum EquipmentSocketEvents {
 }
 
 export interface IEquipmentRead {
-  equipment: IEquipementSet;
+  equipment: IEquipmentSet;
 }
 
 interface IStringIndex {
