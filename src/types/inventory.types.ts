@@ -1,13 +1,9 @@
-import { ICharacter } from "./character.types";
-import { IEquipementSet } from "./equipment.types";
 import { IItemContainer } from "./itemContainer.types";
-import { MapLayers } from "./maps.types";
-import { IResource } from "./resource.types";
 
 export enum InventorySocketEvents {
   ContainerOpen = "InventoryOpen",
   ContainerRead = "InventoryRead",
-  ContainerTransfer = "ContainerTransfer"  
+  ContainerTransfer = "ContainerTransfer",
 }
 
 interface IStringIndex {
