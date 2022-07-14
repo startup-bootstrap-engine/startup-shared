@@ -6,8 +6,9 @@ interface IItemContainerSlots {
 }
 
 export interface IItemContainer extends IResource {
-  parentItem: string;
   owner?: string;
+  isOwnerRestricted: boolean;
+  parentItem: string;
   name?: string;
   slotQty: number;
   slots: IItemContainerSlots;
