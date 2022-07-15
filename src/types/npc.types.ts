@@ -120,4 +120,5 @@ export interface INPCStopDialog {
 export interface INPCLoot {
   itemBlueprintKey: string;
   chance: number;
+  quantity: number;
 }
