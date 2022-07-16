@@ -8,7 +8,6 @@ export enum MapLayers {
 
 export interface IMapMetadataTileset {
   name: string;
-  imagePath: string;
 }
 
 export interface IMapMetaData {
