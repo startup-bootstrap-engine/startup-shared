@@ -3,6 +3,7 @@ export enum MapLayers {
   OverGround = 1,
   Character = 2,
   OverCharacter = 3,
+  Roof = 4,
 }
 
 export interface IMapMetadataTileset {
@@ -19,4 +20,4 @@ export interface IMapMetaData {
   tilesets: IMapMetadataTileset[];
 }
 
-export const MAP_LAYERS = ["ground", "over-ground", "character", "over-character"];
+export const MAP_LAYERS = ["ground", "over-ground", "character", "over-character", "roof"];
