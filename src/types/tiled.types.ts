@@ -138,4 +138,5 @@ export const TiledLayerNames = {
   1: "over-ground",
   2: "character",
   3: "over-character",
+  4: "roof",
 };
