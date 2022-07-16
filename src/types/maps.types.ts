@@ -17,6 +17,8 @@ export interface IMapMetaData {
   tileWidth: number;
   tileHeight: number;
   tilesets: IMapMetadataTileset[];
+  width: number;
+  height: number;
 }
 
 export const MAP_LAYERS = ["ground", "over-ground", "character", "over-character", "roof"];
