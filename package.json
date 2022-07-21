@@ -1,7 +1,7 @@
 {
   "name": "@rpg-engine/shared",
-  "version": "0.3.57",
-  "description": "> TODO: description",
+  "version": "0.3.62",
+  "description": "Types shared across our API and client",
   "author": "Joao Paulo Furtado <joaopaulofurtado@live.com>",
   "homepage": "",
   "license": "ISC",
