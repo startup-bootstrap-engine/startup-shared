@@ -22,3 +22,7 @@ export interface IMapMetaData {
 }
 
 export const MAP_LAYERS = ["ground", "over-ground", "character", "over-character", "roof"];
+
+export enum MapSocketEvents {
+  ChangeMap = "ChangeMap",
+}
