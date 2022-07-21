@@ -1,6 +1,6 @@
 {
   "name": "@rpg-engine/shared",
-  "version": "0.3.62",
+  "version": "0.3.63",
   "description": "Types shared across our API and client",
   "author": "Joao Paulo Furtado <joaopaulofurtado@live.com>",
   "homepage": "",
