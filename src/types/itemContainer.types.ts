@@ -6,13 +6,20 @@ interface IItemContainerSlots {
 }
 
 export interface IItemContainer extends IResource {
-  parentItem: string;
   owner?: string;
+  isOwnerRestricted?: boolean;
+  parentItem: string | IItem;
   name?: string;
   slotQty: number;
   slots: IItemContainerSlots;
   allowedItemTypes?: ItemType[];
   isEmpty: boolean;
+  totalItemsQty: number;
+  itemIds: string[];
+  emptySlotsQty: number;
+  firstAvailableSlot: IItem | null;
+  firstAvailableSlotId: number | null;
+
 }
 
 export interface IItemContainerOpen {

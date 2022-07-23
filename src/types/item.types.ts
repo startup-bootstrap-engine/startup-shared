@@ -21,7 +21,6 @@ export interface IItem extends IResource {
   weight: number;
   allowedEquipSlotType: ItemSlotType[];
   isEquipable: boolean; // can we add it to our equipment slots?
-  equipSlotType?: ItemSlotType; // for equippables only
   isStackable: boolean;
   maxStackSize: number; //if isStackable only
   stackQty?: number;
@@ -33,9 +32,10 @@ export interface IItem extends IResource {
   scene?: string;
   layer?: MapLayers;
   isSolid: boolean;
-  isItemContainer?: boolean;
+  isItemContainer: boolean;
   itemContainer?: string | IItemContainer; // is isContainer, then this is the container reference.
   generateContainerSlots?: number;
+  decayTime?: Date;
 }
 
 export enum ItemType {

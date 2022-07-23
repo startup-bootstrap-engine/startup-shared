@@ -1,5 +1,8 @@
+import { StringMappingType } from "typescript";
 import { AnimationDirection } from "./animation.types";
 import { EntityAttackType, EntityType } from "./entity.types";
+import { IEquipementSet } from "./equipment.types";
+import { IItem } from "./item.types";
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
 import { ISkill } from "./skills.types";
@@ -15,6 +18,8 @@ export interface ICharacter extends IResource {
   maxMana: number;
   x: number;
   y: number;
+  initialX: number;
+  initialY: number;
   direction: AnimationDirection;
   class: CharacterClass;
   gender: CharacterGender;
@@ -24,8 +29,13 @@ export interface ICharacter extends IResource {
   scene: string;
   initialScene: string;
   channelId: string;
+  otherEntitiesInView: any;
   speed: number;
+  baseSpeed: number;
+  weight: number;
+  maxWeight: number;
   movementIntervalMs: number;
+  baseMovementIntervalMs: number;
   lastMovement: Date;
   isBanned: boolean;
   penalty: number;
@@ -43,6 +53,10 @@ export interface ICharacter extends IResource {
     npcs: IViewElement;
     items: IViewElement;
   };
+  equipment?: IEquipementSet | string;
+  isAlive: boolean;
+  type: String;
+  inventory: Promise<IItem | string>;
 }
 
 export enum CharacterClass {
