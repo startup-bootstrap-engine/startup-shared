@@ -1,5 +1,7 @@
 import { AnimationDirection } from "./animation.types";
 import { EntityAttackType, EntityType } from "./entity.types";
+import { IEquipmentSet } from "./equipment.types";
+import { IItemContainer } from "./itemContainer.types";
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
 import { ISkill } from "./skills.types";
@@ -15,6 +17,8 @@ export interface ICharacter extends IResource {
   maxMana: number;
   x: number;
   y: number;
+  initialX: number;
+  initialY: number;
   direction: AnimationDirection;
   class: CharacterClass;
   gender: CharacterGender;
@@ -24,7 +28,11 @@ export interface ICharacter extends IResource {
   scene: string;
   initialScene: string;
   channelId: string;
+  baseSpeed: number;
   speed: number;
+  weight: number;
+  maxWeight: number;
+  baseMovementIntervalMs: number;
   movementIntervalMs: number;
   lastMovement: Date;
   isBanned: boolean;
@@ -38,11 +46,15 @@ export interface ICharacter extends IResource {
   } | null;
   attackType: EntityAttackType;
   attackIntervalSpeed: number;
+  equipement: IEquipmentSet;
   view: {
     characters: IViewElement;
     npcs: IViewElement;
     items: IViewElement;
   };
+  inventory: IItemContainer;
+  type: string;
+  isAlive: boolean;
 }
 
 export enum CharacterClass {
