@@ -19,11 +19,10 @@ export interface IItemContainer extends IResource {
   emptySlotsQty: number;
   firstAvailableSlot: IItem | null;
   firstAvailableSlotId: number | null;
-
 }
 
 export interface IItemContainerOpen {
-  containerId: string;
+  itemId: string;
 }
 
 export interface IItemTransfer {

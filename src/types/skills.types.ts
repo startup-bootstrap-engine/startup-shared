@@ -1,5 +1,26 @@
 import { IResource } from "./resource.types";
 
+export enum SkillSocketEvents {
+  ExperienceGain = "ExperienceGain",
+  SkillGain = "SkillGain",
+  ReadInfo = "ReadInfo",
+}
+
+export enum SkillEventType {
+  LevelUp = "LevelUp",
+  SkillLevelUp = "SkillLevelUp",
+}
+
+export interface ISkillEventFromServer {
+  characterId: string;
+  targetId: string;
+  targetType: "Character" | "NPC";
+  eventType: SkillEventType;
+  exp?: number;
+  level?: number;
+  skill?: string;
+}
+
 export interface ISkillDetails {
   type: SkillType;
   level: number;
@@ -29,6 +50,7 @@ export interface ISkill extends IResource {
   axe: ISkillDetails;
   distance: ISkillDetails;
   shielding: ISkillDetails;
+  dagger: ISkillDetails;
 
   // Crafting skills
   fishing: ISkillDetails;

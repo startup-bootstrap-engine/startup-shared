@@ -1,5 +1,5 @@
 import { ICharacter } from "./character.types";
-import { IEquipementSet } from "./equipment.types";
+import { IEquipmentSet } from "./equipment.types";
 import { IItemContainer } from "./itemContainer.types";
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
@@ -55,6 +55,7 @@ export enum ItemType {
 export enum ItemSubType {
   Accessory = "Accessory",
   Armor = "Armor",
+  Legs = "Legs",
   Axe = "Axe",
   Boot = "Boot",
   Bow = "Bow",
@@ -70,6 +71,7 @@ export enum ItemSubType {
   Other = "Other",
   DeadBody = "DeadBody",
   Dagger = "Dagger",
+  Mace = "Mace",
 }
 
 export enum ItemSlotType {
@@ -101,6 +103,22 @@ export enum ItemSocketEvents {
   ContainerTransfer = "ContainerTransfer",
   EquipmentAndInventoryUpdate = "EquipmentAndInventoryUpdate",
 }
+
+interface IStringIndex {
+  [key: string]: any;
+}
+export const ItemSocketEventsDisplayLabels: IStringIndex = {
+  [ItemSocketEvents.GetItemInfo]: "Look",
+  [ItemSocketEvents.ContainerTransfer]: "Transfer",
+  [ItemSocketEvents.Equip]: "Equip",
+  [ItemSocketEvents.Unequip]: "Unequip",
+  [ItemSocketEvents.Pickup]: "Pickup",
+  [ItemSocketEvents.Drop]: "Drop",
+  [ItemSocketEvents.Use]: "Use",
+  [ItemSocketEvents.ContainerOpen]: "Open",
+  [ItemSocketEvents.ReadItemInfo]: "Inspect",
+  [ItemSocketEvents.ContainerRead]: "Read",
+};
 
 export interface IGetItemInfo {
   id: string;
@@ -137,12 +155,22 @@ export interface IItemInViewBasicInfo {
 }
 
 export const ActionsByItemType = {
-  Equipment: [ItemSocketEvents.Equip, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
-  Consumable: [ItemSocketEvents.Use, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
-  CraftMaterial: [, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
-  Other: [ItemSocketEvents.GetItemInfo],
-  EquipmenSetItems: [ItemSocketEvents.Unequip, ItemSocketEvents.GetItemInfo],
-  EquipmenSetContainer: [ItemSocketEvents.Look, ItemSocketEvents.Unequip, ItemSocketEvents.GetItemInfo],
+  Equipment: [
+    ItemSocketEvents.Equip,
+    ItemSocketEvents.GetItemInfo,
+    ItemSocketEvents.ReadItemInfo,
+    ItemSocketEvents.Drop,
+  ],
+  Consumable: [
+    ItemSocketEvents.Use,
+    ItemSocketEvents.GetItemInfo,
+    ItemSocketEvents.ReadItemInfo,
+    ItemSocketEvents.Drop,
+  ],
+  CraftMaterial: [, ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Drop],
+  Other: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo],
+  EquipmenSetItems: [ItemSocketEvents.Unequip, ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo],
+  EquipmenSetContainer: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Unequip, ItemSocketEvents.ReadItemInfo],
 };
 
 export interface IPayloadProps {
@@ -160,6 +188,6 @@ export interface IUnequipItemPayload {
 }
 
 export interface IEquipmentAndInventoryUpdatePayload {
-  equipment: IEquipementSet;
+  equipment: IEquipmentSet;
   inventory: IItemContainer;
 }

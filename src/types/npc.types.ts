@@ -43,6 +43,9 @@ export interface INPC extends IResource {
   spawnIntervalMin: number;
   nextSpawnTime: Date;
   fleeOnLowHealth: boolean;
+  experience?: number;
+  xpToRelease?: { charId: number; xp: number }[];
+  loots?: INPCLoot[];
 }
 
 export enum NPCTargetType {
@@ -112,4 +115,10 @@ export interface INPCStartDialog {
 
 export interface INPCStopDialog {
   npcId: string;
+}
+
+export interface INPCLoot {
+  itemBlueprintKey: string;
+  chance: number;
+  quantityRange?: number[];
 }

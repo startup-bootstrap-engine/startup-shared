@@ -1,18 +1,28 @@
-export interface IMap {
-  JSONKey: string;
-  imageKey: string;
-  layers: string[];
-  tileWidth: number;
-  tileHeight: number;
-  imagePath: string;
-  jsonPath: string;
-  zipPath: string;
-  tilesetName: string;
-}
-
 export enum MapLayers {
   Ground = 0,
   OverGround = 1,
   Character = 2,
   OverCharacter = 3,
+  Roof = 4,
+}
+
+export interface IMapMetadataTileset {
+  name: string;
+}
+
+export interface IMapMetaData {
+  name: string;
+  hash: string;
+  layers: string[];
+  tileWidth: number;
+  tileHeight: number;
+  tilesets: IMapMetadataTileset[];
+  width: number;
+  height: number;
+}
+
+export const MAP_LAYERS = ["ground", "over-ground", "character", "over-character", "roof"];
+
+export enum MapSocketEvents {
+  ChangeMap = "ChangeMap",
 }

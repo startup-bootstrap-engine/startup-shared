@@ -30,6 +30,26 @@ export interface ITiledLayer {
   width: number;
   x: number;
   y: number;
+  objects?: ITiledObject[];
+}
+
+export interface ITiledObject {
+  height: number;
+  id: number;
+  name: string;
+  properties: ITiledObjectProperty[];
+  rotation: number;
+  type: string;
+  visible: boolean;
+  width: number;
+  x: number;
+  y: number;
+}
+
+export interface ITiledObjectProperty {
+  name: string;
+  type: string;
+  value: string;
 }
 
 export interface ITiledChunk {
@@ -118,4 +138,5 @@ export const TiledLayerNames = {
   1: "over-ground",
   2: "character",
   3: "over-character",
+  4: "roof",
 };

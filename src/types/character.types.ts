@@ -1,7 +1,6 @@
-import { StringMappingType } from "typescript";
 import { AnimationDirection } from "./animation.types";
 import { EntityAttackType, EntityType } from "./entity.types";
-import { IEquipementSet } from "./equipment.types";
+import { IEquipmentSet } from "./equipment.types";
 import { IItem } from "./item.types";
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
@@ -53,10 +52,10 @@ export interface ICharacter extends IResource {
     npcs: IViewElement;
     items: IViewElement;
   };
-  equipment?: IEquipementSet | string;
-  isAlive: boolean;
-  type: String;
+  equipment?: IEquipmentSet | string;
   inventory: Promise<IItem | string>;
+  type: string;
+  isAlive: boolean;
 }
 
 export enum CharacterClass {
