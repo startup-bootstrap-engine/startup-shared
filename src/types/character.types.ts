@@ -1,7 +1,7 @@
 import { AnimationDirection } from "./animation.types";
 import { EntityAttackType, EntityType } from "./entity.types";
 import { IEquipmentSet } from "./equipment.types";
-import { IItemContainer } from "./itemContainer.types";
+import { IItem } from "./item.types";
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
 import { ISkill } from "./skills.types";
@@ -52,7 +52,7 @@ export interface ICharacter extends IResource {
     npcs: IViewElement;
     items: IViewElement;
   };
-  inventory: IItemContainer;
+  inventory: IItem;
   type: string;
   isAlive: boolean;
 }
