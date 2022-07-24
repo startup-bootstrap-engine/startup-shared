@@ -3,7 +3,7 @@ import { IResource } from "./resource.types";
 export enum SkillSocketEvents {
   ExperienceGain = "ExperienceGain",
   SkillGain = "SkillGain",
-  ReadInfo = "ReadInfo"
+  ReadInfo = "ReadInfo",
 }
 
 export enum SkillEventType {

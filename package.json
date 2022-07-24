@@ -1,8 +1,8 @@
 {
   "name": "@rpg-engine/shared",
-  "version": "0.3.63",
+  "version": "0.3.65",
   "description": "Types shared across our API and client",
-  "author": "Joao Paulo Furtado <joaopaulofurtado@live.com>",
+  "author": "Definya Team",
   "homepage": "",
   "license": "ISC",
   "main": "dist/index",
