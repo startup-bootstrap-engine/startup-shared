@@ -14,11 +14,11 @@ export interface IItemContainer extends IResource {
   slots: IItemContainerSlots;
   allowedItemTypes?: ItemType[];
   isEmpty: boolean;
-  totalItemsQty: number;
-  itemIds: string[];
-  emptySlotsQty: number;
-  firstAvailableSlot: IItem | null;
-  firstAvailableSlotId: number | null;
+  totalItemsQty?: number;
+  itemIds?: string[];
+  emptySlotsQty?: number;
+  firstAvailableSlot?: IItem | null;
+  firstAvailableSlotId?: number | null;
 }
 
 export interface IItemContainerOpen {
