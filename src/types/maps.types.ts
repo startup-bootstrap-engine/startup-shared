@@ -1,9 +1,10 @@
 export enum MapLayers {
   Ground = 0,
   OverGround = 1,
-  Character = 2,
-  OverCharacter = 3,
-  Roof = 4,
+  Decoration = 2,
+  Character = 3,
+  OverCharacter = 4,
+  Roof = 5,
 }
 
 export interface IMapMetadataTileset {
@@ -21,7 +22,7 @@ export interface IMapMetaData {
   height: number;
 }
 
-export const MAP_LAYERS = ["ground", "over-ground", "character", "over-character", "roof"];
+export const MAP_LAYERS = ["ground", "over-ground", "decoration", "character", "over-character", "roof"];
 
 export enum MapSocketEvents {
   ChangeMap = "ChangeMap",
