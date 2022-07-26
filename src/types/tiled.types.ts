@@ -132,12 +132,3 @@ export interface ITiledTile {
   id: number;
   properties: ITileProperty[];
 }
-
-export const TiledLayerNames = {
-  0: "ground",
-  1: "over-ground",
-  2: "decoration",
-  3: "character",
-  4: "over-character",
-  5: "roof",
-};
