@@ -36,6 +36,8 @@ export interface IItem extends IResource {
   itemContainer?: string | IItemContainer; // is isContainer, then this is the container reference.
   generateContainerSlots?: number;
   decayTime?: Date;
+  maxRange?: number;
+  requiredAmmoKey?: string;
 }
 
 export enum ItemType {
