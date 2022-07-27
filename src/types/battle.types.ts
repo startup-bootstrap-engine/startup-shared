@@ -39,3 +39,5 @@ export interface IBattleCancelTargeting {
   type: EntityType;
   reason?: string;
 }
+
+export interface IBattleRangedAttackFailed extends IBattleCancelTargeting {}
