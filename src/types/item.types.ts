@@ -104,6 +104,7 @@ export enum ItemSocketEvents {
   ContainerRead = "ContainerRead",
   ContainerTransfer = "ContainerTransfer",
   EquipmentAndInventoryUpdate = "EquipmentAndInventoryUpdate",
+  RangedAttack = "RangedAttack",
 }
 
 interface IStringIndex {
@@ -192,4 +193,13 @@ export interface IUnequipItemPayload {
 export interface IEquipmentAndInventoryUpdatePayload {
   equipment: IEquipmentSet;
   inventory: IItemContainer;
+}
+
+export type Direction = "down" | "up" | "left" | "right" | "down_right" | "down_left" | "up_right" | "up_left";
+
+export interface IRangedAttack {
+  attackerId: string;
+  targetId: string;
+  direction: Direction;
+  ammoKey: string;
 }
