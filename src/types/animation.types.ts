@@ -3,7 +3,7 @@ export interface IEntityAnimation {
   death: IEntityDeathAnimation;
 }
 
-export type AnimationDirection = "down" | "up" | "left" | "right" | "up_left" | "up_right" | "down_left" | "down_right";
+export type AnimationDirection = "down" | "up" | "left" | "right";
 
 export interface IEntityDeathAnimation {
   [direction: string]: {
