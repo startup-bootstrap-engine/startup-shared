@@ -83,6 +83,7 @@ export enum CharacterSocketEvents {
   CharacterPrivateMessage = "CharacterPrivateMessage",
   CharacterPing = "CharacterPing",
   CharacterForceDisconnect = "CharacterForceDisconnect",
+  Login = "Login"
 }
 
 export interface ICharacterPing {

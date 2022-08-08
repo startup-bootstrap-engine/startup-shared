@@ -6,6 +6,7 @@ export enum BattleSocketEvents {
   CancelTargeting = "CancelTargeting", // server => client (triggered when errors occur)
   BattleEvent = "BattleEvent",
   BattleDeath = "BattleDeath",
+  RangedAttackFailure = "RangedAttackFailure",
 }
 
 export enum BattleEventType {
@@ -39,3 +40,5 @@ export interface IBattleCancelTargeting {
   type: EntityType;
   reason?: string;
 }
+
+export interface IBattleRangedAttackFailed extends IBattleCancelTargeting {}
