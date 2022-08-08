@@ -183,7 +183,6 @@ export interface IPayloadProps {
 
 export interface IEquipItemPayload {
   itemId: string;
-  targetSlot: ItemSlotType;
 }
 
 export interface IUnequipItemPayload {
