@@ -32,7 +32,7 @@ export interface IQuestObjectiveInteraction extends IQuestObjective {
   targetNPCkey: string;
 }
 
-export interface IQuestStatusRecord {
+export interface IQuestRecord {
   id: string;
   character: ICharacter | string;
   objective: IQuestObjectiveKill | IQuestObjectiveInteraction | string;
