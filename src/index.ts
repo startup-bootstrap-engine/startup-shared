@@ -38,3 +38,4 @@ export * from "./types/view.types";
 export * from "./types/equipment.types";
 export * from "./helpers/skillHelpers";
 export * from "./types/inventory.types";
+export * from "./types/quest.types";
