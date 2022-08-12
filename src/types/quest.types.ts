@@ -70,6 +70,7 @@ export interface IChooseQuest {
 export enum QuestSocketEvents {
   Started = "Started",
   Completed = "Completed",
+  GetQuests = "GetQuests",
 }
 
 export interface IQuestEventFromServer {
