@@ -62,6 +62,7 @@ export interface IQuestsResponse {
 }
 
 export interface IChooseQuest {
+  npcId: string;
   questId: string;
 }
 
