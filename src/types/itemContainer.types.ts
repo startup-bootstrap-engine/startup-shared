@@ -19,7 +19,10 @@ export interface IItemContainer extends IResource {
   emptySlotsQty?: number;
   firstAvailableSlot?: IItem | null;
   firstAvailableSlotId?: number | null;
+  type: Promise<ItemContainerType> | string;
 }
+
+export type ItemContainerType = "inventory" | "loot" | "map-container";
 
 export interface IItemContainerOpen {
   itemId: string;
