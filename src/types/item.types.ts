@@ -172,7 +172,12 @@ export const ActionsByItemType = {
   ],
   CraftMaterial: [, ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Drop],
   Other: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo],
-  EquipmentSetItems: [ItemSocketEvents.Unequip, ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Drop],
+  EquipmentSetItems: [
+    ItemSocketEvents.Unequip,
+    ItemSocketEvents.GetItemInfo,
+    ItemSocketEvents.ReadItemInfo,
+    ItemSocketEvents.Drop,
+  ],
   EquipmentSetContainer: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Unequip, ItemSocketEvents.ReadItemInfo],
 };
 
