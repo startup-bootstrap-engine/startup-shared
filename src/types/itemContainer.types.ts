@@ -47,6 +47,7 @@ export interface IItemDrop {
   y: number;
   scene: string;
   fromContainerId: string;
+  fromEquipmentSet: boolean;
   toPosition: {
     x: number;
     y: number;
