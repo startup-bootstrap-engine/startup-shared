@@ -21,6 +21,13 @@ export interface IItemContainer extends IResource {
   firstAvailableSlotId?: number | null;
 }
 
+export enum type {
+  inventory = "Inventory",
+  loot = "Loot",
+  mapContainer = "Map-Container",
+  equipamentSet = "EquipmentSet",
+}
+
 export interface IItemContainerOpen {
   itemId: string;
 }
