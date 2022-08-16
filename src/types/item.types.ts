@@ -170,7 +170,6 @@ export const ActionsByItemType = {
     ItemSocketEvents.ReadItemInfo,
     ItemSocketEvents.Drop,
   ],
-  Loot: [ItemSocketEvents.Look, ItemSocketEvents.Equip, ItemSocketEvents.Use, ItemSocketEvents.Pickup],
   CraftMaterial: [, ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Drop],
   Other: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo],
   EquipmentSetItems: [ItemSocketEvents.Unequip, ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo],
