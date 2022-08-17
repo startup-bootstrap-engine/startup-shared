@@ -187,6 +187,7 @@ export const ActionsForInventory = {
     ItemSocketEvents.GetItemInfo,
     ItemSocketEvents.ReadItemInfo,
     ItemSocketEvents.Drop,
+    ItemSocketEvents.Unequip,
   ],
   Consumable: [
     ItemSocketEvents.Use,
