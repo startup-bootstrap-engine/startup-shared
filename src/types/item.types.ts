@@ -172,7 +172,12 @@ export const ActionsByItemType = {
   ],
   CraftMaterial: [, ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Drop],
   Other: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo],
-  EquipmentSetItems: [ItemSocketEvents.Unequip, ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo],
+  EquipmentSetItems: [
+    ItemSocketEvents.Unequip,
+    ItemSocketEvents.GetItemInfo,
+    ItemSocketEvents.ReadItemInfo,
+    ItemSocketEvents.Drop,
+  ],
   EquipmentSetContainer: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Unequip, ItemSocketEvents.ReadItemInfo],
 };
 
@@ -236,6 +241,7 @@ export interface IPayloadProps {
 
 export interface IEquipItemPayload {
   itemId: string;
+  itemContainerId: string;
 }
 
 export interface IUnequipItemPayload {

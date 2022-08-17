@@ -28,6 +28,8 @@ export enum type {
   equipamentSet = "EquipmentSet",
 }
 
+export type ItemContainerType = "inventory" | "loot" | "map-container";
+
 export interface IItemContainerOpen {
   itemId: string;
 }
@@ -52,6 +54,7 @@ export interface IItemDrop {
   y: number;
   scene: string;
   fromContainerId: string;
+  fromEquipmentSet: boolean;
   toPosition: {
     x: number;
     y: number;
@@ -61,6 +64,7 @@ export interface IItemDrop {
 
 export interface IItemContainerRead {
   itemContainer: IItemContainer;
+  type: ItemContainerType;
 }
 
 export interface IItemContainerProps {
