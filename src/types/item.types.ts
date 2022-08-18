@@ -157,6 +157,30 @@ export interface IItemInViewBasicInfo {
   y?: number;
 }
 
+export const ActionsByItemType = {
+  Equipment: [
+    ItemSocketEvents.Equip,
+    ItemSocketEvents.GetItemInfo,
+    ItemSocketEvents.ReadItemInfo,
+    ItemSocketEvents.Drop,
+  ],
+  Consumable: [
+    ItemSocketEvents.Use,
+    ItemSocketEvents.GetItemInfo,
+    ItemSocketEvents.ReadItemInfo,
+    ItemSocketEvents.Drop,
+  ],
+  CraftMaterial: [, ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Drop],
+  Other: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo],
+  EquipmentSetItems: [
+    ItemSocketEvents.Unequip,
+    ItemSocketEvents.GetItemInfo,
+    ItemSocketEvents.ReadItemInfo,
+    ItemSocketEvents.Drop,
+  ],
+  EquipmentSetContainer: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Unequip, ItemSocketEvents.ReadItemInfo],
+};
+
 export const ActionsForInventory = {
   Equipment: [
     ItemSocketEvents.Equip,
