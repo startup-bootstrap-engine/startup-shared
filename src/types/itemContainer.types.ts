@@ -21,7 +21,12 @@ export interface IItemContainer extends IResource {
   firstAvailableSlotId?: number | null;
 }
 
-export type ItemContainerType = "inventory" | "loot" | "map-container" | "equipmentSet";
+export enum ItemContainerType {
+  Inventory = "Inventory",
+  Equipment = "Equipment",
+  Loot = "Loot",
+  MapContainer = "MapContainer",
+}
 
 export interface IItemContainerOpen {
   itemId: string;
