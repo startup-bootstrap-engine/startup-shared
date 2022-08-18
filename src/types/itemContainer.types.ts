@@ -21,7 +21,7 @@ export interface IItemContainer extends IResource {
   firstAvailableSlotId?: number | null;
 }
 
-export type ItemContainerType = "inventory" | "loot" | "map-container";
+export type ItemContainerType = "inventory" | "loot" | "map-container" | "equipmentSet";
 
 export interface IItemContainerOpen {
   itemId: string;
@@ -47,6 +47,7 @@ export interface IItemDrop {
   y: number;
   scene: string;
   fromContainerId: string;
+  fromEquipmentSet: boolean;
   toPosition: {
     x: number;
     y: number;

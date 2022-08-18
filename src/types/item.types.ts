@@ -157,7 +157,7 @@ export interface IItemInViewBasicInfo {
   y?: number;
 }
 
-export const ActionsByItemType = {
+export const ActionsForInventory = {
   Equipment: [
     ItemSocketEvents.Equip,
     ItemSocketEvents.GetItemInfo,
@@ -171,9 +171,43 @@ export const ActionsByItemType = {
     ItemSocketEvents.Drop,
   ],
   CraftMaterial: [, ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Drop],
+  Tool: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Drop],
   Other: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo],
-  EquipmentSetItems: [ItemSocketEvents.Unequip, ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo],
-  EquipmentSetContainer: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Unequip, ItemSocketEvents.ReadItemInfo],
+};
+
+export const ActionsForLoot = {
+  Equipment: [
+    ItemSocketEvents.Equip,
+    ItemSocketEvents.GetItemInfo,
+    ItemSocketEvents.ReadItemInfo,
+    ItemSocketEvents.Pickup,
+  ],
+  Consumable: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Pickup],
+  CraftMaterial: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Pickup],
+  Tool: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Pickup],
+  Other: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Pickup],
+};
+
+export const ActionsForEquipmentSet = {
+  Equipment: [
+    ItemSocketEvents.GetItemInfo,
+    ItemSocketEvents.ReadItemInfo,
+    ItemSocketEvents.Drop,
+    ItemSocketEvents.Unequip,
+  ],
+};
+
+export const ActionsForMapContainer = {
+  Equipment: [
+    ItemSocketEvents.Equip,
+    ItemSocketEvents.GetItemInfo,
+    ItemSocketEvents.ReadItemInfo,
+    ItemSocketEvents.Pickup,
+  ],
+  Consumable: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Pickup],
+  CraftMaterial: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Pickup],
+  Tool: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Pickup],
+  Other: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Pickup],
 };
 
 export interface IPayloadProps {
