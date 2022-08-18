@@ -38,7 +38,6 @@ interface IStringIndex {
 export const EquipmentSocketEventsDisplayLabels: IStringIndex = {
   [EquipmentSocketEvents.Unequip]: "Unequip",
   [EquipmentSocketEvents.GetEquipmentInfo]: "Look",
-  [EquipmentSocketEvents.ReadEquipmentInfo]: "Inspect",
   [EquipmentSocketEvents.ContainerOpen]: "Open",
   [EquipmentSocketEvents.ContainerRead]: "Read",
 };

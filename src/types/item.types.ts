@@ -119,7 +119,6 @@ export const ItemSocketEventsDisplayLabels: IStringIndex = {
   [ItemSocketEvents.Drop]: "Drop",
   [ItemSocketEvents.Use]: "Use",
   [ItemSocketEvents.ContainerOpen]: "Open",
-  [ItemSocketEvents.ReadItemInfo]: "Inspect",
   [ItemSocketEvents.ContainerRead]: "Read",
 };
 
@@ -158,56 +157,31 @@ export interface IItemInViewBasicInfo {
 }
 
 export const ActionsForInventory = {
-  Equipment: [
-    ItemSocketEvents.Equip,
-    ItemSocketEvents.GetItemInfo,
-    ItemSocketEvents.ReadItemInfo,
-    ItemSocketEvents.Drop,
-  ],
-  Consumable: [
-    ItemSocketEvents.Use,
-    ItemSocketEvents.GetItemInfo,
-    ItemSocketEvents.ReadItemInfo,
-    ItemSocketEvents.Drop,
-  ],
-  CraftMaterial: [, ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Drop],
-  Tool: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Drop],
+  Equipment: [ItemSocketEvents.Equip, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
+  Consumable: [ItemSocketEvents.Use, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
+  CraftMaterial: [, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
+  Tool: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
   Other: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo],
 };
 
 export const ActionsForLoot = {
-  Equipment: [
-    ItemSocketEvents.Equip,
-    ItemSocketEvents.GetItemInfo,
-    ItemSocketEvents.ReadItemInfo,
-    ItemSocketEvents.Pickup,
-  ],
-  Consumable: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Pickup],
-  CraftMaterial: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Pickup],
-  Tool: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Pickup],
-  Other: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Pickup],
+  Equipment: [ItemSocketEvents.Equip, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Pickup],
+  Consumable: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Pickup],
+  CraftMaterial: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Pickup],
+  Tool: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Pickup],
+  Other: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Pickup],
 };
 
 export const ActionsForEquipmentSet = {
-  Equipment: [
-    ItemSocketEvents.GetItemInfo,
-    ItemSocketEvents.ReadItemInfo,
-    ItemSocketEvents.Drop,
-    ItemSocketEvents.Unequip,
-  ],
+  Equipment: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop, ItemSocketEvents.Unequip],
 };
 
 export const ActionsForMapContainer = {
-  Equipment: [
-    ItemSocketEvents.Equip,
-    ItemSocketEvents.GetItemInfo,
-    ItemSocketEvents.ReadItemInfo,
-    ItemSocketEvents.Pickup,
-  ],
-  Consumable: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Pickup],
-  CraftMaterial: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Pickup],
-  Tool: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Pickup],
-  Other: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo, ItemSocketEvents.Pickup],
+  Equipment: [ItemSocketEvents.Equip, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Pickup],
+  Consumable: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Pickup],
+  CraftMaterial: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Pickup],
+  Tool: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Pickup],
+  Other: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Pickup],
 };
 
 export interface IPayloadProps {
