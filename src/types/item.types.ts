@@ -160,8 +160,8 @@ export const ActionsForInventory = {
   Equipment: [ItemSocketEvents.Equip, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
   Consumable: [ItemSocketEvents.Use, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
   CraftMaterial: [ItemSocketEvents.Use, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
-  Tool: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
-  Other: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo],
+  Tool: [ItemSocketEvents.Use, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
+  Other: [ItemSocketEvents.Use, ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo],
 };
 
 export const ActionsForLoot = {
