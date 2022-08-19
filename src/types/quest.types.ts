@@ -2,6 +2,7 @@ import { ICharacter } from "./character.types";
 
 export interface IQuest {
   id: string;
+  key: string;
   npcId: string;
   title: string;
   description: string;
