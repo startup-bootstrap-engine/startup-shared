@@ -174,6 +174,7 @@ export const ActionsForLoot = {
 
 export const ActionsForEquipmentSet = {
   Equipment: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop, ItemSocketEvents.Unequip],
+  Container: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
 };
 
 export const ActionsForMapContainer = {
