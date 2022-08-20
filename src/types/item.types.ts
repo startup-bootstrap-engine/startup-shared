@@ -210,5 +210,6 @@ export interface IRangedAttack {
   attackerId: string;
   targetId: string;
   direction: Direction;
-  ammoKey: string;
+  ammoKey?: string;
+  type?: string;
 }
