@@ -7,6 +7,7 @@ export interface IQuest {
   description: string;
   rewards: IQuestReward[];
   objectives: IQuestObjectiveKill[] | IQuestObjectiveInteraction[];
+  key: string;
 }
 
 export interface IQuestReward {
