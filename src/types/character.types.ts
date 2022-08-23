@@ -148,6 +148,7 @@ export interface ICharacterPositionUpdateFromServer {
   maxHealth: number;
   mana: number;
   maxMana: number;
+  hasQuest: boolean;
 }
 
 export interface ICharacterLogout {
