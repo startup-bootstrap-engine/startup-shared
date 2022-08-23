@@ -7,6 +7,7 @@ export enum EntityAttackType {
   Melee = "Melee",
   Ranged = "Ranged",
   None = "None",
+  MeleeRanged = "MeleeRanged",
 }
 
 export interface IEntitiesInView {
