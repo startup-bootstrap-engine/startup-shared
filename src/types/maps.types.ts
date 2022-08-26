@@ -59,4 +59,5 @@ export interface IMapMetaData {
 
 export enum MapSocketEvents {
   ChangeMap = "ChangeMap",
+  NonPVPZone = "NonPVPZone",
 }
