@@ -162,7 +162,12 @@ export const ActionsForInventory = {
   CraftMaterial: [ItemSocketEvents.Use, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
   Tool: [ItemSocketEvents.Use, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
   Other: [ItemSocketEvents.Use, ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo],
-  Container: [ItemSocketEvents.Equip, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop, ItemSocketEvents.ContainerOpen]
+  Container: [
+    ItemSocketEvents.Equip,
+    ItemSocketEvents.GetItemInfo,
+    ItemSocketEvents.Drop,
+    ItemSocketEvents.ContainerOpen,
+  ],
 };
 
 export const ActionsForLoot = {

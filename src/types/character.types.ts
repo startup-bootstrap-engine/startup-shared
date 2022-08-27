@@ -119,7 +119,6 @@ export interface ICharacterCreateFromServer {
   maxHealth: number;
   mana: number;
   maxMana: number;
-  hasQuest: boolean;
 }
 export interface ICharacterPositionUpdateFromClient {
   id: string; // will be validated server side
