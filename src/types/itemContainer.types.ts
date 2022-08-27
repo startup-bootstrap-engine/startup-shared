@@ -44,7 +44,7 @@ export interface IItemPickup {
   y: number;
   scene: string;
   toContainerId: string;
-  fromContainerId: string;
+  fromContainerId?: string;
 }
 
 export interface IItemDrop {
