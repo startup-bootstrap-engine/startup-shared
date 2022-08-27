@@ -56,6 +56,7 @@ export interface ICharacter extends IResource {
   inventory: Promise<IItem | string>;
   type: string;
   isAlive: boolean;
+  hasQuest: boolean;
 }
 
 export enum CharacterClass {
@@ -118,6 +119,7 @@ export interface ICharacterCreateFromServer {
   maxHealth: number;
   mana: number;
   maxMana: number;
+  hasQuest: boolean;
 }
 export interface ICharacterPositionUpdateFromClient {
   id: string; // will be validated server side
@@ -133,7 +135,6 @@ export interface ICharacterPositionUpdateFromServer {
   y: number;
   newX: number;
   newY: number;
-
   name: string;
   direction: AnimationDirection;
   isMoving: boolean;

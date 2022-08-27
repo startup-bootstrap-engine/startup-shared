@@ -46,6 +46,7 @@ export interface INPC extends IResource {
   experience?: number;
   xpToRelease?: { charId: number; xp: number }[];
   loots?: INPCLoot[];
+  hasQuest?: boolean;
 }
 
 export enum NPCTargetType {
@@ -96,6 +97,7 @@ export interface INPCPositionUpdatePayload {
   maxHealth: number;
   mana: number;
   maxMana: number;
+  hasQuest: boolean;
 }
 
 export interface INPCDataUpdatePayload {
