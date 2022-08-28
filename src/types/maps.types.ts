@@ -48,7 +48,7 @@ export interface IMapMetadataTileset {
 
 export interface IMapMetaData {
   name: string;
-  version: string;
+  version: number;
   layers: string[];
   tileWidth: number;
   tileHeight: number;
