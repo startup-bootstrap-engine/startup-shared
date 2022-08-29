@@ -47,6 +47,8 @@ export interface INPC extends IResource {
   xpToRelease?: { charId: number; xp: number }[];
   loots?: INPCLoot[];
   hasQuest?: boolean;
+  baseHealth: number;
+  healthRandomizerDice: number;
 }
 
 export enum NPCTargetType {
