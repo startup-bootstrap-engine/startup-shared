@@ -118,6 +118,7 @@ export interface ICharacterCreateFromServer {
   maxHealth: number;
   mana: number;
   maxMana: number;
+  textureKey: string;
 }
 export interface ICharacterPositionUpdateFromClient {
   id: string; // will be validated server side
@@ -145,6 +146,7 @@ export interface ICharacterPositionUpdateFromServer {
   maxHealth: number;
   mana: number;
   maxMana: number;
+  textureKey: string;
 }
 
 export interface ICharacterLogout {
