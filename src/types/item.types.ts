@@ -1,4 +1,5 @@
 import { ICharacter } from "./character.types";
+import { EntityAttackType } from "./entity.types";
 import { IEquipmentSet } from "./equipment.types";
 import { IItemContainer } from "./itemContainer.types";
 import { MapLayers } from "./maps.types";
@@ -9,6 +10,7 @@ export interface IItem extends IResource {
   owner?: ICharacter | string;
   type: ItemType;
   subType: ItemSubType;
+  rangeType: EntityAttackType;
   name: string;
   description: string; // custom item description
   fullDescription: string; //virtual mongoose field, that is dynamically generated based on item attack, defense, weight, etc.
