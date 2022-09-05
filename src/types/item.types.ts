@@ -208,6 +208,8 @@ export interface IUnequipItemPayload {
 export interface IEquipmentAndInventoryUpdatePayload {
   equipment: IEquipmentSet;
   inventory: IItemContainer;
+  openEquipmentSetOnUpdate?: boolean;
+  openInventoryOnUpdate?: boolean;
 }
 
 export type Direction = "down" | "up" | "left" | "right" | "down_right" | "down_left" | "up_right" | "up_left";
