@@ -10,7 +10,7 @@ export interface IItem extends IResource {
   owner?: ICharacter | string;
   type: ItemType;
   subType: ItemSubType;
-  rangeType: EntityAttackType;
+
   name: string;
   description: string; // custom item description
   fullDescription: string; //virtual mongoose field, that is dynamically generated based on item attack, defense, weight, etc.
@@ -40,6 +40,7 @@ export interface IItem extends IResource {
   decayTime?: Date;
   maxRange?: number;
   requiredAmmoKey?: string;
+  rangeType?: EntityAttackType;
 }
 
 export enum ItemType {
