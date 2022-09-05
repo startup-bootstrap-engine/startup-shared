@@ -21,7 +21,7 @@ export interface ICharacter extends IResource {
   initialY: number;
   direction: AnimationDirection;
   class: CharacterClass;
-  gender: CharacterGender;
+  textureKey: string;
   totalWeightCapacity: number;
   isOnline: boolean;
   layer: MapLayers;
@@ -118,6 +118,7 @@ export interface ICharacterCreateFromServer {
   maxHealth: number;
   mana: number;
   maxMana: number;
+  textureKey: string;
 }
 export interface ICharacterPositionUpdateFromClient {
   id: string; // will be validated server side
@@ -145,6 +146,7 @@ export interface ICharacterPositionUpdateFromServer {
   maxHealth: number;
   mana: number;
   maxMana: number;
+  textureKey: string;
 }
 
 export interface ICharacterLogout {
