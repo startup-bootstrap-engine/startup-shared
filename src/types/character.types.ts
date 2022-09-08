@@ -86,6 +86,23 @@ export enum CharacterSocketEvents {
   Login = "Login",
 }
 
+export enum CharacterFactions {
+  LifeBringer = "Life Bringer",
+  ShadowWalker = "Shadow Walker"
+}
+
+export enum LifeBringerRaces {
+  Human = "Human",
+  Elf = "Elf",
+  Dwarf = "Dwarf"
+}
+
+export enum ShadowWalkerRaces {
+  Human = "Human",
+  Orc = "Orc",
+  Minotaur = "Minotaur"
+}
+
 export interface ICharacterPing {
   // tell the server you're still alive
   id: string;
