@@ -88,19 +88,19 @@ export enum CharacterSocketEvents {
 
 export enum CharacterFactions {
   LifeBringer = "Life Bringer",
-  ShadowWalker = "Shadow Walker"
+  ShadowWalker = "Shadow Walker",
 }
 
 export enum LifeBringerRaces {
   Human = "Human",
   Elf = "Elf",
-  Dwarf = "Dwarf"
+  Dwarf = "Dwarf",
 }
 
 export enum ShadowWalkerRaces {
   Human = "Human",
   Orc = "Orc",
-  Minotaur = "Minotaur"
+  Minotaur = "Minotaur",
 }
 
 export interface ICharacterPing {
