@@ -1,7 +1,7 @@
 import { ICharacter } from "./character.types";
+import { IResource } from "./resource.types";
 
-export interface IQuest {
-  id: string;
+export interface IQuest extends IResource {
   key: string;
   npcId: string;
   title: string;
