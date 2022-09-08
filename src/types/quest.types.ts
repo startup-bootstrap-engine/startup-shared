@@ -18,7 +18,7 @@ export interface IQuestReward {
   qty: number;
 }
 
-interface IQuestObjective {
+export interface IQuestObjective {
   id: string;
   type: QuestType;
   status: QuestStatus;
