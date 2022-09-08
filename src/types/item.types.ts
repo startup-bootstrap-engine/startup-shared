@@ -24,6 +24,7 @@ export interface IItem extends IResource {
   allowedEquipSlotType: ItemSlotType[];
   isEquipable: boolean; // can we add it to our equipment slots?
   isStackable: boolean;
+  isTwoHanded: boolean;
   maxStackSize: number; //if isStackable only
   stackQty?: number;
   isUsable: boolean;
