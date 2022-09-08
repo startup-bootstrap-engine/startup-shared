@@ -8,6 +8,7 @@ export interface IQuest extends IResource {
   description: string;
   rewards: IQuestReward[];
   objectives: IQuestObjectiveKill[] | IQuestObjectiveInteraction[];
+  thumbnail?: string;
 }
 
 export interface IQuestReward {
