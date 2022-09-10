@@ -49,6 +49,8 @@ export interface INPC extends IResource {
   hasQuest?: boolean;
   baseHealth?: number;
   healthRandomizerDice?: number;
+  skillRandomizerDice?: number;
+  skillsToBeRandomized?: string[];
 }
 
 export enum NPCTargetType {
