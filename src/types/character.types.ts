@@ -180,3 +180,9 @@ export interface ICameraCoordinates {
 export interface ICharacterForceDisconnect {
   reason: string;
 }
+export interface ICharacterTexture {
+  textureDisplayName: string;
+  textureKey: string;
+  faction: string;
+  race: string;
+}
