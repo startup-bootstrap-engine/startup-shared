@@ -64,7 +64,7 @@ export enum ItemSubType {
   Legs = "Legs",
   Axe = "Axe",
   Boot = "Boot",
-  Bow = "Bow",
+  Ranged = "Ranged",
   Food = "Food",
   Glove = "Glove",
   Helmet = "Helmet",
