@@ -1,13 +1,14 @@
 import { ICharacter } from "./character.types";
+import { IResource } from "./resource.types";
 
-export interface IQuest {
-  id: string;
+export interface IQuest extends IResource {
   key: string;
   npcId: string;
   title: string;
   description: string;
   rewards: IQuestReward[];
   objectives: IQuestObjectiveKill[] | IQuestObjectiveInteraction[];
+  thumbnail?: string;
 }
 
 export interface IQuestReward {
@@ -17,7 +18,7 @@ export interface IQuestReward {
   qty: number;
 }
 
-interface IQuestObjective {
+export interface IQuestObjective {
   id: string;
   type: QuestType;
   status: QuestStatus;
