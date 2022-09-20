@@ -225,3 +225,13 @@ export interface IRangedAttack {
   ammoKey?: string;
   type?: string;
 }
+
+export interface ITraderItem {
+  itemId: string;
+  qty: number
+}
+
+export interface IBuySellItems {
+  buy: ITraderItem[],
+  sell: ITraderItem[]
+}
