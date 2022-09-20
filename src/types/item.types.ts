@@ -228,10 +228,10 @@ export interface IRangedAttack {
 
 export interface ITraderItem {
   itemId: string;
-  qty: number
+  qty: number;
 }
 
 export interface IBuySellItems {
-  buy: ITraderItem[],
-  sell: ITraderItem[]
+  buy: ITraderItem[];
+  sell: ITraderItem[];
 }
