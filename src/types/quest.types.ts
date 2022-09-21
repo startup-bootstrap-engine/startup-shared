@@ -56,7 +56,7 @@ export enum QuestStatus {
 export interface IGetQuests {
   npcId?: string;
   characterId?: string;
-  status: QuestStatus;
+  status?: QuestStatus;
 }
 
 export interface IQuestsResponse {
