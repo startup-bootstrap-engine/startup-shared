@@ -54,7 +54,8 @@ export enum QuestStatus {
 /** REQUEST INTERFACES **/
 
 export interface IGetQuests {
-  npcId: string;
+  npcId?: string;
+  characterId?: string;
   status: QuestStatus;
 }
 
