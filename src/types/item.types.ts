@@ -110,7 +110,7 @@ export enum ItemSocketEvents {
   EquipmentAndInventoryUpdate = "EquipmentAndInventoryUpdate",
   RangedAttack = "RangedAttack",
   Buy = "Buy",
-  Sell = "Sell"
+  Sell = "Sell",
 }
 
 interface IStringIndex {

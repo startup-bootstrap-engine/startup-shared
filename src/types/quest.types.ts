@@ -60,7 +60,7 @@ export interface IGetQuests {
 }
 
 export interface IQuestsResponse {
-  npcId: string;
+  npcId?: string;
   quests: IQuest[];
 }
 
