@@ -25,6 +25,7 @@ export interface IItem extends IResource {
   isEquipable: boolean; // can we add it to our equipment slots?
   isStackable: boolean;
   isTwoHanded: boolean;
+  hasUseWith: boolean;
   maxStackSize: number; //if isStackable only
   stackQty?: number;
   isUsable: boolean;
