@@ -2,7 +2,7 @@ import { IItem, ItemType } from "./item.types";
 import { IResource } from "./resource.types";
 
 interface IItemContainerSlots {
-  [slot: number]: IItem;
+  [slot: number]: IItem | undefined | null;
 }
 
 export interface IItemContainer extends IResource {
