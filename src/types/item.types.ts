@@ -210,8 +210,8 @@ export interface IUnequipItemPayload {
 }
 
 export interface IEquipmentAndInventoryUpdatePayload {
-  equipment: IEquipmentSet;
-  inventory: IItemContainer;
+  equipment?: IEquipmentSet;
+  inventory?: IItemContainer;
   openEquipmentSetOnUpdate?: boolean;
   openInventoryOnUpdate?: boolean;
 }
