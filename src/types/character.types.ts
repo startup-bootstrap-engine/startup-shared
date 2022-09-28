@@ -84,6 +84,7 @@ export enum CharacterSocketEvents {
   CharacterPing = "CharacterPing",
   CharacterForceDisconnect = "CharacterForceDisconnect",
   Login = "Login",
+  ItemConsumed = "ItemConsumed"
 }
 
 export enum CharacterFactions {
@@ -180,9 +181,15 @@ export interface ICameraCoordinates {
 export interface ICharacterForceDisconnect {
   reason: string;
 }
+
 export interface ICharacterTexture {
   textureDisplayName: string;
   textureKey: string;
   faction: string;
   race: string;
+}
+
+export interface ICharacterItemConsumed {
+  targetId: string;
+  health: number;
 }

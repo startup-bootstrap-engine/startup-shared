@@ -238,3 +238,7 @@ export interface IBuySellItems {
   buy: ITraderItem[];
   sell: ITraderItem[];
 }
+
+export interface IUseItemPayload {
+  itemId: string;
+}
