@@ -25,6 +25,7 @@ export interface IItem extends IResource {
   isEquipable: boolean; // can we add it to our equipment slots?
   isStackable: boolean;
   isTwoHanded: boolean;
+  hasUseWith: boolean;
   maxStackSize: number; //if isStackable only
   stackQty?: number;
   isUsable: boolean;
@@ -109,6 +110,8 @@ export enum ItemSocketEvents {
   ContainerTransfer = "ContainerTransfer",
   EquipmentAndInventoryUpdate = "EquipmentAndInventoryUpdate",
   RangedAttack = "RangedAttack",
+  Buy = "Buy",
+  Sell = "Sell",
 }
 
 interface IStringIndex {
@@ -224,4 +227,14 @@ export interface IRangedAttack {
   direction: Direction;
   ammoKey?: string;
   type?: string;
+}
+
+export interface ITraderItem {
+  itemId: string;
+  qty: number;
+}
+
+export interface IBuySellItems {
+  buy: ITraderItem[];
+  sell: ITraderItem[];
 }

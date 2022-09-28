@@ -9,6 +9,7 @@ export interface IQuest extends IResource {
   rewards: IQuestReward[];
   objectives: IQuestObjectiveKill[] | IQuestObjectiveInteraction[];
   thumbnail?: string;
+  status?: QuestStatus;
 }
 
 export interface IQuestReward {
@@ -54,12 +55,13 @@ export enum QuestStatus {
 /** REQUEST INTERFACES **/
 
 export interface IGetQuests {
-  npcId: string;
-  status: QuestStatus;
+  npcId?: string;
+  characterId?: string;
+  status?: QuestStatus;
 }
 
 export interface IQuestsResponse {
-  npcId: string;
+  npcId?: string;
   quests: IQuest[];
 }
 
