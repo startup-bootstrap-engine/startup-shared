@@ -60,7 +60,7 @@ export interface IMapMetaData {
 export enum MapSocketEvents {
   ChangeMap = "ChangeMap",
   NonPVPZone = "NonPVPZone",
-  SameMapTeleport = "SameMapTeleport"
+  SameMapTeleport = "SameMapTeleport",
 }
 
 export interface IMapDestination {
