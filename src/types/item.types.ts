@@ -41,7 +41,7 @@ export interface IItem extends IResource {
   generateContainerSlots?: number;
   decayTime?: Date;
   maxRange?: number;
-  requiredAmmoKey?: string;
+  requiredAmmoKeys?: string[];
   rangeType?: EntityAttackType;
 }
 
