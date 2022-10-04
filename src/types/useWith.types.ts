@@ -1,3 +1,5 @@
+import { MapLayers } from "./maps.types";
+
 /** REQUEST INTERFACES **/
 
 export interface IUseWithItem {
@@ -11,7 +13,7 @@ export interface IUseWithTile {
     x: number;
     y: number;
     map: string;
-    layer: string;
+    layer: MapLayers;
   };
 }
 
