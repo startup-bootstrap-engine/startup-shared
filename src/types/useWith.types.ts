@@ -10,6 +10,7 @@ export interface IUseWithTile {
   targetTile: {
     x: number;
     y: number;
+    map: string;
     layer: string;
   };
 }
