@@ -18,5 +18,5 @@ export interface IUseWithTile {
 
 export enum UseWithSocketEvents {
   UseWithItem = "UseWithItem",
-  UseWitTile = "UseWithTile",
+  UseWithTile = "UseWithTile",
 }
