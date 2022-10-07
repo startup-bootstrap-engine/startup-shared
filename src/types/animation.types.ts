@@ -23,11 +23,10 @@ export interface IAnimationEffect {
 }
 
 export enum AnimationSocketEvents {
-  ShowAnimation = "ShowAnimation"
+  ShowAnimation = "ShowAnimation",
 }
 
 export enum AnimationEffectKeys {
   ItemConsumed = "ItemConsumed",
-  SkillIncreased = "SkillIncreased"
-
+  SkillIncreased = "SkillIncreased",
 }
