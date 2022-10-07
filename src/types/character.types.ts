@@ -84,7 +84,7 @@ export enum CharacterSocketEvents {
   CharacterPing = "CharacterPing",
   CharacterForceDisconnect = "CharacterForceDisconnect",
   Login = "Login",
-  ItemConsumed = "ItemConsumed"
+  ItemConsumed = "ItemConsumed",
 }
 
 export enum CharacterFactions {
