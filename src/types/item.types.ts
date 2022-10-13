@@ -41,7 +41,7 @@ export interface IItem extends IResource {
   generateContainerSlots?: number;
   decayTime?: Date;
   maxRange?: number;
-  requiredAmmoKey?: string;
+  requiredAmmoKeys?: string[];
   rangeType?: EntityAttackType;
 }
 
@@ -237,4 +237,8 @@ export interface ITraderItem {
 export interface IBuySellItems {
   buy: ITraderItem[];
   sell: ITraderItem[];
+}
+
+export interface IUseItemPayload {
+  itemId: string;
 }

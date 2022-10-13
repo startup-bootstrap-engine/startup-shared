@@ -16,3 +16,19 @@ export interface IEntityMovementAnimation {
     standing: number | number[];
   };
 }
+
+export interface IAnimationEffect {
+  targetId: string;
+  effectKey: string;
+}
+
+export enum AnimationSocketEvents {
+  ShowAnimation = "ShowAnimation",
+}
+
+export enum AnimationEffectKeys {
+  LevelUp = 'level_up',
+  LifeHeal = 'life_heal',
+  ManaHeal = 'mana_heal',
+  SkillLevelUp = 'new_skill',
+}
