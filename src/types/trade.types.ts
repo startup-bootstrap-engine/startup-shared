@@ -2,6 +2,8 @@ export enum CharacterTradeSocketEvents {
   TradeWithNPC = "TradeWithNPC",
 }
 
+export type TradeTransactionType = "buy" | "sell";
+
 export interface ITradeItem {
   itemId: string;
   qty: number;
@@ -9,6 +11,6 @@ export interface ITradeItem {
 
 export interface ICharacterNPCTrade {
   npcId: string;
-  buy?: ITradeItem[];
-  sell?: ITradeItem[];
+  type: TradeTransactionType;
+  items: ITradeItem[];
 }
