@@ -5,7 +5,7 @@ export enum CharacterTradeSocketEvents {
 export type TradeTransactionType = "buy" | "sell";
 
 export interface ITradeItem {
-  itemId: string;
+  key: string;
   qty: number;
   price: number;
 }
