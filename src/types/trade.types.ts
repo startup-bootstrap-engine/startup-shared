@@ -6,6 +6,7 @@ export type TradeTransactionType = "buy" | "sell";
 
 export interface ITradeItem {
   key: string;
+  name: string;
   qty: number;
   price: number;
 }
