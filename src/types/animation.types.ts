@@ -27,8 +27,8 @@ export enum AnimationSocketEvents {
 }
 
 export enum AnimationEffectKeys {
-  LevelUp = 'level_up',
-  LifeHeal = 'life_heal',
-  ManaHeal = 'mana_heal',
-  SkillLevelUp = 'new_skill',
+  LevelUp = "level_up",
+  LifeHeal = "life_heal",
+  ManaHeal = "mana_heal",
+  SkillLevelUp = "new_skill",
 }
