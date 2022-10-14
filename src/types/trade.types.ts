@@ -6,12 +6,12 @@ export type TradeTransactionType = "buy" | "sell";
 
 export interface ITradeItem {
   key: string;
-  name: string;
+  name?: string; // Only available on trade response
   qty: number;
   price: number;
 }
 
-export interface ICharacterNPCTrade {
+export interface ICharacterNPCTradeRequest {
   npcId: string;
   type: TradeTransactionType;
   items: ITradeItem[];
