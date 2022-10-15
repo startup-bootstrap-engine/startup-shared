@@ -112,6 +112,7 @@ export enum ItemSocketEvents {
   RangedAttack = "RangedAttack",
   Buy = "Buy",
   Sell = "Sell",
+  InventoryOpen = "InventoryOpen",
 }
 
 interface IStringIndex {
