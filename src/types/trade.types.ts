@@ -4,14 +4,42 @@ export enum CharacterTradeSocketEvents {
 
 export type TradeTransactionType = "buy" | "sell";
 
-export interface ITradeItem {
+export interface ITradeRequestItem {
   key: string;
-  name?: string; // Only available on trade response
   qty: number;
 }
 
+export interface ITransactionItem {
+  itemId: string;
+  qty?: number;
+  price: number;
+  texturePath: string;
+  name: string;
+}
+
 export interface ICharacterNPCTradeRequest {
+  // when hitting the "Confirm" modal button
   npcId: string;
   type: TradeTransactionType;
-  items: ITradeItem[];
+  items: ITradeRequestItem[];
+}
+
+export interface ICharacterNPCTradeInit {
+  // When selecting the "Buy items..." or "Sell items..." context menu option
+  npcId: string;
+  type: TradeTransactionType;
+}
+
+export interface ICharacterNPCTradeInitBuyResponse {
+  npcId: string;
+  type: TradeTransactionType;
+  traderItems: ITransactionItem[];
+  characterAvailableGold: number;
+}
+
+export interface ICharacterNPCTradeInitSellResponse {
+  npcId: string;
+  type: TradeTransactionType;
+  characterItems: ITransactionItem[];
+  characterAvailableGold: number;
 }
