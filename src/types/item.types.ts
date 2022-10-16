@@ -152,6 +152,8 @@ export interface IItemUpdate {
   y: number;
   scene: string;
   layer: MapLayers;
+  stackQty: number;
+  isStackable: boolean;
 }
 
 export interface IItemsInView {
