@@ -10,6 +10,7 @@ export interface ITradeRequestItem {
 }
 
 export interface ITransactionItem {
+  key: string;
   itemId: string;
   qty?: number;
   price: number;
