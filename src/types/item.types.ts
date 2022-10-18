@@ -244,3 +244,8 @@ export interface IBuySellItems {
 export interface IUseItemPayload {
   itemId: string;
 }
+
+export enum SpellType {
+  Self = "self-casting",
+  Ranged = "ranged-casting",
+}
