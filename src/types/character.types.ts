@@ -84,7 +84,7 @@ export enum CharacterSocketEvents {
   CharacterPing = "CharacterPing",
   CharacterForceDisconnect = "CharacterForceDisconnect",
   Login = "Login",
-  ItemConsumed = "ItemConsumed",
+  AttributeChanged = "AttributeChanged",
 }
 
 export enum CharacterFactions {
@@ -189,7 +189,8 @@ export interface ICharacterTexture {
   race: string;
 }
 
-export interface ICharacterItemConsumed {
+export interface ICharacterAttributeChanged {
   targetId: string;
-  health: number;
+  health?: number;
+  mana?: number;
 }
