@@ -5,21 +5,22 @@ export enum CharacterTradeSocketEvents {
 export type TradeTransactionType = "buy" | "sell";
 
 export interface ITradeRequestItem {
+  // Request coming from the client
   key: string;
   qty: number;
 }
 
-export interface ITransactionItem {
+export interface ITradeResponseItem {
   key: string;
   itemId: string;
-  qty?: number;
+  qty?: number; // only used when selling (qty would be how much items are available to be sold by the player)
   price: number;
   texturePath: string;
   name: string;
 }
 
 export interface ICharacterNPCTradeRequest {
-  // when hitting the "Confirm" modal button
+  // CLIENT request to the SERVER when hitting the "Confirm" modal button
   npcId: string;
   type: TradeTransactionType;
   items: ITradeRequestItem[];
@@ -34,13 +35,13 @@ export interface ICharacterNPCTradeInit {
 export interface ICharacterNPCTradeInitBuyResponse {
   npcId: string;
   type: TradeTransactionType;
-  traderItems: ITransactionItem[];
+  traderItems: ITradeResponseItem[];
   characterAvailableGold: number;
 }
 
 export interface ICharacterNPCTradeInitSellResponse {
   npcId: string;
   type: TradeTransactionType;
-  characterItems: ITransactionItem[];
+  characterItems: ITradeResponseItem[];
   characterAvailableGold: number;
 }
