@@ -74,6 +74,7 @@ export enum CharacterGender {
   Female = "Female",
 }
 
+//@ts-ignore
 export enum CharacterSocketEvents {
   CharacterCreate = "CharacterCreate",
   CharacterPositionUpdate = "CharacterPositionUpdate",
@@ -84,6 +85,7 @@ export enum CharacterSocketEvents {
   CharacterForceDisconnect = "CharacterForceDisconnect",
   Login = "Login",
   ItemConsumed = "ItemConsumed",
+  AttributeChanged = "AttributeChanged",
 }
 
 export enum CharacterFactions {
