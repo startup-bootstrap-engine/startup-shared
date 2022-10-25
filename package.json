@@ -1,10 +1,6 @@
 {
   "name": "@rpg-engine/shared",
-<<<<<<< HEAD
-  "version": "0.5.59",
-=======
   "version": "0.5.60",
->>>>>>> ff35b224bf5f0a113f324c6aa549afd4aa4a9f13
   "description": "Types shared across our API and client",
   "author": "Definya Team",
   "homepage": "",
