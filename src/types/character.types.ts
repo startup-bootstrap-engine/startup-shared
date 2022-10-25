@@ -192,5 +192,6 @@ export interface ICharacterTexture {
 
 export interface ICharacterItemConsumed {
   targetId: string;
-  health: number;
+  health?: number;
+  mana?: number;
 }
