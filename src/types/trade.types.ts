@@ -45,3 +45,8 @@ export interface ICharacterNPCTradeInitSellResponse {
   characterItems: ITradeResponseItem[];
   characterAvailableGold: number;
 }
+
+export interface ITraderItemNPC {
+  key: string;
+  price: number;
+}

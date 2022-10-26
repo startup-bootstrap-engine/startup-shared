@@ -4,6 +4,7 @@ import { EntityAttackType } from "./entity.types";
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
 import { ISkill } from "./skills.types";
+import { ITraderItemNPC } from "./trade.types";
 
 export interface INPC extends IResource {
   tiledId?: number;
@@ -51,6 +52,8 @@ export interface INPC extends IResource {
   healthRandomizerDice?: number;
   skillRandomizerDice?: number;
   skillsToBeRandomized?: string[];
+  isTrader?: boolean;
+  traderItem?: ITraderItemNPC;
 }
 
 export enum NPCTargetType {
