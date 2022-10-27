@@ -1,6 +1,6 @@
 {
   "name": "@rpg-engine/shared",
-  "version": "0.5.64",
+  "version": "0.5.65",
   "description": "Types shared across our API and client",
   "author": "Definya Team",
   "homepage": "",
@@ -32,6 +32,7 @@
   "dependencies": {
     "husky": "^4.3.0",
     "prettier": "^2.2.1",
+    "tsc": "^2.0.4",
     "typescript": "^4.6.4"
   },
   "devDependencies": {

@@ -231,16 +231,6 @@ export interface IRangedAttack {
   type?: string;
 }
 
-export interface ITraderItem {
-  itemId: string;
-  qty: number;
-}
-
-export interface IBuySellItems {
-  buy: ITraderItem[];
-  sell: ITraderItem[];
-}
-
 export interface IUseItemPayload {
   itemId: string;
 }
