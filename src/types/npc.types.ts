@@ -1,6 +1,7 @@
 import { AnimationDirection } from "./animation.types";
 import { CharacterClass, CharacterGender, ICharacter } from "./character.types";
 import { EntityAttackType } from "./entity.types";
+import { ITraderItem } from './item.types';
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
 import { ISkill } from "./skills.types";
@@ -85,6 +86,7 @@ export enum NPCSocketEvents {
   NPCStopDialogNPC = "NPCStopDialogNPC",
 }
 
+
 export interface INPCPositionUpdatePayload {
   id: string;
   name: string;
@@ -102,6 +104,8 @@ export interface INPCPositionUpdatePayload {
   mana: number;
   maxMana: number;
   hasQuest: boolean;
+  isTrader?: boolean;
+  traderItems?: ITraderItem[]
 }
 
 export interface INPCDataUpdatePayload {
