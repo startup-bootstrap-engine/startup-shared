@@ -4,9 +4,10 @@ export enum CharacterTradeSocketEvents {
 
 export type TradeTransactionType = "buy" | "sell";
 
-export interface ITraderItem { // this is present on NPC model and lists which items are available for trading in a particular NPC.
+export interface ITraderItem {
+  // this is present on NPC model and lists which items are available for trading in a particular NPC.
   key: string;
-  price: string;
+  price: number;
 }
 
 export interface ITradeRequestItem {
