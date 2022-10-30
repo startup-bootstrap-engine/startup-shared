@@ -1,12 +1,11 @@
-
 /** REQUEST INTERFACES **/
 
 export interface IDepotContainerOpen {
-    npcId: string;
-  }
-  
+  npcId: string;
+}
+
 /** SOCKET EVENTS **/
-  
+
 export enum DepotSocketEvents {
-    OpenContainer = "OpenContainer",
+  OpenContainer = "OpenContainer",
 }
