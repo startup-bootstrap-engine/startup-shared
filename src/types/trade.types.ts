@@ -1,5 +1,7 @@
 export enum CharacterTradeSocketEvents {
-  TradeWithNPC = "TradeWithNPC",
+  TradeWithNPC = "TradeWithNPC", // this perform the trade itself
+  InitBuyRequest = "InitBuyRequest", // this event is in charge of populating the client menu
+  InitSellRequest = "InitSellRequest",
 }
 
 export type TradeTransactionType = "buy" | "sell";
