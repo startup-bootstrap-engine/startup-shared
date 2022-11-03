@@ -19,7 +19,7 @@ export interface ITradeRequestItem {
 
 export interface ITradeResponseItem {
   key: string;
-  itemId: string;
+  itemId?: string; // used only when selling
   qty?: number; // only used when selling (qty would be how much items are available to be sold by the player)
   price: number;
   texturePath: string;
