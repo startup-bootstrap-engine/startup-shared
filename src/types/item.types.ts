@@ -129,7 +129,7 @@ export const ItemSocketEventsDisplayLabels: IStringIndex = {
   [ItemSocketEvents.Use]: "Use",
   [ItemSocketEvents.ContainerOpen]: "Open",
   [ItemSocketEvents.ContainerRead]: "Read",
-  [ItemSocketEvents.UseWith]: "Use with..."
+  [ItemSocketEvents.UseWith]: "Use with...",
 };
 
 export interface IGetItemInfo {
@@ -172,7 +172,7 @@ export const ActionsForInventory = {
   Consumable: [ItemSocketEvents.Use, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
   CraftMaterial: [ItemSocketEvents.UseWith, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
   Tool: [ItemSocketEvents.UseWith, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
-  Other: [ ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
+  Other: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
   Container: [
     ItemSocketEvents.Equip,
     ItemSocketEvents.GetItemInfo,
