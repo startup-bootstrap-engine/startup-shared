@@ -103,6 +103,7 @@ export enum ItemSocketEvents {
   Pickup = "Pickup",
   Drop = "Drop",
   Use = "Use",
+  UseWith = "Use with...",
   GetItemInfo = "GetItemInfo",
   ReadItemInfo = "ReadItemInfo",
   ContainerOpen = "ContainerOpen",
@@ -128,6 +129,7 @@ export const ItemSocketEventsDisplayLabels: IStringIndex = {
   [ItemSocketEvents.Use]: "Use",
   [ItemSocketEvents.ContainerOpen]: "Open",
   [ItemSocketEvents.ContainerRead]: "Read",
+  [ItemSocketEvents.UseWith]: "Use with...",
 };
 
 export interface IGetItemInfo {
@@ -168,9 +170,9 @@ export interface IItemInViewBasicInfo {
 export const ActionsForInventory = {
   Equipment: [ItemSocketEvents.Equip, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
   Consumable: [ItemSocketEvents.Use, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
-  CraftMaterial: [ItemSocketEvents.Use, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
-  Tool: [ItemSocketEvents.Use, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
-  Other: [ItemSocketEvents.Use, ItemSocketEvents.GetItemInfo, ItemSocketEvents.ReadItemInfo],
+  CraftMaterial: [ItemSocketEvents.UseWith, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
+  Tool: [ItemSocketEvents.UseWith, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
+  Other: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
   Container: [
     ItemSocketEvents.Equip,
     ItemSocketEvents.GetItemInfo,
