@@ -61,7 +61,7 @@ export interface IMapMetaData {
   tilesets: IMapMetadataTileset[];
   width: number;
   height: number;
-  lightening: {
+  lightening?: {
     type: MapLighteningType;
     value?: number;
   };
