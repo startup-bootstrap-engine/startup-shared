@@ -52,6 +52,7 @@ export enum MapLighteningType {
 }
 
 export interface IMapMetaData {
+  key: string;
   name: string;
   version: number;
   layers: string[];
