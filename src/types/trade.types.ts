@@ -8,7 +8,6 @@ export type TradeTransactionType = "buy" | "sell";
 export interface ITraderItem {
   // this is present on NPC model and lists which items are available for trading in a particular NPC.
   key: string;
-  price: number;
 }
 
 export interface ITradeRequestItem {
@@ -51,9 +50,4 @@ export interface ICharacterNPCTradeInitSellResponse {
   type: TradeTransactionType;
   characterItems: ITradeResponseItem[];
   characterAvailableGold: number;
-}
-
-export interface ITraderItemNPC {
-  key: string;
-  price: number;
 }
