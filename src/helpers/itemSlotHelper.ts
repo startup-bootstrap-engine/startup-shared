@@ -10,7 +10,7 @@ export const getItemTextureKeyPath = (itemToRender: IItem, atlasJSON: any) => {
     const textureBreakPath = itemTexturePath.split(".");
     const txtPrefix: string = textureBreakPath[0];
     const txtExtension: string = textureBreakPath[1];
-    const newTexturePath = `${txtPrefix}-qty-${Math.floor(Number(idx))}.${txtExtension}`;
+    const newTexturePath = `${txtPrefix}-qty-${String(Math.floor(Number(idx)))}.${txtExtension}`;
     const spriteData = atlasJSON.frames[newTexturePath];
 
     if (spriteData !== undefined) {
