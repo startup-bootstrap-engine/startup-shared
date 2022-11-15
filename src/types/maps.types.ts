@@ -46,6 +46,11 @@ export interface IMapMetadataTileset {
   name: string;
 }
 
+export enum MapLighteningType {
+  Static = "Static",
+  Dynamic = "Dynamic",
+}
+
 export interface IMapMetaData {
   name: string;
   version: number;
@@ -55,6 +60,10 @@ export interface IMapMetaData {
   tilesets: IMapMetadataTileset[];
   width: number;
   height: number;
+  lightening: {
+    type: MapLighteningType;
+    value?: number;
+  };
 }
 
 export enum MapSocketEvents {
