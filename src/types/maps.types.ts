@@ -65,6 +65,7 @@ export interface IMapMetaData {
     type: MapLighteningType;
     value?: number;
   };
+  weather?: AvailableWeather;
 }
 
 export enum MapSocketEvents {
