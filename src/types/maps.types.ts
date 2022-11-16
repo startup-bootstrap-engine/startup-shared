@@ -85,7 +85,13 @@ export enum PeriodOfDay {
   Night = "Night",
 }
 
-export const WEATHER_OF_DAY = ["Standard", "Raining", "Clouding"];
+export enum AvailableWeather {
+  Standard = "Standard",
+  SoftRain = "SoftRain",
+  HeavyRain = "HeavyRain",
+  Snowing = "Snowing",
+}
+
 export interface IControlTime {
   time: string;
   period: string;
