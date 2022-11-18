@@ -27,8 +27,17 @@ export enum AnimationSocketEvents {
 }
 
 export enum AnimationEffectKeys {
+  // battle-effects
   LevelUp = "level_up",
   LifeHeal = "life_heal",
   ManaHeal = "mana_heal",
   SkillLevelUp = "new_skill",
+  Poison = "poison",
+  // battle
+  Hit = "hit",
+  // projectiles
+  Blue = "blue",
+  Green = "green",
+  Dark = "dark",
+  FireBall = "fireball"
 }
