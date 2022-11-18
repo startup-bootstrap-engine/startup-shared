@@ -1,3 +1,4 @@
+import { EntityType } from "./entity.types";
 import { MapLayers } from "./maps.types";
 
 /** REQUEST INTERFACES **/
@@ -17,9 +18,16 @@ export interface IUseWithTile {
   };
 }
 
+export interface IUseWithEntity {
+  itemId: string;
+  entityId: string;
+  entityType: EntityType
+}
+
 /** SOCKET EVENTS **/
 
 export enum UseWithSocketEvents {
   UseWithItem = "UseWithItem",
   UseWithTile = "UseWithTile",
+  UseWithEntity = "UseWithEntity",
 }
