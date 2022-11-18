@@ -57,10 +57,12 @@ export enum ItemType {
   Tool = "Tool",
   Container = "Container",
   Other = "Other",
+  CraftingResource = "CraftingResource",
 }
 
 export enum ItemSubType {
   Accessory = "Accessory",
+  CraftingResource = "CraftingResource",
   Armor = "Armor",
   Legs = "Legs",
   Axe = "Axe",
@@ -79,6 +81,7 @@ export enum ItemSubType {
   DeadBody = "DeadBody",
   Dagger = "Dagger",
   Mace = "Mace",
+  Tool = "Tool",
 }
 
 export enum ItemSlotType {
