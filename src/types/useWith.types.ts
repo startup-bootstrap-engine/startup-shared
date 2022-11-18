@@ -21,7 +21,7 @@ export interface IUseWithTile {
 export interface IUseWithEntity {
   itemId: string;
   entityId: string;
-  entityType: EntityType
+  entityType: EntityType;
 }
 
 /** SOCKET EVENTS **/
