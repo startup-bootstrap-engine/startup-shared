@@ -95,8 +95,8 @@ export enum AvailableWeather {
 
 export interface IControlTime {
   time: string;
-  period: string;
-  weather: string;
+  period: PeriodOfDay;
+  weather: AvailableWeather;
 }
 
 export enum WeatherSocketEvents {
