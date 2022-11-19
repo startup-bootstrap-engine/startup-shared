@@ -19,6 +19,8 @@ export interface IEntityMovementAnimation {
 
 export interface IAnimationEffect {
   targetId: string;
+  targetX: number;
+  targetY: number;
   effectKey: string;
 }
 
