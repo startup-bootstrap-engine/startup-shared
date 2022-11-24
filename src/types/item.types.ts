@@ -51,7 +51,6 @@ export enum ItemType {
   Accessory = "Accessory",
   Jewelry = "Jewelry",
   Consumable = "Consumable",
-  CraftMaterial = "CraftMaterial",
   Quest = "Quest",
   Information = "Information",
   Tool = "Tool",
@@ -173,7 +172,7 @@ export interface IItemInViewBasicInfo {
 export const ActionsForInventory = {
   Equipment: [ItemSocketEvents.Equip, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
   Consumable: [ItemSocketEvents.Use, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
-  CraftMaterial: [ItemSocketEvents.UseWith, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
+  CraftingResource: [ItemSocketEvents.UseWith, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
   Tool: [ItemSocketEvents.UseWith, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
   Other: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Drop],
   Container: [
@@ -187,7 +186,7 @@ export const ActionsForInventory = {
 export const ActionsForLoot = {
   Equipment: [ItemSocketEvents.Equip, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Pickup],
   Consumable: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Pickup],
-  CraftMaterial: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Pickup],
+  CraftingResource: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Pickup],
   Tool: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Pickup],
   Other: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Pickup],
 };
@@ -200,7 +199,7 @@ export const ActionsForEquipmentSet = {
 export const ActionsForMapContainer = {
   Equipment: [ItemSocketEvents.Equip, ItemSocketEvents.GetItemInfo, ItemSocketEvents.Pickup],
   Consumable: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Pickup],
-  CraftMaterial: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Pickup],
+  CraftingResource: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Pickup],
   Tool: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Pickup],
   Other: [ItemSocketEvents.GetItemInfo, ItemSocketEvents.Pickup],
 };
