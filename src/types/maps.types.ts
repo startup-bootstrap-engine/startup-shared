@@ -4,7 +4,8 @@ export enum MapLayers {
   Decoration = 2,
   Character = 3,
   OverCharacter = 4,
-  Roof = 5,
+  OverCharacterDecoration = 5,
+  Roof = 6,
 }
 
 export const TiledLayerNames = {
@@ -13,12 +14,21 @@ export const TiledLayerNames = {
   2: "decoration",
   3: "character",
   4: "over-character",
-  5: "roof",
+  5: "over-character-decoration",
+  6: "roof",
 };
 
 export const MAP_OBJECT_LAYERS = ["NPCs", "Transitions", "Items", "Roofs"];
 
-export const MAP_LAYERS = ["ground", "over-ground", "decoration", "character", "over-character", "roof"];
+export const MAP_LAYERS = [
+  "ground",
+  "over-ground",
+  "decoration",
+  "character",
+  "over-character",
+  "over-character-decoration",
+  "roof",
+];
 
 export const MAP_LAYERS_TO_ID = {
   ground: 0,
@@ -26,7 +36,8 @@ export const MAP_LAYERS_TO_ID = {
   decoration: 2,
   character: 3,
   "over-character": 4,
-  roof: 5,
+  "over-character-decoration": 5,
+  roof: 6,
 };
 
 export const MAP_REQUIRED_LAYERS = [
