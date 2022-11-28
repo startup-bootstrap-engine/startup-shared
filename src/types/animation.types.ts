@@ -50,4 +50,5 @@ export enum AnimationEffectKeys {
   Green = "green",
   Dark = "dark",
   FireBall = "fireball",
+  Arrow = "arrow",
 }
