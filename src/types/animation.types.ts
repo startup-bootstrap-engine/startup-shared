@@ -24,8 +24,16 @@ export interface IAnimationEffect {
   effectKey: string;
 }
 
+export interface IProjectileAnimationEffect {
+  sourceId: string;
+  targetId: string;
+  projectileEffectKey: string;
+  effectKey?: string;
+}
+
 export enum AnimationSocketEvents {
   ShowAnimation = "ShowAnimation",
+  ShowProjectileAnimation = "ShowProjectileAnimation"
 }
 
 export enum AnimationEffectKeys {
