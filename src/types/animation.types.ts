@@ -33,7 +33,7 @@ export interface IProjectileAnimationEffect {
 
 export enum AnimationSocketEvents {
   ShowAnimation = "ShowAnimation",
-  ShowProjectileAnimation = "ShowProjectileAnimation"
+  ShowProjectileAnimation = "ShowProjectileAnimation",
 }
 
 export enum AnimationEffectKeys {
