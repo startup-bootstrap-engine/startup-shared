@@ -1,3 +1,5 @@
+import { EntityAttackType } from "./entity.types";
+import { ItemSubType } from "./item.types";
 import { IResource } from "./resource.types";
 
 export enum SkillSocketEvents {
@@ -74,4 +76,73 @@ export enum SkillType {
   Gathering = "Gathering",
   Magic = "Magic",
   Misc = "Misc",
+}
+
+export enum CombatSkill {
+  First = "first",
+  Sword = "sword",
+  Dagger = "dagger",
+  Axe = "axe",
+  Distance = "distance",
+  Shielding = "shielding",
+  Club = "club",
+}
+
+export enum BasicAttribute {
+  Strength = "strength",
+  Resistance = "resistance",
+  Dexterity = "dexterity",
+  Magic = "magic",
+}
+
+export const BASIC_ATTRIBUTES: BasicAttribute[] = [
+  BasicAttribute.Strength,
+  BasicAttribute.Resistance,
+  BasicAttribute.Dexterity,
+  BasicAttribute.Magic,
+] 
+
+export const COMBAT_SKILLS = [
+  EntityAttackType.None,
+  ItemSubType.Sword,
+  ItemSubType.Dagger,
+  ItemSubType.Axe,
+  ItemSubType.Ranged,
+  ItemSubType.Spear,
+  ItemSubType.Shield,
+  ItemSubType.Mace,
+];
+
+export const SKILLS_MAP = new Map<ItemSubType | string, string>([
+  [EntityAttackType.None, CombatSkill.First],
+  [ItemSubType.Sword, CombatSkill.Sword],
+  [ItemSubType.Dagger, CombatSkill.Dagger],
+  [ItemSubType.Axe, CombatSkill.Axe],
+  [ItemSubType.Ranged, CombatSkill.Distance],
+  [ItemSubType.Spear, CombatSkill.Distance],
+  [ItemSubType.Shield, CombatSkill.Shielding],
+  [ItemSubType.Mace, CombatSkill.Club],
+  [BasicAttribute.Strength, BasicAttribute.Strength],
+  [BasicAttribute.Resistance, BasicAttribute.Resistance],
+  [BasicAttribute.Dexterity, BasicAttribute.Dexterity],
+  [BasicAttribute.Magic, BasicAttribute.Magic],
+]);
+export interface IDecreaseSPResult {
+  skillType: string;
+  skillName: string;
+  skillLevel: number;
+  skillPoints: number;
+  spToNextLevel: number;
+}
+
+export interface IIncreaseSPResult {
+  skillLevelUp: boolean;
+  skillLevel: number;
+  skillName: string;
+}
+
+export interface IIncreaseXPResult {
+  level: number;
+  previousLevel: number;
+  exp: number;
 }
