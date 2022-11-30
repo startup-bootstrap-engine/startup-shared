@@ -7,7 +7,7 @@ export interface IQuest extends IResource {
   title: string;
   description: string;
   rewards: IQuestReward[];
-  objectives: IQuestObjectiveKill[] | IQuestObjectiveInteraction[] | IQuestObjectiveCraft[];
+  objectives: IQuestObjectiveKill[] | IQuestObjectiveInteraction[];
   thumbnail?: string;
   status?: QuestStatus;
 }
@@ -32,23 +32,19 @@ export interface IQuestObjectiveKill extends IQuestObjective {
 }
 
 export interface IQuestObjectiveInteraction extends IQuestObjective {
-  targetNPCkey: string;
-}
-
-export interface IQuestObjectiveCraft extends IQuestObjective {
-  itemsKeys: string[];
+  targetNPCkey?: string;
+  itemsKeys?: string[];
 }
 
 export interface IQuestRecord {
   id: string;
   character: ICharacter | string;
-  objective: IQuestObjectiveKill | IQuestObjectiveInteraction | IQuestObjectiveCraft | string;
+  objective: IQuestObjectiveKill | IQuestObjectiveInteraction | string;
 }
 
 export enum QuestType {
   Kill = "Kill",
   Interaction = "Interaction",
-  Craft = "Craft",
 }
 
 export enum QuestStatus {

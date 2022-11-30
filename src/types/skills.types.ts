@@ -100,7 +100,7 @@ export const BASIC_ATTRIBUTES: BasicAttribute[] = [
   BasicAttribute.Resistance,
   BasicAttribute.Dexterity,
   BasicAttribute.Magic,
-] 
+];
 
 export const COMBAT_SKILLS = [
   EntityAttackType.None,
