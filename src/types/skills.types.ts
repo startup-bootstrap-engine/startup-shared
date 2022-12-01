@@ -93,6 +93,7 @@ export enum BasicAttribute {
   Resistance = "resistance",
   Dexterity = "dexterity",
   Magic = "magic",
+  MagicResistance = "magicResistance",
 }
 
 export const BASIC_ATTRIBUTES: BasicAttribute[] = [
@@ -126,7 +127,9 @@ export const SKILLS_MAP = new Map<ItemSubType | string, string>([
   [BasicAttribute.Resistance, BasicAttribute.Resistance],
   [BasicAttribute.Dexterity, BasicAttribute.Dexterity],
   [BasicAttribute.Magic, BasicAttribute.Magic],
+  [BasicAttribute.MagicResistance, BasicAttribute.MagicResistance],
 ]);
+
 export interface IDecreaseSPResult {
   skillType: string;
   skillName: string;
