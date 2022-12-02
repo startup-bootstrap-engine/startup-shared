@@ -140,9 +140,6 @@ export interface ICharacterCreateFromServer {
   textureKey: string;
 }
 export interface ICharacterPositionUpdateFromClient {
-  id: string; // will be validated server side
-  x: number;
-  y: number;
   newX: number;
   newY: number;
   direction: AnimationDirection;
