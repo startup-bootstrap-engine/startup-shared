@@ -32,7 +32,8 @@ export interface IQuestObjectiveKill extends IQuestObjective {
 }
 
 export interface IQuestObjectiveInteraction extends IQuestObjective {
-  targetNPCkey: string;
+  targetNPCkey?: string;
+  itemsKeys?: string[];
 }
 
 export interface IQuestRecord {

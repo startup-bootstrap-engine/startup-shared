@@ -24,8 +24,16 @@ export interface IAnimationEffect {
   effectKey: string;
 }
 
+export interface IProjectileAnimationEffect {
+  sourceId: string;
+  targetId: string;
+  projectileEffectKey: string;
+  effectKey?: string;
+}
+
 export enum AnimationSocketEvents {
   ShowAnimation = "ShowAnimation",
+  ShowProjectileAnimation = "ShowProjectileAnimation",
 }
 
 export enum AnimationEffectKeys {
@@ -42,4 +50,5 @@ export enum AnimationEffectKeys {
   Green = "green",
   Dark = "dark",
   FireBall = "fireball",
+  Arrow = "arrow",
 }
