@@ -157,7 +157,6 @@ export interface ICharacterPositionUpdateFromServer {
   channelId: string;
   speed: number;
   movementIntervalMs: number;
-
   health: number;
   maxHealth: number;
   mana: number;
@@ -191,4 +190,5 @@ export interface ICharacterAttributeChanged {
   targetId: string;
   health?: number;
   mana?: number;
+  speed?: number;
 }
