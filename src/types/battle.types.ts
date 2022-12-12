@@ -7,6 +7,7 @@ export enum BattleSocketEvents {
   BattleEvent = "BattleEvent",
   BattleDeath = "BattleDeath",
   RangedAttackFailure = "RangedAttackFailure",
+  EntityEffect = "EntityEffect",
 }
 
 export enum BattleEventType {
