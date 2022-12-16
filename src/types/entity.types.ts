@@ -22,3 +22,13 @@ export interface IEntityInViewBasicInfo {
   y?: number;
   direction?: string;
 }
+
+export interface IEntityEffect {
+  targetId: string;
+  targetType: EntityType;
+  value: number;
+}
+
+export enum EffectsSocketEvents {
+  EntityEffect = "EntityEffect"
+}

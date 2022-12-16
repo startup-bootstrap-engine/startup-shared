@@ -49,6 +49,7 @@ export interface INPC extends IResource {
   xpToRelease?: { charId: number; xp: number }[];
   loots?: INPCLoot[];
   hasQuest?: boolean;
+  hasDepot?: boolean;
   baseHealth?: number;
   healthRandomizerDice?: number;
   skillRandomizerDice?: number;
@@ -106,6 +107,7 @@ export interface INPCPositionUpdatePayload {
   mana: number;
   maxMana: number;
   hasQuest: boolean;
+  hasDepot: boolean;
   isTrader?: boolean;
   traderItems?: ITraderItem[];
 }
