@@ -107,7 +107,7 @@ export interface INPCPositionUpdatePayload {
   mana: number;
   maxMana: number;
   hasQuest: boolean;
-  hasDepot: boolean;
+  hasDepot?: boolean;
   isTrader?: boolean;
   traderItems?: ITraderItem[];
 }

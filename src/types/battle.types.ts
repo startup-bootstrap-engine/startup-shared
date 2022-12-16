@@ -6,7 +6,7 @@ export enum BattleSocketEvents {
   CancelTargeting = "CancelTargeting", // server => client (triggered when errors occur)
   BattleEvent = "BattleEvent",
   BattleDeath = "BattleDeath",
-  RangedAttackFailure = "RangedAttackFailure"
+  RangedAttackFailure = "RangedAttackFailure",
 }
 
 export enum BattleEventType {
