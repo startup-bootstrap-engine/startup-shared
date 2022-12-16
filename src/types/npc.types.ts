@@ -112,6 +112,17 @@ export interface INPCPositionUpdatePayload {
   traderItems?: ITraderItem[];
 }
 
+export enum NPCSubtype {
+  Animal = "Animal",
+  Bird = "Bird",
+  Insect = "Insect",
+  Undead = "Undead",
+  Magical = "Magical",
+  Humanoid = "Humanoid",
+  Dragon = "Dragon",
+  Elemental = "Elemental",
+}
+
 export interface INPCDataUpdatePayload {
   [key: string]: any;
 }
