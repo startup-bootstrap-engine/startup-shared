@@ -123,7 +123,6 @@ export const SKILLS_MAP = new Map<ItemSubType | string, string>([
   [ItemSubType.Spear, CombatSkill.Distance],
   [ItemSubType.Shield, CombatSkill.Shielding],
   [ItemSubType.Mace, CombatSkill.Club],
-  [ItemSubType.Magic, BasicAttribute.Magic],
   [BasicAttribute.Strength, BasicAttribute.Strength],
   [BasicAttribute.Resistance, BasicAttribute.Resistance],
   [BasicAttribute.Dexterity, BasicAttribute.Dexterity],
@@ -143,10 +142,34 @@ export interface IIncreaseSPResult {
   skillLevelUp: boolean;
   skillLevel: number;
   skillName: string;
+  skillPoints?: number,
+  skillPointsToNextLevel?: number
 }
 
 export interface IIncreaseXPResult {
   level: number;
   previousLevel: number;
   exp: number;
+}
+
+export interface IBasicAttributesBonusAndPenalties {
+  strength: number;
+  resistance: number;
+  dexterity: number;
+  magic: number;
+  magicResistance: number;
+}
+
+export interface ICombatSkillsBonusAndPenalties {
+  first: number;
+  sword: number;
+  dagger: number;
+  axe: number;
+  distance: number;
+  shielding: number;
+  club: number;
+}
+
+export interface ICraftingGatheringSkillsBonusAndPenalties {
+  
 }
