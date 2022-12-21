@@ -123,6 +123,7 @@ export const SKILLS_MAP = new Map<ItemSubType | string, string>([
   [ItemSubType.Spear, CombatSkill.Distance],
   [ItemSubType.Shield, CombatSkill.Shielding],
   [ItemSubType.Mace, CombatSkill.Club],
+  [ItemSubType.Magic, BasicAttribute.Magic],
   [BasicAttribute.Strength, BasicAttribute.Strength],
   [BasicAttribute.Resistance, BasicAttribute.Resistance],
   [BasicAttribute.Dexterity, BasicAttribute.Dexterity],
