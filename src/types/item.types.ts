@@ -160,6 +160,10 @@ export interface IItemUpdate {
   isStackable: boolean;
 }
 
+export interface IItemUpdateAll {
+  items: IItemUpdate[];
+}
+
 export interface IItemsInView {
   [id: string]: IItemInViewBasicInfo;
 }
