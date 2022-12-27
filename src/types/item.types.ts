@@ -99,6 +99,7 @@ export enum ItemSlotType {
 
 export enum ItemSocketEvents {
   Update = "Update",
+  UpdateAll = "UpdateAll",
   Look = "Look",
   Equip = "Equip",
   Unequip = "Unequip",
