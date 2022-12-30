@@ -78,6 +78,7 @@ export enum CharacterGender {
 export enum CharacterSocketEvents {
   CharacterCreate = "CharacterCreate",
   CharacterPositionUpdate = "CharacterPositionUpdate",
+  CharacterPositionUpdateAll = "CharacterPositionUpdateAll",
   CharacterPositionUpdateConfirm = "CharacterPositionUpdateConfirm",
   CharacterLogout = "CharacterLogout",
   CharacterPrivateMessage = "CharacterPrivateMessage",
@@ -162,6 +163,10 @@ export interface ICharacterPositionUpdateFromServer {
   mana: number;
   maxMana: number;
   textureKey: string;
+}
+
+export interface IAllCharacterPositionUpdateFromServer {
+  nearbyCharacters: ICharacterPositionUpdateFromServer[];
 }
 
 export interface ICharacterLogout {

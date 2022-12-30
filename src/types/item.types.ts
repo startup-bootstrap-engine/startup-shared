@@ -99,6 +99,7 @@ export enum ItemSlotType {
 
 export enum ItemSocketEvents {
   Update = "Update",
+  UpdateAll = "UpdateAll",
   Look = "Look",
   Equip = "Equip",
   Unequip = "Unequip",
@@ -157,6 +158,10 @@ export interface IItemUpdate {
   layer: MapLayers;
   stackQty: number;
   isStackable: boolean;
+}
+
+export interface IItemUpdateAll {
+  items: IItemUpdate[];
 }
 
 export interface IItemsInView {

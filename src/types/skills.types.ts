@@ -143,8 +143,8 @@ export interface IIncreaseSPResult {
   skillLevelUp: boolean;
   skillLevel: number;
   skillName: string;
-  skillPoints?: number,
-  skillPointsToNextLevel?: number
+  skillPoints?: number;
+  skillPointsToNextLevel?: number;
 }
 
 export interface IIncreaseXPResult {
@@ -171,6 +171,4 @@ export interface ICombatSkillsBonusAndPenalties {
   club: number;
 }
 
-export interface ICraftingGatheringSkillsBonusAndPenalties {
-  
-}
+export interface ICraftingGatheringSkillsBonusAndPenalties {}
