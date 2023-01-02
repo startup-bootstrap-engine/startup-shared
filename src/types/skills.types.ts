@@ -28,6 +28,8 @@ export interface ISkillDetails {
   level: number;
   skillPoints: number;
   skillPointsToNextLevel: number;
+  isBuffed: boolean;
+  buffedLevel: number;
 }
 
 export interface ISkill extends IResource {
