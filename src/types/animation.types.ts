@@ -48,7 +48,9 @@ export enum AnimationEffectKeys {
   // projectiles
   Blue = "blue",
   Green = "green",
+  Red = "red",
+  Energy = "energy",
   Dark = "dark",
   FireBall = "fireball",
-  Arrow = "arrow",
+  Arrow = "arrow"
 }
