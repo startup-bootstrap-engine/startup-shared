@@ -45,6 +45,11 @@ export enum AnimationEffectKeys {
   Poison = "poison",
   // battle
   Hit = "hit",
+  HitBlue = "hit-blue",
+  HitDark = "hit-dark",
+  HitFire = "hit-fire",
+  HitHeal = "hit-heal",
+  HitPoison = "hit-poison",
   // projectiles
   Blue = "blue",
   Green = "green",
@@ -52,5 +57,6 @@ export enum AnimationEffectKeys {
   Energy = "energy",
   Dark = "dark",
   FireBall = "fireball",
-  Arrow = "arrow"
+  Arrow = "arrow",
+  Heal = "heal"
 }
