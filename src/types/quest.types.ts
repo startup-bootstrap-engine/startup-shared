@@ -20,9 +20,9 @@ export interface IQuestReward {
 }
 
 export interface IQuestObjective {
-  id: string;
+  id?: string;
   type: QuestType;
-  status: QuestStatus;
+  status?: QuestStatus;
 }
 
 export interface IQuestObjectiveKill extends IQuestObjective {
