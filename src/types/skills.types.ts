@@ -48,12 +48,12 @@ export interface ISkill extends IResource {
   dexterity: ISkillDetails;
 
   // Combat skills
-  first: ISkillDetails;
+  melee: ISkillDetails;
   club: ISkillDetails;
   sword: ISkillDetails;
   axe: ISkillDetails;
-  distance: ISkillDetails;
-  shielding: ISkillDetails;
+  ranged: ISkillDetails;
+  shield: ISkillDetails;
   dagger: ISkillDetails;
 
   // Crafting skills
@@ -81,12 +81,12 @@ export enum SkillType {
 }
 
 export enum CombatSkill {
-  First = "first",
+  Melee = "melee",
   Sword = "sword",
   Dagger = "dagger",
   Axe = "axe",
-  Distance = "distance",
-  Shielding = "shielding",
+  Ranged = "ranged",
+  Shield = "shield",
   Club = "club",
 }
 
