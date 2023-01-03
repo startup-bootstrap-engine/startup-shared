@@ -13,9 +13,9 @@ export interface IQuest extends IResource {
 }
 
 export interface IQuestReward {
-  id: string;
+  id?: string;
   itemKeys: string[];
-  spellKeys: string[];
+  spellKeys?: string[];
   qty: number;
 }
 
