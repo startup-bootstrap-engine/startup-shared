@@ -81,12 +81,12 @@ export enum SkillType {
 }
 
 export enum CombatSkill {
-  Melee = "melee",
+  First = "first",
   Sword = "sword",
   Dagger = "dagger",
   Axe = "axe",
-  Ranged = "ranged",
-  Shield = "shield",
+  Distance = "distance",
+  Shielding = "shielding",
   Club = "club",
 }
 
