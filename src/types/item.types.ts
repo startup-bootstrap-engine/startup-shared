@@ -117,6 +117,8 @@ export enum ItemSocketEvents {
   Buy = "Buy",
   Sell = "Sell",
   InventoryOpen = "InventoryOpen",
+  LoadCraftBook = "LoadCraftBook",
+  CraftItem = "CraftItem",
 }
 
 interface IStringIndex {
@@ -247,4 +249,24 @@ export interface IUseItemPayload {
 export enum SpellCastingType {
   SelfCasting = "self-casting",
   RangedCasting = "ranged-casting",
+}
+
+export interface ILoadCraftBookPayload {
+  itemSubType: string;
+}
+
+export interface ICraftItemPayload {
+  itemKey: string;
+}
+
+export interface ICraftableItemIngredient {
+  key: string;
+  qty: number;
+}
+
+export interface ICraftableItem {
+  key: string;
+  name: string;
+  canCraft: boolean;
+  ingredients: ICraftableItemIngredient[]
 }
