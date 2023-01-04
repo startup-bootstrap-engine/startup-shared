@@ -268,5 +268,5 @@ export interface ICraftableItem {
   key: string;
   name: string;
   canCraft: boolean;
-  ingredients: ICraftableItemIngredient[]
+  ingredients: ICraftableItemIngredient[];
 }
