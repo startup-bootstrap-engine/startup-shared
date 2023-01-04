@@ -118,6 +118,7 @@ export enum ItemSocketEvents {
   Sell = "Sell",
   InventoryOpen = "InventoryOpen",
   LoadCraftBook = "LoadCraftBook",
+  CraftableItems = "CraftableItems",
   CraftItem = "CraftItem",
 }
 
