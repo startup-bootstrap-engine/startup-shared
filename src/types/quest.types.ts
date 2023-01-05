@@ -13,16 +13,16 @@ export interface IQuest extends IResource {
 }
 
 export interface IQuestReward {
-  id: string;
+  id?: string;
   itemKeys: string[];
-  spellKeys: string[];
+  spellKeys?: string[];
   qty: number;
 }
 
 export interface IQuestObjective {
-  id: string;
+  id?: string;
   type: QuestType;
-  status: QuestStatus;
+  status?: QuestStatus;
 }
 
 export interface IQuestObjectiveKill extends IQuestObjective {
