@@ -263,11 +263,13 @@ export interface ICraftItemPayload {
 export interface ICraftableItemIngredient {
   key: string;
   qty: number;
+  texturePath: string;
 }
 
 export interface ICraftableItem {
   key: string;
   name: string;
   canCraft: boolean;
+  texturePath: string;
   ingredients: ICraftableItemIngredient[];
 }
