@@ -113,8 +113,12 @@ export interface ICharacterPing {
 
 export interface ICharacterPositionUpdateConfirm {
   id: string;
-  direction: string;
   isValid: boolean;
+  position: {
+    newX: number;
+    newY: number;
+    direction: number;
+  };
 }
 
 export type Events = CharacterSocketEvents;
