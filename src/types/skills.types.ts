@@ -48,12 +48,12 @@ export interface ISkill extends IResource {
   dexterity: ISkillDetails;
 
   // Combat skills
-  melee: ISkillDetails;
+  first: ISkillDetails;
   club: ISkillDetails;
   sword: ISkillDetails;
   axe: ISkillDetails;
-  ranged: ISkillDetails;
-  shield: ISkillDetails;
+  distance: ISkillDetails;
+  shielding: ISkillDetails;
   dagger: ISkillDetails;
 
   // Crafting skills
