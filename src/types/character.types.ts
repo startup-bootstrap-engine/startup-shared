@@ -84,6 +84,7 @@ export enum CharacterSocketEvents {
   CharacterPrivateMessage = "CharacterPrivateMessage",
   CharacterPing = "CharacterPing",
   CharacterForceDisconnect = "CharacterForceDisconnect",
+  CharacterSyncPosition = "CharacterSyncPosition",
   Login = "Login",
   ItemConsumed = "ItemConsumed",
   AttributeChanged = "AttributeChanged",
@@ -109,6 +110,15 @@ export enum ShadowWalkerRaces {
 export interface ICharacterPing {
   // tell the server you're still alive
   id: string;
+}
+
+export interface ICharacterSyncPosition {
+  id: string;
+  position: {
+    originX: number;
+    originY: number;
+    direction: AnimationDirection;
+  };
 }
 
 export interface ICharacterPositionUpdateConfirm {
