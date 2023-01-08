@@ -115,8 +115,8 @@ export interface ICharacterPositionUpdateConfirm {
   id: string;
   isValid: boolean;
   position: {
-    newX: number;
-    newY: number;
+    originX: number;
+    originY: number;
     direction: AnimationDirection;
   };
 }
