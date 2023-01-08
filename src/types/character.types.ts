@@ -155,6 +155,8 @@ export interface ICharacterCreateFromServer {
   textureKey: string;
 }
 export interface ICharacterPositionUpdateFromClient {
+  originX: number;
+  originY: number;
   newX: number;
   newY: number;
   direction: AnimationDirection;
