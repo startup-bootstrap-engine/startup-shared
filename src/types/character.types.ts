@@ -117,7 +117,7 @@ export interface ICharacterPositionUpdateConfirm {
   position: {
     newX: number;
     newY: number;
-    direction: number;
+    direction: AnimationDirection;
   };
 }
 
