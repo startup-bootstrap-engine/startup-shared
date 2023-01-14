@@ -84,13 +84,14 @@ export enum NPCMovementType {
 
 export enum NPCSocketEvents {
   NPCDataUpdate = "NPCDataUpdate",
+  NPCPositionCreate = "NPCPositionCreate",
   NPCPositionUpdate = "NPCPositionUpdate",
   NPCTalkToNPC = "NPCTalkToNPC",
   NPCStartDialogNPC = "NPCStartDialogNPC",
   NPCStopDialogNPC = "NPCStopDialogNPC",
 }
 
-export interface INPCPositionUpdatePayload {
+export interface INPCPositionCreatePayload {
   id: string;
   name: string;
   x: number;
@@ -110,6 +111,13 @@ export interface INPCPositionUpdatePayload {
   hasDepot?: boolean;
   isTrader?: boolean;
   traderItems?: ITraderItem[];
+}
+export interface INPCPositionUpdatePayload {
+  id: string;
+  x: number;
+  y: number;
+  direction: string;
+  alignment: NPCAlignment;
 }
 
 export enum NPCSubtype {
