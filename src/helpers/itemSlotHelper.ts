@@ -1,4 +1,4 @@
-interface IItemTexturePathGetOptions {
+export interface IItemTexturePathGetOptions {
   key: string;
   stackQty: number;
   texturePath: string;

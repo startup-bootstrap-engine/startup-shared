@@ -61,6 +61,22 @@ export interface IItemDrop {
   };
 }
 
+export interface IItemMove {
+  from: {
+    source: string;
+    containerId: string;
+    slotIndex: number;
+    item: IItem;
+  };
+  to: {
+    source: string;
+    containerId: string;
+    slotIndex: number;
+    item: IItem | null;
+  };
+  quantity: number | undefined;
+}
+
 export interface IItemContainerRead {
   itemContainer: IItemContainer;
   type: ItemContainerType;

@@ -105,6 +105,7 @@ export enum ItemSocketEvents {
   Unequip = "Unequip",
   Pickup = "Pickup",
   Drop = "Drop",
+  Move = "Move",
   Use = "Use",
   UseWith = "Use with...",
   GetItemInfo = "GetItemInfo",
