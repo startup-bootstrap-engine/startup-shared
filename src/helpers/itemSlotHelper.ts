@@ -1,10 +1,14 @@
-import { IItem } from "../types/item.types";
+interface IItemTexturePathGetOptions {
+  key: string;
+  stackQty: number;
+  texturePath: string;
+}
 
-export const getItemTextureKeyPath = (itemToRender: IItem, atlasJSON: any) => {
-  const stackQty = itemToRender?.stackQty ?? 0;
-  const itemTexturePath = itemToRender.texturePath;
+export const getItemTextureKeyPath = (requiredOptions: IItemTexturePathGetOptions, atlasJSON: any) => {
+  const stackQty = requiredOptions?.stackQty ?? 0;
+  const itemTexturePath = requiredOptions.texturePath;
 
-  if (itemToRender && stackQty >= 1) {
+  if (requiredOptions && stackQty >= 1) {
     const idx = stackQty >= 5 ? "5" : stackQty;
 
     const textureBreakPath = itemTexturePath.split(".");
