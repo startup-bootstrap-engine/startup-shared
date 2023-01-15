@@ -1,5 +1,5 @@
 export const getSPForLevel = (level: number): number => {
-  const totalSPOnLevel = Math.pow(level, 3) * 2.5;
+  const totalSPOnLevel = Math.pow(level, 3) * 5;
   return totalSPOnLevel;
 };
 
