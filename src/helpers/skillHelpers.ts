@@ -1,11 +1,15 @@
 export const getSPForLevel = (level: number): number => {
-  const totalSPOnLevel = Math.pow(level, 3) * 5;
-  return totalSPOnLevel;
+  const baseSP = 100;
+  const exponentialSP = Math.pow(level, 1.5) * 25;
+  const logarithmicSP = Math.log(level) * 100;
+  return Math.round(baseSP + exponentialSP + logarithmicSP);
 };
 
 export const getXPForLevel = (level: number): number => {
-  const totalXPOnLevel = Math.pow(level, 3) * 3;
-  return totalXPOnLevel;
+  const baseXP = 100;
+  const exponentialXP = Math.pow(level, 2.5) * 25;
+  const logarithmicXP = Math.log(level) * 100;
+  return Math.round(baseXP + exponentialXP + logarithmicXP);
 };
 
 export const calculateXPToNextLevel = (currentXP: number, level: number): number => {
@@ -21,3 +25,15 @@ export const calculateSPToNextLevel = (currentSP: number, level: number): number
 
   return spToNextLevelDiff;
 };
+
+/**
+ * 
+ * 
+ * 
+ * export const getXPForLevel = (level: number): number => {
+  const a = 20;
+  const b = 1.5;
+  const totalXPOnLevel = a * Math.pow(b, level - 1);
+  return totalXPOnLevel;
+};
+ */
