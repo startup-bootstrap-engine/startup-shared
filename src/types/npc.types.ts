@@ -86,9 +86,15 @@ export enum NPCSocketEvents {
   NPCDataUpdate = "NPCDataUpdate",
   NPCPositionCreate = "NPCPositionCreate",
   NPCPositionUpdate = "NPCPositionUpdate",
+  NPCPositionRequest = "NPCPositionRequest",
   NPCTalkToNPC = "NPCTalkToNPC",
   NPCStartDialogNPC = "NPCStartDialogNPC",
   NPCStopDialogNPC = "NPCStopDialogNPC",
+}
+
+export interface INPCPositionRequestPayload {
+  type: "create" | "update";
+  id: string;
 }
 
 export interface INPCPositionCreatePayload {
