@@ -76,6 +76,7 @@ export enum CharacterGender {
 
 //@ts-ignore
 export enum CharacterSocketEvents {
+  CharacterRefresh = "CharacterRefresh",
   CharacterCreate = "CharacterCreate",
   CharacterPositionUpdate = "CharacterPositionUpdate",
   CharacterPositionUpdateAll = "CharacterPositionUpdateAll",
