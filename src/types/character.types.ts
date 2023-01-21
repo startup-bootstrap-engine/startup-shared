@@ -7,6 +7,7 @@ import { IResource } from "./resource.types";
 import { ISkill } from "./skills.types";
 import { IUser } from "./user.types";
 import { IViewElement } from "./view.types";
+import { Types } from "mongoose";
 
 export interface ICharacter extends IResource {
   name: string;
@@ -213,4 +214,10 @@ export interface ICharacterAttributeChanged {
   health?: number;
   mana?: number;
   speed?: number;
+}
+
+export interface IAppliedBuffsEffect {
+  _id: Types.ObjectId;
+  key: string;
+  value: number;
 }
