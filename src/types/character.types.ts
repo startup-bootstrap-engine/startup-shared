@@ -7,6 +7,7 @@ import { IResource } from "./resource.types";
 import { ISkill } from "./skills.types";
 import { IUser } from "./user.types";
 import { IViewElement } from "./view.types";
+import { Types } from "mongoose";
 
 export interface ICharacter extends IResource {
   name: string;
@@ -76,13 +77,16 @@ export enum CharacterGender {
 
 //@ts-ignore
 export enum CharacterSocketEvents {
+  CharacterRefresh = "CharacterRefresh",
   CharacterCreate = "CharacterCreate",
   CharacterPositionUpdate = "CharacterPositionUpdate",
+  CharacterPositionUpdateAll = "CharacterPositionUpdateAll",
   CharacterPositionUpdateConfirm = "CharacterPositionUpdateConfirm",
   CharacterLogout = "CharacterLogout",
   CharacterPrivateMessage = "CharacterPrivateMessage",
   CharacterPing = "CharacterPing",
   CharacterForceDisconnect = "CharacterForceDisconnect",
+  CharacterSyncPosition = "CharacterSyncPosition",
   Login = "Login",
   ItemConsumed = "ItemConsumed",
   AttributeChanged = "AttributeChanged",
@@ -110,10 +114,23 @@ export interface ICharacterPing {
   id: string;
 }
 
+export interface ICharacterSyncPosition {
+  id: string;
+  position: {
+    originX: number;
+    originY: number;
+    direction: AnimationDirection;
+  };
+}
+
 export interface ICharacterPositionUpdateConfirm {
   id: string;
-  direction: string;
   isValid: boolean;
+  position: {
+    originX: number;
+    originY: number;
+    direction: AnimationDirection;
+  };
 }
 
 export type Events = CharacterSocketEvents;
@@ -140,9 +157,8 @@ export interface ICharacterCreateFromServer {
   textureKey: string;
 }
 export interface ICharacterPositionUpdateFromClient {
-  id: string; // will be validated server side
-  x: number;
-  y: number;
+  originX: number;
+  originY: number;
   newX: number;
   newY: number;
   direction: AnimationDirection;
@@ -160,12 +176,15 @@ export interface ICharacterPositionUpdateFromServer {
   channelId: string;
   speed: number;
   movementIntervalMs: number;
-
   health: number;
   maxHealth: number;
   mana: number;
   maxMana: number;
   textureKey: string;
+}
+
+export interface IAllCharacterPositionUpdateFromServer {
+  nearbyCharacters: ICharacterPositionUpdateFromServer[];
 }
 
 export interface ICharacterLogout {
@@ -194,4 +213,13 @@ export interface ICharacterAttributeChanged {
   targetId: string;
   health?: number;
   mana?: number;
+  speed?: number;
+  maxMana?: number;
+  maxHealth?: number;
+}
+
+export interface IAppliedBuffsEffect {
+  _id: Types.ObjectId;
+  key: string;
+  value: number;
 }

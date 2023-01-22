@@ -24,8 +24,16 @@ export interface IAnimationEffect {
   effectKey: string;
 }
 
+export interface IProjectileAnimationEffect {
+  sourceId: string;
+  targetId: string;
+  projectileEffectKey: string;
+  effectKey?: string;
+}
+
 export enum AnimationSocketEvents {
   ShowAnimation = "ShowAnimation",
+  ShowProjectileAnimation = "ShowProjectileAnimation",
 }
 
 export enum AnimationEffectKeys {
@@ -37,9 +45,18 @@ export enum AnimationEffectKeys {
   Poison = "poison",
   // battle
   Hit = "hit",
+  HitBlue = "hit-blue",
+  HitDark = "hit-dark",
+  HitFire = "hit-fire",
+  HitHeal = "hit-heal",
+  HitPoison = "hit-poison",
   // projectiles
   Blue = "blue",
   Green = "green",
+  Red = "red",
+  Energy = "energy",
   Dark = "dark",
   FireBall = "fireball",
+  Arrow = "arrow",
+  Heal = "heal",
 }

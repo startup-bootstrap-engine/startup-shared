@@ -1,10 +1,10 @@
 export const getSPForLevel = (level: number): number => {
-  const totalSPOnLevel = Math.pow(level, 3) * 10;
+  const totalSPOnLevel = Math.pow(level, 3) * 5;
   return totalSPOnLevel;
 };
 
 export const getXPForLevel = (level: number): number => {
-  const totalXPOnLevel = Math.pow(level, 3) * 5;
+  const totalXPOnLevel = Math.pow(level, 3) * 3;
   return totalXPOnLevel;
 };
 

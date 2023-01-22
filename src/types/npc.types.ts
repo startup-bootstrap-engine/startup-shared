@@ -49,6 +49,7 @@ export interface INPC extends IResource {
   xpToRelease?: { charId: number; xp: number }[];
   loots?: INPCLoot[];
   hasQuest?: boolean;
+  hasDepot?: boolean;
   baseHealth?: number;
   healthRandomizerDice?: number;
   skillRandomizerDice?: number;
@@ -83,13 +84,20 @@ export enum NPCMovementType {
 
 export enum NPCSocketEvents {
   NPCDataUpdate = "NPCDataUpdate",
+  NPCPositionCreate = "NPCPositionCreate",
   NPCPositionUpdate = "NPCPositionUpdate",
+  NPCPositionRequest = "NPCPositionRequest",
   NPCTalkToNPC = "NPCTalkToNPC",
   NPCStartDialogNPC = "NPCStartDialogNPC",
   NPCStopDialogNPC = "NPCStopDialogNPC",
 }
 
-export interface INPCPositionUpdatePayload {
+export interface INPCPositionRequestPayload {
+  type: "create" | "update";
+  id: string;
+}
+
+export interface INPCPositionCreatePayload {
   id: string;
   name: string;
   x: number;
@@ -106,8 +114,27 @@ export interface INPCPositionUpdatePayload {
   mana: number;
   maxMana: number;
   hasQuest: boolean;
+  hasDepot?: boolean;
   isTrader?: boolean;
   traderItems?: ITraderItem[];
+}
+export interface INPCPositionUpdatePayload {
+  id: string;
+  x: number;
+  y: number;
+  direction: string;
+  alignment: NPCAlignment;
+}
+
+export enum NPCSubtype {
+  Animal = "Animal",
+  Bird = "Bird",
+  Insect = "Insect",
+  Undead = "Undead",
+  Magical = "Magical",
+  Humanoid = "Humanoid",
+  Dragon = "Dragon",
+  Elemental = "Elemental",
 }
 
 export interface INPCDataUpdatePayload {

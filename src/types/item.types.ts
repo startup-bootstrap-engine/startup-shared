@@ -99,11 +99,13 @@ export enum ItemSlotType {
 
 export enum ItemSocketEvents {
   Update = "Update",
+  UpdateAll = "UpdateAll",
   Look = "Look",
   Equip = "Equip",
   Unequip = "Unequip",
   Pickup = "Pickup",
   Drop = "Drop",
+  Move = "Move",
   Use = "Use",
   UseWith = "Use with...",
   GetItemInfo = "GetItemInfo",
@@ -116,6 +118,9 @@ export enum ItemSocketEvents {
   Buy = "Buy",
   Sell = "Sell",
   InventoryOpen = "InventoryOpen",
+  LoadCraftBook = "LoadCraftBook",
+  CraftableItems = "CraftableItems",
+  CraftItem = "CraftItem",
 }
 
 interface IStringIndex {
@@ -157,6 +162,10 @@ export interface IItemUpdate {
   layer: MapLayers;
   stackQty: number;
   isStackable: boolean;
+}
+
+export interface IItemUpdateAll {
+  items: IItemUpdate[];
 }
 
 export interface IItemsInView {
@@ -242,4 +251,27 @@ export interface IUseItemPayload {
 export enum SpellCastingType {
   SelfCasting = "self-casting",
   RangedCasting = "ranged-casting",
+}
+
+export interface ILoadCraftBookPayload {
+  itemSubType: string;
+}
+
+export interface ICraftItemPayload {
+  itemKey: string;
+}
+
+export interface ICraftableItemIngredient {
+  key: string;
+  name: string;
+  qty: number;
+  texturePath: string;
+}
+
+export interface ICraftableItem {
+  key: string;
+  name: string;
+  canCraft: boolean;
+  texturePath: string;
+  ingredients: ICraftableItemIngredient[];
 }
