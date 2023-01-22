@@ -158,10 +158,10 @@ export interface IItemUpdate {
   name: string;
   x: number;
   y: number;
-  scene: string;
+  scene?: string;
   layer: MapLayers;
   stackQty: number;
-  isStackable: boolean;
+  isStackable?: boolean;
 }
 
 export interface IItemUpdateAll {
