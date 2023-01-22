@@ -214,6 +214,8 @@ export interface ICharacterAttributeChanged {
   health?: number;
   mana?: number;
   speed?: number;
+  maxMana?: number;
+  maxHealth?: number;
 }
 
 export interface IAppliedBuffsEffect {
