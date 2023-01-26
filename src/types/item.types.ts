@@ -21,6 +21,7 @@ export interface IItem extends IResource {
   attack?: number;
   defense?: number;
   weight: number;
+  rarity: string;
   allowedEquipSlotType: ItemSlotType[];
   isEquipable: boolean; // can we add it to our equipment slots?
   isStackable: boolean;
@@ -59,6 +60,14 @@ export enum ItemType {
   CraftingResource = "CraftingResource",
 }
 
+export enum ItemRarities {
+  Common = "Common",
+  Uncommon = "Uncommon",
+  Rare = "Rare",
+  Epic = "Epic",
+  Legendary = "Legendary",
+}
+
 export enum ItemSubType {
   Accessory = "Accessory",
   CraftingResource = "CraftingResource",
@@ -81,6 +90,7 @@ export enum ItemSubType {
   Dagger = "Dagger",
   Mace = "Mace",
   Tool = "Tool",
+  Book = "Book",
 }
 
 export enum ItemSlotType {
