@@ -7,14 +7,12 @@ export enum BattleSocketEvents {
   BattleEvent = "BattleEvent",
   BattleDeath = "BattleDeath",
   RangedAttackFailure = "RangedAttackFailure",
-  EntryEffect = "EntryEffect",
 }
 
 export enum BattleEventType {
   Miss = "Miss",
   Block = "Block",
   Hit = "Hit",
-  Poison = "Poison",
 }
 
 export interface IBattleEventFromServer {
