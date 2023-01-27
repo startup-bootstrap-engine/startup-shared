@@ -62,6 +62,7 @@ export interface ISkill extends IResource {
   lumberjacking: ISkillDetails;
   cooking: ISkillDetails;
   alchemy: ISkillDetails;
+  blacksmithing: ISkillDetails;
 
   // Magic skills (will be introduced later!)
   // ice: ISkillDetails;
