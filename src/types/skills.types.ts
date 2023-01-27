@@ -28,8 +28,6 @@ export interface ISkillDetails {
   level: number;
   skillPoints: number;
   skillPointsToNextLevel: number;
-  isBuffed?: boolean;
-  buffedLevel?: number;
 }
 
 export interface ISkill extends IResource {
@@ -127,6 +125,7 @@ export const SKILLS_MAP = new Map<ItemSubType | string, string>([
   [ItemSubType.Shield, CombatSkill.Shielding],
   [ItemSubType.Mace, CombatSkill.Club],
   [ItemSubType.Magic, BasicAttribute.Magic],
+  [ItemSubType.Staff, BasicAttribute.Magic],
   [BasicAttribute.Strength, BasicAttribute.Strength],
   [BasicAttribute.Resistance, BasicAttribute.Resistance],
   [BasicAttribute.Dexterity, BasicAttribute.Dexterity],
@@ -144,7 +143,8 @@ export interface IDecreaseSPResult {
 
 export interface IIncreaseSPResult {
   skillLevelUp: boolean;
-  skillLevel: number;
+  skillLevelBefore: number;
+  skillLevelAfter: number;
   skillName: string;
   skillPoints?: number;
   skillPointsToNextLevel?: number;

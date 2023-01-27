@@ -37,7 +37,7 @@ export interface IQuestObjectiveInteraction extends IQuestObjective {
 }
 
 export interface IQuestItems {
-  key: string;
+  itemKey: string;
   qty: number;
 }
 

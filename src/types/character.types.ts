@@ -7,6 +7,7 @@ import { IResource } from "./resource.types";
 import { ISkill } from "./skills.types";
 import { IUser } from "./user.types";
 import { IViewElement } from "./view.types";
+import { Types } from "mongoose";
 
 export interface ICharacter extends IResource {
   name: string;
@@ -76,6 +77,7 @@ export enum CharacterGender {
 
 //@ts-ignore
 export enum CharacterSocketEvents {
+  CharacterRefresh = "CharacterRefresh",
   CharacterCreate = "CharacterCreate",
   CharacterPositionUpdate = "CharacterPositionUpdate",
   CharacterPositionUpdateAll = "CharacterPositionUpdateAll",
@@ -84,6 +86,7 @@ export enum CharacterSocketEvents {
   CharacterPrivateMessage = "CharacterPrivateMessage",
   CharacterPing = "CharacterPing",
   CharacterForceDisconnect = "CharacterForceDisconnect",
+  CharacterSyncPosition = "CharacterSyncPosition",
   Login = "Login",
   ItemConsumed = "ItemConsumed",
   AttributeChanged = "AttributeChanged",
@@ -111,10 +114,23 @@ export interface ICharacterPing {
   id: string;
 }
 
+export interface ICharacterSyncPosition {
+  id: string;
+  position: {
+    originX: number;
+    originY: number;
+    direction: AnimationDirection;
+  };
+}
+
 export interface ICharacterPositionUpdateConfirm {
   id: string;
-  direction: string;
   isValid: boolean;
+  position: {
+    originX: number;
+    originY: number;
+    direction: AnimationDirection;
+  };
 }
 
 export type Events = CharacterSocketEvents;
@@ -141,6 +157,8 @@ export interface ICharacterCreateFromServer {
   textureKey: string;
 }
 export interface ICharacterPositionUpdateFromClient {
+  originX: number;
+  originY: number;
   newX: number;
   newY: number;
   direction: AnimationDirection;
@@ -196,4 +214,12 @@ export interface ICharacterAttributeChanged {
   health?: number;
   mana?: number;
   speed?: number;
+  maxMana?: number;
+  maxHealth?: number;
+}
+
+export interface IAppliedBuffsEffect {
+  _id: Types.ObjectId;
+  key: string;
+  value: number;
 }

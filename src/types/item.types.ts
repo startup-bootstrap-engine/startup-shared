@@ -21,6 +21,7 @@ export interface IItem extends IResource {
   attack?: number;
   defense?: number;
   weight: number;
+  rarity: string;
   allowedEquipSlotType: ItemSlotType[];
   isEquipable: boolean; // can we add it to our equipment slots?
   isStackable: boolean;
@@ -59,6 +60,14 @@ export enum ItemType {
   CraftingResource = "CraftingResource",
 }
 
+export enum ItemRarities {
+  Common = "Common",
+  Uncommon = "Uncommon",
+  Rare = "Rare",
+  Epic = "Epic",
+  Legendary = "Legendary",
+}
+
 export enum ItemSubType {
   Accessory = "Accessory",
   CraftingResource = "CraftingResource",
@@ -81,6 +90,7 @@ export enum ItemSubType {
   Dagger = "Dagger",
   Mace = "Mace",
   Tool = "Tool",
+  Book = "Book",
 }
 
 export enum ItemSlotType {
@@ -105,6 +115,7 @@ export enum ItemSocketEvents {
   Unequip = "Unequip",
   Pickup = "Pickup",
   Drop = "Drop",
+  Move = "Move",
   Use = "Use",
   UseWith = "Use with...",
   GetItemInfo = "GetItemInfo",
@@ -157,10 +168,10 @@ export interface IItemUpdate {
   name: string;
   x: number;
   y: number;
-  scene: string;
+  scene?: string;
   layer: MapLayers;
   stackQty: number;
-  isStackable: boolean;
+  isStackable?: boolean;
 }
 
 export interface IItemUpdateAll {
@@ -262,12 +273,15 @@ export interface ICraftItemPayload {
 
 export interface ICraftableItemIngredient {
   key: string;
+  name: string;
   qty: number;
+  texturePath: string;
 }
 
 export interface ICraftableItem {
   key: string;
   name: string;
   canCraft: boolean;
+  texturePath: string;
   ingredients: ICraftableItemIngredient[];
 }
