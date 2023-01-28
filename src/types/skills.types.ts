@@ -140,6 +140,15 @@ export const SKILLS_MAP = new Map<ItemSubType | string, string>([
   [BasicAttribute.Dexterity, BasicAttribute.Dexterity],
   [BasicAttribute.Magic, BasicAttribute.Magic],
   [BasicAttribute.MagicResistance, BasicAttribute.MagicResistance],
+  ["iron-armor", CraftingSkill.Blacksmithing],
+  ["golden-armor", CraftingSkill.Blacksmithing],
+  ["bronze-armor", CraftingSkill.Blacksmithing],
+  ["plate-armor", CraftingSkill.Blacksmithing],
+  ["double-axe", CraftingSkill.Blacksmithing],
+  ["frost-double-axe", CraftingSkill.Blacksmithing],
+  ["bread", CraftingSkill.Cooking],
+  ["greater-life-potion", CraftingSkill.Alchemy],
+  ["light-antidote", CraftingSkill.Alchemy],
 ]);
 
 export interface IDecreaseSPResult {
