@@ -60,6 +60,7 @@ export interface ISkill extends IResource {
   lumberjacking: ISkillDetails;
   cooking: ISkillDetails;
   alchemy: ISkillDetails;
+  blacksmithing: ISkillDetails;
 
   // Magic skills (will be introduced later!)
   // ice: ISkillDetails;
@@ -86,6 +87,15 @@ export enum CombatSkill {
   Distance = "distance",
   Shielding = "shielding",
   Club = "club",
+}
+
+export enum CraftingSkill {
+  Fishing = "fishing",
+  Mining = "mining",
+  Lumberjacking = "lumberjacking",
+  Cooking = "cooking",
+  Alchemy = "alchemy",
+  Blacksmithing = "blacksmithing",
 }
 
 export enum BasicAttribute {
