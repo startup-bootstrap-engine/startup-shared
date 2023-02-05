@@ -45,3 +45,4 @@ export * from "./types/useWith.types";
 export * from "./types/user.types";
 export * from "./types/validation.types";
 export * from "./types/view.types";
+export * from "./types/spell.types";
