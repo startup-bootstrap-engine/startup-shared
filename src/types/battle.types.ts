@@ -16,6 +16,7 @@ export enum BattleEventType {
 }
 
 export interface IBattleEventFromServer {
+  attackerId: string;
   targetId: string;
   targetType: "Character" | "NPC";
   eventType: BattleEventType;
