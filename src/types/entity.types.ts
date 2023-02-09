@@ -1,6 +1,7 @@
 export enum EntityType {
   Character = "Character",
   NPC = "NPC",
+  Item = "Item",
 }
 
 export enum EntityAttackType {
