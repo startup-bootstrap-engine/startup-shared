@@ -50,6 +50,7 @@ export enum AnimationEffectKeys {
   HitFire = "hit-fire",
   HitHeal = "hit-heal",
   HitPoison = "hit-poison",
+  HitCorruption = "hit-corruption",
   // projectiles
   Blue = "blue",
   Green = "green",
@@ -59,4 +60,5 @@ export enum AnimationEffectKeys {
   FireBall = "fireball",
   Arrow = "arrow",
   Heal = "heal",
+  Corruption = "corruption",
 }
