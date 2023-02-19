@@ -43,6 +43,12 @@ export enum AnimationEffectKeys {
   ManaHeal = "mana-heal",
   SkillLevelUp = "new-skill",
   Poison = "poison",
+  Burn = "burn",
+  Freeze = "freeze",
+  Holy = "holy",
+  Lifedrain = "lifedrain",
+  Rooted = "rooted",
+  HitEnergy = "hit-energy",
   // battle
   Hit = "hit",
   HitBlue = "hit-blue",
