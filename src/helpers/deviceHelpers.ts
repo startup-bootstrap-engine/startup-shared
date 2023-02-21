@@ -1,3 +1,5 @@
+import mobile from "is-mobile";
+
 const isSmallerThanBreakpoint = (breakpoint: string): boolean => {
   const mql = window.matchMedia(
     `(max-width: ${breakpoint}) and (orientation: portrait), (max-height: ${breakpoint}) and (orientation: landscape)`
@@ -6,9 +8,9 @@ const isSmallerThanBreakpoint = (breakpoint: string): boolean => {
 };
 
 export const isMobileOrTablet = (): boolean => {
-  return isSmallerThanBreakpoint("767px");
+  return mobile({ tablet: true }) ?? isSmallerThanBreakpoint("767px");
 };
 
 export const isMobile = (): boolean => {
-  return isSmallerThanBreakpoint("479px");
+  return mobile() ?? isSmallerThanBreakpoint("479px");
 };
