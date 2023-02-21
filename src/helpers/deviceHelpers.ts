@@ -1,4 +1,4 @@
-import mobile from "is-mobile";
+import { isMobile as detectMobile, isTablet as detectTablet } from "react-device-detect";
 
 const isSmallerThanBreakpoint = (breakpoint: string): boolean => {
   const mql = window.matchMedia(
@@ -8,12 +8,12 @@ const isSmallerThanBreakpoint = (breakpoint: string): boolean => {
   return mql.matches;
 };
 
- 
+// here we use a lib for initial detection, then we fallback for screen size if something happens.
 
 export const isMobileOrTablet = (): boolean => {
-  return mobile({ tablet: true }) ?? isSmallerThanBreakpoint("767px");
+  return detectMobile ?? detectTablet ?? isSmallerThanBreakpoint("767px");
 };
 
 export const isMobile = (): boolean => {
-  return mobile() ?? isSmallerThanBreakpoint("479px");
+  return detectMobile ?? isSmallerThanBreakpoint("479px");
 };
