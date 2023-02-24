@@ -2,6 +2,7 @@ export * from "./constants/date.constants";
 export * from "./constants/npc.constants";
 export * from "./constants/socket.constants";
 export * from "./constants/world.constants";
+export * from "./helpers/deviceHelpers";
 export * from "./helpers/itemSlotHelper";
 export * from "./helpers/skillHelpers";
 export * from "./libs/GridHelper";
