@@ -37,6 +37,7 @@
   },
   "devDependencies": {
     "@rpg-engine/shared": "^0.2.51",
-    "@types/mongoose": "^5.11.97"
+    "@types/mongoose": "^5.11.97",
+    "mobile-device-detect": "^0.4.3"
   }
 }
