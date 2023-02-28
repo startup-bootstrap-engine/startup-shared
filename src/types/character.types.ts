@@ -1,3 +1,4 @@
+import { Types } from "mongoose";
 import { AnimationDirection } from "./animation.types";
 import { EntityAttackType, EntityType } from "./entity.types";
 import { IEquipmentSet } from "./equipment.types";
@@ -6,8 +7,6 @@ import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
 import { ISkill } from "./skills.types";
 import { IUser } from "./user.types";
-import { IViewElement } from "./view.types";
-import { Types } from "mongoose";
 
 export interface ICharacter extends IResource {
   name: string;
@@ -48,11 +47,6 @@ export interface ICharacter extends IResource {
   } | null;
   attackType: EntityAttackType;
   attackIntervalSpeed: number;
-  view: {
-    characters: IViewElement;
-    npcs: IViewElement;
-    items: IViewElement;
-  };
   equipment?: IEquipmentSet | string;
   inventory: Promise<IItem | string>;
   type: string;
