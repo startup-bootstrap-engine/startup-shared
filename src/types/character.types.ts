@@ -54,6 +54,7 @@ export interface ICharacter extends IResource {
 }
 
 export enum CharacterClass {
+  None = "None",
   Warrior = "Warrior",
   Berserker = "Berserker",
   Druid = "Druid",
