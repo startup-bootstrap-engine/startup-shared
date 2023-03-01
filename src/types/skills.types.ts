@@ -77,6 +77,7 @@ export enum SkillType {
   Gathering = "Gathering",
   Magic = "Magic",
   Misc = "Misc",
+  Character = "Character"
 }
 
 export enum CombatSkill {
@@ -105,6 +106,19 @@ export enum BasicAttribute {
   Magic = "magic",
   MagicResistance = "magicResistance",
 }
+
+export enum CharacterEntities {
+  Speed = "baseSpeed",
+  MaxMana = "maxMana",
+  MaxHealth = "maxHealth",
+
+}
+
+export const ENTITIES_SKILLS: CharacterEntities[] = [
+  CharacterEntities.Speed,
+  CharacterEntities.MaxMana,
+  CharacterEntities.MaxHealth
+];
 
 export const BASIC_ATTRIBUTES: BasicAttribute[] = [
   BasicAttribute.Strength,
