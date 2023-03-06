@@ -1,3 +1,5 @@
+import { IItem } from "./item.types";
+
 export enum CharacterTradeSocketEvents {
   TradeWithNPC = "TradeWithNPC", // this perform the trade itself
   TradeInit = "TradeInit", // this is called to populate all trading modals on the client
@@ -16,13 +18,8 @@ export interface ITradeRequestItem {
   qty: number;
 }
 
-export interface ITradeResponseItem {
-  key: string;
-  itemId?: string; // used only when selling
-  qty?: number; // only used when selling (qty would be how much items are available to be sold by the player)
+export interface ITradeResponseItem extends IItem {
   price: number;
-  texturePath: string;
-  name: string;
 }
 
 export interface ICharacterNPCTradeRequest {

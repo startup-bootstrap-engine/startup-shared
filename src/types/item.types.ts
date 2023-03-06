@@ -278,10 +278,7 @@ export interface ICraftableItemIngredient {
   texturePath: string;
 }
 
-export interface ICraftableItem {
-  key: string;
-  name: string;
+export interface ICraftableItem extends IItem {
   canCraft: boolean;
-  texturePath: string;
   ingredients: ICraftableItemIngredient[];
 }
