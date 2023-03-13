@@ -77,7 +77,7 @@ export enum SkillType {
   Gathering = "Gathering",
   Magic = "Magic",
   Misc = "Misc",
-  Character = "Character"
+  Character = "Character",
 }
 
 export enum CombatSkill {
@@ -111,13 +111,12 @@ export enum CharacterEntities {
   Speed = "baseSpeed",
   MaxMana = "maxMana",
   MaxHealth = "maxHealth",
-
 }
 
 export const ENTITIES_SKILLS: CharacterEntities[] = [
   CharacterEntities.Speed,
   CharacterEntities.MaxMana,
-  CharacterEntities.MaxHealth
+  CharacterEntities.MaxHealth,
 ];
 
 export const BASIC_ATTRIBUTES: BasicAttribute[] = [
@@ -154,6 +153,12 @@ export const SKILLS_MAP = new Map<ItemSubType | string, string>([
   [BasicAttribute.Dexterity, BasicAttribute.Dexterity],
   [BasicAttribute.Magic, BasicAttribute.Magic],
   [BasicAttribute.MagicResistance, BasicAttribute.MagicResistance],
+  [CraftingSkill.Fishing, CraftingSkill.Fishing],
+  [CraftingSkill.Cooking, CraftingSkill.Cooking],
+  [CraftingSkill.Alchemy, CraftingSkill.Alchemy],
+  [CraftingSkill.Lumberjacking, CraftingSkill.Lumberjacking],
+  [CraftingSkill.Mining, CraftingSkill.Mining],
+  [CraftingSkill.Blacksmithing, CraftingSkill.Blacksmithing]
 ]);
 
 export interface IDecreaseSPResult {
@@ -180,6 +185,7 @@ export interface IIncreaseXPResult {
 }
 
 export interface IBasicAttributesBonusAndPenalties {
+  stamina: number;
   strength: number;
   resistance: number;
   dexterity: number;
@@ -197,4 +203,11 @@ export interface ICombatSkillsBonusAndPenalties {
   club: number;
 }
 
-export interface ICraftingGatheringSkillsBonusAndPenalties {}
+export interface ICraftingSkillsBonusAndPenalties {
+  fishing: number;
+  mining: number;
+  lumberjacking: number;
+  cooking: number;
+  alchemy: number;
+  blacksmithing: number;
+}
