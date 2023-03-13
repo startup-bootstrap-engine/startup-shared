@@ -158,7 +158,7 @@ export const SKILLS_MAP = new Map<ItemSubType | string, string>([
   [CraftingSkill.Alchemy, CraftingSkill.Alchemy],
   [CraftingSkill.Lumberjacking, CraftingSkill.Lumberjacking],
   [CraftingSkill.Mining, CraftingSkill.Mining],
-  [CraftingSkill.Blacksmithing, CraftingSkill.Blacksmithing]
+  [CraftingSkill.Blacksmithing, CraftingSkill.Blacksmithing],
 ]);
 
 export interface IDecreaseSPResult {
