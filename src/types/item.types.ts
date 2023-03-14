@@ -320,4 +320,5 @@ export interface IEquippableWeapon extends IEquippableItem {
   defense: number;
   rangeType: EntityAttackType;
   isTwoHanded?: boolean;
+  isTraining?: boolean;
 }
