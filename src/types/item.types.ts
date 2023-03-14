@@ -303,6 +303,7 @@ export interface IEquippableItem {
   allowedEquipSlotType: ItemSlotType[];
   basePrice?: number;
   isTwoHanded?: boolean;
+  rangeType?: EntityAttackType;
 }
 
 export interface IEquippableRangedItem extends IEquippableItem {
