@@ -326,7 +326,7 @@ export interface IEquippableWeaponBlueprint extends IEquippableItemBlueprint {
   isTraining?: boolean;
 }
 
-export interface ICraftableItemBlueprint {
+export interface ICraftableItemBlueprint extends IBaseItemBlueprint {
   type: ItemType.Consumable | ItemType.CraftingResource;
   maxStackSize?: number;
   usableEffect: (character) => void | Promise<void>;
