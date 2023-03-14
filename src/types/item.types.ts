@@ -299,6 +299,7 @@ export interface IBaseItemBlueprint {
   description: string;
   weight: number;
   basePrice?: number;
+  canSell?: boolean;
 }
 
 export interface IEquippableItemBlueprint extends IBaseItemBlueprint {
