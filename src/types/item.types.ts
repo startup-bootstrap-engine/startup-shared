@@ -289,22 +289,25 @@ export enum RangedWeaponRange {
   High = 9,
 }
 
-export interface IEquippableItem {
+export interface IBaseItemBlueprint {
   key: string;
   type: ItemType;
-  subType: ItemSubType;
+  subType: ItemSubType.CraftingResource;
   textureAtlas: string;
   texturePath: string;
   name: string;
   description: string;
-  weight: number;
-  defense?: number;
-  attack?: number;
-  allowedEquipSlotType: ItemSlotType[];
+  weight: string;
   basePrice?: number;
 }
 
-export interface IEquippableRangedItem extends IEquippableItem {
+export interface IEquippableItemBlueprint extends IBaseItemBlueprint {
+  defense?: number;
+  attack?: number;
+  allowedEquipSlotType: ItemSlotType[];
+}
+
+export interface IEquippableRangedItemBlueprint extends IEquippableItemBlueprint {
   rangeType: EntityAttackType;
   maxRange: RangedWeaponRange;
   requiredAmmoKeys: string[];
@@ -313,12 +316,18 @@ export interface IEquippableRangedItem extends IEquippableItem {
   isTwoHanded?: boolean;
 }
 
-export interface IEquippableArmor extends Omit<IEquippableItem, "attack"> {}
+export interface IEquippableArmorBlueprint extends Omit<IEquippableItemBlueprint, "attack"> {}
 
-export interface IEquippableWeapon extends IEquippableItem {
+export interface IEquippableWeaponBlueprint extends IEquippableItemBlueprint {
   attack: number;
   defense: number;
   rangeType: EntityAttackType;
   isTwoHanded?: boolean;
   isTraining?: boolean;
+}
+
+export interface ICraftableItemBlueprint {
+  type: ItemType.Consumable | ItemType.CraftingResource;
+  maxStackSize?: number;
+  usableEffect: (character: ICharacter) => void;
 }
