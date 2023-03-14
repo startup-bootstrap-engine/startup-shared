@@ -1,3 +1,5 @@
+import { EntityType } from "./entity.types";
+
 export interface IRawSpell {
   key: string;
   name: string;
@@ -15,9 +17,12 @@ export interface ISpellRead {
 
 export interface ISpellCast {
   magicWords: string;
+  targetId: string;
+  targetType: EntityType;
 }
 
 export enum SpellSocketEvents {
   LearnedSpellsRead = "LearnedSpellsRead",
   CastSpell = "CastSpell",
+  IdentifyTarget = "IdentifyTarget",
 }
