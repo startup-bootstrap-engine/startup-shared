@@ -282,3 +282,24 @@ export interface ICraftableItem extends IItem {
   canCraft: boolean;
   ingredients: ICraftableItemIngredient[];
 }
+
+export enum RangedWeaponRange {
+  Short = 6,
+  Medium = 7,
+  High = 9,
+}
+
+export interface IEquippableItem {
+  key: string;
+  type: ItemType;
+  subType: ItemSubType;
+  textureAtlas: string;
+  texturePath: string;
+  name: string;
+  description: string;
+  weight: number;
+  defense?: number;
+  attack?: number;
+  allowedEquipSlotType: string[];
+  basePrice?: number;
+}
