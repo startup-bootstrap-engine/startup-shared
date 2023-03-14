@@ -329,5 +329,5 @@ export interface IEquippableWeaponBlueprint extends IEquippableItemBlueprint {
 export interface ICraftableItemBlueprint {
   type: ItemType.Consumable | ItemType.CraftingResource;
   maxStackSize?: number;
-  usableEffect: (character: ICharacter) => void;
+  usableEffect: (character: ICharacter) => void | Promise<void>;
 }
