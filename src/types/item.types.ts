@@ -292,7 +292,7 @@ export enum RangedWeaponRange {
 export interface IBaseItemBlueprint {
   key: string;
   type: ItemType;
-  subType: ItemSubType.CraftingResource;
+  subType: ItemSubType;
   textureAtlas: string;
   texturePath: string;
   name: string;
