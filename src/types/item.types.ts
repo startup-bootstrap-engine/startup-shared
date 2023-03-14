@@ -302,12 +302,22 @@ export interface IEquippableItem {
   attack?: number;
   allowedEquipSlotType: ItemSlotType[];
   basePrice?: number;
-  isTwoHanded?: boolean;
-  rangeType?: EntityAttackType;
 }
 
 export interface IEquippableRangedItem extends IEquippableItem {
   rangeType: EntityAttackType;
   maxRange: RangedWeaponRange;
   requiredAmmoKeys: string[];
+  attack: number;
+  defense: number;
+  isTwoHanded?: boolean;
+}
+
+export interface IEquippableArmor extends Omit<IEquippableItem, "attack"> {}
+
+export interface IEquippableWeapon extends IEquippableItem {
+  attack: number;
+  defense: number;
+  rangeType: EntityAttackType;
+  isTwoHanded?: boolean;
 }
