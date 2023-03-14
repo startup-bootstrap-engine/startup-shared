@@ -297,7 +297,7 @@ export interface IBaseItemBlueprint {
   texturePath: string;
   name: string;
   description: string;
-  weight: string;
+  weight: number;
   basePrice?: number;
 }
 
