@@ -300,6 +300,13 @@ export interface IEquippableItem {
   weight: number;
   defense?: number;
   attack?: number;
-  allowedEquipSlotType: string[];
+  allowedEquipSlotType: ItemSlotType[];
   basePrice?: number;
+  isTwoHanded?: boolean;
+}
+
+export interface IEquippableRangedItem extends IEquippableItem {
+  rangeType: EntityAttackType;
+  maxRange: RangedWeaponRange;
+  requiredAmmoKeys: string[];
 }
