@@ -346,7 +346,6 @@ export interface IEquippableRangedWeaponOneHandedBlueprint extends IEquippableWe
 
   attack: number;
   defense: number;
-  isTwoHanded?: boolean;
   allowedEquipSlotType: [ItemSlotType.LeftHand, ItemSlotType.RightHand];
 }
 
