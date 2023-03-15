@@ -333,4 +333,20 @@ export interface ICraftableItemBlueprint extends IBaseItemBlueprint {
   usableEffect?: (character) => void | Promise<void>;
 }
 
-export interface IConsumableItemBlueprint extends ICraftableItemBlueprint {}
+export interface IConsumableItemBlueprint extends ICraftableItemBlueprint {
+  type: ItemType.Consumable;
+}
+
+export interface IRuneItemBlueprint extends IBaseItemBlueprint {
+  allowedEquipSlotType: ItemSlotType[];
+  hasUseWith: true;
+  canUseOnNonPVPZone: boolean;
+
+  useWithMaxDistanceGrid: number;
+  power: number;
+  animationKey: string;
+  projectileAnimationKey: string;
+  minMagicLevelRequired: number;
+
+  usableEffect?: (character) => void | Promise<void>;
+}
