@@ -337,6 +337,7 @@ export interface ICraftableItemBlueprint extends IBaseItemBlueprint {
 
 export interface IConsumableItemBlueprint extends ICraftableItemBlueprint {
   type: ItemType.Consumable;
+  usableEffect: (character) => void | Promise<void>;
 }
 
 export enum RunePower {
