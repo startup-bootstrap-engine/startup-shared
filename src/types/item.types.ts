@@ -382,3 +382,7 @@ export interface IRuneItemBlueprint extends IBaseItemBlueprint {
 
   usableEffect?: (caster, target) => void | Promise<void> | Promise<number>;
 }
+
+export interface IEquippableStaffBlueprint extends IEquippableWeaponBlueprint {
+  projectileAnimationKey: AnimationEffectKeys;
+}
