@@ -385,4 +385,5 @@ export interface IRuneItemBlueprint extends IBaseItemBlueprint {
 
 export interface IEquippableStaffBlueprint extends IEquippableWeaponBlueprint {
   projectileAnimationKey: AnimationEffectKeys;
+  maxRange: RangedWeaponRange;
 }
