@@ -301,6 +301,7 @@ export interface IBaseItemBlueprint {
   weight: number;
   basePrice?: number;
   canSell?: boolean;
+  maxStackSize?: number;
 }
 
 export interface IEquippableItemBlueprint extends IBaseItemBlueprint {
