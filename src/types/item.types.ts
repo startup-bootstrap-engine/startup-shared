@@ -350,6 +350,7 @@ export interface IRuneItemBlueprint extends IBaseItemBlueprint {
   allowedEquipSlotType: ItemSlotType[];
   hasUseWith: true;
   canUseOnNonPVPZone: boolean;
+  maxStackSize: number;
 
   useWithMaxDistanceGrid: RangedWeaponRange;
   power: RunePower;
