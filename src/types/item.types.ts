@@ -337,13 +337,22 @@ export interface IConsumableItemBlueprint extends ICraftableItemBlueprint {
   type: ItemType.Consumable;
 }
 
+export enum RunePower {
+  UltraLow = 5,
+  Low = 10,
+  Medium = 15,
+  High = 20,
+  UltraHigh = 25,
+  Fatal = 30,
+}
+
 export interface IRuneItemBlueprint extends IBaseItemBlueprint {
   allowedEquipSlotType: ItemSlotType[];
   hasUseWith: true;
   canUseOnNonPVPZone: boolean;
 
   useWithMaxDistanceGrid: number;
-  power: number;
+  power: RunePower;
   animationKey: string;
   projectileAnimationKey: string;
   minMagicLevelRequired: number;
