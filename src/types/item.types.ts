@@ -331,7 +331,7 @@ export interface IEquippableWeaponBlueprint extends IEquippableItemBlueprint {
 
 export interface IEquippableRangedWeaponBlueprint extends IEquippableWeaponBlueprint {
   rangeType: EntityAttackType.Ranged;
-  subtype: ItemSubType.Ranged;
+  subType: ItemSubType.Ranged;
   maxRange: RangedWeaponRange;
   requiredAmmoKeys: string[];
   attack: number;
