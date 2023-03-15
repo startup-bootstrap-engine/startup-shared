@@ -316,6 +316,7 @@ export interface IEquippableRangedAmmoBlueprint extends IBaseItemBlueprint {
   attack: number;
   allowedEquipSlotType: [ItemSlotType.Accessory];
   maxStackSize: number;
+  isTraining?: boolean;
 }
 
 export interface IEquippableArmorBlueprint extends Omit<IEquippableItemBlueprint, "attack"> {}
