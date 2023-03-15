@@ -357,5 +357,5 @@ export interface IRuneItemBlueprint extends IBaseItemBlueprint {
   projectileAnimationKey: string;
   minMagicLevelRequired: number;
 
-  usableEffect?: (character) => void | Promise<void>;
+  usableEffect?: (caster, target) => void | Promise<void>;
 }
