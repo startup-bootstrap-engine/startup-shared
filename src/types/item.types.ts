@@ -1,3 +1,4 @@
+import { AnimationEffectKeys } from "./animation.types";
 import { ICharacter } from "./character.types";
 import { EntityAttackType } from "./entity.types";
 import { IEquipmentSet } from "./equipment.types";
@@ -353,8 +354,8 @@ export interface IRuneItemBlueprint extends IBaseItemBlueprint {
 
   useWithMaxDistanceGrid: RangedWeaponRange;
   power: RunePower;
-  animationKey: string;
-  projectileAnimationKey: string;
+  animationKey: AnimationEffectKeys;
+  projectileAnimationKey: AnimationEffectKeys;
   minMagicLevelRequired: number;
 
   usableEffect?: (caster, target) => void | Promise<void> | Promise<number>;
