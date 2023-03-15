@@ -351,11 +351,11 @@ export interface IRuneItemBlueprint extends IBaseItemBlueprint {
   hasUseWith: true;
   canUseOnNonPVPZone: boolean;
 
-  useWithMaxDistanceGrid: number;
+  useWithMaxDistanceGrid: RangedWeaponRange;
   power: RunePower;
   animationKey: string;
   projectileAnimationKey: string;
   minMagicLevelRequired: number;
 
-  usableEffect?: (caster, target) => void | Promise<void>;
+  usableEffect?: (caster, target) => void | Promise<void> | Promise<number>;
 }
