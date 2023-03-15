@@ -332,3 +332,5 @@ export interface ICraftableItemBlueprint extends IBaseItemBlueprint {
   maxStackSize?: number;
   usableEffect?: (character) => void | Promise<void>;
 }
+
+export interface IConsumableItemBlueprint extends ICraftableItemBlueprint {}
