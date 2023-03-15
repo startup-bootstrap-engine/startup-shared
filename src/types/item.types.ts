@@ -337,6 +337,7 @@ export interface IEquippableRangedWeaponBlueprint extends IEquippableWeaponBluep
   attack: number;
   defense: number;
   isTwoHanded?: boolean;
+  allowedEquipSlotType: [ItemSlotType.LeftHand, ItemSlotType.RightHand];
 }
 
 export interface ICraftableItemBlueprint extends IBaseItemBlueprint {
