@@ -320,15 +320,6 @@ export interface IEquippableRangedAmmoBlueprint extends IBaseItemBlueprint {
 
 export interface IEquippableArmorBlueprint extends Omit<IEquippableItemBlueprint, "attack"> {}
 
-export interface IEquippableRangedWeaponBlueprint extends IEquippableItemBlueprint {
-  rangeType: EntityAttackType;
-  maxRange: RangedWeaponRange;
-  requiredAmmoKeys: string[];
-  attack: number;
-  defense: number;
-  isTwoHanded?: boolean;
-}
-
 export interface IEquippableWeaponBlueprint extends IEquippableItemBlueprint {
   type: ItemType.Weapon;
   attack: number;
@@ -336,6 +327,16 @@ export interface IEquippableWeaponBlueprint extends IEquippableItemBlueprint {
   rangeType: EntityAttackType;
   isTwoHanded?: boolean;
   isTraining?: boolean;
+}
+
+export interface IEquippableRangedWeaponBlueprint extends IEquippableWeaponBlueprint {
+  rangeType: EntityAttackType.Ranged;
+  subtype: ItemSubType.Ranged;
+  maxRange: RangedWeaponRange;
+  requiredAmmoKeys: string[];
+  attack: number;
+  defense: number;
+  isTwoHanded?: boolean;
 }
 
 export interface ICraftableItemBlueprint extends IBaseItemBlueprint {
