@@ -285,7 +285,7 @@ export interface ICraftableItem extends IItem {
 }
 
 export enum RangeTypes {
-  UltraShort = 3,
+  UltraShort = 2,
   Short = 6,
   Medium = 7,
   High = 9,
