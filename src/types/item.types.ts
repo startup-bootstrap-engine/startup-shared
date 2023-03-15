@@ -366,6 +366,14 @@ export interface IToolItemBlueprint extends IBaseItemBlueprint {
   useWithMaxDistanceGrid: RangeTypes;
   canSell: false;
   usableEffect?: (character, targetItem, itemCraftable, skillIncrease) => void | Promise<void>;
+  useWithTileEffect?: (
+    originItem,
+    targetTile,
+    targetname: string,
+    character,
+    itemCraftable,
+    skillIncrease
+  ) => Promise<void>;
 }
 
 export interface IConsumableItemBlueprint extends ICraftableItemBlueprint {
