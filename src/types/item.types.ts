@@ -302,6 +302,7 @@ export interface IBaseItemBlueprint {
   basePrice?: number;
   canSell?: boolean;
   maxStackSize?: number;
+  isTraining?: boolean;
 }
 
 export interface IEquippableItemBlueprint extends IBaseItemBlueprint {
@@ -316,7 +317,6 @@ export interface IEquippableRangedAmmoBlueprint extends IBaseItemBlueprint {
   attack: number;
   allowedEquipSlotType: [ItemSlotType.Accessory];
   maxStackSize: number;
-  isTraining?: boolean;
 }
 
 export interface IEquippableArmorBlueprint extends Omit<IEquippableItemBlueprint, "attack"> {}
@@ -327,7 +327,6 @@ export interface IEquippableWeaponBlueprint extends IEquippableItemBlueprint {
   defense: number;
   rangeType: EntityAttackType;
   isTwoHanded?: boolean;
-  isTraining?: boolean;
 }
 
 export interface IEquippableRangedWeaponTwoHandedBlueprint extends IEquippableWeaponBlueprint {
