@@ -284,10 +284,12 @@ export interface ICraftableItem extends IItem {
   ingredients: ICraftableItemIngredient[];
 }
 
-export enum RangedWeaponRange {
+export enum RangeTypes {
+  UltraShort = 3,
   Short = 6,
   Medium = 7,
   High = 9,
+  UltraHigh = 12,
 }
 
 export interface IBaseItemBlueprint {
@@ -332,7 +334,7 @@ export interface IEquippableWeaponBlueprint extends IEquippableItemBlueprint {
 export interface IEquippableRangedWeaponTwoHandedBlueprint extends IEquippableWeaponBlueprint {
   rangeType: EntityAttackType.Ranged;
   subType: ItemSubType.Ranged;
-  maxRange: RangedWeaponRange;
+  maxRange: RangeTypes;
   requiredAmmoKeys: string[];
   attack: number;
   defense: number;
@@ -342,7 +344,7 @@ export interface IEquippableRangedWeaponTwoHandedBlueprint extends IEquippableWe
 export interface IEquippableRangedWeaponOneHandedBlueprint extends IEquippableWeaponBlueprint {
   rangeType: EntityAttackType.Ranged;
   subType: ItemSubType.Ranged;
-  maxRange: RangedWeaponRange;
+  maxRange: RangeTypes;
 
   attack: number;
   defense: number;
@@ -353,6 +355,17 @@ export interface ICraftableItemBlueprint extends IBaseItemBlueprint {
   type: ItemType.Consumable | ItemType.CraftingResource;
   maxStackSize?: number;
   usableEffect?: (character) => void | Promise<void>;
+}
+
+export interface IToolItemBlueprint extends IBaseItemBlueprint {
+  attack?: number;
+  defense?: number;
+  allowedEquipSlotType: [ItemSlotType.LeftHand, ItemSlotType.RightHand];
+  rangeType: EntityAttackType;
+  hasUseWith: true;
+  useWithMaxDistanceGrid: RangeTypes;
+  canSell: false;
+  usableEffect?: (character, targetItem, itemCraftable, skillIncrease) => void | Promise<void>;
 }
 
 export interface IConsumableItemBlueprint extends ICraftableItemBlueprint {
@@ -374,7 +387,7 @@ export interface IRuneItemBlueprint extends IBaseItemBlueprint {
   canUseOnNonPVPZone: boolean;
   maxStackSize: number;
 
-  useWithMaxDistanceGrid: RangedWeaponRange;
+  useWithMaxDistanceGrid: RangeTypes;
   power: RunePower;
   animationKey: AnimationEffectKeys;
   projectileAnimationKey: AnimationEffectKeys;
@@ -385,5 +398,5 @@ export interface IRuneItemBlueprint extends IBaseItemBlueprint {
 
 export interface IEquippableStaffBlueprint extends IEquippableWeaponBlueprint {
   projectileAnimationKey: AnimationEffectKeys;
-  maxRange: RangedWeaponRange;
+  maxRange: RangeTypes;
 }
