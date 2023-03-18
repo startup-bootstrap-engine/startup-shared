@@ -1,6 +1,6 @@
 import { AnimationEffectKeys } from "./animation.types";
 import { ICharacter } from "./character.types";
-import { EntityAttackType, EntityEffectBlueprint } from "./entity.types";
+import { EntityAttackType } from "./entity.types";
 import { IEquipmentSet } from "./equipment.types";
 import { IItemContainer } from "./itemContainer.types";
 import { MapLayers } from "./maps.types";
@@ -319,7 +319,7 @@ export interface IEquippableRangedAmmoBlueprint extends IBaseItemBlueprint {
   attack: number;
   allowedEquipSlotType: [ItemSlotType.Accessory];
   maxStackSize: number;
-  entityEffects?: EntityEffectBlueprint[];
+  entityEffects?: string[];
   entityEffectChance?: number;
 }
 
@@ -331,7 +331,7 @@ export interface IEquippableWeaponBlueprint extends IEquippableItemBlueprint {
   defense: number;
   rangeType: EntityAttackType;
   isTwoHanded?: boolean;
-  entityEffects?: EntityEffectBlueprint[];
+  entityEffects?: string[];
   entityEffectChance?: number;
 }
 
