@@ -33,3 +33,8 @@ export interface IEntityEffectEvent {
 export enum EffectsSocketEvents {
   EntityEffect = "EntityEffect",
 }
+
+export enum EntityEffectBlueprint {
+  Bleeding = "bleeding",
+  Freezing = "freezing",
+}
