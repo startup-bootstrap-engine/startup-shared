@@ -17,8 +17,8 @@ export interface ISpellRead {
 
 export interface ISpellCast {
   magicWords: string;
-  targetId: string;
-  targetType: EntityType;
+  targetId?: string;
+  targetType?: EntityType;
 }
 
 export enum SpellSocketEvents {

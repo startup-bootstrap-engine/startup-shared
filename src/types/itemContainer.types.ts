@@ -26,6 +26,7 @@ export enum ItemContainerType {
   Equipment = "Equipment",
   Loot = "Loot",
   MapContainer = "MapContainer",
+  Depot = "Depot",
 }
 
 export interface IItemContainerOpen {

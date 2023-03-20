@@ -319,6 +319,8 @@ export interface IEquippableRangedAmmoBlueprint extends IBaseItemBlueprint {
   attack: number;
   allowedEquipSlotType: [ItemSlotType.Accessory];
   maxStackSize: number;
+  entityEffects?: string[];
+  entityEffectChance?: number;
 }
 
 export interface IEquippableArmorBlueprint extends Omit<IEquippableItemBlueprint, "attack"> {}
@@ -329,6 +331,8 @@ export interface IEquippableWeaponBlueprint extends IEquippableItemBlueprint {
   defense: number;
   rangeType: EntityAttackType;
   isTwoHanded?: boolean;
+  entityEffects?: string[];
+  entityEffectChance?: number;
 }
 
 export interface IEquippableRangedWeaponTwoHandedBlueprint extends IEquippableWeaponBlueprint {
