@@ -335,7 +335,7 @@ export interface IEquippableWeaponBlueprint extends IEquippableItemBlueprint {
   entityEffectChance?: number;
 }
 
-export interface IEquippableRangedWeaponTwoHandedBlueprint extends IEquippableWeaponBlueprint {
+export interface IEquippableRangedWeaponTwoHandedBlueprint extends Omit<IEquippableWeaponBlueprint, "defense"> {
   rangeType: EntityAttackType.Ranged;
   subType: ItemSubType.Ranged;
   maxRange: RangeTypes;
@@ -344,7 +344,7 @@ export interface IEquippableRangedWeaponTwoHandedBlueprint extends IEquippableWe
   isTwoHanded: true;
   allowedEquipSlotType: [ItemSlotType.LeftHand, ItemSlotType.RightHand];
 }
-export interface IEquippableRangedWeaponOneHandedBlueprint extends IEquippableWeaponBlueprint {
+export interface IEquippableRangedWeaponOneHandedBlueprint extends Omit<IEquippableWeaponBlueprint, "defense"> {
   rangeType: EntityAttackType.Ranged;
   subType: ItemSubType.Ranged;
   maxRange: RangeTypes;
