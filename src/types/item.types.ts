@@ -337,7 +337,6 @@ export interface IEquippableRangedWeaponTwoHandedBlueprint extends IEquippableWe
   maxRange: RangeTypes;
   requiredAmmoKeys: string[];
   attack: number;
-  defense: number;
   isTwoHanded: true;
   allowedEquipSlotType: [ItemSlotType.LeftHand, ItemSlotType.RightHand];
 }
@@ -347,7 +346,6 @@ export interface IEquippableRangedWeaponOneHandedBlueprint extends IEquippableWe
   maxRange: RangeTypes;
 
   attack: number;
-  defense: number;
   allowedEquipSlotType: [ItemSlotType.LeftHand, ItemSlotType.RightHand];
 }
 
