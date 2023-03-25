@@ -111,12 +111,14 @@ export enum CharacterEntities {
   Speed = "baseSpeed",
   MaxMana = "maxMana",
   MaxHealth = "maxHealth",
+  AttackIntervalSpeed = "attackIntervalSpeed"
 }
 
 export const ENTITIES_SKILLS: CharacterEntities[] = [
   CharacterEntities.Speed,
   CharacterEntities.MaxMana,
   CharacterEntities.MaxHealth,
+  CharacterEntities.AttackIntervalSpeed
 ];
 
 export const BASIC_ATTRIBUTES: BasicAttribute[] = [
