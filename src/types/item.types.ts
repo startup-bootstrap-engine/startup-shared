@@ -270,6 +270,7 @@ export interface ILoadCraftBookPayload {
 
 export interface ICraftItemPayload {
   itemKey: string;
+  itemSubType?: string;
 }
 
 export interface ICraftableItemIngredient {
