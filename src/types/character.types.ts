@@ -210,6 +210,8 @@ export interface ICharacterAttributeChanged {
   maxMana?: number;
   maxHealth?: number;
   attackIntervalSpeed?: number;
+  weight?: number;
+  maxWeight?: number;
 }
 
 export interface IAppliedBuffsEffect {
