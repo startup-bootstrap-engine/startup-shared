@@ -312,6 +312,7 @@ export interface IEquippableItemBlueprint extends IBaseItemBlueprint {
   defense?: number;
   attack?: number;
   allowedEquipSlotType: ItemSlotType[];
+  usableEffect?: (character: any) => void | Promise<void>;
 }
 
 export interface IEquippableRangedAmmoBlueprint extends IBaseItemBlueprint {
