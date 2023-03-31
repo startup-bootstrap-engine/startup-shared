@@ -83,6 +83,7 @@ export enum CharacterSocketEvents {
   Login = "Login",
   ItemConsumed = "ItemConsumed",
   AttributeChanged = "AttributeChanged",
+  CharacterRemoveFromView = "CharacterRemoveFromView",
 }
 
 export enum CharacterFactions {
