@@ -52,6 +52,7 @@ export enum AnimationEffectKeys {
   MagicShield = "magic-shield",
   PhysicalShield = "physical-shield",
   HasteSpell = "haste",
+  Execution = "execution",
   // battle
   Hit = "hit",
   HitBlue = "hit-blue",
