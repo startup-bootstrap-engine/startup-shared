@@ -117,6 +117,7 @@ export interface INPCPositionCreatePayload {
   hasDepot?: boolean;
   isTrader?: boolean;
   traderItems?: ITraderItem[];
+  isGiantForm?: boolean;
 }
 export interface INPCPositionUpdatePayload {
   id: string;
@@ -145,7 +146,7 @@ export interface INPCGetInfoEmitterClient {
   npcId: string;
 }
 
-export interface INPCGetInfoEmitterServer extends INPC {}
+export interface INPCGetInfoEmitterServer extends INPC { }
 
 export interface INPCStartDialog {
   npcId: string;
