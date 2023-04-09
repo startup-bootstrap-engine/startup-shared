@@ -283,6 +283,8 @@ export interface ICraftableItemIngredient {
 export interface ICraftableItem extends IItem {
   canCraft: boolean;
   ingredients: ICraftableItemIngredient[];
+  minCraftingRequirements?: [string, number];
+  levelIsOk?: boolean;
 }
 
 export enum RangeTypes {
