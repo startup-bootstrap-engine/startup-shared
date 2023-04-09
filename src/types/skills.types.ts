@@ -112,6 +112,7 @@ export enum CharacterEntities {
   MaxMana = "maxMana",
   MaxHealth = "maxHealth",
   AttackIntervalSpeed = "attackIntervalSpeed",
+  Defense = "defense",
 }
 
 export const ENTITIES_SKILLS: CharacterEntities[] = [
