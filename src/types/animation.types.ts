@@ -71,4 +71,6 @@ export enum AnimationEffectKeys {
   Arrow = "arrow",
   Heal = "heal",
   Corruption = "corruption",
+  BlueWings = "blue-wings",
+  QuickFire = "quick-fire",
 }

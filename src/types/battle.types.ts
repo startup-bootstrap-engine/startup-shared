@@ -23,7 +23,6 @@ export interface IBattleEventFromServer {
   eventType: BattleEventType;
   totalDamage?: number;
   postDamageTargetHP?: number;
-  postDamageTargetMana?: number;
   level?: number;
   skill?: string;
 }
