@@ -149,7 +149,7 @@ export interface ICharacterCreateFromServer {
   mana: number;
   maxMana: number;
   textureKey: string;
-  alpha: number;
+  alpha?: number;
 }
 export interface ICharacterPositionUpdateFromClient {
   originX: number;
@@ -176,7 +176,7 @@ export interface ICharacterPositionUpdateFromServer {
   mana: number;
   maxMana: number;
   textureKey: string;
-  alpha: number;
+  alpha?: number;
 }
 
 export interface IAllCharacterPositionUpdateFromServer {
