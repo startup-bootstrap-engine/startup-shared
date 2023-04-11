@@ -83,6 +83,7 @@ export enum CharacterSocketEvents {
   Login = "Login",
   ItemConsumed = "ItemConsumed",
   AttributeChanged = "AttributeChanged",
+  CharacterRemoveFromView = "CharacterRemoveFromView",
 }
 
 export enum CharacterFactions {
@@ -148,6 +149,7 @@ export interface ICharacterCreateFromServer {
   mana: number;
   maxMana: number;
   textureKey: string;
+  alpha: number;
 }
 export interface ICharacterPositionUpdateFromClient {
   originX: number;
@@ -174,6 +176,7 @@ export interface ICharacterPositionUpdateFromServer {
   mana: number;
   maxMana: number;
   textureKey: string;
+  alpha: number;
 }
 
 export interface IAllCharacterPositionUpdateFromServer {
@@ -209,6 +212,10 @@ export interface ICharacterAttributeChanged {
   speed?: number;
   maxMana?: number;
   maxHealth?: number;
+  attackIntervalSpeed?: number;
+  weight?: number;
+  maxWeight?: number;
+  alpha?: number;
 }
 
 export interface IAppliedBuffsEffect {

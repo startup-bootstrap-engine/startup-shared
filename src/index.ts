@@ -47,3 +47,5 @@ export * from "./types/user.types";
 export * from "./types/validation.types";
 export * from "./types/view.types";
 export * from "./types/shortcut.types";
+export * from "./types/macro.types";
+export * from "./helpers/weightHelper";

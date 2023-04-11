@@ -270,6 +270,7 @@ export interface ILoadCraftBookPayload {
 
 export interface ICraftItemPayload {
   itemKey: string;
+  itemSubType?: string;
 }
 
 export interface ICraftableItemIngredient {
@@ -282,6 +283,8 @@ export interface ICraftableItemIngredient {
 export interface ICraftableItem extends IItem {
   canCraft: boolean;
   ingredients: ICraftableItemIngredient[];
+  minCraftingRequirements?: [string, number];
+  levelIsOk?: boolean;
 }
 
 export enum RangeTypes {
@@ -311,6 +314,7 @@ export interface IEquippableItemBlueprint extends IBaseItemBlueprint {
   defense?: number;
   attack?: number;
   allowedEquipSlotType: ItemSlotType[];
+  usableEffect?: (character: any) => void | Promise<void>;
 }
 
 export interface IEquippableRangedAmmoBlueprint extends IBaseItemBlueprint {
