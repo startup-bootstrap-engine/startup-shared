@@ -51,6 +51,7 @@ export interface ICharacter extends IResource {
   inventory: Promise<IItem | string>;
   type: string;
   isAlive: boolean;
+  alpha?: number;
 }
 
 export enum CharacterClass {

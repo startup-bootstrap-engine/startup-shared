@@ -146,7 +146,7 @@ export interface INPCGetInfoEmitterClient {
   npcId: string;
 }
 
-export interface INPCGetInfoEmitterServer extends INPC { }
+export interface INPCGetInfoEmitterServer extends INPC {}
 
 export interface INPCStartDialog {
   npcId: string;
