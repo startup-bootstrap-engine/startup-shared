@@ -308,6 +308,15 @@ export interface IBaseItemBlueprint {
   canSell?: boolean;
   maxStackSize?: number;
   isTraining?: boolean;
+  minRequirements?: MinRequirements;
+}
+
+export interface MinRequirements {
+  level: number;
+  skill: {
+    name: string;
+    level: number;
+  };
 }
 
 export interface IEquippableItemBlueprint extends IBaseItemBlueprint {
