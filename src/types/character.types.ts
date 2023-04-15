@@ -217,6 +217,7 @@ export interface ICharacterAttributeChanged {
   weight?: number;
   maxWeight?: number;
   alpha?: number;
+  textureKey?: string;
 }
 
 export interface IAppliedBuffsEffect {
