@@ -2,7 +2,14 @@ import { IItem } from "./item.types";
 
 export enum CharacterTradeSocketEvents {
   TradeWithNPC = "TradeWithNPC", // this perform the trade itself
+  TradeWithMarketplace = "TradeWithMarketplace", // this perform the trade with a marketplace
   TradeInit = "TradeInit", // this is called to populate all trading modals on the client
+  MarketplaceTradeInit = "MarketplaceTradeInit", // this is called to populate all trading modals on the client
+}
+
+export enum TradingEntity {
+  NPC = "NPC",
+  Marketplace = "Marketplace",
 }
 
 export type TradeTransactionType = "buy" | "sell";
@@ -30,9 +37,22 @@ export interface ICharacterNPCTradeRequest {
   items: ITradeRequestItem[];
 }
 
+export interface ICharacterMarketplaceTradeRequest {
+  // CLIENT request to the SERVER when hitting the "Confirm" modal button
+  marketplaceId: string;
+  type: TradeTransactionType;
+  items: ITradeRequestItem[];
+}
+
 export interface ICharacterNPCTradeInit {
   // When selecting the "Buy items..." or "Sell items..." context menu option
   npcId: string;
+  type: TradeTransactionType;
+}
+
+export interface ICharacterMarketplaceTradeInit {
+  // When selecting the "Buy items..." or "Sell items..." context menu option
+  marketplaceId: string;
   type: TradeTransactionType;
 }
 
@@ -43,8 +63,22 @@ export interface ICharacterNPCTradeInitBuyResponse {
   characterAvailableGold: number;
 }
 
+export interface ICharacterMarketplaceTradeInitBuyResponse {
+  marketplaceId: string;
+  type: TradeTransactionType;
+  items: ITradeResponseItem[];
+  characterAvailableGold: number;
+}
+
 export interface ICharacterNPCTradeInitSellResponse {
   npcId: string;
+  type: TradeTransactionType;
+  characterItems: ITradeResponseItem[];
+  characterAvailableGold: number;
+}
+
+export interface ICharacterMarketplaceTradeInitSellResponse {
+  marketplaceId: string;
   type: TradeTransactionType;
   characterItems: ITradeResponseItem[];
   characterAvailableGold: number;
