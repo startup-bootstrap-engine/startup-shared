@@ -5,6 +5,7 @@ import { IEquipmentSet } from "./equipment.types";
 import { IItemContainer } from "./itemContainer.types";
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
+import { CharacterTrait } from "./skills.types";
 
 export interface IItem extends IResource {
   tiledId?: number;
@@ -325,6 +326,10 @@ export interface IEquippableItemBlueprint extends IBaseItemBlueprint {
   attack?: number;
   allowedEquipSlotType: ItemSlotType[];
   usableEffect?: (character: any) => void | Promise<void>;
+  equippedEffect?: {
+    characterTrait: CharacterTrait;
+    buff: number;
+  };
 }
 
 export interface IEquippableRangedAmmoBlueprint extends IBaseItemBlueprint {

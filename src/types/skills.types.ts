@@ -140,6 +140,8 @@ export const COMBAT_SKILLS = [
   ItemSubType.Mace,
 ];
 
+export type CharacterTrait = CraftingSkill | CombatSkill | BasicAttribute | CharacterAttributes;
+
 export const SKILLS_MAP = new Map<ItemSubType | string, string>([
   [EntityAttackType.None, CombatSkill.First],
   [ItemSubType.Sword, CombatSkill.Sword],
