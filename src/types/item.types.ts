@@ -173,6 +173,7 @@ export interface IItemUpdate {
   layer: MapLayers;
   stackQty: number;
   isStackable?: boolean;
+  isDeadBodyLootable?: boolean;
 }
 
 export interface IItemUpdateAll {
