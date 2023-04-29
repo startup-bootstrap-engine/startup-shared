@@ -107,7 +107,7 @@ export enum BasicAttribute {
   MagicResistance = "magicResistance",
 }
 
-export enum CharacterEntities {
+export enum CharacterAttributes {
   Speed = "baseSpeed",
   MaxMana = "maxMana",
   MaxHealth = "maxHealth",
@@ -115,11 +115,11 @@ export enum CharacterEntities {
   Defense = "defense",
 }
 
-export const ENTITIES_SKILLS: CharacterEntities[] = [
-  CharacterEntities.Speed,
-  CharacterEntities.MaxMana,
-  CharacterEntities.MaxHealth,
-  CharacterEntities.AttackIntervalSpeed,
+export const CHARACTER_ATTRIBUTES: CharacterAttributes[] = [
+  CharacterAttributes.Speed,
+  CharacterAttributes.MaxMana,
+  CharacterAttributes.MaxHealth,
+  CharacterAttributes.AttackIntervalSpeed,
 ];
 
 export const BASIC_ATTRIBUTES: BasicAttribute[] = [
