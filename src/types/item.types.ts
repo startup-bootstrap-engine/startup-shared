@@ -327,7 +327,7 @@ export interface IEquippableItemBlueprint extends IBaseItemBlueprint {
   allowedEquipSlotType: ItemSlotType[];
   usableEffect?: (character: any) => void | Promise<void>;
   equippedBuff?: {
-    characterTrait: CharacterTrait;
+    targetTrait: CharacterTrait;
     buff: number;
   };
 }
