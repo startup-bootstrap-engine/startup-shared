@@ -13,9 +13,6 @@ export interface ICharacterBuff {
   durationType: BuffDurationType;
   options?: {
     messages?: {
-      skipAllMessages?: boolean;
-      skipActivationMessage?: boolean;
-      skipDeactivationMessage?: boolean;
       activation?: string;
       deactivation?: string;
     };
