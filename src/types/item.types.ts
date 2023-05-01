@@ -1,12 +1,11 @@
 import { AnimationEffectKeys } from "./animation.types";
-import { BuffType } from "./buff.types";
+import { ICharacterPermanentBuff } from "./buff.types";
 import { ICharacter } from "./character.types";
 import { EntityAttackType } from "./entity.types";
 import { IEquipmentSet } from "./equipment.types";
 import { IItemContainer } from "./itemContainer.types";
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
-import { CharacterTrait } from "./skills.types";
 
 export interface IItem extends IResource {
   tiledId?: number;
@@ -327,11 +326,7 @@ export interface IEquippableItemBlueprint extends IBaseItemBlueprint {
   attack?: number;
   allowedEquipSlotType: ItemSlotType[];
   usableEffect?: (character: any) => void | Promise<void>;
-  equippedBuff?: {
-    type: BuffType;
-    trait: CharacterTrait;
-    buffPercentage: number;
-  };
+  equippedBuff?: ICharacterPermanentBuff;
 }
 
 export interface IEquippableRangedAmmoBlueprint extends IBaseItemBlueprint {
