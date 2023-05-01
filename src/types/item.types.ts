@@ -1,4 +1,5 @@
 import { AnimationEffectKeys } from "./animation.types";
+import { BuffType } from "./buff.types";
 import { ICharacter } from "./character.types";
 import { EntityAttackType } from "./entity.types";
 import { IEquipmentSet } from "./equipment.types";
@@ -327,8 +328,9 @@ export interface IEquippableItemBlueprint extends IBaseItemBlueprint {
   allowedEquipSlotType: ItemSlotType[];
   usableEffect?: (character: any) => void | Promise<void>;
   equippedBuff?: {
-    targetTrait: CharacterTrait;
-    buff: number;
+    type: BuffType;
+    trait: CharacterTrait;
+    buffPercentage: number;
   };
 }
 
