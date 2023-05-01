@@ -28,3 +28,7 @@ export interface ICharacterTemporaryBuff extends ICharacterBuff {
   durationType: "temporary";
   durationSeconds: number;
 }
+
+export interface ICharacterItemBuff extends ICharacterPermanentBuff {
+  itemId: string;
+}
