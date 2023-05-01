@@ -19,3 +19,12 @@ export interface ICharacterBuff {
     };
   };
 }
+
+export interface ICharacterPermanentBuff extends ICharacterBuff {
+  durationType: "permanent";
+}
+
+export interface ICharacterTemporaryBuff extends ICharacterBuff {
+  durationType: "temporary";
+  durationSeconds: number;
+}
