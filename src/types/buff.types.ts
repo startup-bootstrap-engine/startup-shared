@@ -33,4 +33,5 @@ export interface ICharacterTemporaryBuff extends ICharacterBuff {
 
 export interface ICharacterItemBuff extends ICharacterPermanentBuff {
   itemId: string;
+  itemKey: string;
 }
