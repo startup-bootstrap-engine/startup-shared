@@ -85,6 +85,7 @@ export enum CharacterSocketEvents {
   ItemConsumed = "ItemConsumed",
   AttributeChanged = "AttributeChanged",
   CharacterRemoveFromView = "CharacterRemoveFromView",
+  CharacterPayload = "CharacterPayload"
 }
 
 export enum CharacterFactions {
