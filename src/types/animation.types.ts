@@ -55,6 +55,7 @@ export enum AnimationEffectKeys {
   Execution = "execution",
   // battle
   Hit = "hit",
+  Miss = "miss",
   HitBlue = "hit-blue",
   HitDark = "hit-dark",
   HitFire = "hit-fire",
