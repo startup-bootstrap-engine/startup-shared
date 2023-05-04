@@ -15,7 +15,7 @@ export interface ICharacterBuff {
   type: CharacterBuffType;
   trait: CharacterTrait; // A trait is a generic character characteristic, like a CombatSkill, CraftingSkill, BasicAttribute, Attribute, etc.
   buffPercentage: number;
-  prevTraitValue?: number;
+  absoluteChange?: number;
   durationType: CharacterBuffDurationType;
   options?: {
     messages?: {
