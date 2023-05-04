@@ -316,6 +316,8 @@ export interface IBaseItemBlueprint {
   maxStackSize?: number;
   isTraining?: boolean;
   minRequirements?: MinRequirements;
+  usableEffectDescription?: string;
+  equippedBuffDescription?: string;
 }
 
 export interface MinRequirements {
