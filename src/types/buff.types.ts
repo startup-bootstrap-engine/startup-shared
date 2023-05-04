@@ -1,3 +1,4 @@
+import { IResource } from "./resource.types";
 import { CharacterTrait } from "./skills.types";
 
 export enum CharacterBuffType {
@@ -10,8 +11,7 @@ export enum CharacterBuffDurationType {
   Temporary = "temporary",
 }
 
-export interface ICharacterBuff {
-  _id?: string; // it will receive an id when assigned on CharacterBuffTracker
+export interface ICharacterBuff extends IResource {
   type: CharacterBuffType;
   trait: CharacterTrait; // A trait is a generic character characteristic, like a CombatSkill, CraftingSkill, BasicAttribute, Attribute, etc.
   buffPercentage: number;
