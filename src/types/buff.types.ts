@@ -17,6 +17,9 @@ export interface ICharacterBuff extends IResource {
   buffPercentage: number;
   absoluteChange?: number;
   durationType: CharacterBuffDurationType;
+}
+
+export interface INewCharacterBuff extends Omit<ICharacterBuff, "_id"> {
   options?: {
     messages?: {
       skipAllMessages?: boolean;
