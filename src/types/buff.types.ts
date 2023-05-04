@@ -1,16 +1,22 @@
 import { CharacterTrait } from "./skills.types";
 
-export type BuffDurationType = "temporary" | "permanent";
+export enum CharacterBuffType {
+  Skill = "skill",
+  CharacterAttribute = "characterAttribute",
+}
 
-export type BuffType = "skill" | "characterAttribute";
+export enum CharacterBuffDurationType {
+  Permanent = "permanent",
+  Temporary = "temporary",
+}
 
 export interface ICharacterBuff {
   _id?: string; // it will receive an id when assigned on CharacterBuffTracker
-  type: BuffType;
+  type: CharacterBuffType;
   trait: CharacterTrait; // A trait is a generic character characteristic, like a CombatSkill, CraftingSkill, BasicAttribute, Attribute, etc.
   buffPercentage: number;
   prevTraitValue?: number;
-  durationType: BuffDurationType;
+  durationType: CharacterBuffDurationType;
   options?: {
     messages?: {
       skipAllMessages?: boolean;
@@ -23,11 +29,11 @@ export interface ICharacterBuff {
 }
 
 export interface ICharacterPermanentBuff extends ICharacterBuff {
-  durationType: "permanent";
+  durationType: CharacterBuffDurationType.Permanent;
 }
 
 export interface ICharacterTemporaryBuff extends ICharacterBuff {
-  durationType: "temporary";
+  durationType: CharacterBuffDurationType.Temporary;
   durationSeconds: number;
 }
 
