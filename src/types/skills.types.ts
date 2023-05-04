@@ -115,31 +115,6 @@ export enum CharacterAttributes {
   Defense = "defense",
 }
 
-export const CHARACTER_ATTRIBUTES: CharacterAttributes[] = [
-  CharacterAttributes.Speed,
-  CharacterAttributes.MaxMana,
-  CharacterAttributes.MaxHealth,
-  CharacterAttributes.AttackIntervalSpeed,
-];
-
-export const BASIC_ATTRIBUTES: BasicAttribute[] = [
-  BasicAttribute.Strength,
-  BasicAttribute.Resistance,
-  BasicAttribute.Dexterity,
-  BasicAttribute.Magic,
-];
-
-export const COMBAT_SKILLS = [
-  EntityAttackType.None,
-  ItemSubType.Sword,
-  ItemSubType.Dagger,
-  ItemSubType.Axe,
-  ItemSubType.Ranged,
-  ItemSubType.Spear,
-  ItemSubType.Shield,
-  ItemSubType.Mace,
-];
-
 export type CharacterTrait = CraftingSkill | CombatSkill | BasicAttribute | CharacterAttributes;
 
 export const SKILLS_MAP = new Map<ItemSubType | string, string>([
@@ -165,6 +140,31 @@ export const SKILLS_MAP = new Map<ItemSubType | string, string>([
   [CraftingSkill.Mining, CraftingSkill.Mining],
   [CraftingSkill.Blacksmithing, CraftingSkill.Blacksmithing],
 ]);
+
+export const CHARACTER_ATTRIBUTES: CharacterAttributes[] = [
+  CharacterAttributes.Speed,
+  CharacterAttributes.MaxMana,
+  CharacterAttributes.MaxHealth,
+  CharacterAttributes.AttackIntervalSpeed,
+];
+
+export const BASIC_ATTRIBUTES: BasicAttribute[] = [
+  BasicAttribute.Strength,
+  BasicAttribute.Resistance,
+  BasicAttribute.Dexterity,
+  BasicAttribute.Magic,
+];
+
+export const COMBAT_SKILLS = [
+  EntityAttackType.None,
+  ItemSubType.Sword,
+  ItemSubType.Dagger,
+  ItemSubType.Axe,
+  ItemSubType.Ranged,
+  ItemSubType.Spear,
+  ItemSubType.Shield,
+  ItemSubType.Mace,
+];
 
 export interface IDecreaseSPResult {
   skillType: string;
