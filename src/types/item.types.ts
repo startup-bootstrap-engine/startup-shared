@@ -46,6 +46,11 @@ export interface IItem extends IResource {
   maxRange?: number;
   requiredAmmoKeys?: string[];
   rangeType?: EntityAttackType;
+  minRequirements?: MinRequirements;
+  entityEffects?: string[];
+  entityEffectChance?: number;
+  usableEffectDescription?: string;
+  equippedBuffDescription?: string;
 }
 
 export enum ItemType {
@@ -311,6 +316,8 @@ export interface IBaseItemBlueprint {
   maxStackSize?: number;
   isTraining?: boolean;
   minRequirements?: MinRequirements;
+  usableEffectDescription?: string;
+  equippedBuffDescription?: string;
 }
 
 export interface MinRequirements {
@@ -339,7 +346,7 @@ export interface IEquippableRangedAmmoBlueprint extends IBaseItemBlueprint {
   entityEffectChance?: number;
 }
 
-export interface IEquippableArmorBlueprint extends Omit<IEquippableItemBlueprint, "attack"> {}
+export interface IEquippableArmorBlueprint extends Omit<IEquippableItemBlueprint, "attack"> { }
 
 export interface IEquippableWeaponBlueprint extends IEquippableItemBlueprint {
   type: ItemType.Weapon;

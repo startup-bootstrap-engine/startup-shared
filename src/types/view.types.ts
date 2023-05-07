@@ -4,6 +4,7 @@ export interface IViewElement {
   y: number;
   scene: string;
   direction?: string;
+  isDeadBodyLootable?: boolean;
 }
 
 export enum ViewSocketEvents {
