@@ -26,4 +26,5 @@ export enum SpellSocketEvents {
   CastSpell = "CastSpell",
   IdentifyTarget = "IdentifyTarget",
   SpellDetails = "SpellDetails",
+  LearnedSpells = "LearnedSpells"
 }
