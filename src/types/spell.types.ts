@@ -1,4 +1,7 @@
+import { CharacterClass } from "./character.types";
 import { EntityType } from "./entity.types";
+import { SpellCastingType } from "./item.types";
+import { BasicAttribute, CharacterAttributes, CombatSkill, CraftingSkill } from "./skills.types";
 
 export interface IRawSpell {
   key: string;
@@ -69,11 +72,6 @@ export enum SpellsBlueprint {
   EntanglingRoots = "entangling-roots",
 }
 
-export declare enum SpellCastingType {
-  SelfCasting = "self-casting",
-  RangedCasting = "ranged-casting"
-}
-
 export enum MagicsBlueprint {
   Rune = "rune",
   DarkRune = "dark-rune",
@@ -84,48 +82,6 @@ export enum MagicsBlueprint {
   EnergyBoltRune = "energy-bolt-rune",
   FireBoltRune = "fire-bolt-rune",
   CorruptionRune = "corruption-rune",
-}
-
-export declare enum CharacterClass {
-  None = "None",
-  Warrior = "Warrior",
-  Berserker = "Berserker",
-  Druid = "Druid",
-  Sorcerer = "Sorcerer",
-  Rogue = "Rogue",
-  Hunter = "Hunter"
-}
-
-export declare enum CombatSkill {
-  First = "first",
-  Sword = "sword",
-  Dagger = "dagger",
-  Axe = "axe",
-  Distance = "distance",
-  Shielding = "shielding",
-  Club = "club"
-}
-export declare enum CraftingSkill {
-  Fishing = "fishing",
-  Mining = "mining",
-  Lumberjacking = "lumberjacking",
-  Cooking = "cooking",
-  Alchemy = "alchemy",
-  Blacksmithing = "blacksmithing"
-}
-export declare enum BasicAttribute {
-  Strength = "strength",
-  Resistance = "resistance",
-  Dexterity = "dexterity",
-  Magic = "magic",
-  MagicResistance = "magicResistance"
-}
-export declare enum CharacterAttributes {
-  Speed = "baseSpeed",
-  MaxMana = "maxMana",
-  MaxHealth = "maxHealth",
-  AttackIntervalSpeed = "attackIntervalSpeed",
-  Defense = "defense"
 }
 
 export interface ISpell {
