@@ -1,6 +1,7 @@
-import { CharacterClass } from "./character.types";
+import { CharacterClass, ICharacter } from "./character.types";
 import { EntityType } from "./entity.types";
 import { SpellCastingType } from "./item.types";
+import { INPC } from "./npc.types";
 import { BasicAttribute, CharacterAttributes, CombatSkill, CraftingSkill } from "./skills.types";
 
 export interface IRawSpell {
@@ -91,9 +92,9 @@ export interface ISpell {
   castingType: SpellCastingType;
   magicWords: string;
   manaCost: number;
-  // castingAnimationKey: string;
-  // targetHitAnimationKey: string;
-  // projectileAnimationKey: string;
+  castingAnimationKey: string;
+  targetHitAnimationKey: string;
+  projectileAnimationKey: string;
   minLevelRequired: number;
   minMagicLevelRequired: number;
   cooldown: number;
@@ -101,8 +102,8 @@ export interface ISpell {
   characterClass?: CharacterClass[];
   attribute?: BasicAttribute | CombatSkill | CraftingSkill | CharacterAttributes;
   maxDistanceGrid?: number;
-  // usableEffect: (
-  //   character: ICharacter,
-  //   target?: ICharacter | INPC
-  // ) => Promise<boolean> | Promise<void> | void | boolean;
+  usableEffect: (
+    character: ICharacter,
+    target?: ICharacter | INPC
+  ) => Promise<boolean> | Promise<void> | void | boolean;
 }
