@@ -346,7 +346,7 @@ export interface IEquippableRangedAmmoBlueprint extends IBaseItemBlueprint {
   entityEffectChance?: number;
 }
 
-export interface IEquippableArmorBlueprint extends Omit<IEquippableItemBlueprint, "attack"> { }
+export interface IEquippableArmorBlueprint extends Omit<IEquippableItemBlueprint, "attack"> {}
 
 export interface IEquippableWeaponBlueprint extends IEquippableItemBlueprint {
   type: ItemType.Weapon;
