@@ -1,7 +1,6 @@
-import { CharacterClass, ICharacter } from "./character.types";
+import { CharacterClass } from "./character.types";
 import { EntityType } from "./entity.types";
 import { SpellCastingType } from "./item.types";
-import { INPC } from "./npc.types";
 import { BasicAttribute, CharacterAttributes, CombatSkill, CraftingSkill } from "./skills.types";
 
 export interface IRawSpell {
@@ -102,8 +101,5 @@ export interface ISpell {
   characterClass?: CharacterClass[];
   attribute?: BasicAttribute | CombatSkill | CraftingSkill | CharacterAttributes;
   maxDistanceGrid?: number;
-  usableEffect: (
-    character: ICharacter,
-    target?: ICharacter | INPC
-  ) => Promise<boolean> | Promise<void> | void | boolean;
+  usableEffect: (character, target?) => Promise<boolean> | Promise<void> | void | boolean;
 }
