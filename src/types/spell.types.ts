@@ -30,6 +30,7 @@ export enum SpellSocketEvents {
   IdentifyTarget = "IdentifyTarget",
   SpellDetails = "SpellDetails",
   LearnedSpells = "LearnedSpells",
+  SpellCooldownsRead = "SpellCooldownsRead",
 }
 
 export enum SpellsBlueprint {
