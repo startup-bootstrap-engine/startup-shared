@@ -70,6 +70,7 @@ export enum SpellsBlueprint {
   PowerStrike = "power-strike",
   CurseOfWeakness = "curse-of-weakness",
   EntanglingRoots = "entangling-roots",
+  SpellPolymorph = "spell-polymorph",
 }
 
 export enum MagicsBlueprint {
