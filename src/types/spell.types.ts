@@ -72,6 +72,7 @@ export enum SpellsBlueprint {
   CurseOfWeakness = "curse-of-weakness",
   EntanglingRoots = "entangling-roots",
   SpellPolymorph = "spell-polymorph",
+  PickPocket = "pick-pocket"
 }
 
 export enum MagicsBlueprint {
