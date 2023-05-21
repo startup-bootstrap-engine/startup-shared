@@ -72,7 +72,8 @@ export enum SpellsBlueprint {
   CurseOfWeakness = "curse-of-weakness",
   EntanglingRoots = "entangling-roots",
   SpellPolymorph = "spell-polymorph",
-  PickPocket = "pick-pocket"
+  PickPocket = "pick-pocket",
+  DruidSilence = "druid-silence",
 }
 
 export enum MagicsBlueprint {
