@@ -30,6 +30,7 @@ export enum SpellSocketEvents {
   IdentifyTarget = "IdentifyTarget",
   SpellDetails = "SpellDetails",
   LearnedSpells = "LearnedSpells",
+  SpellCooldownsRead = "SpellCooldownsRead",
 }
 
 export enum SpellsBlueprint {
@@ -70,6 +71,8 @@ export enum SpellsBlueprint {
   PowerStrike = "power-strike",
   CurseOfWeakness = "curse-of-weakness",
   EntanglingRoots = "entangling-roots",
+  SpellPolymorph = "spell-polymorph",
+  PickPocket = "pick-pocket"
 }
 
 export enum MagicsBlueprint {

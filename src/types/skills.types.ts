@@ -3,7 +3,6 @@ import { ItemSubType } from "./item.types";
 import { IResource } from "./resource.types";
 
 export enum SkillSocketEvents {
-  ExperienceGain = "ExperienceGain",
   SkillGain = "SkillGain",
   ReadInfo = "ReadInfo",
 }
