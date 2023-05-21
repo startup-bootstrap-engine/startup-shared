@@ -18,6 +18,11 @@ export interface ISpellRead {
   spells: IRawSpell[];
 }
 
+export interface ILearnedSpellsRead {
+  magicLevel: number;
+  learnedSpells: ISpell[];
+}
+
 export interface ISpellCast {
   magicWords: string;
   targetId?: string;
