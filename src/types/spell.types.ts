@@ -80,7 +80,8 @@ export enum SpellsBlueprint {
   PickPocket = "pick-pocket",
   DruidSilence = "druid-silence",
   ManaDrain = "mana-drain",
-  FrostArrowCreation = "frost-arrow-creation"
+  FrostArrowCreation = "frost-arrow-creation",
+  CrimsonArrowCreation = "crimson-arrow-creation"
 }
 
 export enum MagicsBlueprint {

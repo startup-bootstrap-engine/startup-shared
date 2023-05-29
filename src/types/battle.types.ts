@@ -44,4 +44,4 @@ export interface IBattleCancelTargeting {
   reason?: string;
 }
 
-export interface IBattleRangedAttackFailed extends IBattleCancelTargeting { }
+export interface IBattleRangedAttackFailed extends IBattleCancelTargeting {}
