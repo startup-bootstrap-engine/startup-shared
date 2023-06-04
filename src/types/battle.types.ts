@@ -25,6 +25,7 @@ export interface IBattleEventFromServer {
   postDamageTargetHP?: number;
   level?: number;
   skill?: string;
+  isCriticalHit?: boolean;
 }
 
 export interface IBattleDeath {

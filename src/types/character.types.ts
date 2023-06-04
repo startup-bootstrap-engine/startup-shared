@@ -201,10 +201,10 @@ export interface ICharacterForceDisconnect {
 }
 
 export interface ICharacterTexture {
-  textureDisplayName: string;
-  textureKey: string;
-  faction: string;
+  class: string;
   race: string;
+  textureKey: string;
+  textureDisplayName: string;
 }
 
 export interface ICharacterAttributeChanged {

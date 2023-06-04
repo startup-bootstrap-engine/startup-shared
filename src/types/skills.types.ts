@@ -3,9 +3,9 @@ import { ItemSubType } from "./item.types";
 import { IResource } from "./resource.types";
 
 export enum SkillSocketEvents {
-  ExperienceGain = "ExperienceGain",
   SkillGain = "SkillGain",
   ReadInfo = "ReadInfo",
+  ExperienceGain = "ExperienceGain",
 }
 
 export enum SkillEventType {
@@ -28,6 +28,7 @@ export interface ISkillDetails {
   level: number;
   skillPoints: number;
   skillPointsToNextLevel: number;
+  buffAndDebuff?: number;
 }
 
 export interface ISkill extends IResource {
