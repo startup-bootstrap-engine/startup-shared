@@ -83,7 +83,7 @@ export enum SpellsBlueprint {
   FrostArrowCreation = "frost-arrow-creation",
   CrimsonArrowCreation = "crimson-arrow-creation",
   EmeraldArrowCreation = "emerald-arrow-creation",
-  Firebolt = "firebolt",
+  FireBolt = "fire-bolt",
   FrostBolt = "frost-bolt",
   ThunderBolt = "thunder-bolt",
   CorruptionBolt = "corruption-bolt",
