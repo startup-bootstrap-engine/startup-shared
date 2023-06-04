@@ -295,11 +295,10 @@ export interface ICraftableItem extends IItem {
 }
 
 export enum RangeTypes {
-  UltraShort = 2,
-  Short = 6,
-  Medium = 7,
-  High = 9,
-  UltraHigh = 12,
+  UltraShort = 3,
+  Short = 5,
+  Medium = 6,
+  High = 7,
 }
 
 export interface IBaseItemBlueprint {
@@ -346,7 +345,7 @@ export interface IEquippableRangedAmmoBlueprint extends IBaseItemBlueprint {
   entityEffectChance?: number;
 }
 
-export interface IEquippableArmorBlueprint extends Omit<IEquippableItemBlueprint, "attack"> { }
+export interface IEquippableArmorBlueprint extends Omit<IEquippableItemBlueprint, "attack"> {}
 
 export interface IEquippableWeaponBlueprint extends IEquippableItemBlueprint {
   type: ItemType.Weapon;
