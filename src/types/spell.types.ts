@@ -120,4 +120,5 @@ export interface ISpell {
   attribute?: BasicAttribute | CombatSkill | CraftingSkill | CharacterAttributes;
   maxDistanceGrid?: number;
   usableEffect: (character, target?) => Promise<boolean> | Promise<void> | void | boolean;
+  canSelfTarget?: boolean;
 }
