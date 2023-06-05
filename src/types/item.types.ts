@@ -405,7 +405,7 @@ export interface IConsumableItemBlueprint extends ICraftableItemBlueprint {
   usableEffect: (character) => void | Promise<void>;
 }
 
-export enum RunePower {
+export enum MagicPower {
   UltraLow = 5,
   Low = 10,
   Medium = 15,
@@ -420,7 +420,7 @@ export interface IRuneItemBlueprint extends IBaseItemBlueprint {
   maxStackSize: number;
 
   useWithMaxDistanceGrid: RangeTypes;
-  power: RunePower;
+  power: MagicPower;
   animationKey: AnimationEffectKeys;
   projectileAnimationKey: AnimationEffectKeys;
   minMagicLevelRequired: number;
