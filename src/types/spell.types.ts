@@ -85,9 +85,8 @@ export enum SpellsBlueprint {
   EmeraldArrowCreation = "emerald-arrow-creation",
   FireBolt = "fire-bolt",
   FrostBolt = "frost-bolt",
-  ThunderBolt = "thunder-bolt",
   CorruptionBolt = "corruption-bolt",
-  EnergyBolt = "energy-bolt",
+  VineGrasp = "vine-grasp",
 }
 
 export enum MagicsBlueprint {
