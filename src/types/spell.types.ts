@@ -87,6 +87,7 @@ export enum SpellsBlueprint {
   FrostBolt = "frost-bolt",
   CorruptionBolt = "corruption-bolt",
   VineGrasp = "vine-grasp",
+  MagicShuriken = "magic-shuriken",
 }
 
 export enum MagicsBlueprint {
