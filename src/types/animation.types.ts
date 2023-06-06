@@ -74,4 +74,5 @@ export enum AnimationEffectKeys {
   Corruption = "corruption",
   BlueWings = "blue-wings",
   QuickFire = "quick-fire",
+  Shuriken = "shuriken",
 }
