@@ -44,6 +44,7 @@ export interface IMarketplaceGetItems {
 export interface IMarketplaceGetItemsResponse {
   items: IMarketplaceItem[];
   moneyAvailable: number;
+  totalItems: number;
 }
 
 export interface IMarketplaceAddItem {
