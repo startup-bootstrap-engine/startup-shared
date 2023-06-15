@@ -49,7 +49,7 @@ export interface IMarketplaceGetItemsResponse {
 
 export interface IMarketplaceAddItem {
   npcId: string;
-  marketplaceItem: IMarketplaceItem;
+  item: IItem;
 }
 
 export interface IMarketplaceRemoveItem {
