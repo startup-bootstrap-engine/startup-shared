@@ -426,6 +426,7 @@ export interface IRuneItemBlueprint extends IBaseItemBlueprint {
   minMagicLevelRequired: number;
 
   usableEffect?: (caster, target) => void | Promise<void> | Promise<number>;
+  usableEntityEffect?: (caster: any, target: any) => void | Promise<void> | Promise<number>;
 }
 
 export interface IEquippableStaffBlueprint extends IEquippableWeaponBlueprint {
