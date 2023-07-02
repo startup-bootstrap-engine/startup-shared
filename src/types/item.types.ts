@@ -379,6 +379,7 @@ export interface ICraftableItemBlueprint extends IBaseItemBlueprint {
   type: ItemType.Consumable | ItemType.CraftingResource;
   maxStackSize?: number;
   usableEffect?: (character) => void | Promise<void>;
+  usableEffectKey: string;
 }
 
 export interface IToolItemBlueprint extends IBaseItemBlueprint {
@@ -402,7 +403,7 @@ export interface IToolItemBlueprint extends IBaseItemBlueprint {
 
 export interface IConsumableItemBlueprint extends ICraftableItemBlueprint {
   type: ItemType.Consumable;
-  usableEffect: (character) => void | Promise<void>;
+  usableEffect?: (character) => void | Promise<void>;
   usableEffectKey: string;
 }
 
