@@ -38,7 +38,7 @@ export interface IMarketplaceAvailableMoneyNotification {
 
 export interface IMarketplaceGetItems {
   npcId: string;
-  options: IGetMarketplaceItemsOptions
+  options: IGetMarketplaceItemsOptions;
 }
 
 export interface IMarketplaceGetItemsResponse {
@@ -51,7 +51,7 @@ export interface IMarketplaceAddItem {
   npcId: string;
   marketplaceItem: {
     price: number;
-    itemId: string
+    itemId: string;
   };
 }
 

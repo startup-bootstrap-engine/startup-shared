@@ -403,6 +403,7 @@ export interface IToolItemBlueprint extends IBaseItemBlueprint {
 export interface IConsumableItemBlueprint extends ICraftableItemBlueprint {
   type: ItemType.Consumable;
   usableEffect: (character) => void | Promise<void>;
+  usableEffectKey: string;
 }
 
 export enum MagicPower {
@@ -427,6 +428,8 @@ export interface IRuneItemBlueprint extends IBaseItemBlueprint {
 
   usableEffect?: (caster, target) => void | Promise<void> | Promise<number>;
   usableEntityEffect?: (caster, target) => void | Promise<void> | Promise<number>;
+
+  usableEffectKey: string;
 }
 
 export interface IEquippableStaffBlueprint extends IEquippableWeaponBlueprint {
