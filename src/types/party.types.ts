@@ -1,90 +1,88 @@
 import { CharacterClass } from "./character.types";
 
 export interface IPartyManagementFromClient {
-    targetId?: string;
-    leaderId?: string;
+  targetId?: string;
+  leaderId?: string;
 }
 
 export enum PartySocketEvents {
-    Create = "create",
-    Leave = "leave",
-    TransferLeadership = "transferLeadership",
-    Invite = "invite",
+  Create = "create",
+  Leave = "leave",
+  TransferLeadership = "transferLeadership",
+  Invite = "invite",
 }
 
 export interface ICharacterPartyChange {
-    leader: {
-        name: string;
-    };
-    members: Array<{
-        name: string;
-    }>;
-    maxSize: number;
-    benefits?: Array<{
-        benefit: string;
-        value: number;
-    }>;
+  leader: {
+    name: string;
+  };
+  members: Array<{
+    name: string;
+  }>;
+  maxSize: number;
+  benefits?: Array<{
+    benefit: string;
+    value: number;
+  }>;
 }
-
 
 export enum CharacterPartyBenefits {
-    Experience = "experience",
-    DropRatio = "drop-ratio",
-    Skill = "skill",
-    Distribution = "distribution",
+  Experience = "experience",
+  DropRatio = "drop-ratio",
+  Skill = "skill",
+  Distribution = "distribution",
 }
 
-
 export interface ICharacterPartyShared {
-    id?: string;
-    leader: {
-        _id: string;
-        class: CharacterClass;
-    };
-    members: {
-        _id: string;
-        class: CharacterClass;
-    }[];
-    maxSize: number;
-    size?: number;
-    benefits?: {
-        benefit: CharacterPartyBenefits;
-        value: number;
-    }[];
+  id?: string;
+  leader: {
+    _id: string;
+    class: CharacterClass;
+  };
+  members: {
+    _id: string;
+    class: CharacterClass;
+  }[];
+  maxSize: number;
+  size?: number;
+  benefits?: {
+    benefit: CharacterPartyBenefits;
+    value: number;
+  }[];
 }
 
 // Different classes members + leader
 export enum CharacterPartyEXPBonus {
-    One = 2,
-    Two = 4,
-    Three = 6,
-    Four = 8,
-    Five = 10,
+  One = 2,
+  Two = 4,
+  Three = 6,
+  Four = 8,
+  Five = 10,
 }
 
 // number os total members + leader
 export enum CharacterPartyDropBonus {
-    None = 0,
-    Two = 6,
-    Three = 9,
-    Four = 12,
-    Five = 15,
+  None = 0,
+  Two = 6,
+  Three = 9,
+  Four = 12,
+  Five = 15,
 }
 
 // number os total members + leader
 export enum CharacterPartySkillBonus {
-    None = 0,
-    Two = 4,
-    Three = 6,
-    Four = 8,
-    Five = 10,
+  None = 0,
+  Two = 4,
+  Three = 6,
+  Four = 8,
+  Five = 10,
 }
 
 // number os total members + leader
 export enum CharacterPartyDistributionBonus {
-    None = 1,
-    Two = 0.5,
-    Three = 0.33,
-    Four = 0.25,
-    Five = 0.2,
+  None = 1,
+  Two = 0.5,
+  Three = 0.33,
+  Four = 0.25,
+  Five = 0.2,
 }
