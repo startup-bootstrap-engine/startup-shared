@@ -88,6 +88,7 @@ export enum SpellsBlueprint {
   CorruptionBolt = "corruption-bolt",
   VineGrasp = "vine-grasp",
   MagicShuriken = "magic-shuriken",
+  SorcererVeilofUndeath = "veil-of-undeath",
 }
 
 export enum MagicsBlueprint {
