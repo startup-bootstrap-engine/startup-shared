@@ -26,6 +26,8 @@ export interface ICharacterBuff {
       deactivation?: string;
     };
   };
+  isStackable?: boolean;
+  originateFrom?: string;
 }
 
 export interface ICharacterPermanentBuff extends ICharacterBuff {
