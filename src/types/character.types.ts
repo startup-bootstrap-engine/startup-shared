@@ -105,6 +105,12 @@ export enum ShadowWalkerRaces {
   Minotaur = "Minotaur",
 }
 
+export enum Modes {
+  SoftMode = "Soft",
+  HardcoreMode = "Hardcore",
+  PermadeathMode = "Permadeath"
+}
+
 export interface ICharacterPing {
   // tell the server you're still alive
   id: string;
