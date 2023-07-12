@@ -88,11 +88,8 @@ export enum SpellsBlueprint {
   CorruptionBolt = "corruption-bolt",
   VineGrasp = "vine-grasp",
   MagicShuriken = "magic-shuriken",
-<<<<<<< HEAD
-  Teleport = "teleport",
-=======
   SorcererVeilofUndeath = "veil-of-undeath",
->>>>>>> f5e39a183f619dbe18069d01a5cbbd53a20f4820
+  Teleport = "teleport",
 }
 
 export enum MagicsBlueprint {
