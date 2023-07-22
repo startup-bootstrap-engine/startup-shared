@@ -165,7 +165,7 @@ export interface ICharacterPositionUpdateFromClient {
   newX: number;
   newY: number;
   direction: AnimationDirection;
-  timestamp?: Date;
+  timestamp?: number;
 }
 export interface ICharacterPositionUpdateFromServer {
   id: string; // will be validated server side
