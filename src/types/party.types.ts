@@ -57,7 +57,7 @@ export enum CharacterPartyEXPBonus {
   Two = 30,
   Three = 40,
   Four = 50,
-  Five = 60
+  Five = 60,
 }
 
 // number os total members + leader
