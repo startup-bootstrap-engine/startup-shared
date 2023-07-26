@@ -105,6 +105,12 @@ export enum ShadowWalkerRaces {
   Minotaur = "Minotaur",
 }
 
+export enum Modes {
+  SoftMode = "Soft",
+  HardcoreMode = "Hardcore",
+  PermadeathMode = "Permadeath",
+}
+
 export interface ICharacterPing {
   // tell the server you're still alive
   id: string;
@@ -159,6 +165,7 @@ export interface ICharacterPositionUpdateFromClient {
   newX: number;
   newY: number;
   direction: AnimationDirection;
+  timestamp?: number;
 }
 export interface ICharacterPositionUpdateFromServer {
   id: string; // will be validated server side

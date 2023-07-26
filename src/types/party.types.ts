@@ -54,11 +54,11 @@ export interface ICharacterPartyShared {
 
 // Different classes members + leader
 export enum CharacterPartyEXPBonus {
-  One = 2,
-  Two = 4,
-  Three = 6,
-  Four = 8,
-  Five = 10,
+  One = 20,
+  Two = 30,
+  Three = 40,
+  Four = 50,
+  Five = 60,
 }
 
 // number os total members + leader
