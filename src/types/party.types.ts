@@ -10,6 +10,7 @@ export enum PartySocketEvents {
   Leave = "leave",
   TransferLeadership = "transferLeadership",
   Invite = "invite",
+  InviteOrCreate = "inviteOrCreate",
 }
 
 export interface ICharacterPartyChange {
