@@ -39,10 +39,12 @@ export interface ICharacterPartyShared {
   leader: {
     _id: string;
     class: CharacterClass;
+    name: string;
   };
   members: {
     _id: string;
     class: CharacterClass;
+    name: string;
   }[];
   maxSize: number;
   size?: number;
