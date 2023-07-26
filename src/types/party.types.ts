@@ -13,7 +13,7 @@ export enum PartySocketEvents {
   InviteOrCreate = "inviteOrCreate",
   GetParty = "getParty",
   PartyInvite = "partyInvite",
-  acceptInvite = "acceptInvite",
+  AcceptInvite = "acceptInvite",
 }
 
 export interface ICharacterPartyChange {
