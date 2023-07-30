@@ -11,7 +11,7 @@ export enum PartySocketEvents {
   AcceptInvite = "acceptInvite",
   LeaveParty = "leaveParty",
   PartyInfoRead = "partyInfoRead",
-  PartyInfoOpen = "partyInfoOpen",  
+  PartyInfoOpen = "partyInfoOpen",
   TransferLeadership = "transferLeadership",
   Create = "create",
   Invite = "invite",
