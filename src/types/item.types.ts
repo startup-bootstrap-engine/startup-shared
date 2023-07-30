@@ -408,12 +408,12 @@ export interface IConsumableItemBlueprint extends ICraftableItemBlueprint {
 }
 
 export enum MagicPower {
-  UltraLow = 1,
-  Low = 3,
-  Medium = 5,
-  High = 7,
-  UltraHigh = 10,
-  Fatal = 15,
+  UltraLow = 0.5,
+  Low = 1.5,
+  Medium = 2.5,
+  High = 4.5,
+  UltraHigh = 5,
+  Fatal = 7,
 }
 
 export interface IRuneItemBlueprint extends IBaseItemBlueprint {
