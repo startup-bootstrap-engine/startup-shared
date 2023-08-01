@@ -91,7 +91,7 @@ export enum SpellsBlueprint {
   SorcererVeilofUndeath = "veil-of-undeath",
   Teleport = "teleport",
   DwarfStoneform = "dwarf-stone-form",
-  ElvenArrow = "elven-arrow"
+  ElvenArrow = "elven-arrow",
 }
 
 export enum MagicsBlueprint {
