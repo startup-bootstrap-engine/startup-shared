@@ -105,6 +105,8 @@ export enum ShadowWalkerRaces {
   Minotaur = "Minotaur",
 }
 
+export type CharacterRaces = LifeBringerRaces | ShadowWalkerRaces;
+
 export enum Modes {
   SoftMode = "Soft",
   HardcoreMode = "Hardcore",

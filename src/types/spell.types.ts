@@ -1,4 +1,4 @@
-import { CharacterClass } from "./character.types";
+import { CharacterClass, CharacterRaces } from "./character.types";
 import { EntityType } from "./entity.types";
 import { SpellCastingType } from "./item.types";
 import { BasicAttribute, CharacterAttributes, CombatSkill, CraftingSkill } from "./skills.types";
@@ -90,6 +90,8 @@ export enum SpellsBlueprint {
   MagicShuriken = "magic-shuriken",
   SorcererVeilofUndeath = "veil-of-undeath",
   Teleport = "teleport",
+  DwarfStoneform = "dwarf-stone-form",
+  ElvenArrow = "elven-arrow",
 }
 
 export enum MagicsBlueprint {
@@ -119,6 +121,7 @@ export interface ISpell {
   cooldown: number;
   requiredItem?: MagicsBlueprint;
   characterClass?: CharacterClass[];
+  characterRace?: CharacterRaces[];
   attribute?: BasicAttribute | CombatSkill | CraftingSkill | CharacterAttributes;
   maxDistanceGrid?: number;
   usableEffect: (character, target?) => Promise<boolean> | Promise<void> | void | boolean;
