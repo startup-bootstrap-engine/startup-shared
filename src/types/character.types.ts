@@ -52,6 +52,7 @@ export interface ICharacter extends IResource {
   type: string;
   isAlive: boolean;
   alpha?: number;
+  isGiantForm?: boolean;
 }
 
 export enum CharacterClass {
@@ -228,6 +229,7 @@ export interface ICharacterAttributeChanged {
   maxWeight?: number;
   alpha?: number;
   textureKey?: string;
+  isGiantForm?: boolean;
 }
 
 export interface IAppliedBuffsEffect {
