@@ -95,6 +95,7 @@ export enum SpellsBlueprint {
   ChefsDelight = "chefs-delight",
   OrcDispelMagic = "dispel-magic",
   MinotaurBullStrength = "minotaur-bull-strength",
+  FireStorm = "fire-storm",
 }
 
 export enum MagicsBlueprint {
