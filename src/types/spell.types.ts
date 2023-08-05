@@ -92,6 +92,9 @@ export enum SpellsBlueprint {
   Teleport = "teleport",
   DwarfStoneform = "dwarf-stone-form",
   ElvenArrow = "elven-arrow",
+  ChefsDelight = "chefs-delight",
+  OrcDispelMagic = "dispel-magic",
+  MinotaurBullStrength = "minotaur-bull-strength",
 }
 
 export enum MagicsBlueprint {
