@@ -160,6 +160,7 @@ export interface ICharacterCreateFromServer {
   maxMana: number;
   textureKey: string;
   alpha?: number;
+  isGiantForm?: boolean;
 }
 export interface ICharacterPositionUpdateFromClient {
   originX: number;
