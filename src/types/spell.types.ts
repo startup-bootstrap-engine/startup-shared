@@ -96,6 +96,8 @@ export enum SpellsBlueprint {
   OrcDispelMagic = "dispel-magic",
   MinotaurBullStrength = "minotaur-bull-strength",
   FireStorm = "fire-storm",
+  MassHealing = "mass-healing",
+  FocusSwift = "focus-swift",
 }
 
 export enum MagicsBlueprint {
