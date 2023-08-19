@@ -30,6 +30,7 @@ export enum MarketplaceSocketEvents {
   BuyItem = "MarketplaceBuyItem",
   WithdrawMoney = "MarketplaceWithdrawMoney",
   GetAvailableMoney = "MarketplaceGetAvailableMoney",
+  GetNonPVPZone = "MarketplaceGetNonPVPZone",
 }
 
 export interface IMarketplaceAvailableMoneyNotification {
