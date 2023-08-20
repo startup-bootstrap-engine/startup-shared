@@ -98,6 +98,10 @@ export enum SpellsBlueprint {
   FireStorm = "fire-storm",
   MassHealing = "mass-healing",
   FocusSwift = "focus-swift",
+  Blizzard = "blizzard",
+  Arrowstorm = "arrowstorm",
+  WildfireVolley = "wildfire-volley",
+  NaturesRevenge = "natures-revenge"
 }
 
 export enum MagicsBlueprint {
