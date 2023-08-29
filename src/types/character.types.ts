@@ -56,6 +56,7 @@ export interface ICharacter extends IResource {
   hasSkull?: boolean;
   skullType?: CharacterSkullType;
   skullExpiresAt?: Date;
+  isOnParty?: boolean;
 }
 
 export enum CharacterClass {
@@ -167,6 +168,7 @@ export interface ICharacterCreateFromServer {
   isGiantForm?: boolean;
   hasSkull?: boolean;
   skullType?: CharacterSkullType;
+  isOnParty: boolean;
 }
 export interface ICharacterPositionUpdateFromClient {
   originX: number;
@@ -238,6 +240,7 @@ export interface ICharacterAttributeChanged {
   isGiantForm?: boolean;
   hasSkull?: boolean;
   skullType?: CharacterSkullType;
+  isOnParty?: boolean;
 }
 
 export interface IAppliedBuffsEffect {
