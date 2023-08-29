@@ -168,7 +168,7 @@ export interface ICharacterCreateFromServer {
   isGiantForm?: boolean;
   hasSkull?: boolean;
   skullType?: CharacterSkullType;
-  isOnParty: boolean;
+  isOnParty?: boolean;
 }
 export interface ICharacterPositionUpdateFromClient {
   originX: number;
