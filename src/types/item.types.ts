@@ -390,13 +390,7 @@ export interface IToolItemBlueprint extends IBaseItemBlueprint {
   hasUseWith: true;
   useWithMaxDistanceGrid: RangeTypes;
   canSell: false;
-  usableEffect?: (
-    character,
-    targetItem,
-    itemCraftable,
-    skillIncrease,
-    originItem
-  ) => void | Promise<void>;
+  usableEffect?: (character, targetItem, itemCraftable, skillIncrease, originItem) => void | Promise<void>;
   useWithTileEffect?: (
     originItem,
     targetTile,

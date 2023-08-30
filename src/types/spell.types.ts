@@ -101,7 +101,9 @@ export enum SpellsBlueprint {
   Blizzard = "blizzard",
   Arrowstorm = "arrowstorm",
   WildfireVolley = "wildfire-volley",
-  NaturesRevenge = "natures-revenge"
+  NaturesRevenge = "natures-revenge",
+  BleedingEdge = "bleeding-edge",
+  ArcaneExplosion = "arcane-explosion",
 }
 
 export enum MagicsBlueprint {

@@ -250,7 +250,7 @@ export interface IAppliedBuffsEffect {
 }
 
 export enum CharacterSkullType {
-  WhiteSkull = 'WhiteSkull',
-  YellowSkull = 'YellowSkull',
-  RedSkull = 'RedSkull',
+  WhiteSkull = "WhiteSkull",
+  YellowSkull = "YellowSkull",
+  RedSkull = "RedSkull",
 }
