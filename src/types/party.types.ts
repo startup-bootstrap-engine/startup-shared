@@ -1,20 +1,18 @@
 import { CharacterClass } from "./character.types";
 
 export interface IPartyManagementFromClient {
+  partyId?: string;
   targetId?: string;
   leaderId?: string;
 }
 
 export enum PartySocketEvents {
-  InviteOrCreate = "inviteOrCreate",
   PartyInvite = "partyInvite",
   AcceptInvite = "acceptInvite",
   LeaveParty = "leaveParty",
   PartyInfoRead = "partyInfoRead",
   PartyInfoOpen = "partyInfoOpen",
-  TransferLeadership = "transferLeadership",
-  Create = "create",
-  Invite = "invite",
+  TransferLeadership = "transferLeadership"
 }
 
 export interface ICharacterPartyChange {
