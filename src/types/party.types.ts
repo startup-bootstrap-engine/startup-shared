@@ -7,12 +7,15 @@ export interface IPartyManagementFromClient {
 }
 
 export enum PartySocketEvents {
+  InviteOrCreate = "inviteOrCreate",
   PartyInvite = "partyInvite",
   AcceptInvite = "acceptInvite",
   LeaveParty = "leaveParty",
   PartyInfoRead = "partyInfoRead",
   PartyInfoOpen = "partyInfoOpen",
-  TransferLeadership = "transferLeadership"
+  TransferLeadership = "transferLeadership",
+  Create = "create",
+  Invite = "invite",
 }
 
 export interface ICharacterPartyChange {
