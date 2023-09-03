@@ -161,4 +161,5 @@ export interface INPCLoot {
   itemBlueprintKey: string;
   chance: number;
   quantityRange?: number[];
+  raidKey?: string;
 }
