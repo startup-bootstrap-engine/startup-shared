@@ -100,6 +100,7 @@ export enum SpellsBlueprint {
   FocusSwift = "focus-swift",
   Blizzard = "blizzard",
   Arrowstorm = "arrowstorm",
+  OrcArrowStorm = "orc-arrowstorm",
   WildfireVolley = "wildfire-volley",
   NaturesRevenge = "natures-revenge",
   BleedingEdge = "bleeding-edge",
