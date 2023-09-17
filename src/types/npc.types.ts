@@ -90,6 +90,7 @@ export enum NPCSocketEvents {
   NPCTalkToNPC = "NPCTalkToNPC",
   NPCStartDialogNPC = "NPCStartDialogNPC",
   NPCStopDialogNPC = "NPCStopDialogNPC",
+  NPCAttributeChanged = "NPCAttributeChanged",
 }
 
 export interface INPCPositionRequestPayload {
