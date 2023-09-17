@@ -106,6 +106,7 @@ export enum SpellsBlueprint {
   BleedingEdge = "bleeding-edge",
   ArcaneExplosion = "arcane-explosion",
   VampiricStorm = "vampiric-storm",
+  CorruptionWave = "corruption-wave",
 }
 
 export enum MagicsBlueprint {
