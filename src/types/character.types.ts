@@ -53,6 +53,10 @@ export interface ICharacter extends IResource {
   isAlive: boolean;
   alpha?: number;
   isGiantForm?: boolean;
+  hasSkull?: boolean;
+  skullType?: CharacterSkullType;
+  skullExpiresAt?: Date;
+  isOnParty?: boolean;
 }
 
 export enum CharacterClass {
@@ -162,6 +166,9 @@ export interface ICharacterCreateFromServer {
   textureKey: string;
   alpha?: number;
   isGiantForm?: boolean;
+  hasSkull?: boolean;
+  skullType?: CharacterSkullType;
+  isOnParty?: boolean;
 }
 export interface ICharacterPositionUpdateFromClient {
   originX: number;
@@ -231,10 +238,19 @@ export interface ICharacterAttributeChanged {
   alpha?: number;
   textureKey?: string;
   isGiantForm?: boolean;
+  hasSkull?: boolean;
+  skullType?: CharacterSkullType;
+  isOnParty?: boolean;
 }
 
 export interface IAppliedBuffsEffect {
   _id: Types.ObjectId;
   key: string;
   value: number;
+}
+
+export enum CharacterSkullType {
+  WhiteSkull = "WhiteSkull",
+  YellowSkull = "YellowSkull",
+  RedSkull = "RedSkull",
 }

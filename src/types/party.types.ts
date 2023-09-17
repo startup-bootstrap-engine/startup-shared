@@ -1,6 +1,7 @@
 import { CharacterClass } from "./character.types";
 
 export interface IPartyManagementFromClient {
+  partyId?: string;
   targetId?: string;
   leaderId?: string;
 }
