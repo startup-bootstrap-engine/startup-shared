@@ -93,6 +93,18 @@ export enum NPCSocketEvents {
   NPCAttributeChanged = "NPCAttributeChanged",
 }
 
+export interface INPCAttributeChanged {
+  targetId: string;
+  health?: number;
+  mana?: number;
+  speed?: number;
+  maxMana?: number;
+  maxHealth?: number;
+  attackIntervalSpeed?: number;
+  textureKey?: string;
+  isGiantForm?: boolean;
+}
+
 export interface INPCPositionRequestPayload {
   type: "create" | "update";
   id: string;
