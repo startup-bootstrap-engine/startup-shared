@@ -116,6 +116,6 @@ export enum WeatherSocketEvents {
 
 export interface IMapTransitionChangeMapPayload {
   map: string;
-  gridX: number;
-  gridY: number;
+  x: number;
+  y: number;
 }
