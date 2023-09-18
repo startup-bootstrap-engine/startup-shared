@@ -113,3 +113,9 @@ export interface IControlTime {
 export enum WeatherSocketEvents {
   TimeWeatherControl = "TimeWeatherControl",
 }
+
+export interface IMapTransitionChangeMapPayload {
+  map: string;
+  gridX: number;
+  gridY: number;
+}
