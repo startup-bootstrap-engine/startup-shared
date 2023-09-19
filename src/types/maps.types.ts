@@ -119,3 +119,7 @@ export interface IMapTransitionChangeMapPayload {
   x: number;
   y: number;
 }
+
+export enum CharacterTransitionSocketEvents {
+  ChangeMap = "ChangeMap",
+}
