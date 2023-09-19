@@ -121,5 +121,5 @@ export interface IMapTransitionChangeMapPayload {
 }
 
 export enum CharacterTransitionSocketEvents {
-  ChangeMap = "ChangeMap",
+  ForcedMapChange = "ForcedMapChange",
 }
