@@ -11,6 +11,9 @@ export interface IRawSpell {
   manaCost: number;
   minMagicLevelRequired: number;
   requiredItem?: string;
+  texturePath?: string;
+  atlasIMG?: any;
+  atlasJSON?: any;
 }
 
 export interface ISpellRead {
@@ -126,6 +129,8 @@ export interface ISpell {
   key: SpellsBlueprint;
   name: string;
   description: string;
+  textureAtlas?: string;
+  texturePath?: string;
   castingType: SpellCastingType;
   magicWords: string;
   manaCost: number;
