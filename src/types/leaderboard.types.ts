@@ -21,12 +21,20 @@ type TopSkillEntry = {
   level: number;
 };
 
-export enum LeaderboardSocketEvents {
-  GetInfo = "LeaderboardGetAllRankings",
+export interface ILeaderboardLevelRankingResponse {
+  levelRank: Set<TopCharacterEntry>;
 }
 
-export interface ILeaderboardRankingResponse {
-  levelRank: Set<TopCharacterEntry>;
-  classRank: Record<string, CharacterRankingClass>;
+export interface ILeaderboardClassRankingResponse {
+  classRank?: Record<string, CharacterRankingClass>;
+}
+
+export interface ILeaderboardSkillRankingResponse {
   skillRank: CharacterRankingSkill[];
+}
+
+export enum LeaderboardSocketEvents {
+  GetLevelRanking = "LeaderboardGetLevelRanking",
+  GetClassRanking = "LeaderboardGetClassRanking",
+  GetSkillRanking = "LeaderboardGetSkillRanking",
 }
