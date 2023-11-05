@@ -15,7 +15,7 @@ export type CharacterRankingSkill = {
   top10: TopSkillEntry[];
 };
 
-type TopSkillEntry = {
+export type TopSkillEntry = {
   name: string;
   skill: string;
   level: number;
