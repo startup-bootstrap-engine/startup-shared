@@ -1,36 +1,36 @@
 import type { CharacterClass } from "./character.types";
 
-export type TopCharacterEntry = {
+export type IRankingTopCharacterEntry = {
   name: string;
   level: number;
 };
 
-export type CharacterRankingClass = {
+export type IRankingCharacterClass = {
   class: CharacterClass;
-  topPlayers: TopCharacterEntry[];
+  topPlayers: IRankingTopCharacterEntry[];
 };
 
-export type CharacterRankingSkill = {
+export type IRankingCharacterSkill = {
   skill: string;
-  top10: TopSkillEntry[];
+  top10: IRankingTopSkillEntry[];
 };
 
-export type TopSkillEntry = {
+export type IRankingTopSkillEntry = {
   name: string;
   skill: string;
   level: number;
 };
 
 export interface ILeaderboardLevelRankingResponse {
-  levelRank: Set<TopCharacterEntry>;
+  levelRank: Set<IRankingTopCharacterEntry>;
 }
 
 export interface ILeaderboardClassRankingResponse {
-  classRank?: Record<string, CharacterRankingClass>;
+  classRank?: Record<string, IRankingCharacterClass>;
 }
 
 export interface ILeaderboardSkillRankingResponse {
-  skillRank: CharacterRankingSkill[];
+  skillRank: IRankingCharacterSkill[];
 }
 
 export enum LeaderboardSocketEvents {
