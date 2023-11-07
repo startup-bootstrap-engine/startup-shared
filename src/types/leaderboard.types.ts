@@ -22,7 +22,7 @@ export type IRankingTopSkillEntry = {
 };
 
 export interface ILeaderboardLevelRankingResponse {
-  levelRank: Set<IRankingTopCharacterEntry>;
+  levelRank: IRankingTopCharacterEntry[];
 }
 
 export interface ILeaderboardClassRankingResponse {
