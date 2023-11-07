@@ -11,6 +11,9 @@ export interface IRawSpell {
   manaCost: number;
   minMagicLevelRequired: number;
   requiredItem?: string;
+  texturePath?: string;
+  atlasIMG?: any;
+  atlasJSON?: any;
 }
 
 export interface ISpellRead {
@@ -107,6 +110,7 @@ export enum SpellsBlueprint {
   ArcaneExplosion = "arcane-explosion",
   VampiricStorm = "vampiric-storm",
   CorruptionWave = "corruption-wave",
+  CleavingStomp = "cleaving-stomp",
 }
 
 export enum MagicsBlueprint {
@@ -125,6 +129,8 @@ export interface ISpell {
   key: SpellsBlueprint;
   name: string;
   description: string;
+  textureAtlas?: string;
+  texturePath?: string;
   castingType: SpellCastingType;
   magicWords: string;
   manaCost: number;
