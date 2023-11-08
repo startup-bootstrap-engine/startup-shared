@@ -431,6 +431,10 @@ export interface IRuneItemBlueprint extends IBaseItemBlueprint {
   usableEntityEffect?: (caster, target) => void | Promise<void> | Promise<number>;
 
   usableEffectKey: string;
+
+  hasAutoTarget?: boolean;
+  hasSelfAutoTarget?: boolean;
+  canTargetNPC?: boolean;
 }
 
 export interface IEquippableStaffBlueprint extends IEquippableWeaponBlueprint {
