@@ -16,6 +16,7 @@ export interface IUserEntity extends IResource {
   unsubscribed: boolean;
   characters: ICharacter[];
   wallet: IUserWallet;
+  isPremiumAccount: boolean;
 }
 
 export interface IUserWallet {
