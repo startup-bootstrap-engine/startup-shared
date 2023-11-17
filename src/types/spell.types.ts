@@ -1,6 +1,7 @@
 import { CharacterClass, CharacterRaces } from "./character.types";
 import { EntityType } from "./entity.types";
 import { SpellCastingType } from "./item.types";
+import { UserAccountTypes } from './premiumAccount.types';
 import { BasicAttribute, CharacterAttributes, CombatSkill, CraftingSkill } from "./skills.types";
 
 export interface IRawSpell {
@@ -137,6 +138,7 @@ export interface ISpell {
   castingAnimationKey: string;
   targetHitAnimationKey: string;
   projectileAnimationKey: string;
+  onlyPremiumAccountType: UserAccountTypes[]
   minLevelRequired: number;
   minMagicLevelRequired: number;
   cooldown: number;
