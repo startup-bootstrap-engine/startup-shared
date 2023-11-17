@@ -3,5 +3,5 @@ export enum UserAccountTypes {
   PremiumBronze = "bronze",
   PremiumSilver = "silver",
   PremiumGold = "gold",
-  PremiumUltimate = "ultimate"
+  PremiumUltimate = "ultimate",
 }
