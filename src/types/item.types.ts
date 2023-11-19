@@ -317,6 +317,7 @@ export interface IBaseItemBlueprint {
   minRequirements?: MinRequirements;
   usableEffectDescription?: string;
   equippedBuffDescription?: string;
+  accountType?: string;
 }
 
 export interface MinRequirements {
