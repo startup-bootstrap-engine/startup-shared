@@ -51,6 +51,7 @@ export interface IItem extends IResource {
   entityEffectChance?: number;
   usableEffectDescription?: string;
   equippedBuffDescription?: string;
+  accountType?: string;
 }
 
 export enum ItemType {
