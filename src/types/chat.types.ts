@@ -8,7 +8,8 @@ export enum ChatMessageType {
 export enum ChatSocketEvents {
   GlobalChatMessageCreate = "GlobalChatMessageCreate",
   GlobalChatMessageRead = "GlobalChatMessageRead",
-  PrivateChatMessage = "PrivateChatMessage",
+  PrivateChatMessageRead = "PrivateChatMessageRead",
+  PrivateChatMessageCreate = "PrivateChatMessageCreate",
 }
 
 export interface IChatMessage extends IResource {
@@ -32,4 +33,29 @@ export interface IChatMessageCreatePayload {
 
 export interface IChatMessageReadPayload {
   messages: IChatMessage[];
+}
+
+export interface IPrivateChatMessage extends IResource {
+  emitter: {
+    _id: string;
+    name: string;
+  };
+  message: string;
+  receiver: {
+    _id: string;
+    name: string;
+  };
+}
+
+export interface IPrivateChatMessageCreatePayload {
+  emitter: {
+    _id: string;
+    name: string;
+  };
+  receiver: {
+    _id: string;
+    name: string;
+  };
+  message: string;
+  limit: number;
 }
