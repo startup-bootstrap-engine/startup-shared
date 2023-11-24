@@ -5,6 +5,7 @@ import { EntityAttackType } from "./entity.types";
 import { IEquipmentSet } from "./equipment.types";
 import { IItemContainer } from "./itemContainer.types";
 import { MapLayers } from "./maps.types";
+import { UserAccountTypes } from "./premiumAccount.types";
 import { IResource } from "./resource.types";
 
 export interface IItem extends IResource {
@@ -51,6 +52,7 @@ export interface IItem extends IResource {
   entityEffectChance?: number;
   usableEffectDescription?: string;
   equippedBuffDescription?: string;
+  canBePurchasedOnlyByPremiumPlans?: UserAccountTypes[];
 }
 
 export enum ItemType {
@@ -317,6 +319,7 @@ export interface IBaseItemBlueprint {
   minRequirements?: MinRequirements;
   usableEffectDescription?: string;
   equippedBuffDescription?: string;
+  canBePurchasedOnlyByPremiumPlans?: UserAccountTypes[];
 }
 
 export interface MinRequirements {
@@ -431,6 +434,10 @@ export interface IRuneItemBlueprint extends IBaseItemBlueprint {
   usableEntityEffect?: (caster, target) => void | Promise<void> | Promise<number>;
 
   usableEffectKey: string;
+
+  hasAutoTarget?: boolean;
+  hasSelfAutoTarget?: boolean;
+  canTargetNPC?: boolean;
 }
 
 export interface IEquippableStaffBlueprint extends IEquippableWeaponBlueprint {
