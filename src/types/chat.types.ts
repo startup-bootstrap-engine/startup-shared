@@ -1,3 +1,4 @@
+import { ICharacter } from "./character.types";
 import { IResource } from "./resource.types";
 
 export enum ChatMessageType {
@@ -10,6 +11,7 @@ export enum ChatSocketEvents {
   GlobalChatMessageRead = "GlobalChatMessageRead",
   PrivateChatMessageRead = "PrivateChatMessageRead",
   PrivateChatMessageCreate = "PrivateChatMessageCreate",
+  PrivateChatMessageFindCharacter = "PrivateChatMessageFindCharacter",
 }
 
 export interface IChatMessage extends IResource {
@@ -45,6 +47,7 @@ export interface IPrivateChatMessage extends IResource {
     _id: string;
     name: string;
   };
+  status: ChatMessageStatus;
 }
 
 export interface IPrivateChatMessageCreatePayload {
@@ -58,4 +61,18 @@ export interface IPrivateChatMessageCreatePayload {
   };
   message: string;
   limit: number;
+  status: ChatMessageStatus;
+}
+
+export enum ChatMessageStatus {
+  Unseen = "Unseen",
+  Seen = "Seen",
+}
+
+export interface IPrivateChatMessageReadPayload {
+  messages: IPrivateChatMessage[];
+}
+
+export interface IPrivateChatFindCharacterResponse {
+  characters: ICharacter[];
 }
