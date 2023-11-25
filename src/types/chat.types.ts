@@ -12,6 +12,7 @@ export enum ChatSocketEvents {
   PrivateChatMessageRead = "PrivateChatMessageRead",
   PrivateChatMessageCreate = "PrivateChatMessageCreate",
   PrivateChatMessageFindCharacter = "PrivateChatMessageFindCharacter",
+  PrivateChatMessageGetUnseenMessageCharacters = "PrivateChatMessageGetUnseenMessageCharacters",
 }
 
 export interface IChatMessage extends IResource {

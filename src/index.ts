@@ -39,7 +39,7 @@ export * from "./types/pagination.types";
 export * from "./types/party.types";
 export * from "./types/places.types";
 export * from "./types/preloadScene.types";
-export * from './types/premiumAccount.types';
+export * from "./types/premiumAccount.types";
 export * from "./types/quest.types";
 export * from "./types/resource.types";
 export * from "./types/scene.types";
