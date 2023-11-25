@@ -70,6 +70,10 @@ export enum ChatMessageStatus {
 }
 
 export interface IPrivateChatMessageReadPayload {
+  receiverId: string;
+}
+
+export interface IPrivateChatMessageReadResponse {
   messages: IPrivateChatMessage[];
 }
 
