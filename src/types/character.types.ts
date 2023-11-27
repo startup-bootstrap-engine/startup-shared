@@ -169,6 +169,7 @@ export interface ICharacterCreateFromServer {
   hasSkull?: boolean;
   skullType?: CharacterSkullType;
   isOnParty?: boolean;
+  owner: IUser;
 }
 export interface ICharacterPositionUpdateFromClient {
   originX: number;
