@@ -198,6 +198,7 @@ export interface ICharacterPositionUpdateFromServer {
   maxMana: number;
   textureKey: string;
   alpha?: number;
+  owner: IUser;
 }
 
 export interface IAllCharacterPositionUpdateFromServer {

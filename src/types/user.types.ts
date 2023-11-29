@@ -1,4 +1,5 @@
 import { ICharacter } from "./character.types";
+import { UserAccountTypes } from './premiumAccount.types';
 import { IResource } from "./resource.types";
 
 export interface IUserPreferences {
@@ -17,6 +18,7 @@ export interface IUserEntity extends IResource {
   characters: ICharacter[];
   wallet: IUserWallet;
   isPremiumAccount: boolean;
+  accountType: UserAccountTypes;
 }
 
 export interface IUserWallet {
