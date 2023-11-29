@@ -1,5 +1,5 @@
 import { ICharacter } from "./character.types";
-import { UserAccountTypes } from './premiumAccount.types';
+import { UserAccountTypes } from "./premiumAccount.types";
 import { IResource } from "./resource.types";
 
 export interface IUserPreferences {
