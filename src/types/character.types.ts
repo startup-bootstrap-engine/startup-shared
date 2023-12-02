@@ -169,6 +169,7 @@ export interface ICharacterCreateFromServer {
   hasSkull?: boolean;
   skullType?: CharacterSkullType;
   isOnParty?: boolean;
+  owner?: Record<string, unknown>;
 }
 export interface ICharacterPositionUpdateFromClient {
   originX: number;
@@ -197,6 +198,7 @@ export interface ICharacterPositionUpdateFromServer {
   maxMana: number;
   textureKey: string;
   alpha?: number;
+  owner?: Record<string, unknown>;
 }
 
 export interface IAllCharacterPositionUpdateFromServer {
