@@ -336,7 +336,7 @@ export interface IEquippableItemBlueprint extends IBaseItemBlueprint {
   allowedEquipSlotType: ItemSlotType[];
   usableEffect?: (character: any) => void | Promise<void>;
   equippedBuff?: ICharacterPermanentBuff | ICharacterPermanentBuff[];
-  isMageGear: Boolean;
+  isMageGear?: Boolean;
 }
 
 export interface IEquippableRangedAmmoBlueprint extends IBaseItemBlueprint {
