@@ -142,7 +142,7 @@ export interface ISpell {
   minLevelRequired: number;
   minMagicLevelRequired: number;
   cooldown: number;
-  requiredItem?: MagicsBlueprint;
+  requiredItem?: string;
   characterClass?: CharacterClass[];
   characterRace?: CharacterRaces[];
   attribute?: BasicAttribute | CombatSkill | CraftingSkill | CharacterAttributes;
