@@ -46,7 +46,6 @@ export interface IPrivateChatMessage extends IResource {
   message: string;
   receiver: {
     _id: string;
-    name: string;
   };
   status: ChatMessageStatus;
 }
