@@ -1,28 +1,19 @@
-// Helper function to check if the device is a touch screen
-const isTouchScreen = (): boolean => "ontouchstart" in window || navigator.maxTouchPoints > 0;
+import { isMobileOnly as detectIsMobileOnly, isMobile as detectIsMobileOrTablet } from "mobile-device-detect";
 
-// Helper function to check the user agent against a set of mobile/tablet identifiers
-const checkUserAgent = (regex: RegExp): boolean => {
-  const userAgent = navigator.userAgent || navigator.vendor;
-  return regex.test(userAgent);
-};
+const isSmallerThanBreakpoint = (breakpoint: string): boolean => {
+  const mql = window.matchMedia(
+    `(max-width: ${breakpoint}) and (orientation: portrait), (max-height: ${breakpoint}) and (orientation: landscape)`
+  );
 
-export const isMobile = (): boolean => {
-  const mobileRegex = /iPhone|Android.+Mobile/i;
-  return checkUserAgent(mobileRegex) && isTouchScreen();
-};
-
-export const isTablet = (): boolean => {
-  const tabletRegex = /iPad|Android/i;
-  return checkUserAgent(tabletRegex) && isTouchScreen();
+  return mql.matches;
 };
 
 export const isMobileOrTablet = (): boolean => {
-  return isMobile() || isTablet();
+  return detectIsMobileOrTablet ?? (isSmallerThanBreakpoint("767px") && !isSmallerThanBreakpoint("479px"));
 };
 
-export const isDesktop = (): boolean => {
-  return !isMobileOrTablet();
+export const isMobile = (): boolean => {
+  return detectIsMobileOnly ?? isSmallerThanBreakpoint("479px");
 };
 
 /* !Evaluate this later
