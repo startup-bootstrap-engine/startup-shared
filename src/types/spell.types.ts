@@ -112,6 +112,8 @@ export enum SpellsBlueprint {
   VampiricStorm = "vampiric-storm",
   CorruptionWave = "corruption-wave",
   CleavingStomp = "cleaving-stomp",
+  ShieldBash = "shield-bash",
+  EnergyWave = "energy-wave",
 }
 
 export enum MagicsBlueprint {
