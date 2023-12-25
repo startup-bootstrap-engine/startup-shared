@@ -24,10 +24,15 @@ export interface IUseWithEntity {
   entityType: EntityType;
 }
 
+export interface IUseWithTileValidation {
+  status: boolean;
+}
+
 /** SOCKET EVENTS **/
 
 export enum UseWithSocketEvents {
   UseWithItem = "UseWithItem",
   UseWithTile = "UseWithTile",
   UseWithEntity = "UseWithEntity",
+  UseWithTileValidation = "UseWithTileValidation",
 }
