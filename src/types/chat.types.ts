@@ -91,3 +91,12 @@ export interface ITradeChatMessage extends IResource {
   };
   message: string;
 }
+
+export interface ITradeChatMessageCreatePayload {
+  emitter: {
+    _id: string;
+    name: string;
+  };
+  message: string;
+  limit: number;
+}
