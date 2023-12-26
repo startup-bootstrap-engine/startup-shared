@@ -13,6 +13,8 @@ export enum ChatSocketEvents {
   PrivateChatMessageCreate = "PrivateChatMessageCreate",
   PrivateChatMessageFindCharacter = "PrivateChatMessageFindCharacter",
   PrivateChatMessageGetUnseenMessageCharacters = "PrivateChatMessageGetUnseenMessageCharacters",
+  TradeChatMessageCreate = "TradeChatMessageCreate",
+  TradeChatMessageRead = "TradeChatMessageRead",
 }
 
 export interface IChatMessage extends IResource {
@@ -80,4 +82,21 @@ export interface IPrivateChatMessageReadResponse {
 
 export interface IPrivateChatFindCharacterResponse {
   characters: ICharacter[];
+}
+
+export interface ITradeChatMessage extends IResource {
+  emitter: {
+    _id: string;
+    name: string;
+  };
+  message: string;
+}
+
+export interface ITradeChatMessageCreatePayload {
+  emitter: {
+    _id: string;
+    name: string;
+  };
+  message: string;
+  limit: number;
 }

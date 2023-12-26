@@ -67,6 +67,7 @@ export enum ItemType {
   Container = "Container",
   Other = "Other",
   CraftingResource = "CraftingResource",
+  Plant = "Plant",
 }
 
 export enum ItemRarities {
@@ -100,6 +101,8 @@ export enum ItemSubType {
   Mace = "Mace",
   Tool = "Tool",
   Book = "Book",
+  Plant = "Plant",
+  Seed = "Seed",
 }
 
 export enum ItemSlotType {
