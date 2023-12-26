@@ -413,6 +413,21 @@ export interface IToolItemBlueprint extends IBaseItemBlueprint {
     skillIncrease
   ) => Promise<void>;
 }
+export interface IUseWithItemBlueprint extends IBaseItemBlueprint {
+  rangeType: EntityAttackType;
+  hasUseWith: true;
+  useWithMaxDistanceGrid: RangeTypes;
+  canSell: boolean;
+  usableEffect?: (character, targetItem, itemCraftable, skillIncrease, originItem) => void | Promise<void>;
+  useWithTileEffect?: (
+    originItem,
+    targetTile,
+    targetname: string,
+    character,
+    itemCraftable,
+    skillIncrease
+  ) => Promise<void>;
+}
 
 export interface IConsumableItemBlueprint extends ICraftableItemBlueprint {
   type: ItemType.Consumable;
