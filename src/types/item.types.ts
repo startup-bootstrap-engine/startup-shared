@@ -325,6 +325,12 @@ export interface IBaseItemBlueprint {
   canBePurchasedOnlyByPremiumPlans?: UserAccountTypes[];
 }
 
+export interface IBaseItemContainerBlueprint extends IBaseItemBlueprint {
+  isItemContainer?: boolean;
+  generateContainerSlots?: number;
+  allowedEquipSlotType?: ItemSlotType[];
+}
+
 export interface MinRequirements {
   level: number;
   skill: {
