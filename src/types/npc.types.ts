@@ -56,6 +56,7 @@ export interface INPC extends IResource {
   skillsToBeRandomized?: string[];
   isTrader?: boolean;
   traderItem?: ITraderItem;
+  hasCustomDeathPenalty?: NPCCustomDeathPenalties;
 }
 
 export enum NPCTargetType {
@@ -131,6 +132,7 @@ export interface INPCPositionCreatePayload {
   isTrader?: boolean;
   traderItems?: ITraderItem[];
   isGiantForm?: boolean;
+  hasCustomDeathPenalty?: NPCCustomDeathPenalties;
 }
 export interface INPCPositionUpdatePayload {
   id: string;
@@ -175,4 +177,9 @@ export interface INPCLoot {
   chance: number;
   quantityRange?: number[];
   raidKey?: string;
+}
+
+export enum NPCCustomDeathPenalties {
+  FullLootDrop = "full-loot-drop",
+  Hardcore = "hardcore",
 }
