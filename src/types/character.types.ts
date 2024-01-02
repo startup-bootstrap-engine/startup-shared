@@ -57,6 +57,8 @@ export interface ICharacter extends IResource {
   skullType?: CharacterSkullType;
   skullExpiresAt?: Date;
   isOnParty?: boolean;
+  friends?: string[];
+  friendRequests?: string[];
 }
 
 export enum CharacterClass {
@@ -91,6 +93,7 @@ export enum CharacterSocketEvents {
   AttributeChanged = "AttributeChanged",
   CharacterRemoveFromView = "CharacterRemoveFromView",
   CharacterPayload = "CharacterPayload",
+  CharacterSearchByName = "CharacterSearchByName",
 }
 
 export enum CharacterFactions {
