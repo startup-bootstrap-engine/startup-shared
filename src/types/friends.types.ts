@@ -1,14 +1,17 @@
+import { ICharacter } from "./character.types";
+
 export enum FriendsSocketEvents {
   SendFriendRequest = "SendFriendRequest",
+  ReceiveFriendRequest = "ReceiveFriendRequest",
   AcceptFriendRequest = "AcceptFriendRequest",
-  RejectFriendRequest = "RejectFriendRequest",
+  RemoveFriend = "RemoveFriend",
 }
 
-export interface IFriendRequestActionCreatePayload {
+export interface IFriendActionCreatePayload {
   characterId: string;
 }
 
-export interface IFriendRequestActionReadPayload {
-  characterId?: string;
+export interface ISendFriendRequestReadPayload {
+  friendRequests?: ICharacter[];
   error?: string;
 }
