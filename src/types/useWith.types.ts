@@ -2,6 +2,10 @@ import { EntityType } from "./entity.types";
 import { MapLayers } from "./maps.types";
 
 /** REQUEST INTERFACES **/
+interface IPosition {
+  x: number;
+  y: number;
+}
 
 export interface IUseWithItem {
   originItemId: string;
@@ -24,6 +28,14 @@ export interface IUseWithEntity {
   entityType: EntityType;
 }
 
+export interface IUseWithSeed {
+  map: string;
+  isFertileGround: boolean;
+  coordinates: IPosition;
+  itemKey: string;
+  isEntity: boolean;
+}
+
 export interface IUseWithTileValidation {
   status: boolean;
 }
@@ -35,4 +47,5 @@ export enum UseWithSocketEvents {
   UseWithTile = "UseWithTile",
   UseWithEntity = "UseWithEntity",
   UseWithTileValidation = "UseWithTileValidation",
+  UseWithSeed = "UseWithSeed",
 }
