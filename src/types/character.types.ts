@@ -259,3 +259,7 @@ export enum CharacterSkullType {
   YellowSkull = "YellowSkull",
   RedSkull = "RedSkull",
 }
+
+export interface ICharacterSearchByNameResponse {
+  characters: ICharacter[];
+}
