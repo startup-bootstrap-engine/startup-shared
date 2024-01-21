@@ -114,6 +114,7 @@ export enum SpellsBlueprint {
   CleavingStomp = "cleaving-stomp",
   ShieldBash = "shield-bash",
   EnergyWave = "energy-wave",
+  BombCreation = "bomb-creation",
 }
 
 export enum MagicsBlueprint {
