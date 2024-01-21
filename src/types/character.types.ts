@@ -22,7 +22,6 @@ export interface ICharacter extends IResource {
   direction: AnimationDirection;
   class: CharacterClass;
   textureKey: string;
-  totalWeightCapacity: number;
   isOnline: boolean;
   layer: MapLayers;
   scene: string;
