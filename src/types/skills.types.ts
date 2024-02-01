@@ -32,6 +32,11 @@ export interface ISkillDetails {
   buffAndDebuff?: number;
 }
 
+export interface ILevelUpFromServer {
+  previousLevel: number;
+  currentLevel: number;
+}
+
 export interface ISkill extends IResource {
   owner: string;
   level: number;
