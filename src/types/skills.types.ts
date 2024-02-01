@@ -6,6 +6,7 @@ export enum SkillSocketEvents {
   SkillGain = "SkillGain",
   ReadInfo = "ReadInfo",
   ExperienceGain = "ExperienceGain",
+  LevelUp = "LevelUp",
 }
 
 export enum SkillEventType {
