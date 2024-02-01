@@ -48,4 +48,5 @@ export enum UseWithSocketEvents {
   UseWithEntity = "UseWithEntity",
   UseWithTileValidation = "UseWithTileValidation",
   UseWithSeed = "UseWithSeed",
+  UseWithWater = "UseWithWater",
 }
