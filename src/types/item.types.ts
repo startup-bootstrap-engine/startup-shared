@@ -185,6 +185,7 @@ export interface IItemUpdate {
   stackQty: number;
   isStackable?: boolean;
   isDeadBodyLootable?: boolean;
+  lastWatering?: Date;
 }
 
 export interface IItemUpdateAll {
