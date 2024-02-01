@@ -469,3 +469,28 @@ export interface IEquippableStaffBlueprint extends IEquippableWeaponBlueprint {
   projectileAnimationKey: AnimationEffectKeys;
   maxRange: RangeTypes;
 }
+
+export interface IRefillableItem extends IBaseItemBlueprint {
+  isRefillable: true;
+  refillResourceKey: string;
+  remainingUses: number;
+  initialRemainingUses: number;
+  hasUseWith: true;
+  rangeType?: EntityAttackType;
+  useWithMaxDistanceGrid: RangeTypes;
+  animationKey: AnimationEffectKeys;
+  projectileAnimationKey: AnimationEffectKeys;
+  allowedEquipSlotType: [ItemSlotType.LeftHand, ItemSlotType.RightHand];
+  usableEffect?: (character, targetItem, skillIncrease, originItem) => void | Promise<void> | Promise<number>;
+  usableEntityEffect?: (caster: any, target: any) => void | Promise<void> | Promise<number>;
+  useWithTileEffect?: (
+    originItem,
+    targetTile,
+    targetname: string,
+    character,
+    itemCraftable,
+    skillIncrease
+  ) => Promise<void>;
+  hasAutoTarget?: boolean;
+  usableEffectDescription: string;
+}

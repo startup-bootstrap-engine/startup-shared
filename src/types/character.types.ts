@@ -22,7 +22,6 @@ export interface ICharacter extends IResource {
   direction: AnimationDirection;
   class: CharacterClass;
   textureKey: string;
-  totalWeightCapacity: number;
   isOnline: boolean;
   layer: MapLayers;
   scene: string;
@@ -258,4 +257,8 @@ export enum CharacterSkullType {
   WhiteSkull = "WhiteSkull",
   YellowSkull = "YellowSkull",
   RedSkull = "RedSkull",
+}
+
+export interface ICharacterSearchByNameResponse {
+  characters: ICharacter[];
 }
