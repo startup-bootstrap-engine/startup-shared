@@ -324,6 +324,7 @@ export interface IBaseItemBlueprint {
   usableEffectDescription?: string;
   equippedBuffDescription?: string;
   canBePurchasedOnlyByPremiumPlans?: UserAccountTypes[];
+  isOnPremiumStore?: boolean;
 }
 
 export interface IBaseItemContainerBlueprint extends IBaseItemBlueprint {
