@@ -265,5 +265,5 @@ export interface ICharacterSearchByNameResponse {
 }
 
 export interface ICharacterAutoLootFromClient {
-  itemsToLoot: string[];
+  itemIdsToLoot: string[];
 }
