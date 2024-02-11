@@ -68,6 +68,7 @@ export interface ISkill extends IResource {
   cooking: ISkillDetails;
   alchemy: ISkillDetails;
   blacksmithing: ISkillDetails;
+  farming: ISkillDetails;
 
   // Magic skills (will be introduced later!)
   // ice: ISkillDetails;
@@ -99,6 +100,7 @@ export enum CombatSkill {
 
 export enum CraftingSkill {
   Fishing = "fishing",
+  Farming = "farming",
   Mining = "mining",
   Lumberjacking = "lumberjacking",
   Cooking = "cooking",
@@ -146,6 +148,7 @@ export const SKILLS_MAP = new Map<ItemSubType | string, string>([
   [CraftingSkill.Lumberjacking, CraftingSkill.Lumberjacking],
   [CraftingSkill.Mining, CraftingSkill.Mining],
   [CraftingSkill.Blacksmithing, CraftingSkill.Blacksmithing],
+  [CraftingSkill.Farming, CraftingSkill.Farming],
 ]);
 
 export const CHARACTER_ATTRIBUTES: CharacterAttributes[] = [
@@ -217,6 +220,7 @@ export interface ICombatSkillsBonusAndPenalties {
 
 export interface ICraftingSkillsBonusAndPenalties {
   fishing: number;
+  farming: number;
   mining: number;
   lumberjacking: number;
   cooking: number;
