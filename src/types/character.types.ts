@@ -93,6 +93,7 @@ export enum CharacterSocketEvents {
   CharacterRemoveFromView = "CharacterRemoveFromView",
   CharacterPayload = "CharacterPayload",
   CharacterSearchByName = "CharacterSearchByName",
+  CharacterAutoLoot = "CharacterAutoLoot",
 }
 
 export enum CharacterFactions {
@@ -262,7 +263,6 @@ export enum CharacterSkullType {
 export interface ICharacterSearchByNameResponse {
   characters: ICharacter[];
 }
-
 
 export interface ICharacterAutoLootFromClient {
   itemsToLoot: string[];
