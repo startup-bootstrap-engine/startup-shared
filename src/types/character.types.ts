@@ -262,3 +262,8 @@ export enum CharacterSkullType {
 export interface ICharacterSearchByNameResponse {
   characters: ICharacter[];
 }
+
+
+export interface ICharacterAutoLootFromClient {
+  itemsToLoot: string[];
+}
