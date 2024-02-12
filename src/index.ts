@@ -56,3 +56,4 @@ export * from "./types/user.types";
 export * from "./types/validation.types";
 export * from "./types/view.types";
 export * from "./types/friends.types";
+export * from "./types/inGameStore.types";
