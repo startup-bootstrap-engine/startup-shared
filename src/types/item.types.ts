@@ -103,6 +103,7 @@ export enum ItemSubType {
   Book = "Book",
   Plant = "Plant",
   Seed = "Seed",
+  Gem = "Gem",
 }
 
 export enum ItemSlotType {
@@ -324,6 +325,7 @@ export interface IBaseItemBlueprint {
   usableEffectDescription?: string;
   equippedBuffDescription?: string;
   canBePurchasedOnlyByPremiumPlans?: UserAccountTypes[];
+  isOnPremiumStore?: boolean;
 }
 
 export interface IBaseItemContainerBlueprint extends IBaseItemBlueprint {
@@ -494,4 +496,9 @@ export interface IRefillableItem extends IBaseItemBlueprint {
   ) => Promise<void>;
   hasAutoTarget?: boolean;
   usableEffectDescription: string;
+}
+
+export interface IBuyPremiumItemSend extends IItem {
+  coinType: "social-crystal" | "gold-coin";
+  price: number;
 }
