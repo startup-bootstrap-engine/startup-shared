@@ -497,3 +497,8 @@ export interface IRefillableItem extends IBaseItemBlueprint {
   hasAutoTarget?: boolean;
   usableEffectDescription: string;
 }
+
+export interface IBuyPremiumItemSend extends IItem {
+  coinType: "social-crystal" | "gold-coin";
+  price: number;
+}
