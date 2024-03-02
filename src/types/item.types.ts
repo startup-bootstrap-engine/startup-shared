@@ -104,6 +104,7 @@ export enum ItemSubType {
   Plant = "Plant",
   Seed = "Seed",
   Gem = "Gem",
+  Orb = "Orb",
 }
 
 export enum ItemSlotType {
