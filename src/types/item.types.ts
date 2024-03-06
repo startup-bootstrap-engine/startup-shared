@@ -431,7 +431,7 @@ export interface IUseWithItemBlueprint extends IBaseItemBlueprint {
     itemCraftable,
     skillIncrease
   ) => Promise<void>;
-  useWithItemEffect?: (originItem, targetItem, character) => Promise<void>;
+  useWithItemEffect?: (originItem: IItem, targetItem: IItem, character: ICharacter) => Promise<void>;
 }
 
 export interface IConsumableItemBlueprint extends ICraftableItemBlueprint {
