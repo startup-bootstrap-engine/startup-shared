@@ -434,6 +434,15 @@ export interface IUseWithItemBlueprint extends IBaseItemBlueprint {
   useWithItemEffect?: (originItem: IItem, targetItem: IItem, character: ICharacter) => Promise<void>;
 }
 
+export interface IItemGem extends IUseWithItemBlueprint {
+  gemStatBuff?: {
+    attack?: number;
+    defense?: number;
+  };
+  gemEntityEffectsAdd?: string[];
+  gemEquippedBuffAdd?: ICharacterPermanentBuff | ICharacterPermanentBuff[];
+}
+
 export interface IConsumableItemBlueprint extends ICraftableItemBlueprint {
   type: ItemType.Consumable;
   usableEffect?: (character) => void | Promise<void>;
