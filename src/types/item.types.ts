@@ -188,6 +188,8 @@ export interface IItemUpdate {
   isStackable?: boolean;
   isDeadBodyLootable?: boolean;
   lastWatering?: Date;
+  growthPoints?: number;
+  requiredGrowthPoints?: number;
 }
 
 export interface IItemUpdateAll {
