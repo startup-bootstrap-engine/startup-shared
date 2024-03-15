@@ -190,6 +190,7 @@ export interface IItemUpdate {
   lastWatering?: Date;
   growthPoints?: number;
   requiredGrowthPoints?: number;
+  isTileTinted?: boolean;
 }
 
 export interface IItemUpdateAll {
