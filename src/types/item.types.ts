@@ -407,6 +407,7 @@ export interface IToolItemBlueprint extends IBaseItemBlueprint {
   defense?: number;
   allowedEquipSlotType: [ItemSlotType.LeftHand, ItemSlotType.RightHand];
   rangeType: EntityAttackType;
+  toolCategory?: string;
   hasUseWith: true;
   useWithMaxDistanceGrid: RangeTypes;
   canSell: false;
