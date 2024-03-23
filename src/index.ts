@@ -40,6 +40,7 @@ export * from "./types/npc.types";
 export * from "./types/pagination.types";
 export * from "./types/party.types";
 export * from "./types/places.types";
+export * from "./types/plant.types";
 export * from "./types/preloadScene.types";
 export * from "./types/premiumAccount.types";
 export * from "./types/quest.types";
