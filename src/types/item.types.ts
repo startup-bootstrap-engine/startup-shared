@@ -191,6 +191,7 @@ export interface IItemUpdate {
   growthPoints?: number;
   requiredGrowthPoints?: number;
   isTileTinted?: boolean;
+  isDead?: boolean;
 }
 
 export interface IItemUpdateAll {
