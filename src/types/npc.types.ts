@@ -132,6 +132,7 @@ export interface INPCPositionCreatePayload {
   isTrader?: boolean;
   traderItems?: ITraderItem[];
   isGiantForm?: boolean;
+  tintColor?: number;
   hasCustomDeathPenalty?: NPCCustomDeathPenalties;
 }
 export interface INPCPositionUpdatePayload {
