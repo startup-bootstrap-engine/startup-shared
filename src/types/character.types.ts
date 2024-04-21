@@ -224,10 +224,11 @@ export interface ICharacterForceDisconnect {
 }
 
 export interface ICharacterTexture {
-  class: string;
-  race: string;
+  class: string[];
+  race: string[];
   textureKey: string;
   textureDisplayName: string;
+  isGloballyAvailable?: boolean;
 }
 
 export interface ICharacterAttributeChanged {
