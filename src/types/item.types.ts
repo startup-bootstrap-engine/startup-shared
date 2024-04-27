@@ -436,7 +436,7 @@ export interface IUseWithItemBlueprint extends IBaseItemBlueprint {
     itemCraftable,
     skillIncrease
   ) => Promise<void>;
-  useWithItemEffect?: (originItem: IItem, targetItem: IItem, character: ICharacter) => Promise<void>;
+  useWithItemEffect?: (originItem, targetItem, character) => Promise<void>;
 }
 
 export interface IItemGem extends IUseWithItemBlueprint {
@@ -446,6 +446,7 @@ export interface IItemGem extends IUseWithItemBlueprint {
   };
   gemEntityEffectsAdd?: string[];
   gemEquippedBuffAdd?: ICharacterPermanentBuff | ICharacterPermanentBuff[];
+  gemEntityEffectChance?: number;
 }
 
 export interface IConsumableItemBlueprint extends ICraftableItemBlueprint {
