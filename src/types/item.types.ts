@@ -440,13 +440,14 @@ export interface IUseWithItemBlueprint extends IBaseItemBlueprint {
 }
 
 export interface IItemGem extends IUseWithItemBlueprint {
-  gemStatBuff?: {
-    attack?: number;
-    defense?: number;
+  gemStatBuff: {
+    attack: number;
+    defense: number;
   };
-  gemEntityEffectsAdd?: string[];
+  gemEntityEffectsAdd: string[];
   gemEquippedBuffAdd?: ICharacterPermanentBuff | ICharacterPermanentBuff[];
   gemEntityEffectChance?: number;
+  usableEffectDescription: string;
 }
 
 export interface IConsumableItemBlueprint extends ICraftableItemBlueprint {

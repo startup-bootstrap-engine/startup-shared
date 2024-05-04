@@ -156,6 +156,7 @@ export interface ISpell {
   onlyPremiumAccountType: UserAccountTypes[];
   minLevelRequired: number;
   minMagicLevelRequired: number;
+  isPVPOnly?: boolean;
   cooldown: number;
   requiredItem?: string;
   characterClass?: CharacterClass[];
