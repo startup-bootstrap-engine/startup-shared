@@ -26,6 +26,7 @@ export * from "./types/entity.types";
 export * from "./types/env.types";
 export * from "./types/equipment.types";
 export * from "./types/friends.types";
+export * from "./types/gem.types";
 export * from "./types/googleOAuth.types";
 export * from "./types/inGameStore.types";
 export * from "./types/inventory.types";

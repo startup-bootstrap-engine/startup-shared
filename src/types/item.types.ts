@@ -3,6 +3,7 @@ import { ICharacterPermanentBuff } from "./buff.types";
 import { ICharacter } from "./character.types";
 import { EntityAttackType } from "./entity.types";
 import { IEquipmentSet } from "./equipment.types";
+import { IGemSchema } from "./gem.types";
 import { IItemContainer } from "./itemContainer.types";
 import { MapLayers } from "./maps.types";
 import { UserAccountTypes } from "./premiumAccount.types";
@@ -53,6 +54,7 @@ export interface IItem extends IResource {
   usableEffectDescription?: string;
   equippedBuffDescription?: string;
   canBePurchasedOnlyByPremiumPlans?: UserAccountTypes[];
+  attachedGems?: IGemSchema[];
 }
 
 export enum ItemType {
