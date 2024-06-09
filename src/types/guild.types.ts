@@ -1,5 +1,6 @@
-export type IGuild = {
-  id: string;
+import { IResource } from "./resource.types";
+
+export interface IGuild extends IResource {
   name: string;
   tag: string;
   coatOfArms: string;
@@ -11,25 +12,31 @@ export type IGuild = {
     controlPoint: boolean;
   }>;
   guildSkills?: string;
-};
+}
 
-export type IGuildInfoRead = {
+export interface IGuildInfoRead {
   guildId: string | undefined;
-};
+}
 
-export type IGuildCanCreate = {
+export interface IGuildCanCreate {
   isCreatable: boolean;
-};
+}
 
-export type IGuildForm = {
+export interface IGuildForm {
   guildName: string;
   guildTag: string;
   guildCoatOfArms: string;
-};
+}
 
-export type IGuildValidate = {
+export interface IGuildValidate {
   characterId: string | undefined;
-};
+}
+
+export interface IGuildManagementFromClient {
+  guildId?: string;
+  targetId?: string;
+  leaderId?: string;
+}
 
 export enum GuildSocketEvents {
   CreateGuild = "createGuild",
@@ -37,4 +44,6 @@ export enum GuildSocketEvents {
   CanCreateGuild = "canCreateGuild",
   GuildInfoRead = "guildInfoRead",
   CreateGuildValidate = "createGuildValidate",
+  GuildAcceptInvite = "guildAcceptInvite",
+  GuildInvite = "guildInvite",
 }
