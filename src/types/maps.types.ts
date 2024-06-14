@@ -108,6 +108,7 @@ export interface IControlTime {
   time: string;
   period: PeriodOfDay;
   weather: AvailableWeather;
+  map?: string;
 }
 
 export enum WeatherSocketEvents {
