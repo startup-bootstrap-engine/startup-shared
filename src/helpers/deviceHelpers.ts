@@ -1,3 +1,4 @@
+import { Capacitor } from "@capacitor/core";
 import { isMobileOnly as detectIsMobileOnly, isMobile as detectIsMobileOrTablet } from "mobile-device-detect";
 
 const isSmallerThanBreakpoint = (breakpoint: string): boolean => {
@@ -9,51 +10,15 @@ const isSmallerThanBreakpoint = (breakpoint: string): boolean => {
 };
 
 export const isMobileOrTablet = (): boolean => {
-  return detectIsMobileOrTablet ?? (isSmallerThanBreakpoint("767px") && !isSmallerThanBreakpoint("479px"));
+  const platform = Capacitor.getPlatform();
+  return (
+    platform === "ios" ||
+    platform === "android" ||
+    (detectIsMobileOrTablet ?? (isSmallerThanBreakpoint("767px") && !isSmallerThanBreakpoint("479px")))
+  );
 };
 
 export const isMobile = (): boolean => {
-  return detectIsMobileOnly ?? isSmallerThanBreakpoint("479px");
+  const platform = Capacitor.getPlatform();
+  return platform === "ios" || platform === "android" || (detectIsMobileOnly ?? isSmallerThanBreakpoint("479px"));
 };
-
-/* !Evaluate this later
-
-// Helper function to check if the device is a touch screen
-const isTouchScreen = (): boolean => 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-
-// Helper function to check the user agent against a set of mobile/tablet identifiers
-const checkUserAgent = (regex: RegExp): boolean => {
-  const userAgent = navigator.userAgent || navigator.vendor;
-  return regex.test(userAgent);
-};
-
-// Check for device motion and orientation capabilities
-const hasMotionAndOrientation = (): boolean => {
-  return 'DeviceMotionEvent' in window && 'DeviceOrientationEvent' in window;
-};
-
-// Estimate device performance capability
-const estimatePerformance = (): boolean => {
-  const isHighPerformance = window.matchMedia('(min-resolution: 2dppx)').matches;
-  return isHighPerformance;
-};
-
-export const isMobile = (): boolean => {
-  const mobileRegex = /iPhone|Android.+Mobile/i;
-  return checkUserAgent(mobileRegex) && isTouchScreen() && !estimatePerformance();
-};
-
-export const isTablet = (): boolean => {
-  const tabletRegex = /iPad|Android/i;
-  return checkUserAgent(tabletRegex) && isTouchScreen() && hasMotionAndOrientation();
-};
-
-export const isMobileOrTablet = (): boolean => {
-  return isMobile() || isTablet();
-};
-
-export const isDesktop = (): boolean => {
-  return !isMobileOrTablet() && !isTouchScreen();
-};
-  
-  */

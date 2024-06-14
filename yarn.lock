@@ -23,14 +23,12 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@rpg-engine/shared@^0.2.51":
-  version "0.2.96"
-  resolved "https://registry.npmjs.org/@rpg-engine/shared/-/shared-0.2.96.tgz"
-  integrity sha512-1lHtWOB6Ejud3U1fnR9Q0zkbNuhn43z6ejv/1+Dbn81/vsjhZImQNrAo+llVocMgufqk2E2z0/aneDLpeSocnQ==
+"@capacitor/core@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@capacitor/core/-/core-6.1.0.tgz#1b4a93f3d5976ce3fd4a7f1b797c48c1243ec934"
+  integrity sha512-Kt4ONm0X9xxJXn9Q73oBaKdzep5B/VJw3VjXa2eGul4cD2k37mJwgjpXSMRnLH0Aju5bCiRL8J/hMAfTlokO6A==
   dependencies:
-    husky "^4.3.0"
-    prettier "^2.2.1"
-    typescript "^4.6.4"
+    tslib "^2.1.0"
 
 "@types/mongoose@^5.11.97":
   version "5.11.97"
@@ -490,6 +488,11 @@ tsc@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/tsc/-/tsc-2.0.4.tgz#5f6499146abea5dca4420b451fa4f2f9345238f5"
   integrity sha512-fzoSieZI5KKJVBYGvwbVZs/J5za84f2lSTLPYf6AGiIf43tZ3GNrI1QzTLcjtyDDP4aLxd46RTZq1nQxe7+k5Q==
+
+tslib@^2.1.0:
+  version "2.6.3"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.3.tgz#0438f810ad7a9edcde7a241c3d80db693c8cbfe0"
+  integrity sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==
 
 typescript@^4.6.4:
   version "4.6.4"
