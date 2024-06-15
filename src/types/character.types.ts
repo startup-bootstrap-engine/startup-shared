@@ -58,6 +58,7 @@ export interface ICharacter extends IResource {
   isOnParty?: boolean;
   friends?: string[];
   friendRequests?: string[];
+  isOnGuild?: boolean;
 }
 
 export enum CharacterClass {
@@ -173,6 +174,7 @@ export interface ICharacterCreateFromServer {
   skullType?: CharacterSkullType;
   isOnParty?: boolean;
   owner?: Record<string, unknown>;
+  isOnGuild?: boolean;
 }
 export interface ICharacterPositionUpdateFromClient {
   originX: number;
@@ -247,6 +249,7 @@ export interface ICharacterAttributeChanged {
   hasSkull?: boolean;
   skullType?: CharacterSkullType;
   isOnParty?: boolean;
+  isOnGuild?: boolean;
 }
 
 export interface IAppliedBuffsEffect {
