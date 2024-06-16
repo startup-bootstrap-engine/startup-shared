@@ -1,17 +1,23 @@
 import { IResource } from "./resource.types";
 
-export interface IGuild extends IResource {
+export interface IGuildInfo extends IResource {
   name: string;
   tag: string;
   coatOfArms: string;
   guildLeader: string;
-  members: string[];
+  members: IGuildMember[];
   territoriesOwned?: Array<{
     map: string;
     lootShare: number;
     controlPoint: boolean;
   }>;
   guildSkills?: string;
+}
+
+export interface IGuildMember {
+  _id: string;
+  name: string;
+  class: string;
 }
 
 export interface IGuildInfoRead {
