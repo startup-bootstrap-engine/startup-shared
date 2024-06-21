@@ -44,6 +44,10 @@ export interface IGuildManagementFromClient {
   leaderId?: string;
 }
 
+export interface IGuildDelete {
+  id: string;
+}
+
 export enum GuildSocketEvents {
   CreateGuild = "createGuild",
   GuildInfoOpen = "guildInfoOpen",
@@ -52,4 +56,5 @@ export enum GuildSocketEvents {
   CreateGuildValidate = "createGuildValidate",
   GuildAcceptInvite = "guildAcceptInvite",
   GuildInvite = "guildInvite",
+  GuildDelete = "guildDelete",
 }
