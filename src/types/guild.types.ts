@@ -11,13 +11,20 @@ export interface IGuildInfo extends IResource {
     lootShare: number;
     controlPoint: boolean;
   }>;
-  guildSkills?: string;
+  guildSkills: IGuildSkillsInfo[];
+  guidLevel: number;
 }
 
 export interface IGuildMember {
   _id: string;
   name: string;
   class: string;
+}
+
+export interface IGuildSkillsInfo {
+  name: string;
+  level: number;
+  xp: number;
 }
 
 export interface IGuildInfoRead {
