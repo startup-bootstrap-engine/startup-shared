@@ -86,6 +86,7 @@ export enum SkillType {
   Magic = "Magic",
   Misc = "Misc",
   Character = "Character",
+  Guild = "Guild",
 }
 
 export enum CombatSkill {
