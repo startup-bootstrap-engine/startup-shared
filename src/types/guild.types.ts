@@ -29,6 +29,7 @@ export interface IGuildSkillsInfo {
 
 export interface IGuildInfoRead {
   guildId: string | undefined;
+  characterId?: string;
 }
 
 export interface IGuildCanCreate {
@@ -55,6 +56,12 @@ export interface IGuildDelete {
   id: string;
 }
 
+export interface IGuildPayload {
+  id: string;
+  tag: string;
+  coatOfArms: string;
+}
+
 export enum GuildSocketEvents {
   CreateGuild = "createGuild",
   GuildInfoOpen = "guildInfoOpen",
@@ -64,4 +71,5 @@ export enum GuildSocketEvents {
   GuildAcceptInvite = "guildAcceptInvite",
   GuildInvite = "guildInvite",
   GuildDelete = "guildDelete",
+  GuildInfoDelete = "guildInfoDelete",
 }

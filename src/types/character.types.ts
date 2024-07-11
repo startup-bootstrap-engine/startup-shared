@@ -2,6 +2,7 @@ import { Types } from "mongoose";
 import { AnimationDirection } from "./animation.types";
 import { EntityAttackType, EntityType } from "./entity.types";
 import { IEquipmentSet } from "./equipment.types";
+import { IGuildPayload } from "./guild.types";
 import { IItem } from "./item.types";
 import { MapLayers } from "./maps.types";
 import { IResource } from "./resource.types";
@@ -175,6 +176,7 @@ export interface ICharacterCreateFromServer {
   isOnParty?: boolean;
   owner?: Record<string, unknown>;
   isOnGuild?: boolean;
+  guild?: IGuildPayload;
 }
 export interface ICharacterPositionUpdateFromClient {
   originX: number;
