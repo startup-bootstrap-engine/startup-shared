@@ -62,6 +62,11 @@ export interface IGuildPayload {
   coatOfArms: string;
 }
 
+export interface IGuildLeave {
+  guildId: string;
+  memberId: string;
+}
+
 export enum GuildSocketEvents {
   CreateGuild = "createGuild",
   GuildInfoOpen = "guildInfoOpen",
@@ -72,4 +77,5 @@ export enum GuildSocketEvents {
   GuildInvite = "guildInvite",
   GuildDelete = "guildDelete",
   GuildInfoDelete = "guildInfoDelete",
+  GuildMemberLeave = "guildMemberLeave",
 }
