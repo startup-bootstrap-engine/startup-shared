@@ -67,6 +67,7 @@ export enum SpellsBlueprint {
   RogueStealth = "rogue-stealth-spell",
   BerserkerBloodthirst = "berserker-bloodthirst",
   RogueExecution = "rogue-execution",
+  WarriorExecution = "warrior-execution",
   ManaRegenSpell = "auto-mana-regen",
   HealthRegenSell = "auto-health-regen",
   ManaShield = "mana-shield",
