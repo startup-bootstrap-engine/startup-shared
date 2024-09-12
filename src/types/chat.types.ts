@@ -4,6 +4,7 @@ import { IResource } from "./resource.types";
 export enum ChatMessageType {
   Global = "Global",
   Private = "Private",
+  Guild = "Guild",
 }
 
 export enum ChatSocketEvents {
@@ -15,6 +16,8 @@ export enum ChatSocketEvents {
   PrivateChatMessageGetUnseenMessageCharacters = "PrivateChatMessageGetUnseenMessageCharacters",
   TradeChatMessageCreate = "TradeChatMessageCreate",
   TradeChatMessageRead = "TradeChatMessageRead",
+  GuildChatMessageRead = "GuildChatMessageRead",
+  GuildChatMessageCreate = "GuildChatMessageCreate",
 }
 
 export interface IChatMessage extends IResource {
