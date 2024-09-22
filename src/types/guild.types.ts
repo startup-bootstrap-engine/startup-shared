@@ -67,6 +67,10 @@ export interface IGuildLeave {
   memberId: string;
 }
 
+export interface IGuildUpdateSkillByTokens {
+  skill: string;
+}
+
 export enum GuildSocketEvents {
   CreateGuild = "createGuild",
   GuildInfoOpen = "guildInfoOpen",
@@ -78,4 +82,5 @@ export enum GuildSocketEvents {
   GuildDelete = "guildDelete",
   GuildInfoDelete = "guildInfoDelete",
   GuildMemberLeave = "guildMemberLeave",
+  GuildUpdateSkillByTokens = "guildUpdateSkillByTokens",
 }
