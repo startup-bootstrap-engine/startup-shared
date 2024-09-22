@@ -13,6 +13,7 @@ export interface IGuildInfo extends IResource {
   }>;
   guildSkills: IGuildSkillsInfo[];
   guidLevel: number;
+  upgradeTokens: number;
 }
 
 export interface IGuildMember {
