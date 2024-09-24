@@ -2,7 +2,7 @@ import { ICharacter } from "./character.types";
 import { IResource } from "./resource.types";
 
 export enum ChatMessageType {
-  Global = "Global",
+  Local = "Local",
   Private = "Private",
   Guild = "Guild",
 }
@@ -18,9 +18,11 @@ export enum ChatSocketEvents {
   TradeChatMessageRead = "TradeChatMessageRead",
   GuildChatMessageRead = "GuildChatMessageRead",
   GuildChatMessageCreate = "GuildChatMessageCreate",
+  LocalChatMessageCreate = "LocalChatMessageCreate",
+  LocalChatMessageRead = "LocalChatMessageRead",
 }
 
-export interface IChatMessage extends IResource {
+export interface ILocalChatMessage extends IResource {
   emitter: {
     _id: string;
     name: string;
@@ -29,7 +31,7 @@ export interface IChatMessage extends IResource {
   type: ChatMessageType;
 }
 
-export interface IChatMessageCreatePayload {
+export interface ILocalChatMessageCreatePayload {
   emitter: {
     _id: string;
     name: string;
@@ -39,8 +41,8 @@ export interface IChatMessageCreatePayload {
   limit: number;
 }
 
-export interface IChatMessageReadPayload {
-  messages: IChatMessage[];
+export interface ILocalChatMessageReadPayload {
+  messages: ILocalChatMessage[];
 }
 
 export interface IPrivateChatMessage extends IResource {
@@ -96,6 +98,23 @@ export interface ITradeChatMessage extends IResource {
 }
 
 export interface ITradeChatMessageCreatePayload {
+  emitter: {
+    _id: string;
+    name: string;
+  };
+  message: string;
+  limit: number;
+}
+
+export interface IGlobalChatMessage extends IResource {
+  emitter: {
+    _id: string;
+    name: string;
+  };
+  message: string;
+}
+
+export interface IGlobalChatMessageCreatePayload {
   emitter: {
     _id: string;
     name: string;
