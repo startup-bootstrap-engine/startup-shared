@@ -24,6 +24,11 @@ export enum ChatSocketEvents {
   ChatDisplayTextOnCharacter = "ChatDisplayTextOnCharacter",
 }
 
+export interface IChatDisplayTextOnCharacterPayload {
+  characterId: string;
+  text: string;
+}
+
 export interface ILocalChatMessage extends IResource {
   emitter: {
     _id: string;
