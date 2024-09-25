@@ -78,6 +78,15 @@ export interface ISkill extends IResource {
   // water: ISkillDetails;
 }
 
+export enum ElementalType {
+  Fire = "fire",
+  Water = "water",
+  Earth = "earth",
+  Air = "air",
+  Corruption = "corruption",
+  Nature = "nature",
+}
+
 export enum SkillType {
   BasicAttributes = "BasicAttributes",
   Combat = "Combat",

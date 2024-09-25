@@ -13,6 +13,7 @@ export interface IGuildInfo extends IResource {
   }>;
   guildSkills: IGuildSkillsInfo[];
   guidLevel: number;
+  upgradeTokens: number;
 }
 
 export interface IGuildMember {
@@ -67,6 +68,10 @@ export interface IGuildLeave {
   memberId: string;
 }
 
+export interface IGuildUpdateSkillByTokens {
+  skill: string;
+}
+
 export enum GuildSocketEvents {
   CreateGuild = "createGuild",
   GuildInfoOpen = "guildInfoOpen",
@@ -78,4 +83,5 @@ export enum GuildSocketEvents {
   GuildDelete = "guildDelete",
   GuildInfoDelete = "guildInfoDelete",
   GuildMemberLeave = "guildMemberLeave",
+  GuildUpdateSkillByTokens = "guildUpdateSkillByTokens",
 }

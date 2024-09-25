@@ -2,7 +2,7 @@ import { CharacterClass, CharacterRaces } from "./character.types";
 import { EntityType } from "./entity.types";
 import { SpellCastingType } from "./item.types";
 import { UserAccountTypes } from "./premiumAccount.types";
-import { BasicAttribute, CharacterAttributes, CombatSkill, CraftingSkill } from "./skills.types";
+import { BasicAttribute, CharacterAttributes, CombatSkill, CraftingSkill, ElementalType } from "./skills.types";
 
 export interface IRawSpell {
   key: string;
@@ -165,6 +165,7 @@ export interface ISpell {
   characterRace?: CharacterRaces[];
   attribute?: BasicAttribute | CombatSkill | CraftingSkill | CharacterAttributes;
   maxDistanceGrid?: number;
-  usableEffect: (character, target?) => Promise<boolean> | Promise<void> | void | boolean;
+  usableEffect: (character, target?, damageBonus?: number) => Promise<boolean> | Promise<void> | void | boolean;
   canSelfTarget?: boolean;
+  elementalType?: ElementalType;
 }
