@@ -5,6 +5,7 @@ export enum ChatMessageType {
   Local = "Local",
   Private = "Private",
   Guild = "Guild",
+  Global = "Global",
 }
 
 export enum ChatSocketEvents {
@@ -128,4 +129,5 @@ export interface IGlobalChatMessageCreatePayload {
   };
   message: string;
   limit: number;
+  type: ChatMessageType;
 }
