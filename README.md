@@ -4,19 +4,10 @@ Here's a refined version of your instructions, incorporating the changes you men
 
 # `@startup-engine/shared`
 
-## How to Update Our Shared Packages
-
-### Important
-
-- **Direct Push to Master**: You can push changes directly to the master branch. Just make sure you're in sync with master before starting to work:
-  ```bash
-  git pull origin master
-  ```
-
 ### Pre-requisites
 
-- Ensure that the `.npmrc` file is present at the root of the project. If you don’t have it, [refer to our Notion documentation](https://www.notion.so/projectstockalert/Configuration-files-a1725ae8e64a497fb617d92a17ab29fd#7fe40aa161404c06b145c1b60c849495).
-- **Organization Setup**: Before publishing for the first time, you must create an organization on NPM if it hasn't been done already. This allows you to use scoped packages (e.g., `@startup-engine/shared`).
+- Ensure that the `.npmrc` file is present at the root of the project. If you don’t have it, run `yarn configure` to pull the necessary `.npmrc` token for authentication.
+  - **Organization Setup**: Before publishing for the first time, you must create an organization on NPM if it hasn't been done already. This allows you to use scoped packages (e.g., `@startup-engine/shared`).
 
 ### Step-by-Step: Setting up a New Shared Library
 
@@ -31,9 +22,6 @@ Here's a refined version of your instructions, incorporating the changes you men
        "main": "index.js"
      }
      ```
-
-2. **Configure Yarn**:
-   - Run `yarn configure` to pull the necessary `.npmrc` token for authentication. This ensures that you have the correct permissions to publish the package.
 
 ### Step-by-Step: Updating an Existing Shared Library
 
