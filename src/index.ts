@@ -18,3 +18,5 @@ export * from "./types/translation.types";
 export * from "./types/user.types";
 
 export * from "./schemas/userSchema";
+export * from "./types/places.types";
+export * from "./types/validation.types";
