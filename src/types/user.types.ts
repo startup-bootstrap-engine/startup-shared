@@ -1,29 +1,6 @@
-import { ICharacter } from "./character.types";
-import { UserAccountTypes } from "./premiumAccount.types";
-import { IResource } from "./resource.types";
-
 export interface IUserPreferences {
   experience: UserExperience;
   goal: UserGoal;
-}
-
-export interface IUserEntity extends IResource {
-  name: string | null;
-  role: UserTypes | null;
-  authFlow: UserAuthFlow;
-  email: string;
-  address: string | null;
-  phone: string | null;
-  unsubscribed: boolean;
-  characters: ICharacter[];
-  wallet: IUserWallet;
-  isPremiumAccount: boolean;
-  accountType: UserAccountTypes;
-}
-
-export interface IUserWallet {
-  publicAddress: string;
-  networkId: number;
 }
 
 export interface IUserToken {
@@ -54,12 +31,6 @@ export enum UserAuthFlow {
   FacebookOAuth = "FacebookOAuth",
   LinkedInOAuth = "LinkedInOAuth",
   AppleOAuth = "AppleOAuth",
-}
-
-export interface IUser extends IUserEntity {
-  name: string | null;
-  isLoggedIn: boolean;
-  token: string | null;
 }
 
 export interface INewUser {
@@ -100,34 +71,3 @@ export interface IDispatchUpdatePushNotificationToken {
   type: UserActionTypes.updatePushNotificationToken;
   payload: string;
 }
-
-export interface IDispatchUserFetch {
-  type: UserActionTypes.fetch;
-  payload: IUser;
-}
-
-export interface IDispatchUserInfo {
-  type: UserActionTypes.refreshInfo;
-  payload: IUserEntity;
-}
-
-export interface IDispatchUserLogin {
-  type: UserActionTypes.login;
-  payload: IUserAccessToken;
-}
-
-export interface IDispatchUserClear {
-  type: UserActionTypes.clear;
-}
-
-export interface IDispatchUserRegister {
-  type: UserActionTypes.register;
-}
-
-// this is used inside our reducer
-export type UserAction =
-  | IDispatchUserFetch
-  | IDispatchUserLogin
-  | IDispatchUserInfo
-  | IDispatchUserClear
-  | IDispatchUpdatePushNotificationToken;

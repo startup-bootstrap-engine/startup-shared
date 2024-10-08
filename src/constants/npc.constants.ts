@@ -1,1 +1,0 @@
-export const NPC_MAX_TALKING_DISTANCE_IN_GRID = 5;

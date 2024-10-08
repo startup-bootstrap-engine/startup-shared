@@ -1,4 +1,0 @@
-import { GRID_HEIGHT, GRID_WIDTH } from "./world.constants";
-
-export const SOCKET_TRANSMISSION_ZONE_WIDTH = GRID_WIDTH * 30;
-export const SOCKET_TRANSMISSION_ZONE_HEIGHT = GRID_HEIGHT * 30;
