@@ -19,7 +19,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc -p .",
-    "prepublish": "tsc",
     "format": "prettier --write 'src/**/*.ts' --loglevel silent",
     "format:check": "prettier --check '**/*.ts' '**/*.json'",
     "configure": "./environment/download-credentials.sh"
@@ -34,7 +33,8 @@
     "mobile-device-detect": "^0.4.3",
     "prettier": "^2.2.1",
     "tsc": "^2.0.4",
-    "typescript": "^4.6.4"
+    "typescript": "^4.6.4",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@capacitor/core": "^6.1.0",
