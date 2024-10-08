@@ -1,6 +1,6 @@
 {
   "name": "@startup-engine/shared",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Types shared across our API and client",
   "author": "Definya Team",
   "homepage": "",
