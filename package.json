@@ -1,8 +1,8 @@
 {
   "name": "@startup-engine/shared",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Types shared across our API and client",
-  "author": "Definya Team",
+  "author": "Startup Engine Team",
   "homepage": "",
   "license": "ISC",
   "main": "dist/index",
@@ -18,14 +18,16 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tsc": "tsc -p .",
+    "tsc": "tsc",
     "format": "prettier --write 'src/**/*.ts' --loglevel silent",
     "format:check": "prettier --check '**/*.ts' '**/*.json'",
-    "configure": "./environment/download-credentials.sh"
+    "configure": "./environment/download-credentials.sh",
+    "prepublishOnly": "yarn tsc"
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn tsc && yarn format"
+      "pre-push": "yarn tsc && yarn format",
+      "prepublishOnly": "yarn tsc"
     }
   },
   "dependencies": {
