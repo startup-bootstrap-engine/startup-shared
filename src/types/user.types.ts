@@ -1,8 +1,3 @@
-export interface IUserPreferences {
-  experience: UserExperience;
-  goal: UserGoal;
-}
-
 export interface IUserToken {
   token: string;
 }
@@ -63,11 +58,4 @@ export enum UserActionTypes {
   clear = "clear",
   register = "register",
   updatePushNotificationToken = "updatePushNotificationToken",
-}
-
-// Dispatch actions
-
-export interface IDispatchUpdatePushNotificationToken {
-  type: UserActionTypes.updatePushNotificationToken;
-  payload: string;
 }

@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 export const userPreferencesSchema = z.object({
-  userId: z.string().min(1),
+  userId: z.string().min(1), // Foreign key reference to User
 
   theme: z.string().default("lara"),
 
