@@ -51,6 +51,8 @@ export const userSchema = z.object({
   pushNotificationToken: z.string().nullable().optional(),
 
   channel: z.string().nullable().optional(),
+
+  preferencesId: z.string().min(1),
 });
 
 export type BaseIUser = z.infer<typeof userSchema>;

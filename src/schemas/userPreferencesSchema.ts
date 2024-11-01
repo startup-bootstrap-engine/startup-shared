@@ -1,0 +1,22 @@
+import { z } from "zod";
+
+export const userPreferencesSchema = z.object({
+  userId: z.string().min(1),
+
+  theme: z.string().default("lara"),
+
+  language: z.string().default("en"),
+
+  notifications: z.object({
+    email: z.boolean().default(true),
+    push: z.boolean().default(true),
+  }),
+});
+
+export type BaseIUserPreferences = z.infer<typeof userPreferencesSchema>;
+
+export interface IUserPreferences extends BaseIUserPreferences {
+  id: string;
+  createdAt: Date;
+  updatedAt: Date;
+}
