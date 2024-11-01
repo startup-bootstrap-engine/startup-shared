@@ -56,7 +56,7 @@ export const userSchema = z.object({
 export type BaseIUser = z.infer<typeof userSchema>;
 
 export interface IUser extends BaseIUser {
-  _id: string;
+  id: string;
   createdAt: Date;
   updatedAt: Date;
 }

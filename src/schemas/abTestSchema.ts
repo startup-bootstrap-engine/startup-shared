@@ -10,7 +10,7 @@ export const abTestSchema = z.object({
 export type BaseIABTest = z.infer<typeof abTestSchema>;
 
 export interface IABTest extends BaseIABTest {
-  _id: string;
+  id: string;
   createdAt: Date;
   updatedAt: Date;
 }
