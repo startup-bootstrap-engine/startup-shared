@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import { useCallback } from "react";
 
 interface IUseText {
   capitalizeFirstLetter: (string: string) => string;
@@ -21,14 +21,14 @@ const useText = (): IUseText => {
   }, []);
 
   const reverseString = useCallback((string: string): string => {
-    return string.split('').reverse().join('');
+    return string.split("").reverse().join("");
   }, []);
 
   return {
     capitalizeFirstLetter,
     toLowerCase,
     toUpperCase,
-    reverseString
+    reverseString,
   };
 };
 
