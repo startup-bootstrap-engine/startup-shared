@@ -1,6 +1,6 @@
 {
   "name": "@startup-engine/shared",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "Types shared across our API and client",
   "author": "Startup Engine Team",
   "homepage": "",
@@ -34,13 +34,16 @@
     "husky": "^4.3.0",
     "mobile-device-detect": "^0.4.3",
     "prettier": "^2.2.1",
+    "react": "^18.3.1",
     "tsc": "^2.0.4",
     "typescript": "^4.6.4",
     "zod": "^3.23.8"
   },
   "devDependencies": {
     "@capacitor/core": "^6.1.0",
-    "@types/mongoose": "^5.11.97"
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^22.8.7",
+    "@types/react": "^18.3.12"
   },
   "peerDependencies": {
     "@capacitor/core": "^4.6.3"
