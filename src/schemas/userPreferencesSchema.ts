@@ -11,12 +11,13 @@ export const userPreferencesSchema = z.object({
     email: z.boolean().default(true),
     push: z.boolean().default(true),
   }),
+
+  createdAt: z.date().optional(),
+  updatedAt: z.date().optional(),
 });
 
 export type BaseIUserPreferences = z.infer<typeof userPreferencesSchema>;
 
 export interface IUserPreferences extends BaseIUserPreferences {
   id: string;
-  createdAt: Date;
-  updatedAt: Date;
 }

@@ -51,12 +51,13 @@ export const userSchema = z.object({
   pushNotificationToken: z.string().nullable().optional(),
 
   channel: z.string().nullable().optional(),
+
+  createdAt: z.date().optional(),
+  updatedAt: z.date().optional(),
 });
 
 export type BaseIUser = z.infer<typeof userSchema>;
 
 export interface IUser extends BaseIUser {
   id: string;
-  createdAt: Date;
-  updatedAt: Date;
 }
