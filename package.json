@@ -1,6 +1,6 @@
 {
   "name": "@startup-engine/shared",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Types shared across our API and client",
   "author": "Startup Engine Team",
   "homepage": "",
@@ -45,7 +45,7 @@
     "@types/react": "^18.3.12"
   },
   "peerDependencies": {
-    "react": "^18.3.1",
-    "@capacitor/core": "^4.6.3"
+    "@capacitor/core": "^4.6.3",
+    "react": "^18.3.1"
   }
 }
